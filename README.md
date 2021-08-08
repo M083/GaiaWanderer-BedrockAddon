@@ -13,7 +13,8 @@ Addon for Minecraft Bedrock Edition
 
 ## はじめに
 このアドオンはMinecraft Bedrock Edition(以下MCBE)専用です。
-Java Edition等のMCBE以外のMinecraftでは動作しません。
+
+Java Edition等、MCBE以外のMinecraftでは動作しません。
 
 多数のアイテム、ブロック、バイオーム、モブ、ダンジョンなどが追加され、通常のMCBEのサバイバルとは一味違うサバイバルをプレイすることができます。
 
@@ -24,34 +25,37 @@ Java Edition等のMCBE以外のMinecraftでは動作しません。
 
 ## 動作環境
 v1.17.10以降のMCBEがインストールされた端末。
-Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可。
+Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## 導入方法
-執筆中
+
+#### 1. ダウンロード
+[**Releases**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases) から最新バージョンのアドオンをダウンロードします。 拡張子(ファイル名の末尾)が.mcaddonの物をダウンロードするようにしてください。
+
 
 ## スクリーンショット
 
-<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/mana_jungle_ss.PNG">
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/mana_jungle_ss.PNG">
 
-<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/lava_mountain_ss.PNG">
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/lava_mountain_ss.PNG">
 
-<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/crevasse_ss.PNG">
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/crevasse_ss.PNG">
 
-<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/plains_ss.PNG">
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/plains_ss.PNG">
 
-<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/hover_ss.PNG">
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/hover_ss.PNG">
 
-<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/griff_ss.PNG">
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/griff_ss.PNG">
 
-<img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/red_gel_ss.png"> <img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/green_gel_ss.png">
+<img width="400" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/red_gel_ss.png"> <img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/green_gel_ss.png">
 
-<img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/adryva_ss.PNG">
+<img width="400" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/adryva_ss.PNG">
 
 
 ## 免責
-作者は、このアドオンによって生じた如何なる損害にも、
-修正や更新も、責任を負わないこととします。
-使用にあたっては、自己責任でお願いします。
+このアドオンによって生じた如何なる損害にも責任を負いかねます。
+
+使用にあたっては自己責任でお願いします。
 
 ## 連絡先
 Twitter ([@M0_83](https://twitter.com/M0_83))
