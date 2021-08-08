@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:totem"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ggg",
+      "tst",
+      " g "
+    ],
+    "key": {
+      "t": {
+        "item": "gaiawanderer:green_tablet"
+      },
+      "g": {
+        "item": "minecraft:gold_nugget"
+      },
+      "s": {
+        "item": "minecraft:shroomlight"
+      }
+    },
+    "result": {
+      "item": "minecraft:totem"
+    }
+  }
+}

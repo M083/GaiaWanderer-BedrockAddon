@@ -1,0 +1,52 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "gaiawanderer:floating_land_feature_rule",
+            "places_feature": "gaiawanderer:floating_land_feature"
+        },
+        "conditions": {
+            "placement_pass": "first_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "plains"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 8,
+            "scatter_chance": 25.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    190,
+                    200
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

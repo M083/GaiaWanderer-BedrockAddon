@@ -1,0 +1,39 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "gaiawanderer:large_cave_feature_rule",
+            "places_feature": "gaiawanderer:large_cave_feature"
+        },
+        "conditions": {
+            "placement_pass": "first_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "rotten_forest"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 4,
+            "x": 0,
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    45,
+                    55
+                ]
+            },
+            "z": 0
+        }
+    }
+}

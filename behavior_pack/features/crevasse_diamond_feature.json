@@ -1,0 +1,33 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:crevasse_diamond_feature"
+		},
+		"count": 12,
+
+		"replace_rules": [
+			{
+				"places_block": "gaiawanderer:diamond_packed_ice",
+				"may_replace": [
+					"minecraft:ice",
+					"minecraft:packed_ice",
+					"minecraft:blue_ice"
+				]
+			}
+		]
+
+		// "places_block": "gaiawanderer:diamond_packed_ice",
+		// "may_replace": [
+		// 	{
+		// 		"name": "minecraft:ice"
+		// 	},
+		// 	{
+		// 		"name": "minecraft:packed_ice"
+		// 	},
+		// 	{
+		// 		"name": "minecraft:blue_ice"
+		// 	}
+		// ]
+	}	
+}

@@ -1,0 +1,134 @@
+/* old
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "gaiawanderer:mega_tree_feature"
+		},
+		"structure_name": "mystructure:mega_tree",
+		"facing_direction": "random",
+		"adjustment_radius": 16,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"minecraft:leaves",
+					"minecraft:dirt",
+					"minecraft:tallgrass",
+					"minecraft:grass",
+					"minecraft:water",
+					"minecraft:flowing_water",
+					"minecraft:waterlily",
+					"minecraft:log",
+					"minecraft:log2",
+					"minecraft:vine",
+					"minecraft:red_mushroom_block",
+					"minecraft:brown_mushroom_block",
+					"minecraft:red_mushroom",
+					"minecraft:brown_mushroom"
+				]
+			}
+		}
+	}
+}
+*/
+
+{
+	"format_version": "1.15.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "gaiawanderer:mega_tree_feature"
+		},
+		"may_grow_on": [
+			"minecraft:grass",
+			"minecraft:dirt",
+			"minecraft:podzol",
+			"minecraft:sand",
+			{
+				"name": "minecraft:dirt",
+				"states": {
+					"dirt_type": "coarse"
+				}
+			}
+		],
+		"may_replace": [
+			"minecraft:air",
+			"minecraft:leaves",
+			"minecraft:dirt",
+			"minecraft:seaweed",
+			"minecraft:tallgrass",
+			"minecraft:grass",
+			"minecraft:water",
+			"minecraft:flowing_water",
+			"minecraft:waterlily",
+			"minecraft:log",
+			"minecraft:log2",
+			"minecraft:vine",
+			"minecraft:red_mushroom_block",
+			"minecraft:brown_mushroom_block",
+			"minecraft:red_mushroom",
+			"minecraft:brown_mushroom",
+			"minecraft:moss_block",
+			"gaiawanderer:mana_leaves"
+		],
+		"acacia_trunk": {
+			"trunk_block": {
+				"name": "minecraft:log"
+			},
+			"trunk_width": 3,
+			"trunk_height": {
+				"base": 23,
+				"intervals": [1, 7]
+			},
+			"trunk_lean": {
+				"allow_diagonal_growth": true,
+				"lean_height": {
+					"range_min": 8,
+					"range_max": 16
+				},
+				"lean_steps":{
+					"range_min": 2,
+					"range_max": 4
+				}
+			},
+			"branches": {
+				"branch_position":{
+					"range_min": 2,
+					"range_max": 6
+				},
+				"branch_chance": {
+					"numerator": 3,
+					"denominator": 4
+				},
+				"branch_length": {
+					"range_min": 3,
+					"range_max": 6
+				},
+				"branch_canopy": {
+					"acacia_canopy": {
+						"leaf_block": {
+							"name": "minecraft:leaves"
+						},
+						"canopy_size": 3
+					}
+				}
+			},
+			"trunk_decoration": {
+				"decoration_block": "minecraft:shroomlight",
+				"decoration_chance": {
+					"numerator": 1,
+					"denominator": 100
+				}
+			}
+		},
+		"mega_canopy": {
+			"leaf_block": {
+				"name": "gaiawanderer:mana_leaves"
+			},
+			"canopy_height": 4,
+			 "base_radius": 8,
+			 "core_width": 3
+		}
+	}
+}

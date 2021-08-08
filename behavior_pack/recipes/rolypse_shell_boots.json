@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:rolypse_shell_boots"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "i i",
+      "l l"
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "l": {
+        "item": "gaiawanderer:rolypse_shell"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:rolypse_shell_boots"
+    }
+  }
+}

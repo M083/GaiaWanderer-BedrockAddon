@@ -1,0 +1,40 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_fertlizer",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "rotten_fertlizer"
+      },
+      "minecraft:on_use_on": {
+        "on_use_on": {
+          "condition": "query.all_tags('dirt')",
+          "event": "gaiawanderer:set_fertlizer"
+        }
+      }
+    },
+    "events": {
+      "gaiawanderer:set_fertlizer": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "fill ~ ~ ~ ~ ~ ~ gaiawanderer:rotten_dirt 0 replace dirt",
+                "fill ~ ~ ~ ~ ~ ~ gaiawanderer:rotten_dirt 0 replace grass",
+                "fill ~ ~ ~ ~ ~ ~ gaiawanderer:rotten_stone 0 replace stone 0",
+                "playsound land.nether_wart @p"
+              ]
+            }
+          },
+          {
+            "decrement_stack": {}
+          }
+        ]
+      }
+    }
+  }
+}

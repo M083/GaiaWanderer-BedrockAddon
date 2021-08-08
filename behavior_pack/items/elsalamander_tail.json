@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:elsalamander_tail",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "elsalamander_tail"
+      },
+      "minecraft:explodable": false,
+      "minecraft:should_despawn": false
+    }
+  }
+}

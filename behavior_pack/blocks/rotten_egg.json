@@ -1,0 +1,78 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:rotten_egg"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_root.json",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:flammable": {
+                "flame_odds": 10,
+                "burn_odds": 10
+            },
+            "minecraft:map_color": "#DDDDDD",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.8,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [ "down" ],
+                        "block_filter": [
+                            {
+                                "tags": "q.any_tag('dirt','sand','gravel','grass','snow','wood','pumpkin','plant','stone','metal','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','stone_pick_diggable','wood_pick_diggable')"
+                            },
+                            "gaiawanderer:rotten_root",
+                            "gaiawanderer:rotten_egg",
+                            "gaiawanderer:rotten_dirt",
+                            "minecraft:brown_mushroom_block",
+                            "minecraft:red_mushroom_block"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:on_fall_on":{
+                "event": "gaiawanderer:spawnspider"
+            },
+            "minecraft:on_interact":{
+                "event": "gaiawanderer:spawnspider"
+            },
+            "minecraft:on_step_on":{
+                "event": "gaiawanderer:spawnspider"
+            },
+            "minecraft:on_step_off":{
+                "event": "gaiawanderer:spawnspider"
+            },
+            "minecraft:on_player_destroyed":{
+                "event": "gaiawanderer:spawnspider"
+            }
+        },
+        "events": {
+            "gaiawanderer:spawnspider": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ gaiawanderer:rotten_root"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "summon gaiawanderer:mushspider"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "summon gaiawanderer:mushspider"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "summon gaiawanderer:mushspider"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

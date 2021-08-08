@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "gaiawanderer:fog_mana_jungle"
+		},
+		"distance": {
+			"air": {
+				"render_distance_type": "fixed",
+				"fog_color": "#EAFFF4",
+				"fog_start": 4,
+				"fog_end": 64
+			},
+			"water": {
+				"render_distance_type": "fixed",
+    			"fog_color": "#7fffd4",
+				"fog_start": 0.5,
+    			"fog_end": 60
+			},
+			"weather": {
+				"render_distance_type": "fixed",
+				"fog_color": "#EAFFF4",
+				"fog_start": 4,
+				"fog_end": 24
+			}
+		}
+	}
+}

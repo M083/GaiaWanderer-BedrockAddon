@@ -1,0 +1,69 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "gaiawanderer:hollow_salamander",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:weight": {
+          "default": 25
+        },
+        "minecraft:herd": {
+          "min_size":3,
+          "max_size":5
+        },
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+    
+        "minecraft:biome_filter": {
+          "all_of": [
+            {"test": "has_biome_tag", "operator":"==", "value": "nether"}
+          ]
+        }
+      },
+      {
+        "minecraft:spawns_underground": {},
+
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": false
+        },
+
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 50
+        },
+
+        "minecraft:weight": {
+          "default": 80
+        },
+
+        "minecraft:density_limit": {
+          "surface": 5
+        },
+
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+        "minecraft:biome_filter": {
+          "all_of": [
+            {"test": "has_biome_tag", "operator":"!=", "value": "nether"},
+            {"test": "has_biome_tag", "operator":"!=", "value": "the_end"}
+          ]
+        }
+      }
+    ]
+  }
+}

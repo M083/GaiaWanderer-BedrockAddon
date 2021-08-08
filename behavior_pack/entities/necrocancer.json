@@ -1,0 +1,292 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gaiawanderer:necrocancer",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+
+		"component_groups": {
+			"nether": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:loot": {
+					"table": "loot_tables/entities/necrocancer_nether.json"
+				},
+				"minecraft:scale": {
+					"value": 3.5
+				},
+				"minecraft:lava_movement": {
+					"value": 0.32
+				},
+				"minecraft:health": {
+					"value": 45,
+					"max": 45
+				},
+				"minecraft:breathable": {
+					"totalSupply": 15,
+					"suffocateTime": 0,
+					"breathesLava": true
+				},
+				"minecraft:fire_immune": true,
+				"minecraft:navigation.climb": {
+					"can_path_over_water": true
+				},
+				"minecraft:behavior.float": {
+					"priority": 1
+				},
+				"minecraft:break_blocks": {
+					"breakable_blocks": []
+				},
+				"minecraft:can_climb": {
+				}
+			},
+
+			"become_slime": {
+				"minecraft:spawn_entity": {
+					"max_wait_time": 0,
+					"min_wait_time": 0,
+					"single_use": true,
+					"spawn_entity": "minecraft:slime",
+					"spawn_event": "minecraft:entity_spawned"
+				},
+				"minecraft:despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:experience_reward": {
+				"on_death": "query.last_hit_by_player ? 9 : 0"
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:variant": {
+				"value": 0
+			},
+			"minecraft:type_family": {
+				"family": [ "necrocancer", "monster", "arthropod", "rotten_monster" ]
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/necrocancer.json"
+			},
+			"minecraft:health": {
+				"value": 35,
+				"max": 35
+			},
+			"minecraft:collision_box": {
+				"width": 0.35,
+				"height": 0.35
+			},
+			"minecraft:scale": {
+				"value": 2.25
+			},
+			"minecraft:attack": {
+				"damage": 13
+			},
+			"minecraft:navigation.climb": {
+				"is_amphibious": true,
+				"can_path_over_water": true,
+				"can_swim": false,
+				"can_walk": true,
+				"avoid_sun": true
+			},
+			"minecraft:movement.basic": {
+			},
+			"minecraft:jump.static": {
+			},
+			"minecraft:can_climb": {
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 8,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 9,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.delayed_attack": {
+				"priority": 4,
+				"attack_duration": 2.0,
+				"hit_delay_pct": 0.65,
+				"reach_multiplier": 8.85,
+				"track_target": true
+			},
+			"minecraft:behavior.avoid_mob_type": {
+				"priority": 2,
+				"entity_types":{
+					"filters": {
+						"any_of": [
+							{ "test": "is_target" , "subject": "other" }
+						]
+					},
+					"walk_speed_multiplier": 1,
+					"sprint_speed_multiplier": 1,
+					"max_dist": 4
+				}
+			},
+			"minecraft:behavior.pickup_items": {
+				"priority": 6,
+				"max_dist": 6,
+				"goal_radius": 3,
+				"speed_multiplier": 1
+			},
+			"minecraft:shareables": {
+				"items": [
+					{
+						"item": "minecraft:stone:0",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:stone:1",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:stone:2",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:stone:3",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:stone:4",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:stone:5",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:stone:6",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:cobblestone",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item": "minecraft:gravel",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item":"minecraft:dirt",
+						"want_amount": 64,
+						"surplus_amount": 128
+					},
+					{
+						"item":"minecraft:flint",
+						"want_amount": 64,
+						"surplus_amount": 128
+					}
+				]
+			},
+			"minecraft:inventory": {
+				"inventory_size": 16,
+				"private": true
+			},
+			// "minecraft:break_blocks": {
+			// 	"breakable_blocks": [
+			// 		"stone",
+			// 		"cobblestone",
+			// 		"gravel",
+			// 		"grass",
+			// 		"dirt"
+			// 	]
+			// },
+			"minecraft:behavior.move_to_water": {
+				"priority": 5,
+				"search_range": 7,
+				"search_height": 4
+			},
+			"minecraft:behavior.flee_sun": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 3,
+				"within_radius": 25,
+				"reselect_targets": false,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{ "test": "is_family", "subject": "other", "value": "player" },
+								{ "test": "is_family", "subject": "other", "value": "snowgolem" },
+								{ "test": "is_family", "subject": "other", "value": "irongolem" }
+							]
+						},
+						"max_dist": 15
+					},
+					{
+						"filters": {
+							"any_of": [
+								{ "test": "is_family", "subject": "other", "value": "skeleton" },
+								{ "test": "is_family", "subject": "other", "value": "skeletonhorse" }
+							]
+						},
+						"max_dist": 35,
+						"must_see": false
+					}
+				],
+				"must_see_forget_duration": 2.0
+			},
+			"minecraft:movement": {
+				"value": 0.175
+			},
+			"minecraft:follow_range": {
+				"value": 32,
+				"max": 32
+			},
+			"minecraft:nameable": {
+			},
+			"minecraft:physics": {
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "has_biome_tag", "operator": "==", "value": "nether"
+						},
+						"add": { "component_groups": [ "nether" ] }
+					},
+
+					{
+						"filters": {
+							"test": "has_biome_tag", "operator": "==", "value": "rotten_forest"
+						},
+						"add": { 
+							"component_groups": [ "become_slime" ] 
+						}
+					}
+				]
+			}
+		}
+	}
+}

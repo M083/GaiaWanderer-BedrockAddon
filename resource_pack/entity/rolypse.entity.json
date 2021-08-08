@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:rolypse",
+      "materials": { "default": "rolypse" },
+      "textures": {
+        "gold": "textures/entity/rolypse/rolypse_gold",
+        "emerald": "textures/entity/rolypse/rolypse_emerald",
+        "diamond": "textures/entity/rolypse/rolypse_diamond"
+      },
+      "geometry": {
+        "default": "geometry.rolypse"
+      },
+      "animations": {
+        "default_leg_pose": "animation.rolypse.default_leg_pose",
+        "default_body_pose": "animation.rolypse.default_body_pose",
+        "default_thorn_pose": "animation.rolypse.default_thorn_pose",
+        "walk": "animation.rolypse.walk",
+        "rolling": "animation.rolypse.rolling"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.rolypse.move" },
+        { "roll": "controller.animation.rolypse.roll" }
+      ],
+      "render_controllers": [ "controller.render.rolypse" ],
+      "spawn_egg": {
+        "base_color": "#545454",
+        "overlay_color": "#22ACACSSS"
+      }
+    }
+  }
+}

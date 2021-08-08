@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:search_feature": {
+		"description": {
+			"identifier": "gaiawanderer:rotten_brown_mushroom_feature_control_search"
+		},
+		"places_feature": "gaiawanderer:rotten_brown_mushroom_feature_control_scatter",
+		"search_volume": {
+			"min": [ 0, -30, 0],
+			"max": [ 0, 30, 0]
+		},
+		"search_axis": "+y"
+	}
+}

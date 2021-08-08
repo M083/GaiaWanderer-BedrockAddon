@@ -1,0 +1,76 @@
+{
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.75,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 4,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:bug_extract",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.1,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:rusted_key",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.35,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:fly_wing",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

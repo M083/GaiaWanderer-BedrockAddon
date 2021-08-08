@@ -1,0 +1,36 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "rotten_forest"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.3,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.8,
+        "white_ash": true
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ -0.1, 0.3 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 0,
+        "sea_floor_material": "minecraft:clay",
+        "sea_material": "minecraft:water",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "gaiawanderer:rotten_dirt"
+      },
+      "minecraft:overworld_generation_rules": {
+        "mutate_transformation": "roofed_forest_mutated",
+        "generate_for_climates": [
+          [ "lukewarm", 4],
+          [ "medium", 5 ]
+        ]
+      },
+    
+      "rotten_forest": {}
+    }
+  }
+}

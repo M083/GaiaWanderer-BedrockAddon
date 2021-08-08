@@ -1,0 +1,63 @@
+	{
+		"format_version": "1.8.0",
+		"animation_controllers": {
+			"controller.animation.necrocancer": {
+				"states": {
+					"walking": {
+						"parameters": [ "query.modified_move_speed" ],
+						"animations": [
+							{
+								"walk": [
+									{
+										"0.0": 0.0,
+										"1.0": 2.5
+									}
+								]
+							},
+							{ "look_at_target": [] }
+						],
+						"transitions": [
+							{
+								"attacking" : "variable.AnimationValue == 2"
+							},
+							{
+								"idling" : "variable.AnimationValue == 0"
+							}
+						]
+					},
+					"idling": {
+						"animations": [
+							{
+								"idle": []
+							},
+							{ "look_at_target": [] }
+						],
+						"transitions": [
+							{
+								"attacking" : "variable.AnimationValue == 2"
+							},
+							{
+								"walking" : "variable.AnimationValue == 1"
+							}
+						]
+					},
+					"attacking": {
+						"animations": [
+							{
+								"attack": []
+							},
+							{ "look_at_target": [] }
+						],
+						"transitions": [
+							{
+								"idling" : "variable.AnimationValue == 0"
+							},
+							{
+								"walking": "variable.AnimationValue == 1"
+							}
+						]
+					}
+				}
+			}
+		}
+	}

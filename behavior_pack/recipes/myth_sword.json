@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:myth_sword"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " is",
+      " if",
+      " l "
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      },
+      "s": {
+        "item": "gaiawanderer:strong_string"
+      },
+      "f": {
+        "item": "gaiawanderer:fly_wing"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:myth_sword",
+      "data": 0
+    }
+  }
+}

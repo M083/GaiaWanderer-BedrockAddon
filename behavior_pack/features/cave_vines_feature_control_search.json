@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:search_feature": {
+		"description": {
+			"identifier": "gaiawanderer:cave_vines_feature_control_search"
+		},
+		"places_feature": "gaiawanderer:cave_vines_feature_control_sequence",
+		"search_volume": {
+			"min": [ 0, -10, 0],
+			"max": [ 0, 120, 0]
+		},
+		"search_axis": "-y"
+	}
+}

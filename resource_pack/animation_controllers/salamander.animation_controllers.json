@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.salamander": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            { "idle": [] },
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            },
+            { "look_at_target": [] },
+            { "climb": [] }
+          ]
+        }
+      }
+    }
+  }
+}

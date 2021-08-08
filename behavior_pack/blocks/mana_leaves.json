@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:mana_leaves"
+        },
+        "components": {
+            "tag:minecraft:wood": {},
+            "minecraft:loot": "loot_tables/blocks/mana_leaves.json",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 100,
+            "minecraft:flammable": {
+                "flame_odds": 0.25,
+                "burn_odds": 0.25
+            },
+            "minecraft:map_color": "#64F6BD",
+            "minecraft:block_light_absorption": 4,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

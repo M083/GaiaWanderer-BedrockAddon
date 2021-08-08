@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_wart_item",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "rotten_wart_item"
+      },
+      "minecraft:block_placer": {
+        "block": "gaiawanderer:rotten_wart"
+      }
+    }
+  }
+}

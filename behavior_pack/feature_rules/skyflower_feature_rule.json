@@ -1,0 +1,52 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "gaiawanderer:skyflower_feature_rule",
+            "places_feature": "gaiawanderer:skyflower_feature_control_scatter"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "plains"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 6,
+            "scatter_chance": 15.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    "(query.above_top_solid(variable.worldx, variable.worldz) > 180)? query.above_top_solid(variable.worldx, variable.worldz) : -9999",
+                    "(query.above_top_solid(variable.worldx, variable.worldz) > 180)? query.above_top_solid(variable.worldx, variable.worldz) - 1 : -9999"
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

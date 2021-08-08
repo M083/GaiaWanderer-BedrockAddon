@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:emerald"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "fff",
+      "fff",
+      "fff"
+    ],
+    "key": {
+      "f": {
+        "item": "gaiawanderer:emerald_fragment"
+      }
+    },
+    "result": {
+      "item": "minecraft:emerald"
+    }
+  }
+}

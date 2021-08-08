@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:frost_axe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ii",
+      "il",
+      " l"
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:ice_beak"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:frost_axe",
+      "data": 0
+    }
+  }
+}

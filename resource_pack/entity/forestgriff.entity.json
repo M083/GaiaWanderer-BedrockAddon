@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:forestgriff",
+      "materials": { "default": "forestgriff" },
+      "textures": {
+        "brown_brown": "textures/entity/forestgriff/forestgriff_brown_brown",
+        "brown_white": "textures/entity/forestgriff/forestgriff_brown_white",
+        "brown_black": "textures/entity/forestgriff/forestgriff_brown_black",
+        "white_brown": "textures/entity/forestgriff/forestgriff_white_brown",
+        "white_white": "textures/entity/forestgriff/forestgriff_white_white",
+        "white_black": "textures/entity/forestgriff/forestgriff_white_black",
+        "black_brown": "textures/entity/forestgriff/forestgriff_black_brown",
+        "black_white": "textures/entity/forestgriff/forestgriff_black_white",
+        "black_black": "textures/entity/forestgriff/forestgriff_black_black"
+      },
+      "geometry": {
+        "default": "geometry.forestgriff",
+        "saddled": "geometry.forestgriff_saddled"
+      },
+      "animations": {
+        "stand_pose": "animation.forestgriff.stand_pose",
+        "sitting_pose": "animation.forestgriff.sitting",
+        "fly_pose": "animation.forestgriff.fly_pose",
+        "walk": "animation.forestgriff.walk",
+        "fly": "animation.forestgriff.fly",
+        "health": "animation.forestgriff.health"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.forestgriff.pose" },
+        { "move": "controller.animation.forestgriff.move" },
+        { "health": "controller.animation.forestgriff.health" }
+      ],
+      "render_controllers": [ "controller.render.forestgriff" ],
+      "spawn_egg": {
+        "base_color": "#CBCBC1",
+        "overlay_color": "#3EC1D7"
+      }
+    }
+  }
+}

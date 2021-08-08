@@ -1,0 +1,15 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:search_feature": {
+		"description": {
+			"identifier": "gaiawanderer:rotten_root_chain_feature_control_search"
+		},
+		"places_feature": "gaiawanderer:rotten_root_chain_feature",
+		"search_volume": {
+			"min": [ 0, -6, 0],
+			"max": [ 0, 0, 0]
+		},
+		"search_axis": "-y",
+		"required_successes": 3
+	}
+}

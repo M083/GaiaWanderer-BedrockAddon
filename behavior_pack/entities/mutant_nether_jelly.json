@@ -1,0 +1,1088 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:mutant_nether_jelly",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "damage_count_0": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "damage_count_1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "damage_count_2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "damage_count_3": {
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+      },
+      "damage_count_4": {
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
+      "damage_count_5": {
+        "minecraft:mark_variant": {
+          "value": 5
+        }
+      },
+      "damage_count_6": {
+        "minecraft:mark_variant": {
+          "value": 6
+        }
+      },
+      "damage_count_7": {
+        "minecraft:mark_variant": {
+          "value": 7
+        }
+      },
+      "damage_count_8": {
+        "minecraft:mark_variant": {
+          "value": 8
+        }
+      },
+      "damage_count_9": {
+        "minecraft:mark_variant": {
+          "value": 9
+        }
+      },
+      "damage_count_10": {
+        "minecraft:mark_variant": {
+          "value": 10
+        }
+      },
+      "damage_count_11": {
+        "minecraft:mark_variant": {
+          "value": 11
+        }
+      },
+      "damage_count_12": {
+        "minecraft:mark_variant": {
+          "value": 12
+        }
+      },
+      "damage_count_13": {
+        "minecraft:mark_variant": {
+          "value": 13
+        }
+      },
+      "damage_count_14": {
+        "minecraft:mark_variant": {
+          "value": 14
+        }
+      },
+      "damage_count_15": {
+        "minecraft:mark_variant": {
+          "value": 15
+        }
+      },
+      "damage_count_16": {
+        "minecraft:mark_variant": {
+          "value": 16
+        }
+      },
+      "damage_count_17": {
+        "minecraft:mark_variant": {
+          "value": 17
+        }
+      },
+      "damage_count_18": {
+        "minecraft:mark_variant": {
+          "value": 18
+        }
+      },
+      "damage_count_19": {
+        "minecraft:mark_variant": {
+          "value": 19
+        }
+      },
+      "damage_count_20": {
+        "minecraft:mark_variant": {
+          "value": 20
+        }
+      },
+      "damage_count_21": {
+        "minecraft:mark_variant": {
+          "value": 21
+        }
+      },
+      "damage_count_22": {
+        "minecraft:mark_variant": {
+          "value": 22
+        }
+      },
+      "damage_count_23": {
+        "minecraft:mark_variant": {
+          "value": 23
+        }
+      },
+      "damage_count_24": {
+        "minecraft:mark_variant": {
+          "value": 24
+        }
+      },
+      "damage_count_25": {
+        "minecraft:mark_variant": {
+          "value": 25
+        }
+      },
+      "damage_count_26": {
+        "minecraft:mark_variant": {
+          "value": 26
+        }
+      },
+      "damage_count_27": {
+        "minecraft:mark_variant": {
+          "value": 27
+        }
+      },
+      "damage_count_28": {
+        "minecraft:mark_variant": {
+          "value": 28
+        }
+      },
+      "damage_count_29": {
+        "minecraft:mark_variant": {
+          "value": 29
+        }
+      },
+      "damage_count_30": {
+        "minecraft:mark_variant": {
+          "value": 30
+        }
+      },
+
+      "mode_calm": {
+        "minecraft:flying_speed": {
+          "value": 0.3
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_sink": false,
+          "can_path_from_air": true,
+          "avoid_water": false,
+          "avoid_damage_blocks": false,
+          "avoid_sun": false
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "nether_jelly"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "event": "rage"
+              }
+            }
+          ]
+        }
+      },
+      "mode_rage": {
+        "minecraft:boss": {
+          "name": "entity.gaiawanderer:mutant_nether_jelly.name"
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "nether_jelly"
+                    }
+                  ]
+                },
+                "event": "heal_event"
+              },
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "nether_jelly"
+                    }
+                  ]
+                },
+                "event": "damage_count_event"
+              }
+            }
+          ]
+        }
+      },
+      "attack_spin_before": {
+        "minecraft:attack": {
+          "damage": 0
+        },
+        "minecraft:behavior.melee_attack": {
+          "speed_multiplier": 3,
+          "track_target": true
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_sink": false,
+          "can_path_from_air": true,
+          "avoid_water": false,
+          "avoid_damage_blocks": false,
+          "avoid_sun": false
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:movement": {
+          "value": 0.63
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [1.12, 1.12],
+          "time_down_event": {
+            "event": "attack_spin_before_end"
+          }
+        }
+      },
+      "attack_spin": {
+        "minecraft:attack": {
+          "damage": 8
+        },
+        "minecraft:movement": {
+          "value": 0.63
+        },
+        "minecraft:behavior.melee_attack": {
+          "speed_multiplier": 3,
+          "track_target": true
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_sink": false,
+          "can_path_from_air": true,
+          "avoid_water": false,
+          "avoid_damage_blocks": false,
+          "avoid_sun": false
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [1.88, 1.88],
+          "time_down_event": {
+            "event": "attack_spin_end"
+          }
+        },
+        "minecraft:area_attack" : {
+          "damage_range": 8,
+          "damage_per_tick": 8,
+          "cause": "contact",
+          "entity_filter": {
+            "all_of": [
+              { "test": "is_family", "subject": "other", "operator": "!=", "value": "nether_jelly" },
+              { "test": "is_family", "subject": "other", "operator": "!=", "value": "mutant_nether_jelly" }
+            ] 
+          }
+        }
+      },
+      "attack_spin_after": {
+        "minecraft:attack": {
+          "damage": 8
+        },
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:movement": {
+          "value": 0.03
+        },
+        "minecraft:behavior.melee_attack": {
+          "speed_multiplier": 3,
+          "track_target": true
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [0.72, 0.72],
+          "time_down_event": {
+            "event": "attack_spin_after_end"
+          }
+        }
+      },
+      "attack_chase": {
+        "minecraft:shooter": {
+          "def": "minecraft:arrow",
+          "aux_val": 37
+        },
+        "minecraft:attack": {
+          "damage": 0
+        },
+        "minecraft:teleport": {
+          "random_teleports": true,
+          "max_random_teleport_time": 5,
+          "random_teleport_cube": [ 32, 32, 32 ],
+          "target_distance": 16,
+          "target_teleport_chance": 0.05,
+          "light_teleport_chance": 0.05
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 1,
+          "attack_radius": 64,
+          "charge_shoot_trigger": 0.05,
+          "charge_charged_trigger": 0.05,
+          "burst_shots": 1,
+          "burst_interval": 0.05
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_sink": false,
+          "can_path_from_air": true,
+          "avoid_water": false,
+          "avoid_damage_blocks": false,
+          "avoid_sun": false
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:movement": {
+          "value": 0.33
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [6, 6],
+          "time_down_event": {
+            "event": "attack_chase_end"
+          }
+        }
+      },
+      "attack_piercing": {
+        "minecraft:movement": {
+          "value": 0.23
+        },
+        "minecraft:attack": {
+          "damage": 40
+        },
+        "minecraft:navigation.hover": {
+          "can_path_over_water": true,
+          "can_sink": false,
+          "can_path_from_air": true,
+          "avoid_water": false,
+          "avoid_damage_blocks": false,
+          "avoid_sun": false
+        },
+        "minecraft:movement.hover": {},
+        "minecraft:variant": {
+          "value": 4
+        },
+        "minecraft:behavior.delayed_attack": {
+          "attack_duration": 1.2,
+          "hit_delay_pct": 0.52,
+          "reach_multiplier": 12,
+          "track_target": true
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [4.8, 4.8],
+          "time_down_event": {
+            "event": "attack_piercing_end"
+          }
+        }
+      },
+      "health_trigger": {
+        "minecraft:mark_variant":{
+          "value": 0
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "health_trigger_event"
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 1200,
+        "max": 1200
+      },
+      "minecraft:behavior.float_wander": {
+        "priority": 10,
+        "xz_dist": 3,
+        "y_dist": 12,
+        "y_offset": -1.0,
+        "random_reselect": true,
+        "float_duration": [ 0.3, 0.75 ]
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:flying_speed": {
+        "value": 0.3
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesLava": true,
+        "breathes_solids": true,
+        "breathes_water": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:mob_effect": {
+        "entity_filter": {
+          "any_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "operator": "!=",
+              "value": "monster"
+            }
+          ]
+        },
+        "effect_range": 1.25,
+        "effect_time": 60,
+        "mob_effect": "poison"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mutant_nether_jelly",
+          "monster",
+          "boss"
+        ]
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 11,
+        "xz_dist": 8,
+        "y_dist": 16,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [6, 12]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "operator": "!=",
+              "value": "monster"
+            },
+            "max_dist": 48
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/nether_jelly.json"
+      },
+      "minecraft:collision_box": {
+        "width": 3.25,
+        "height": 3.9
+      },
+      "minecraft:fall_damage": {
+        "value": 0
+      },
+      "minecraft:scale": {
+        "value": 2
+      },
+      "minecraft:movement": {
+        "value": 0.03
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.look_at_entity": {
+        "priority": 9,
+        "look_distance": 16.0,
+        "probability": 0.02
+      },
+      "minecraft:can_fly": {},
+      "minecraft:nameable": {},
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+
+      "death_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "fill ~ ~ ~ ~ ~ ~ gaiawanderer:rocked_barrel"
+            }
+          },
+          {
+            "run_command": {
+              "command": "fill ~ ~1 ~ ~ ~1 ~ chest"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 13 gaiawanderer:key"
+            }
+          },
+          {
+            "run_command": {
+              "command":  "replaceitem block ~ ~1 ~ slot.container 0 shulker_box 1 6"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 1 shulker_box 1 12"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 2 gaiawanderer:nether_diamond 6"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 3 gaiawanderer:mutant_nether_jelly_arm 1"
+            }
+          },
+          {
+            "run_command": {
+              "command": "xp 300 @e[type = player]"
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "mode_calm"
+              ]
+            }
+          }
+        ]
+      },
+      "rage": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "mode_calm"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "mode_rage",
+                "attack_spin_before",
+                "health_trigger"
+              ]
+            }
+          }
+        ]
+      },
+      "attack_spin_before_end": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "attack_spin_before"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "attack_spin"
+              ]
+            }
+          }
+        ]
+      },
+      "attack_spin_end": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "attack_spin"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "attack_spin_after"
+              ]
+            }
+          }
+        ]
+      },
+      "attack_spin_after_end": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "attack_spin_after"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {          
+                "add": {
+                  "component_groups": [
+                    "attack_piercing"
+                  ]
+                }
+              },
+              {
+                "add": {
+                  "component_groups": [
+                    "attack_chase"
+                  ]
+                },
+                "run_command":{
+                  "command": "tp @s @e[type=gaiawanderer:nether_jelly,r=32,c=-1]"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "attack_chase_end": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "attack_chase"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {          
+                "add": {
+                  "component_groups": [
+                    "attack_spin_before"
+                  ]
+                }
+              },
+              {
+                "add": {
+                  "component_groups": [
+                    "attack_piercing"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "attack_piercing_end": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "attack_piercing"
+              ]
+            }
+          },
+          {
+            "randomize": [
+              {          
+                "add": {
+                  "component_groups": [
+                    "attack_spin_before"
+                  ]
+                }
+              },
+              {
+                "add": {
+                  "component_groups": [
+                    "attack_chase"
+                  ]
+                },
+                "run_command":{
+                  "command": "tp @s @e[type=gaiawanderer:nether_jelly,r=32,c=-1]"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "health_trigger_event": {
+        "sequence": [
+          {
+            "run_command":{
+              "command": "summon gaiawanderer:nether_jelly"
+            }
+          },
+          {
+            "run_command":{
+              "command": "summon gaiawanderer:nether_jelly"
+            }
+          },
+          {
+            "run_command":{
+              "command": "summon gaiawanderer:nether_jelly"
+            }
+          },
+          {
+            "run_command":{
+              "command": "summon gaiawanderer:nether_jelly"
+            }
+          },
+          {
+            "run_command":{
+              "command": "summon gaiawanderer:nether_jelly"
+            }
+          },
+          {
+            "run_command":{
+              "command": "summon gaiawanderer:nether_jelly"
+            }
+          },
+          {
+            "run_command":{
+              "command": "event entity @e[type=gaiawanderer:nether_jelly,r=32] servant_event"
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "health_trigger"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "damage_count_0"
+              ]
+            }
+          }
+        ]
+      },
+      "heal_event": {
+        "sequence": [
+          {
+            "run_command":{
+              "command": "effect @s instant_health 3"
+            }
+          },
+          {
+            "run_command": {
+              "command": "particle minecraft:heart_particle ~ ~ ~"
+            }
+          }
+        ]
+      },
+      "damage_count_event": {
+        "sequence": [
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 30 },
+            "add": {
+              "component_groups": [
+                "health_trigger"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 29 },
+            "add": {
+              "component_groups": [
+                "damage_count_30"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 28 },
+            "add": {
+              "component_groups": [
+                "damage_count_29"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 27 },
+            "add": {
+              "component_groups": [
+                "damage_count_28"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 26 },
+            "add": {
+              "component_groups": [
+                "damage_count_27"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 25 },
+            "add": {
+              "component_groups": [
+                "damage_count_26"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 24 },
+            "add": {
+              "component_groups": [
+                "damage_count_25"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 23 },
+            "add": {
+              "component_groups": [
+                "damage_count_24"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 22 },
+            "add": {
+              "component_groups": [
+                "damage_count_23"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 21 },
+            "add": {
+              "component_groups": [
+                "damage_count_22"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 20 },
+            "add": {
+              "component_groups": [
+                "damage_count_21"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 19 },
+            "add": {
+              "component_groups": [
+                "damage_count_20"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 18 },
+            "add": {
+              "component_groups": [
+                "damage_count_19"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 17 },
+            "add": {
+              "component_groups": [
+                "damage_count_18"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 16 },
+            "add": {
+              "component_groups": [
+                "damage_count_17"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 15 },
+            "add": {
+              "component_groups": [
+                "damage_count_16"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 14 },
+            "add": {
+              "component_groups": [
+                "damage_count_15"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 13 },
+            "add": {
+              "component_groups": [
+                "damage_count_14"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 12 },
+            "add": {
+              "component_groups": [
+                "damage_count_13"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 11 },
+            "add": {
+              "component_groups": [
+                "damage_count_12"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 10 },
+            "add": {
+              "component_groups": [
+                "damage_count_11"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 9 },
+            "add": {
+              "component_groups": [
+                "damage_count_10"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 8 },
+            "add": {
+              "component_groups": [
+                "damage_count_9"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 7 },
+            "add": {
+              "component_groups": [
+                "damage_count_8"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 6 },
+            "add": {
+              "component_groups": [
+                "damage_count_7"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 5 },
+            "add": {
+              "component_groups": [
+                "damage_count_6"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 4 },
+            "add": {
+              "component_groups": [
+                "damage_count_5"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 3 },
+            "add": {
+              "component_groups": [
+                "damage_count_4"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 2 },
+            "add": {
+              "component_groups": [
+                "damage_count_3"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 1 },
+            "add": {
+              "component_groups": [
+                "damage_count_2"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_mark_variant", "operator": "equals", "value": 0 },
+            "add": {
+              "component_groups": [
+                "damage_count_1"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

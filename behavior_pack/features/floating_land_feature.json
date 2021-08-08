@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:floating_land_feature"	    
+		},
+		"count": 64,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:clay",
+				"may_replace": [
+					"minecraft:air"
+				]	  
+			}
+		]
+
+//		"places_block": "minecraft:grass",
+//		"may_replace": [
+//			{
+//				"name": "minecraft:air"
+//			}
+//		]
+	}	
+}

@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:forestflower"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/forestflower.json",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:flammable": {
+                "flame_odds": 10,
+                "burn_odds": 10
+            },
+            "minecraft:map_color": "#76F7E6",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.7,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [ "up" ],
+                        "block_filter": [ "minecraft:grass", "minecraft:dirt" ]
+                    }
+                ]
+            },
+            "minecraft:geometry": "geometry.skyflower",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "forestflower",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [ -4.0, 0.0, -4.0],
+                "size": [ 8.0, 16.0, 8.0 ]
+            },
+            "minecraft:breathability": "air"
+        }
+    }
+}

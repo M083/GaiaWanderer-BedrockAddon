@@ -1,0 +1,52 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "gaiawanderer:dungeon1_feature_rule",
+            "places_feature": "gaiawanderer:dungeon1_feature"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "lava_mountain"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 1,
+            "scatter_chance": 1.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    "(query.heightmap(variable.worldx, variable.worldz) < 70)? query.heightmap(variable.worldx, variable.worldz) - 15 : 200",
+                    "(query.heightmap(variable.worldx, variable.worldz) < 70)? query.heightmap(variable.worldx, variable.worldz) - 17 : 200"
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

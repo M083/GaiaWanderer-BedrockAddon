@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:shebrus",
+      "materials": {
+        "default": "shebrus"
+      },
+      "textures": {
+        "default": "textures/entity/shebrus/shebrus",
+        "snow": "textures/entity/shebrus/shebrus_snow"
+      },
+      "geometry": {
+        "default": "geometry.shebrus"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.AnimationAmountBlend = Math.lerp(query.time_stamp, (query.time_stamp + query.frame_alpha), query.frame_alpha);",
+          "variable.yPos = (query.has_target) ? 0.0: -6.25;"
+        ]
+      },
+      "animations": {
+        "move": "animation.shebrus.move"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.shebrus"
+        }
+      ],
+      "render_controllers": [ "controller.render.shebrus" ],
+      "spawn_egg": {
+        "base_color": "#D5C496",
+        "overlay_color": "#D31B1B"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.rolypse": {
+      "arrays": {
+      	"textures": {
+      	  "Array.patterns": [
+      	  	"Texture.gold",
+      	  	"Texture.emerald",
+            "Texture.diamond"
+      	  ]
+      	}
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.patterns[query.mark_variant]" ]
+    }
+  }
+}

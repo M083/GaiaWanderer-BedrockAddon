@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:applesnale",
+      "materials": { "default": "applesnale" },
+      "textures": {
+        "normal": "textures/entity/applesnale/applesnale",
+        "golden": "textures/entity/applesnale/applesnale_golden"
+      },
+      "geometry": {
+        "default": "geometry.applesnale"
+      },
+      "animations": {
+        "walk": "animation.applesnale.walk",
+        "idle": "animation.applesnale.idle"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.applesnale" }
+      ],
+      "render_controllers": [ "controller.render.applesnale" ],
+      "spawn_egg": {
+        "base_color": "#C8180A",
+        "overlay_color": "#EBD3B3"
+      }
+    }
+  }
+}

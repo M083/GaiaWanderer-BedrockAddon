@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:boxahok",
+      "materials": { "default": "boxahok" },
+      "textures": {
+        "plains_happy": "textures/entity/boxahok/boxahok_plains_happy",
+        "plains_angry": "textures/entity/boxahok/boxahok_plains_angry",
+        "nether_angry": "textures/entity/boxahok/boxahok_nether_angry"
+      },
+      "geometry": {
+        "default": "geometry.boxahok"
+      },
+      "animations": {
+        "walk": "animation.boxahok.walk",
+        "notidle": "animation.boxahok.notidle"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.boxahok" }
+      ],
+      "render_controllers": [ "controller.render.boxahok" ],
+      "spawn_egg": {
+        "base_color": "#74562F",
+        "overlay_color": "#509026"
+      }
+    }
+  }
+}

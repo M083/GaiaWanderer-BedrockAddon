@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_spore",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "rotten_spore"
+      },
+      "minecraft:block_placer": {
+        "block": "gaiawanderer:rotten_root"
+      }
+    }
+  }
+}

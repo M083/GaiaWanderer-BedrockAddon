@@ -1,0 +1,98 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:dungeon_block2"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_dirt.json",
+            "tag:dirt": {},
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#ACABAA",
+            "minecraft:block_light_absorption": 15,
+            "minecraft:block_light_emission": 0,
+            "minecraft:on_placed": {
+                "event": "gaiawanderer:create2"
+            }
+        },
+        "events": {
+            "gaiawanderer:create2": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~3 ~ ~ ~-3 ~ gaiawanderer:stonebrick_burned"
+                        }
+                    },
+                    {
+                        "randomize": [
+                            {
+                                "randomize": [
+                                    {
+                                        "run_command": {
+                                            "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~-3 gaiawanderer:stonebrick_burned"
+                                        }
+                                    },
+                                    {
+                                        "run_command": {
+                                            "command": "fill ~-3 ~-3 ~-3 ~-3 ~3 ~3 gaiawanderer:stonebrick_burned"
+                                        }
+                                    },
+                                    {
+                                        "run_command": {
+                                            "command": "fill ~3 ~-3 ~-3 ~3 ~3 ~3 gaiawanderer:stonebrick_burned"
+                                        }
+                                    }
+                                ],
+                                "weight": 85
+                            },
+                            {
+                                "sequence": [
+                                    {
+                                        "run_command": {
+                                            "command": "fill ~-1 ~-3 ~-1 ~1 ~-8 ~1 air"
+                                        }
+                                    },
+                                    {
+                                        "run_command": {
+                                            "command": "fill ~ ~-7 ~ ~ ~2 ~ weeping_vines"
+                                        }
+                                    }
+                                ],
+                                "weight": 4
+                            },
+                            {
+                                "run_command": {
+                                    "command": "structure load mystructure:spawn_salamander ~ ~ ~"
+                                },
+                                "weight": 1
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~ ~ gold_block"
+                                },
+                                "weight": 4
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~ ~ diamond_block"
+                                },
+                                "weight": 3
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~ ~ emerald_block"
+                                },
+                                "weight": 2
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

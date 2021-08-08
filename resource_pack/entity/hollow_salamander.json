@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:hollow_salamander",
+      "materials": { "default": "hollow_salamander" },
+      "textures": {
+        "default": "textures/entity/hollow_salamander",
+        "nether": "textures/entity/hollow_salamander_nether"
+      },
+      "geometry": {
+        "default": "geometry.hollow_salamander"
+      },
+      "animations": {
+        "swim": "animation.hollow_salamander.swim"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.hollow_salamander" }
+      ],
+      "render_controllers": [ "controller.render.hollow_salamander" ],
+      "spawn_egg": {
+        "base_color": "#404040",
+        "overlay_color": "#FFD805"
+      }
+    }
+  }
+}

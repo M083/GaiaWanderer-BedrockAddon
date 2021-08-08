@@ -1,0 +1,106 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:rotten_root"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_root.json",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:flammable": {
+                "flame_odds": 10,
+                "burn_odds": 10
+            },
+            "minecraft:map_color": "#DDDDDD",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [ "down" ],
+                        "block_filter": [
+                            {
+                                "tags": "q.any_tag('dirt','sand','gravel','grass','snow','wood','pumpkin','plant','stone','metal','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','stone_pick_diggable','wood_pick_diggable')"
+                            },
+                            "gaiawanderer:rotten_root",
+                            "gaiawanderer:rotten_egg",
+                            "gaiawanderer:rotten_dirt",
+                            "minecraft:brown_mushroom_block",
+                            "minecraft:red_mushroom_block",
+                            "minecraft:warped_hyphae"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:on_placed": {
+                "event": "gaiawanderer:growup"
+            },
+            "minecraft:random_ticking": {
+                "on_tick" : {
+                    "event": "gaiawanderer:setegg"
+                }
+            },
+            "minecraft:geometry": "geometry.low_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "rotten_root",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [ -4.0, 0.0, -4.0],
+                "size": [ 8.0, 16.0, 8.0 ]
+            },
+            "minecraft:breathability": "air",
+            "minecraft:breakonpush": true
+        },
+        "events": {
+            "gaiawanderer:setegg": {
+                "randomize": [
+                    {
+                        "sequence": [
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~-1 ~ gaiawanderer:rotten_root 0 replace air"
+                                }
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~-1 ~ gaiawanderer:rotten_dirt 0 replace dirt"
+                                }
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~-1 ~ gaiawanderer:rotten_dirt 0 replace grass"
+                                }
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~-1 ~ gaiawanderer:rotten_stone 0 replace stone"
+                                }
+                            }
+                        ],
+                        "weight": 19
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~1 ~ ~ ~1 ~ gaiawanderer:rotten_egg 0 replace gaiawanderer:rotten_root"
+                        },
+                        "weight": 1
+                    }
+                ]
+            },
+            "gaiawanderer:growup": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~1 ~ ~ ~1 ~ gaiawanderer:rotten_root 0 replace air"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

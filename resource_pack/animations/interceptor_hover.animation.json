@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.interceptor_hover.look_at_target" : {
+			"bones" : {
+				"head" : {
+					"rotation" : [ "query.target_x_rotation", "query.target_y_rotation", 0.0 ]
+				},
+				"wing" : {
+					"rotation" : [ 0.0, "((query.life_time * 0.5) * 3500.32)", 0.0 ]
+				}
+			},
+			"loop" : true
+		}
+	}
+}

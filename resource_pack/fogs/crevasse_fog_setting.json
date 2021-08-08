@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "gaiawanderer:fog_crevasse"
+		},
+		"distance": {
+			"weather": {
+				"render_distance_type": "fixed",
+				"fog_color": "#EAEAF4",
+				"fog_start": 0,
+				"fog_end": 16
+			}
+		}
+	}
+}

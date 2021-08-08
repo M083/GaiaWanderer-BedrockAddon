@@ -1,0 +1,177 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:mechaboat",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "up_effect": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "levitation",
+              "duration": 3,
+              "amplifier": 5
+            },
+            {
+              "effect": "slow_falling",
+              "duration": 8,
+              "amplifier": 1
+            }
+          ]
+        }
+      },
+      "clear_effect": {
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "levitation"
+          ]
+        }
+      }
+    },
+    "components": {
+
+      "minecraft:type_family": {
+        "family": [ "mechaboat", "inanimate" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/mechaboat.json"
+      },
+      "minecraft:collision_box": {
+        "width": 2.8,
+        "height": 3.9
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.15
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": false,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": false,
+        "can_sink": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:navigation.climb": {
+        "can_path_over_water": true
+      },
+      "minecraft:rideable": {
+        "seat_count": 5,
+        "pull_in_entities": true,
+        "rider_can_interact": true,
+        "interact_text": "action.interact.ride.boat",
+        "family_types": [
+          "player"
+        ],
+        "seats": [
+          {
+            "position": [ 0.0, 1.1, 0.9 ]
+          },
+          {
+            "position": [-0.8, 0.9, 0.2 ]
+          },
+          {
+            "position": [ 0.8, 0.9, 0.2 ]
+          },
+          {
+            "position": [-1.2, 0.9,-1.2 ]
+          },
+          {
+            "position": [ 1.2, 0.9,-1.2 ]
+          }
+        ]
+      },
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:mob_effect": {
+        "entity_filter": {
+          "all_of": [
+            { "test": "is_family", "operator": "==", "subject": "other", "value": "player" }
+          ]
+        },
+        "effect_range": 2,
+        "effect_time": 1,
+        "mob_effect": "conduit_power"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {"test": "is_family", "subject": "other", "operator": "==", "value": "player"},
+                  {"test": "rider_count","operator": "!=", "value": 0 }
+                ]
+              },
+              "event": "up"
+            },
+            "deals_damage": false,
+            "on_damage_sound_event": "piston.out"
+          }
+        ]
+      }, 
+      "minecraft:environment_sensor": {
+        "triggers":[
+          {
+            "filters": {
+              "test": "in_water",
+              "operator": "!="
+            },
+            "event": "clear"
+          }
+        ]
+      },
+      "minecraft:is_stackable": {
+      },
+      "minecraft:input_ground_controlled": {
+      },
+      "minecraft:can_power_jump": {
+      },
+      "minecraft:behavior.player_ride_tamed": {
+      },
+
+      "minecraft:behavior.controlled_by_player": {
+        "priority": 0
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "up": {
+        "add": { "component_groups": [ "up_effect" ] }
+      },
+      "clear": {
+        "add": { "component_groups": [ "clear_effect" ] }
+      }
+    }
+  }
+}

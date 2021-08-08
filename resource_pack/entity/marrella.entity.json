@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:marrella",
+      "materials": {
+        "default": "marrella"
+      },
+      "textures": {
+        "default": "textures/entity/marrella"
+      },
+      "geometry": {
+        "default": "geometry.marrella"
+      },
+      "animations": {
+        "swim": "animation.marrella.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.marrella"
+        }
+      ],
+      "render_controllers": [ "controller.render.marrella" ],
+      "spawn_egg": {
+        "base_color": "#C0C0C0",
+        "overlay_color": "#6B00AC"
+      }
+    }
+  }
+}

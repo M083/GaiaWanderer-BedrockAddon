@@ -1,0 +1,60 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:rotten_thorn"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_thorn.json",
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:map_color": "#DDDDDD",
+            "minecraft:geometry": "geometry.rotten_thorn",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "rotten_thorn_block",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:entity_collision": true,
+            "minecraft:pick_collision": {
+                "origin": [ -8.0, 0, -8.0],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:breathability": "air",
+            "minecraft:on_step_on": {
+                "event": "gaiawanderer:rotten_thorn_event",
+                "target": "target"
+            }
+        },
+        "events": {
+            "gaiawanderer:rotten_thorn_event": {
+                "sequence": [
+                    {
+                        "add_mob_effect": {
+                            "amplifier": 1,
+                            "duration": 10,
+                            "effect": "poison",
+                            "target": "other"
+                        }
+                    },
+                    {
+                        "add_mob_effect": {
+                            "amplifier": 3,
+                            "duration": 10,
+                            "effect": "slowness",
+                            "target": "other"
+                        }
+                    },
+                    {
+                        "damage": {
+                            "amount": 4,
+                            "type": "wither",
+                            "target": "other"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

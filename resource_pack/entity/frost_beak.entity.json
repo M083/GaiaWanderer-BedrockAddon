@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:frost_beak",
+      "materials": { "default": "frost_beak" },
+      "textures": {
+        "default": "textures/entity/frost_beak"
+      },
+      "geometry": {
+        "default": "geometry.frost_beak"
+      },
+      "animations": {
+        "fly": "animation.frost_beak.fly",
+        "attack": "animation.frost_beak.attack"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.frost_beak"
+        }
+      ],
+      "render_controllers": [ "controller.render.frost_beak" ],
+      "spawn_egg": {
+        "base_color": "#00c6e4",
+        "overlay_color": "#A0A0A0"
+      }
+    }
+  }
+}

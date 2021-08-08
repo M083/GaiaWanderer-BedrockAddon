@@ -1,0 +1,42 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:boxa_steak",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.cookedFood"
+      },
+      "minecraft:icon": {
+        "texture": "boxa_steak"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1,
+      "minecraft:food": {
+        "nutrition": 12,
+        "saturation_modifier": "good",
+        "can_always_eat": true,
+        "on_consume": {
+          "event": "steak_effect",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "steak_effect": {
+        "sequence": [
+          {
+            "add_mob_effect": {
+              "effect": "absorption",
+              "amplifier": 1,
+              "duration": 360
+            }
+          }
+        ]
+      }
+    }
+  }
+}

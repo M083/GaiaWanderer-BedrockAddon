@@ -1,0 +1,153 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.fortresscancer.move": {
+      "states": {
+        "sleep": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "sleep": [ {"0.0": 0.0 , "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "default": "query.variant == 1"
+            },
+            {
+              "broken": "query.variant == 2"
+            }
+          ]
+        },
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "default_leg_pose": []
+            },
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 3.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "sleep": "query.variant == 0"
+            },
+            {
+              "broken": "query.variant == 2"
+            }
+          ]
+        },
+        "broken": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "default_leg_pose": []
+            },
+            {
+              "broken": []
+            }
+          ],
+          "transitions": [
+            {
+              "sleep": "query.variant == 0"
+            },
+            {
+              "default": "query.variant == 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.fortresscancer.attack": {
+      "states": {
+        "none": {
+          "transitions": [
+            {
+              "shooting": "query.mark_variant == 1"
+            },
+            {
+              "rolling": "query.mark_variant == 2"
+            },
+            {
+              "stump": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "shooting": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "shooting": [ {"0.0": 0.0 , "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "none": "query.mark_variant == 0"
+            },
+            {
+              "rolling": "query.mark_variant == 2"
+            },
+            {
+              "stump": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "rolling": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "rolling": [ {"0.0": 0.0 , "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "none": "query.mark_variant == 0"
+            },
+            {
+              "shooting": "query.mark_variant == 1"
+            },
+            {
+              "stump": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "stump": {
+          "parameters": [ "1.0" ],
+          "animations": [
+            {
+              "stump": []
+            }
+          ],
+          "transitions": [
+            {
+              "none": "query.mark_variant == 0"
+            },
+            {
+              "shooting": "query.mark_variant == 1"
+            },
+            {
+              "rolling": "query.mark_variant == 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.fortresscancer.stump_attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "stump_attack": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:cutlassfish",
+      "materials": {
+        "default": "cutlassfish"
+      },
+      "textures": {
+        "default": "textures/entity/cutlassfish"
+      },
+      "geometry": {
+        "default": "geometry.cutlassfish"
+      },
+      "animations": {
+        "swim": "animation.cutlassfish.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.cutlassfish"
+        }
+      ],
+      "render_controllers": [ "controller.render.cutlassfish" ],
+      "spawn_egg": {
+        "base_color": "#C6C6C6",
+        "overlay_color": "#A0A0A0"
+      }
+    }
+  }
+}

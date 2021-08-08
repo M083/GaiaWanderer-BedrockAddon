@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:locust",
+      "materials": { "default": "locust" },
+      "textures": {
+        "default": "textures/entity/mantis"
+      },
+      "geometry": {
+        "default": "geometry.locust"
+      },
+      "animations": {
+        "fly": "animation.locust.fly",
+        "idle": "animation.locust.idle"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.locust" }
+      ],
+      "render_controllers": [ "controller.render.locust" ],
+      "spawn_egg": {
+        "base_color": "#EBD3B3",
+        "overlay_color": "#C8180A"
+      }
+    }
+  }
+}

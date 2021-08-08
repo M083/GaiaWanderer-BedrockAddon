@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:saddle"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "lll",
+      "l l"
+    ],
+    "key": {
+      "l": {
+        "item": "gaiawanderer:hard_leather"
+      }
+    },
+    "result": {
+      "item": "minecraft:saddle"
+    }
+  }
+}

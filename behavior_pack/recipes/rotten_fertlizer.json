@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "gaiawanderer:rotten_fertlizer"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "gaiawanderer:rotten_spore"
+      },
+      {
+        "item": "minecraft:bone_meal"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      }
+    ],
+    "result": {
+      "item": "gaiawanderer:rotten_fertlizer",
+      "count": 4
+    }
+  }
+}

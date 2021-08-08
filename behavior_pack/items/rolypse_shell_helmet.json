@@ -1,0 +1,60 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:rolypse_shell_helmet",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": {
+        "texture": "rolypse_shell_helmet"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.helmet"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "damage_chance": 0,
+        "max_durability": 900
+      },
+      "minecraft:knockback_resistance": {
+        "protection": 1.0
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["gaiawanderer:rolypse_shell"],
+            "repair_amount": 600
+          },
+          {
+            "items": ["gaiawanderer:rolypse_shell_helmet"],
+            "repair_amount": 800
+          }
+        ]
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "wear_sound"
+        }
+      },
+      "minecraft:enchantable": {
+        "value": 30,
+        "slot": "armor_head"
+      },
+      "minecraft:armor": {
+        "protection": 4
+      }
+    },
+    "events": {
+      "wear_sound": {
+        "run_command": {
+          "command": "playsound armor.equip_iron"
+        }
+      }
+    }
+  }
+}

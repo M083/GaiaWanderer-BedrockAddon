@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:gelhollow",
+      "materials": { "default": "gelhollow" },
+      "textures": {
+        "default": "textures/entity/gelhollow"
+      },
+      "geometry": {
+        "default": "geometry.gelhollow"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.zbodyrotation = ((query.time_stamp + query.frame_alpha) * 14.32);",
+          "variable.tentacleangle = (Math.cos((query.time_stamp + query.frame_alpha) * 2.32) * 90);"
+        ]
+      },
+      "animations": {
+        "move": "animation.gelhollow.move",
+        "rotate": "animation.gelhollow.rotate"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.gelhollow" }
+      ],
+      "render_controllers": [ "controller.render.gelhollow" ],
+      "spawn_egg": {
+        "base_color": "#A5FF7F",
+        "overlay_color": "#00FF90"
+      }
+    }
+  }
+}

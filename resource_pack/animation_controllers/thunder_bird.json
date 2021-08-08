@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.thunder_bird": {
+      "states": {
+        "attacking": {
+          "animations": [
+            { "attack": [] }
+          ],
+          "transitions": [
+            {
+              "flying" : "query.variant != 1"
+            },
+            {
+              "hover" : "!query.is_riding"
+            }
+          ]
+        },
+        "hover": {
+          "animations": [
+            { "hover": [] }
+          ],
+          "transitions": [
+            {
+              "flying" : "query.variant != 1"
+            },
+            {
+              "attacking" : "query.is_riding"
+            }
+          ]
+        },
+        "flying": {
+          "animations": [
+            { "fly": [] }
+          ],
+          "transitions": [
+            {
+              "hover" : "query.variant == 1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

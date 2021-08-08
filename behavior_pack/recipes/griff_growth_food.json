@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:griff_growth_food"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bbb",
+      "bfb",
+      "bbb"
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:bug_extract"
+      },
+      "f": {
+        "item": "gaiawanderer:griff_feed_food"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:griff_growth_food",
+      "data": 0
+    }
+  }
+}

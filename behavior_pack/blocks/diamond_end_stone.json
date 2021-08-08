@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:diamond_end_stone"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/diamond_end_stone.json",
+            "tag:ice_ore": {},
+            "minecraft:destroy_time": 7,
+            "minecraft:explosion_resistance": 20,
+            "minecraft:map_color": "#DEE6A4",
+            "minecraft:block_light_absorption": 16,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

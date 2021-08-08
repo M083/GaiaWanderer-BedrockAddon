@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:arrow",
+      "materials": {
+        "default": "arrow",
+        "air_blade": "air_blade"
+      },
+      "textures": {
+        "default": "textures/entity/arrows",
+        "air_blade": "textures/entity/air_blade",
+        "shebrus_spear": "textures/entity/shebrus_spear",
+        "wander_broom": "textures/entity/wander_broom",
+        "fireball": "textures/items/fireball",
+        "frost_spear": "textures/entity/frost_spear",
+        "canon": "textures/entity/canon",
+        "mantis_throwing_star": "textures/entity/mantis",
+        "void": "textures/entity/void",
+        "gravity_ball": "textures/entity/gravity_ball"
+      },
+      "geometry": {
+        "default": "geometry.arrow",
+        "air_blade": "geometry.air_blade",
+        "shebrus_spear": "geometry.shebrus_spear",
+        "wander_broom": "geometry.wander_broom",
+        "fireball": "geometry.fireball",
+        "frost_spear": "geometry.shebrus_spear",
+        "canon": "geometry.canon",
+        "mantis_throwing_star": "geometry.mantis_throwing_star",
+        "void": "geometry.shebrus_spear",
+        "gravity_ball": "geometry.gravity_ball"
+      },
+      "animations": {
+        "move": "animation.arrow.move"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.shake = query.shake_time - query.frame_alpha;",
+          "variable.shake_power = variable.shake > 0.0 ? -Math.sin(variable.shake * 200.0) * variable.shake : 0.0;"
+        ],
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [ "controller.render.arrow" ]
+    }
+  }
+}

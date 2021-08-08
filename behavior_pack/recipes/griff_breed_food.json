@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:griff_breed_food"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ggg",
+      "gfg",
+      "ggg"
+    ],
+    "key": {
+      "g": {
+        "item": "minecraft:gold_nugget"
+      },
+      "f": {
+        "item": "gaiawanderer:griff_feed_food"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:griff_breed_food",
+      "data": 0
+    }
+  }
+}

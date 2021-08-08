@@ -1,0 +1,59 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:teleport_robe",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "teleport_robe"
+      },
+      "minecraft:use_duration": 1,
+      "minecraft:max_stack_size":1,
+      "minecraft:durability": {
+        "max_durability": 100
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "gaiawanderer:fly_wing", "gaiawanderer:skyflower", "gaiawanderer:marrella_blood", "gaiawanderer:green_gel" ],
+            "repair_amount": 40
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "robe",
+        "duration": 15
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "teleport_robe"
+        }
+      }
+    },
+    "events": {
+      "teleport_robe": {
+        "sequence": [
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 4
+            }
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound item.trident.throw @s ~ ~ ~ 1.5 1.5"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

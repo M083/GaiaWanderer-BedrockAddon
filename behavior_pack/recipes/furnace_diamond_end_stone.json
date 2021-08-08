@@ -1,0 +1,12 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "gaiawanderer:furnace_diamond_end_stone"
+    },
+
+    "tags": ["furnace", "blast_furnace"],
+    "input": "gaiawanderer:diamond_end_stone",
+    "output": "minecraft:diamond"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:thunder_fan",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "thunder_fan"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 999
+      },
+      "minecraft:enchantable":{
+        "value": 30,
+        "slot": "sword"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "gaiawanderer:thunder_feather" ],
+            "repair_amount": 800
+          },
+          {
+            "items": [ "gaiawanderer:thunder_fan" ],
+            "repair_amount": 999
+          },
+          {
+            "items": [ "minecraft:feather" ],
+            "repair_amount": 100
+          }
+        ]
+      },
+      "minecraft:weapon": {},
+      "minecraft:cooldown": {
+        "category": "thunder_fan",
+        "duration": 1
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "gaiawanderer:blade"
+        }
+      }
+    },
+    "events": {
+      "gaiawanderer:blade": {
+        "sequence": [
+          {
+            "swing": {}
+          },
+          {
+            "shoot": {
+              "projectile": "minecraft:arrow",
+              "launch_power": 0.7
+            }
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound random.bow @s ~ ~ ~ 1.5 1.5"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

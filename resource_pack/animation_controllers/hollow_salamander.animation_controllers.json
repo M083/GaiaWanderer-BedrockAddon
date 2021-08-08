@@ -1,0 +1,22 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.hollow_salamander" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed + 0.1" ],
+					"animations": [
+						{ 
+							"swim": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		}
+	}
+}

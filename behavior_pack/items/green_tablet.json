@@ -1,0 +1,49 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:green_tablet",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.miscFood"
+      },
+      "minecraft:icon": {
+        "texture": "green_tablet"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1,
+      "minecraft:food": {
+        "nutrition": 10,
+        "saturation_modifier": "good",
+        "can_always_eat": true,
+        "on_consume": {
+          "event": "tablet_effect",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "tablet_effect": {
+        "sequence": [
+          {
+            "add_mob_effect": {
+              "effect": "instant_health",
+              "amplifier": 1,
+              "duration": 1
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "regeneration",
+              "amplifier": 0,
+              "duration": 360
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:necrocancer",
+      "materials": { "default": "necrocancer" },
+      "textures": {
+        "normal": "textures/entity/necrocancer/necrocancer",
+        "nether": "textures/entity/necrocancer/necrocancer_nether"
+      },
+      "geometry": {
+        "default": "geometry.necrocancer"
+      },
+      "animations": {
+        "idle": "animation.necrocancer.idle",
+        "walk": "animation.necrocancer.walk",
+        "attack": "animation.necrocancer.attack",
+        "look_at_target": "animation.necrocancer.loot_at_target"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.IsAttacking = query.is_delayed_attacking;",
+          "variable.IsWalking = (query.modified_move_speed < 0.15)? 0: 1;",
+          "variable.AnimationValue = (variable.IsAttacking)? 2: variable.IsWalking;"
+        ]
+      },
+      "animation_controllers": [
+        {
+          "default": "controller.animation.necrocancer"
+        }
+      ],
+      "render_controllers": [ "controller.render.necrocancer" ],
+      "spawn_egg": {
+        "base_color": "#031152",
+        "overlay_color": "#701C54"
+      }
+    }
+  }
+}

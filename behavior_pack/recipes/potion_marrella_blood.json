@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "gaiawanderer:potion_marrella_blood"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "minecraft:potion",
+    "reagent": "gaiawanderer:marrella_antenna",
+    "output": "gaiawanderer:marrella_blood"
+  }
+}

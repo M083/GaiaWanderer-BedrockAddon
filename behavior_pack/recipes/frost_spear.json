@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:frost_spear"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X",
+      "Y",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "gaiawanderer:ice_beak"
+      },
+      "Y": {
+        "item": "gaiawanderer:rotten_wart_item"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:frost_spear",
+      "count": 4
+    }
+  }
+}

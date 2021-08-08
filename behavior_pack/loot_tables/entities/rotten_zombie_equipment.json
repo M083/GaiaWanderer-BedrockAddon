@@ -1,0 +1,67 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.15
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.15
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:brown_mushroom",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.15
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:red_mushroom",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.2
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "gaiawanderer:rusted_key"
+        }
+      ]
+    }
+  ]
+}

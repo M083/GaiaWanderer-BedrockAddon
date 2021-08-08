@@ -1,0 +1,93 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.rhyothemyth.move": {
+      "states": {
+        "swoop_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "swoop": [ {"0.0": 0.0 , "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "shot_move": "query.mark_variant == 1"
+            },
+            {
+              "sting_move": "query.mark_variant == 2"
+            },
+            {
+              "stun": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "shot_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "shot": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "swoop_move": "query.mark_variant == 0"
+            },
+            {
+              "sting_move": "query.mark_variant == 2"
+            },
+            {
+              "stun": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "sting_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "sting": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "swoop_move": "query.mark_variant == 0"
+            },
+            {
+              "shot_move": "query.mark_variant == 1"
+            },
+            {
+              "stun": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "stun": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "stun": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "swoop_move": "query.mark_variant == 0"
+            },
+            {
+              "shot_move": "query.mark_variant == 1"
+            },
+            {
+              "sting_move": "query.mark_variant == 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rhyothemyth.sting": {
+      "states": {
+        "default": {
+          "animations": [ { "sting_default": [] } ],
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "sting_attacking": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,755 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "animations":{
+        "gw_event":"controller.animation.gw_event"
+      },
+      "scripts":{
+        "animate":["gw_event"]
+      }
+    },
+
+    "component_groups": {
+      "weapon_default": {
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "rotten_forest"
+                  }
+                ]
+              },
+              "event": "water_poison"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "!=",
+                    "value": "rotten_forest"
+                  }
+                ]
+              },
+              "event": "remove_water_poison"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "torso",
+                    "operator": "==",
+                    "value": "gaiawanderer:jetpack"
+                  },
+                  {
+                    "test": "is_sneaking"
+                  },
+                  {
+                    "test": "in_water",
+                    "operator":"!="
+                  }
+                ]
+              },
+              "event": "jetpack_boost_on"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "torso",
+                    "operator": "==",
+                    "value": "gaiawanderer:jetpack"
+                  }
+                ],
+                "any_of": [
+                  {
+                    "test": "is_sneaking",
+                    "operator":"!="
+                  },
+                  {
+                    "test": "in_water"
+                  }
+                ]
+              },
+              "event": "jetpack_boost_off"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "head",
+                    "operator": "==",
+                    "value": "gaiawanderer:burn_crown"
+                  }
+                ]
+              },
+              "event": "burn_crown_effect"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "head",
+                    "operator": "==",
+                    "value": "gaiawanderer:golden_crown"
+                  }
+                ]
+              },
+              "event": "golden_crown_effect"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "operator": "==",
+                    "value": "gaiawanderer:cantera"
+                  },
+                  {
+                    "test": "in_water",
+                    "operator":"!="
+                  }
+                ]
+              },
+              "event": "cantera_on"
+            },
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "operator": "!=",
+                    "value": "gaiawanderer:cantera"
+                  },
+                  {
+                    "test": "in_water"
+                  }
+                ]
+              },
+              "event": "cantera_off"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "head",
+                    "operator": "==",
+                    "value": "gaiawanderer:nether_metal_helmet"
+                  }
+                  ,
+                  {
+                    "test": "is_variant",
+                    "operator": "equals",
+                    "value": 1
+                  }
+                ]
+              },
+              "event": "nether_metal_helmet_hurt_event"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "torso",
+                    "operator": "==",
+                    "value": "gaiawanderer:nether_metal_chestplate"
+                  }
+                  ,
+                  {
+                    "test": "is_variant",
+                    "operator": "equals",
+                    "value": 2
+                  }
+                ]
+              },
+              "event": "nether_metal_chestplate_hurt_event"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "leg",
+                    "operator": "==",
+                    "value": "gaiawanderer:nether_metal_leggings"
+                  }
+                  ,
+                  {
+                    "test": "is_variant",
+                    "operator": "equals",
+                    "value": 3
+                  }
+                ]
+              },
+              "event": "nether_metal_leggings_hurt_event"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "feet",
+                    "operator": "==",
+                    "value": "gaiawanderer:nether_metal_boots"
+                  }
+                  ,
+                  {
+                    "test": "is_variant",
+                    "operator": "equals",
+                    "value": 4
+                  }
+                ]
+              },
+              "event": "nether_metal_boots_hurt_event"
+            }
+          ]
+        }
+      },
+      "water_poison": {
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": {
+                "test": "in_water",
+                "operator": "==",
+                "value": true
+              },
+              "cause": "drowning",
+              "damage_per_tick": 2
+            },
+            {
+              "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+              "cause": "lava",
+              "damage_per_tick": 4
+            }
+          ]
+        }
+      },
+
+      "helmet_hurt_effect": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "chestplate_hurt_event",
+            "target": "self"
+          }
+        }
+      },
+      "chestplate_hurt_effect": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "leggings_hurt_event",
+            "target": "self"
+          }
+        }
+      },
+      "leggings_hurt_effect": {
+        "minecraft:variant": {
+          "value": 3
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "boots_hurt_event",
+            "target": "self"
+          }
+        }
+      },
+      "boots_hurt_effect": {
+        "minecraft:variant": {
+          "value": 4
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "hurt_event_end",
+            "target": "self"
+          }
+        }
+      },
+      "hurt_effect_end": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:timer": {}
+      },
+
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+
+    "components": {
+      // "minecraft:burns_in_daylight": {
+      // }, //dev
+      "minecraft:variant": {
+        "value":0
+      },
+      "minecraft:damage_sensor": {
+        "triggers" : [
+          // {
+          //   "cause": "none",
+          //   "on_damage": {
+          //     "filters": {
+          //       "all_of": [
+          //         {
+          //           "test": "has_equipment",
+          //           "domain": "head",
+          //           "operator": "==",
+          //           "value": "gaiawanderer:golden_crown"
+          //         }
+          //       ]
+          //     }
+          //   },
+          //   "deals_damage": true
+          // },
+          // {
+          //   "cause": "magma",
+          //   "on_damage": {
+          //     "filters": {
+          //       "all_of": [
+          //         {
+          //           "test": "has_equipment",
+          //           "domain": "head",
+          //           "operator": "==",
+          //           "value": "gaiawanderer:golden_crown"
+          //         }
+          //       ]
+          //     }
+          //   },
+          //   "deals_damage": true
+          // },
+          // {
+          //   "on_damage": {
+          //     "filters": {
+          //       "all_of": [
+          //         {
+          //           "test": "has_equipment",
+          //           "domain": "head",
+          //           "operator": "==",
+          //           "value": "gaiawanderer:golden_crown"
+          //         },
+          //         {"test": "has_damage", "value": "fatal"}
+          //       ]
+          //     },
+          //     "event": "save_life"
+          //   },
+          //   "deals_damage": false,
+          //   "on_damage_sound_event": "piston.out"
+          // },
+          {
+            "on_damage": {
+              "event": "helmet_hurt_event"
+            }
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "inhaleTime": 3.75,
+        "generatesBubbles": false
+      },
+      "minecraft:nameable": {
+        "alwaysShow": true,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.15, 0.04 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.15, 0.04 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_mob_effect",
+                  "subject": "self",
+                  "value": "bad_omen"
+                },
+                {
+                  "test": "is_in_village",
+                  "subject": "self",
+                  "value": true
+                }
+              ]
+            },
+            "event": "minecraft:trigger_raid"
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "in_water"
+                },
+                  {
+                    "test": "has_biome_tag",
+                    "operator": "==",
+                    "value": "rotten_forest"
+                  }
+              ]
+            },
+            "event": "water_poison"
+          }
+        ]
+      }
+    },
+
+    "events": {
+      "water_poison": {
+        "add": {
+          "component_groups": [
+            "water_poison"
+          ]
+        }
+      },
+      "remove_water_poison": {
+        "remove": {
+          "component_groups": [
+            "water_poison"
+          ]
+        }
+      },
+      "save_life": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s regeneration 30 4"
+            }
+          },
+          {
+            "run_command": {
+              "command": "effect @s absorption 10 2"
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound random.totem @s ~ ~ ~"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem entity @s slot.armor.head 0 gaiawanderer:silver_crown"
+            }
+          }
+        ]
+      },
+      "jetpack_boost_on": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s levitation 1 6 true"
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound firework.launch @p ~ ~ ~ 0.5 0.45"
+            }
+          },
+          {
+            "run_command": {
+              "command": "particle minecraft:explosion_manual ~ ~ ~"
+            }
+          }
+        ]
+      },
+      "jetpack_boost_off": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s slow_falling 1 0 true"
+            }
+          },
+          {
+            "run_command": {
+              "command": "effect @s levitation 0 6 true"
+            }
+          }
+        ]
+      },
+      "nether_metal_helmet_hurt_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s resistance 10 1 true"
+            }
+          }
+        ]
+      },
+      "nether_metal_chestplate_hurt_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s strength 10 0 true"
+            }
+          }
+        ]
+      },
+      "nether_metal_leggings_hurt_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s speed 10 1 true"
+            }
+          }
+        ]
+      },
+      "nether_metal_boots_hurt_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s slow_falling 10 1 true"
+            }
+          }
+        ]
+      },
+      "burn_crown_effect": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s resistance 1 0 true"
+            }
+          },
+          {
+            "run_command": {
+              "command": "effect @s fire_resistance 1 0 true"
+            }
+          }
+        ]
+      },
+      "golden_crown_effect": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s night_vision 11 0 true"
+            }
+          }
+        ]
+      },
+      "cantera_on": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "fill ~-2 ~-1 ~-2 ~2 ~3 ~2 air 0 replace gaiawanderer:cantera_light"
+            }
+          },
+          {
+            "run_command": {
+              "command": "fill ~ ~1 ~ ~ ~1 ~ gaiawanderer:cantera_light 0 replace air"
+            }
+          }
+        ]
+      },
+      "cantera_off": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "fill ~-2 ~-1 ~-2 ~2 ~3 ~2 air 0 replace gaiawanderer:cantera_light"
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "weapon_default"
+          ]
+        }
+      },
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+
+      "helmet_hurt_event": {
+        "add": {
+          "component_groups": [ "helmet_hurt_effect" ]
+        }
+      },
+      "chestplate_hurt_event": {
+        "remove": {
+          "component_groups": [ "helmet_hurt_effect" ]
+        },
+        "add": {
+          "component_groups": [ "chestplate_hurt_effect" ]
+        }
+      },
+      "leggings_hurt_event": {
+        "remove": {
+          "component_groups": [ "chestplate_hurt_effect" ]
+        },
+        "add": {
+          "component_groups": [ "leggings_hurt_effect" ]
+        }
+      },
+      "boots_hurt_event": {
+        "remove": {
+          "component_groups": [ "leggings_hurt_effect" ]
+        },
+        "add": {
+          "component_groups": [ "boots_hurt_effect" ]
+        }
+      },
+      "hurt_event_end": {
+        "remove": {
+          "component_groups": [ "boots_hurt_effect" ]
+        },
+        "add": {
+          "component_groups": [ "hurt_effect_end" ]
+        }
+      }
+    }
+  }
+}

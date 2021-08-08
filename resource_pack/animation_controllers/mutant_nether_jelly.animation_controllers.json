@@ -1,0 +1,150 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.mutant_nether_jelly.look_at_target": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 4 || query.variant == 2"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "look_at_target": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 4 || query.variant == 2)"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.mutant_nether_jelly.attack": {
+            "states": {
+                "none": {
+                    "transitions": [
+                        {
+                            "spin": "query.variant == 1"
+                        },
+                        {
+                            "piercing": "query.variant == 4 && query.is_delayed_attacking == 1"
+                        }
+                    ]
+                },
+                "spin": {
+                    "animations": [
+                        {
+                            "spin_attack": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.variant != 1"
+                        }
+                    ]
+                },
+                "piercing": {
+                    "animations": [
+                        {
+                            "piercing_attack": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.variant != 4 || query.is_delayed_attacking != 1"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.mutant_nether_jelly.arm": {
+            "states": {
+                "none": {
+                    "transitions": [
+                        {
+                            "default": "query.variant == 0"
+                        },
+                        {
+                            "chase": "query.variant == 2"
+                        }
+                    ]
+                },
+                "default": {
+                    "animations": [
+                        {
+                            "default_arm_pose": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.variant != 0"
+                        }
+                    ]
+                },
+                "chase": {
+                    "animations": [
+                        {
+                            "chase_anim": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "none": "query.variant != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.mutant_nether_jelly.umbrella": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 0 || query.variant == 2 || (query.variant == 4 && query.is_delayed_attacking != 1)"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "umbrella_anim": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 0 || query.variant == 2 || (query.variant == 4 && query.is_delayed_attacking != 1))"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.mutant_nether_jelly.legs": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 0 || query.variant == 2 || (query.variant == 4 && query.is_delayed_attacking != 1)"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "legs_anim": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 0 || query.variant == 2 || (query.variant == 4 && query.is_delayed_attacking != 1))"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

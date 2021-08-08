@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mechaboat.look_at_target" : {
+			"bones" : {
+				"head" : {
+					"rotation" : [ "query.target_x_rotation", "query.target_y_rotation", 0.0 ]
+				}
+			},
+			"loop" : true
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gaiawanderer:safe_explode_huge",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+
+		"components": {
+		    "minecraft:explode": {
+				"breaks_blocks": false,
+		    	"fuse_length": 0,
+		    	"fuse_lit": true,
+		    	"power": 3,
+		    	"causes_fire": true,
+		    	"fire_affected_by_griefing": true,
+		    	"destroy_affected_by_griefing": true
+		    }
+		}
+	}
+}

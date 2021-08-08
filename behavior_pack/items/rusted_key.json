@@ -1,0 +1,15 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:rusted_key",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "rusted_key"
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hollow_salamander.swim": {
+			"loop": true,
+			"animation_length": 1,
+			"override_previous_animation": true,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/3", 0, 0],
+						"0.25": ["query.target_x_rotation/3", 20, 0],
+						"0.5": ["query.target_x_rotation/3", 0, 0],
+						"0.75": ["query.target_x_rotation/3", -20, 0],
+						"1.0": ["query.target_x_rotation/3", 0, 0]
+					},
+					"position": {
+						"0.0": [4, 0, 0],
+						"0.5": [-4, 0, 0],
+						"1.0": [4, 0, 0]
+					}
+				},
+				"neck": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/3", -30, 0],
+						"0.25": ["query.target_x_rotation/3", 0, 0],
+						"0.5": ["query.target_x_rotation/3", 30, 0],
+						"0.75": ["query.target_x_rotation/3", 0, 0],
+						"1.0": ["query.target_x_rotation/3", -30, 0]
+					}
+				},
+				"rarm": {
+					"rotation": {
+						"0.0": [0, -15, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [0, 15, 0],
+						"0.75": [0, 0, 0],
+						"1.0": [0, -15, 0]
+					}
+				},
+				"larm": {
+					"rotation": {
+						"0.0": [0, -15, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [0, 15, 0],
+						"0.75": [0, 0, 0],
+						"1.0": [0, -15, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": ["query.target_x_rotation/3", 0, 0],
+						"0.25": ["query.target_x_rotation/3", -40, 0],
+						"0.5": ["query.target_x_rotation/3", 0, 0],
+						"0.75": ["query.target_x_rotation/3", 40, 0],
+						"1.0": ["query.target_x_rotation/3", 0, 0]
+					}
+				},
+				"rleg": {
+					"rotation": {
+						"0.0": [0, 25, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [0, -25, 0],
+						"0.75": [0, 0, 0],
+						"1.0": [0, 25, 0]
+					}
+				},
+				"lleg": {
+					"rotation": {
+						"0.0": [0, 25, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [0, -25, 0],
+						"0.75": [0, 0, 0],
+						"1.0": [0, 25, 0]
+					}
+				},
+				"tail1": {
+					"rotation": {
+						"0.0": [0, 50, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [0, -50, 0],
+						"0.75": [0, 0, 0],
+						"1.0": [0, 50, 0]
+					}
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 60, 0],
+						"0.5": [0, 0, 0],
+						"0.75": [0, -60, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"tail3": {
+					"rotation": {
+						"0.0": [0, 70, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [0, -70, 0],
+						"0.75": [0, 0, 0],
+						"1.0": [0, 70, 0]
+					}
+				}
+			}
+		}
+	}
+}

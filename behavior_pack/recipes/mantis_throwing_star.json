@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:mamtis_throwing_star"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " i ",
+      "ili",
+      " i "
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:mantis_sickle"
+      },
+      "l": {
+        "item": "minecraft:slime_ball"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:mantis_throwing_star",
+      "data": 0,
+      "count": 4
+    }
+  }
+}

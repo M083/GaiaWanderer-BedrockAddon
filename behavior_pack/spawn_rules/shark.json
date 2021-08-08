@@ -1,0 +1,67 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "gaiawanderer:shark",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:spawns_underground": {},
+
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 55
+        },
+
+        "minecraft:weight": {
+          "default": 50
+        },
+
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator": "==", "value": "abyssal_ocean" 
+        }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:spawns_underground": {},
+
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 55
+        },
+        
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+
+        "minecraft:weight": {
+          "default": 9
+        },
+
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator": "==", "value": "ocean" 
+        }
+      }
+    ]
+  }
+}

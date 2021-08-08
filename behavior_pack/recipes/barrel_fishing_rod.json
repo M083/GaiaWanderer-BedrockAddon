@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:barrel_fishing_rod"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  S",
+      " Sl",
+      "S l"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:stick"
+      },
+      "l": {
+        "item": "gaiawanderer:strong_string"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:barrel_fishing_rod"
+    }
+  }
+}

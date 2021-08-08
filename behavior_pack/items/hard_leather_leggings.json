@@ -1,0 +1,57 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:hard_leather_leggings",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": {
+        "texture": "hard_leather_leggings"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.leggings"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "damage_chance": 0,
+        "max_durability": 800
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.legs"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["gaiawanderer:hard_leather"],
+            "repair_amount": 600
+          },
+          {
+            "items": ["gaiawanderer:hard_leather_leggings"],
+            "repair_amount": 800
+          }
+        ]
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "wear_sound"
+        }
+      },
+      "minecraft:enchantable": {
+        "value": 30,
+        "slot": "armor_legs"
+      },
+      "minecraft:armor": {
+        "protection": 4
+      }
+    },
+    "events": {
+      "wear_sound": {
+        "run_command": {
+          "command": "playsound armor.equip_iron"
+        }
+      }
+    }
+  }
+}

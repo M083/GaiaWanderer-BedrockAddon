@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:nether_metal_helmet"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bmb",
+      "n n"
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "m": {
+        "item": "gaiawanderer:nether_metal"
+      },
+      "n": {
+        "item": "gaiawanderer:nether_diamond"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:nether_metal_helmet"
+    }
+  }
+}

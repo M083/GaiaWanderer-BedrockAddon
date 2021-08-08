@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:wandering_ticket",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "wandering_ticket"
+      },
+      "minecraft:entity_placer": {
+        "entity": "minecraft:wandering_trader"
+      }
+    }
+  }
+}

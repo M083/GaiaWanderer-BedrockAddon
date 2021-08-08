@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:mechaboat_item"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ggg",
+      "ibi",
+      "wiw"
+    ],
+    "key": {
+      "i": {
+        "item": "minecraft:iron_block"
+      },
+      "g": {
+        "item": "minecraft:glass"
+      },
+      "w": {
+        "item": "minecraft:warped_planks"
+      },
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:mechaboat_item",
+      "count": 1
+    }
+  }
+}

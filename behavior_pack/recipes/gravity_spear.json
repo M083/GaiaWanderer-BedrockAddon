@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:gravity_spear"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "a ",
+      "mc",
+      "s"
+    ],
+    "key": {
+      "a": {
+        "item": "gaiawanderer:mutant_nether_jelly_arm"
+      },
+      "m": {
+        "item": "gaiawanderer:nether_metal"
+      },
+      "s": {
+        "item": "gaiawanderer:myth_sword"
+      },
+      "c": {
+        "item": "gaiawanderer:fortress_canon"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:gravity_spear"
+    }
+  }
+}

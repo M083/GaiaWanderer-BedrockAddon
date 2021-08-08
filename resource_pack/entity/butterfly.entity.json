@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:butterfly",
+      "materials": { "default": "butterfly" },
+      "textures": {
+        "ruby": "textures/entity/butterfly/ruby_butterfly",
+        "lapis": "textures/entity/butterfly/lapis_butterfly"
+      },
+      "geometry": {
+        "default": "geometry.butterfly"
+      },
+      "animations": {
+        "flying": "animation.butterfly.flying"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.butterfly" }
+      ],
+      "render_controllers": [ "controller.render.butterfly" ],
+      "spawn_egg": {
+        "base_color": "#76EEEE",
+        "overlay_color": "#E10000"
+      }
+    }
+  }
+}

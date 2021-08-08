@@ -1,0 +1,49 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:fire_immune_tablet",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.miscFood"
+      },
+      "minecraft:icon": {
+        "texture": "fire_immune_tablet"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": "good",
+        "can_always_eat": true,
+        "on_consume": {
+          "event": "tablet_effect",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "tablet_effect": {
+        "sequence": [
+          {
+            "add_mob_effect": {
+              "effect": "regeneration",
+              "amplifier": 1,
+              "duration": 30
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "fire_resistance",
+              "amplifier": 1,
+              "duration": 120
+            }
+          }
+        ]
+      }
+    }
+  }
+}

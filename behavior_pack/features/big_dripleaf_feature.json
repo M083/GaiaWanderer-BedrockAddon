@@ -1,0 +1,27 @@
+
+{
+	"format_version": "1.15.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "gaiawanderer:big_dripleaf_feature"
+		},
+		"may_grow_on": [
+			"minecraft:grass",
+			"minecraft:dirt",
+			"minecraft:stone",
+			"minecraft:moss_block"
+		],
+		"may_replace": [
+			"minecraft:air",
+			"minecraft:water"
+		],
+		"trunk": {
+			"trunk_block": "minecraft:big_dripleaf",
+			"trunk_height": {
+				"range_min": 3,
+				"range_max": 12
+			},
+			"can_be_submerged": true
+		}
+	}
+}

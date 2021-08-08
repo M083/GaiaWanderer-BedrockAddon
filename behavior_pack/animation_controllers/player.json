@@ -1,0 +1,151 @@
+{
+	"animation_controllers":{
+		"controller.animation.gw_event":{
+			"states":{
+				"func":{
+					"on_entry":[
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~ detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~-1 detect ~ ~ ~ log -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~ detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~-1 detect ~ ~ ~ log2 -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~ detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~-1 detect ~ ~ ~ crimson_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~ ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~ ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~ ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~1 ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~1 ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~1 ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~ ~2 ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~1 ~2 ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~ detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=!gw:done] ~-1 ~2 ~-1 detect ~ ~ ~ warped_stem -1 setblock ~ ~ ~ air 0 destroy",
+						"/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item,tag=gw:previous] ~ ~ ~ tag @s add gw:done"],"transitions":[{
+							"func_back":"query.get_equipped_item_name(0) == 'lumberjack_axe'"
+						},
+						{
+							"protec":"query.get_equipped_item_name(0) != 'lumberjack_axe'"
+						}
+					]
+					},
+					"func_back":{
+						"transitions":[{
+							"func":"query.get_equipped_item_name(0) == 'lumberjack_axe'"
+						},
+						{
+							"protec":"query.get_equipped_item_name(0) != 'lumberjack_axe'"
+						}]
+					},
+					"protec":{
+						"on_entry":["/execute @e[x=~-7,y=~-7,z=~-7,dx=16,dy=255,dz=16,type=minecraft:item] ~ ~ ~ tag @s add gw:done"],"transitions":[{
+							"protec_back":"query.get_equipped_item_name(0) != 'lumberjack_axe'"
+						},
+						{
+							"func":"query.get_equipped_item_name(0) == 'lumberjack_axe'"
+						}]
+					},
+					"protec_back":{
+						"transitions":[{
+							"protec":"query.get_equipped_item_name(0) != 'lumberjack_axe'"
+						},
+						{
+							"func":"query.get_equipped_item_name(0) == 'lumberjack_axe'"
+						}]
+					}
+				}
+			}
+		},
+		"format_version":"1.10.0"
+	}

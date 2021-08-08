@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.rolypse.move": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed * query.variant" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rolypse.roll": {
+      "states": {
+        "default": {
+          "animations": [ 
+            { "default_leg_pose": [] },
+            { "default_thorn_pose": [] },
+            { "default_body_pose": [] }
+          ],
+          "transitions": [
+            {
+              "rolling" : "query.variant == 0"
+            }
+          ]
+        },
+        "rolling": {
+          "animations": [
+            { "default_thorn_pose": [] },
+            {
+              "rolling": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.variant == 1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

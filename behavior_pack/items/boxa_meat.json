@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:boxa_meat",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.rawFood"
+      },
+      "minecraft:icon": {
+        "texture": "boxa_meat"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1,
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation_modifier": "low"
+      }
+    }
+  }
+}

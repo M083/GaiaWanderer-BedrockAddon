@@ -1,0 +1,1302 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:arrow",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "gaiawanderer:start_riding": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "ride"
+            }
+          ]
+        }
+      },
+      "gaiawanderer:start_riding_entity": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "ride_entity"
+            }
+          ]
+        }
+      },
+      "minecraft:hard_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": [ 1, 5 ],
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 1.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 4,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "minecraft:player_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 1
+        }
+      },
+
+      "gaiawanderer:air_blade_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "liquid_inertia": 0.99,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:mutant_nether_jelly_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:soul_flame_particle_event"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "liquid_inertia": 0.99,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:fortresscancer_arrow": {
+        "minecraft:variant": {
+          "value": 6
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [6.0, 6.0],
+          "time_down_event": {
+            "event": "gaiawanderer:canon_explode"
+          }
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": false,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 0.99
+        }
+      },
+
+      "gaiawanderer:nether_jelly_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:end_particle_event"
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "nether_jelly"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.0, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 1.2,
+          "liquid_inertia": 0.99,
+          "gravity": 0.01,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:frost_beak_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "frost_beak"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.0, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "uncertainty_base": 1,
+          "liquid_inertia": 0.99,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:thunder_bird_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "thunder_bird"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.0, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:area_lightning",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "liquid_inertia": 0.99,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:thunder_fan_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:area_lightning",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "liquid_inertia": 0.99,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:gravity_ball_arrow": {
+        "minecraft:variant": {
+          "value": 10
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:gravity_ball_event",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "uncertainty_base": 1,
+          "liquid_inertia": 0.99,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:shebrus_spear_arrow": {
+        "minecraft:variant": {
+          "value": 2
+        },
+
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "stone",
+            "cobblestone",
+            "gravel",
+            "grass",
+            "dirt",
+            "gaiawanderer:rotten_root",
+            "gaiawanderer:rotten_egg"
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 4,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:mantis_throwing_star_arrow": {
+        "minecraft:variant": {
+          "value": 8
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 4,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:teleport_robe_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "teleport_owner": { },
+            "remove_on_hit": { }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 4,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:frost_spear_arrow": {
+        "minecraft:variant": {
+          "value": 5
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "frost"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 3,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:burn_spear_arrow": {
+        "minecraft:variant": {
+          "value": 4
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:explode_safe",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {}
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 4,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:arachne_spider_arrow": {
+        "minecraft:variant": {
+          "value": 7
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:set_water",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 4,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:canon_spear_arrow": {
+        "minecraft:variant": {
+          "value": 7
+        },
+
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:flame_particle_event"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 12,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:explode_safe_huge",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {}
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 4,
+          "gravity": 0.10,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": false,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+      "gaiawanderer:wander_broom_arrow": {
+        "minecraft:variant": {
+          "value": 3
+        },
+
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "player"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.15, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          //"hit_sound": "dig.wood",
+          //"hit_ground_sound": "dig.wood",
+          
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw","power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
+      "minecraft:pillager_arrow": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": [ 3, 6 ],
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": true
+            },
+            "stick_in_ground": {
+              "shake_time": 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 1.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 4,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      }
+    },
+
+    "components": {
+        "minecraft:variant": {
+          "value": 0
+        },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": [ 1, 4 ],
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          },
+          "stick_in_ground": {
+            "shake_time" : 0.35
+          },
+          "arrow_effect": {
+          }
+        },
+        "hit_sound": "bow.hit",
+        "power": 1.6,
+        "gravity": 0.05,
+        "uncertainty_base": 16,
+        "uncertainty_multiplier": 4,
+        "anchor": 1,
+        "should_bounce": true,
+        "offset": [ 0, -0.1, 0 ]
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+
+    "events": {
+
+      "gaiawanderer:soul_flame_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:blue_flame_particle ~ ~ ~"
+        }
+      },
+      "gaiawanderer:flame_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:mobflame_single ~ ~ ~"
+        }
+      },
+      "gaiawanderer:end_particle_event": {
+        "run_command": {
+          "command": "particle minecraft:eyeofender_death_explode_particle ~ ~ ~"
+        }
+      },
+      "gaiawanderer:ground_lightning": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:ground_lightning"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:area_lightning": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "execute @e[r = 8] ~ ~ ~ summon lightning_bolt"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:explode_safe_huge": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:safe_explode_huge"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:explode_safe": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:safe_explode_huge"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:gravity_ball_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:gravity_ball"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:canon_explode": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:safe_explode"
+            }
+          },
+          {
+            "run_command": {
+              "command": "kill @s"
+            }
+          }
+        ]
+      },
+      "ride": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "ride @p start_riding @s"
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "gaiawanderer:start_riding"
+              ]
+            }
+          }
+        ]
+      },
+      "ride_entity": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "ride @e [r = 6] start_riding @s"
+            }
+          },
+          {
+            "remove": {
+              "component_groups": [
+                "gaiawanderer:start_riding_entity"
+              ]
+            }
+          }
+        ]
+      },
+      "frost": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "fill ~-1 ~-2 ~-1 ~1 ~-2 ~1 ice 0 replace air",
+                "fill ~-1 ~-2 ~-1 ~1 ~-2 ~1 ice 0 replace water",
+                "fill ~-1 ~ ~-1 ~1 ~-2 ~1 obsidian 0 replace flowing_lava",
+                "fill ~-1 ~ ~-1 ~1 ~-2 ~1 obsidian 0 replace lava"
+              ]
+            }
+          }
+        ]
+      },
+      "gaiawanderer:set_water": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": [
+                "fill ~ ~ ~ ~ ~ ~ flowing_water 0 replace air"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {"test": "is_difficulty", "value": "hard"},
+            "add": {
+              "component_groups": [ "minecraft:hard_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:myth_sword" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:shebrus_spear" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:frost_spear" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:wander_broom" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:burn_spear" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:canon_spear" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:gravity_spear" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:thunder_fan" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:mantis_throwing_star" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "operator": "!=", "value": "gaiawanderer:teleport_robe" }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "minecraft:player_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:myth_sword" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:air_blade_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:teleport_robe" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:teleport_robe_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:rotten_scythe" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:air_blade_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:thunder_fan" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:thunder_fan_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:mantis_throwing_star" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:mantis_throwing_star_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:wander_broom" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:wander_broom_arrow", "gaiawanderer:start_riding" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "frost_beak" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:frost_beak_arrow", "gaiawanderer:start_riding_entity" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "nether_jelly" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:nether_jelly_arrow", "gaiawanderer:start_riding_entity" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "thunder_bird" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:thunder_bird_arrow", "gaiawanderer:start_riding_entity" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "weather thunder"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "arachne_humanoid" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:air_blade_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:arachne_humanoid, c = 1] shot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "mutant_nether_jelly" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:mutant_nether_jelly_arrow" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:shebrus_spear" }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:shebrus_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:frost_spear" }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:frost_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "player" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:burn_spear" }
+                  ]
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:burn_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "player" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:canon_spear" }
+                  ]
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:canon_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "player" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:gravity_spear" }
+                  ]
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:gravity_ball_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "any_of": [
+                    { "test": "is_family", "subject": "other", "value": "fortresscancer" }
+                  ]   
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:fortresscancer_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "any_of": [
+                    { "test": "is_family", "subject": "other", "value": "interceptor_canon" }
+                  ]   
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:canon_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "arachne_spider" }
+                  ]   
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:arachne_spider_arrow" ]
+            }
+          },
+          {
+            "filters": {"test": "is_family", "subject": "other", "value": "pillager"},
+            "add": {
+              "component_groups": [ "minecraft:pillager_arrow" ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

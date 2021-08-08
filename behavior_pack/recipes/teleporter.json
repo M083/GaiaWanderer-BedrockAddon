@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:teleporter"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "b",
+      "g",
+      "b"
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "g": {
+        "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:teleporter"
+    }
+  }
+}

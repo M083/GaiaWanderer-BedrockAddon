@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:interceptor_canon"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bi "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:fortress_canon"
+      },
+      "i": {
+        "item": "gaiawanderer:interceptor_item"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:interceptor_canon_item",
+      "count": 1
+    }
+  }
+}

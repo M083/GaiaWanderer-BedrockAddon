@@ -1,0 +1,188 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:locust",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "spawn_more": {
+        "minecraft:spawn_entity": {
+          "filters": {
+            "all_of": [
+              { "test": "has_mob_effect", "operator": "!=", "value": "strength" }
+            ]
+          },
+          "max_wait_time": 1,
+          "min_wait_time": 1,
+          "single_use": true,
+          "spawn_entity": "gaiawanderer:locust"
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 4 : 0"
+      },
+      "minecraft:mob_effect": {
+        "entity_filter": {
+          "any_of": [
+            { "test": "is_family", "subject": "other", "operator": "==", "value": "locust" }
+          ] 
+        },
+        "effect_range": 3,
+        "effect_time": 10,
+        "mob_effect": "strength"
+      },
+      "minecraft:behavior.follow_parent": {
+        "priority": 5,
+        "speed_multiplier": 1.1
+      },
+      "minecraft:type_family": {
+        "family": [ "locust", "arthropod", "monster", "mob" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.5
+      },
+      "minecraft:health": {
+        "value": 6,
+        "max": 6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/locust.json"
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+	    "minecraft:movement.jump": {
+		    "jump_delay": [ 1.5, 6.5 ]
+	    },
+      "minecraft:behavior.eat_block": {
+        "priority": 2,
+        "success_chance": 0.1,
+        "time_until_eat": 1.5,
+        "eat_and_replace_block_pairs": [
+          { "eat_block": "grass", "replace_block": "dirt" },
+          { "eat_block": "tallgrass", "replace_block": "air" }
+        ],
+        "on_eat": {
+          "event": "spawn_locust",
+          "target": "self"
+        }
+      },
+      "minecraft:movement": {
+        "value": 0.75
+      },
+      "minecraft:balloonable": {
+        "mass": 0.6
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true
+      },
+      "minecraft:jump.static": {
+        "jump_power": 0.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.slime_float": {
+        "priority": 1
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "track_target": false
+      },
+      "minecraft:behavior.slime_attack": {
+        "priority": 5
+      },
+      "minecraft:behavior.leap_at_target": {
+        "yd": 0.55
+      },
+      "minecraft:behavior.slime_random_direction": {
+        "priority": 6
+      },
+      "minecraft:behavior.slime_keep_on_jumping": {
+        "priority": 7
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "snowgolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                }
+              ]
+            },
+            "max_dist": 32
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "leaves",
+          "leaves2",
+          "tallgrass",
+          "wheat",
+          "potatoes",
+          "carrots",
+          "beetroot",
+          "yellow_flower",
+          "red_flower"
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "spawn_locust": {
+        "sequence":[
+          {
+            "add": {
+              "component_groups": [
+                "spawn_more"
+              ]
+            }
+          }
+        ]
+      }
+    }
+	}
+}

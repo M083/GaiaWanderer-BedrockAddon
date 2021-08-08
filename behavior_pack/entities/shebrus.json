@@ -1,0 +1,184 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:shebrus",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "snow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/shebrus_snow.json"
+        },
+        "minecraft:scale": {
+          "value": 1.48
+        },
+        "minecraft:health": {
+          "value": 35,
+          "max": 35
+        },
+        "minecraft:behavior.leap_at_target": {
+        "yd": 0.5
+        },
+        "minecraft:attack": {
+          "damage": 5,
+          "effect_name": "slowness",
+          "effect_duration": 5
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 9 : 0"
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.7,
+        "height": 0.4
+      },
+      "minecraft:nameable": {
+      },
+
+      "minecraft:type_family": {
+        "family": [ "shebrus", "monster" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/shebrus.json"
+      },
+
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:attack": {
+        "damage": 5,
+        "effect_name": "wither",
+        "effect_duration": 5
+      },
+      "minecraft:behavior.leap_at_target": {
+        "yd": 0.55
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_break_doors": true,
+        "avoid_portals": false
+      },
+      "minecraft:annotation.break_door": {
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.3
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:environment_sensor": [
+        {
+          "filters": {
+            "test": "is_underwater",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          },
+          "event": "minecraft:start_transforming"
+        }
+      ],
+
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1,
+        "reach_multiplier": 1.25,
+        "track_target": false
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 25,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                { "test": "is_family", "subject": "other", "value": "irongolem" }
+              ]
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "villager" },
+                { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+              ]
+            },
+            "max_dist": 16,
+            "must_see": false
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "rabbit" }
+              ]
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_biome_tag", "operator": "==", "value": "crevasse"
+            },
+            "add": { "component_groups": [ "snow" ] }
+          }
+        ]
+      }
+    }
+  }
+}

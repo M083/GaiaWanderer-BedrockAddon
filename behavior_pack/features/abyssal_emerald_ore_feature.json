@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:abyssal_emerald_feature"	    
+		},
+		"count": 12,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:emerald",
+				"may_replace": [
+					"minecraft:stone"
+				]
+			}
+		]
+
+//		"places_block": "minecraft:emerald",
+//		"may_replace": [
+//			{
+//				"name": "minecraft:stone"
+//			}
+//		]
+	}	
+}

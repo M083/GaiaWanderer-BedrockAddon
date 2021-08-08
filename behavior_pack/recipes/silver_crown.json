@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:silver_crown"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "i i",
+      "gdg",
+      "iii"
+    ],
+    "key": {
+      "d": {
+        "item": "minecraft:diamond"
+      },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      },
+      "g": {
+        "item": "gaiawanderer:green_tablet"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:silver_crown"
+    }
+  }
+}

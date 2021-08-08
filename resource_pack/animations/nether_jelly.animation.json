@@ -1,0 +1,71 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.nether_jelly.rotate" : {
+			"anim_time_update" : "query.modified_distance_moved",
+			"loop" : true,
+			"bones" : {
+				"body" : {
+					"rotation" : [ "query.is_riding ? 90.0: 0",  0.0, 0.0 ]
+				}
+			}
+		},
+		"animation.nether_jelly.move" : {
+			"anim_time_update" : "query.modified_distance_moved",
+			"loop" : true,
+			"bones" : {
+				"body" : {
+					"position" : [ 0.0, "query.is_in_water ? 0.0 : (query.is_baby ? 3.2 : 6.4)", 0.0 ]
+				},
+				"tentacle1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle2" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle3" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle4" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle5" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle6" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle7" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle8" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle1_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle2_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle3_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle4_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle5_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle6_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle7_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				},
+				"tentacle8_1" : {
+					"rotation" : [ "(Math.cos(query.life_time  * 400) * 20 + 15) - this", 0.0, 0.0 ]
+				}
+			}
+		}
+	}
+}

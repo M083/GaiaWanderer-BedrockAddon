@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:bonefish",
+      "materials": {
+        "default": "bonefish"
+      },
+      "textures": {
+        "default": "textures/entity/bonefish"
+      },
+      "geometry": {
+        "default": "geometry.bonefish"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(query.time_stamp, (query.time_stamp + query.frame_alpha), query.frame_alpha);"
+        ]
+      },
+      "animations": {
+        "flop": "animation.bonefish.flop",
+        "swim": "animation.bonefish.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.bonefish"
+        }
+      ],
+      "render_controllers": [ "controller.render.bonefish" ],
+      "spawn_egg": {
+        "base_color": "#A0A0A0",
+        "overlay_color": "#C6C6C6"
+      }
+    }
+  }
+}

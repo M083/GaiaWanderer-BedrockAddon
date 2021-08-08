@@ -1,0 +1,49 @@
+{
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.15,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:salamander_core",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:blaze_powder",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

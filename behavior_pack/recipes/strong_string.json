@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gaiawanderer:strong_string"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#E#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:string"
+      },
+      "E": {
+        "item": "gaiawanderer:bug_extract"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:strong_string"
+    }
+  }
+}

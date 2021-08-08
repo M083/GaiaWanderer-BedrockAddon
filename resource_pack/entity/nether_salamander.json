@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:nether_salamander",
+      "materials": { "default": "salamander" },
+      "textures": {
+        "default": "textures/entity/nether_salamander"
+      },
+      "geometry": {
+        "default": "geometry.salamander"
+      },
+      "animations": {
+        "climb": "animation.salamander.climb",
+        "walk": "animation.salamander.walk",
+        "idle": "animation.salamander.idle",
+        "look_at_target": "animation.salamander.look_at_target"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.salamander" }
+      ],
+      "render_controllers": [ "controller.render.salamander" ],
+      "spawn_egg": {
+        "base_color": "#B3001D",
+        "overlay_color": "#B30077"
+      }
+    }
+  }
+}

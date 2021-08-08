@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.bonefish.flop": {
+      "loop": true,
+      "bones": {
+        "body_front": {
+          "rotation": [
+            0.0,
+            "Math.cos(variable.AnimationAmountBlend * 45.0) * 4.0",
+            "variable.ZRot"
+          ]
+        },
+        "body_back": {
+          "rotation": [
+            0.0,
+            "Math.cos(variable.AnimationAmountBlend * 45.0) * -21.75",
+            0.0
+          ]
+        },
+        "tailfin": { "rotation": [ 0.0, "Math.cos(variable.AnimationAmountBlend * 45.0) * -40.0", 0.0 ] }
+      }
+    },
+    "animation.bonefish.swim": {
+      "loop": true,
+      "bones": {
+        "body_front": { "rotation": [ 0.0, "Math.cos(variable.AnimationAmountBlend * 30.0) * 4.0", 0.0 ] },
+        "body_back": { "rotation": [ 0.0, "Math.cos(variable.AnimationAmountBlend * 30.0) * -21.75", 0.0 ] },
+        "tailfin": { "rotation": [ 0.0, "Math.cos(variable.AnimationAmountBlend * 30.0) * -40.0", 0.0 ] }
+      }
+    }
+  }
+}

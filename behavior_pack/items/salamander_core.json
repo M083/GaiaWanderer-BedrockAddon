@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:salamander_core",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "salamander_core"
+      },
+      "minecraft:explodable": false,
+      "minecraft:should_despawn": false
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:boxahok",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "plains_happy": { 
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:behavior.panic": {
+          "priority": 1,
+          "speed_multiplier": 1.25
+        }
+      },
+      "plains_angry": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.0,
+          "track_target": true,
+          "reach_multiplier": 1.1
+        },
+        "minecraft:attack": {
+          "damage": 2
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        }
+      },
+      "nether_angry": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:health": {
+          "value": 36,
+          "max": 36
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.2,
+          "track_target": true,
+          "reach_multiplier": 1.1
+        },
+        "minecraft:attack": {
+          "damage": 8
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5 : 0"
+      },
+
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [ "boxahok" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/boxahok.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.95,
+        "height": 1.05
+      },
+      "minecraft:fall_damage": {
+        "value": 1.0
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft：behavior.move_to_land": {
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": false,
+        "can_break_doors": false,
+        "avoid_portals": false,
+        "avoid_water": true
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:scaffolding_climber": {},
+      "minecraft:movement.basic": {
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:health": {
+        "value": 12,
+        "max": 12
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance":  10.0
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:physics": {
+      }
+    },
+
+    "events": {
+      "become_plains_happy": {
+        "add": { "component_groups": [ "plains_happy" ] }
+      },
+      "become_plains_angry": {
+        "add": { "component_groups": [ "plains_angry" ] }
+      },
+
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_biome_tag", "operator": "==", "value": "nether"
+            },
+            "add": { "component_groups": [ "nether_angry" ] }
+          },
+          {
+            "filters": {
+              "test": "has_biome_tag", "operator": "!=", "value": "nether"
+            },
+            "randomize": [
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "plains_happy" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "plains_angry" ] }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

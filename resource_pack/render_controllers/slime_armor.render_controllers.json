@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.slime_armor": {
+      "arrays": {
+      	"textures": {
+      	  "Array.patterns": [
+      	  	"Texture.Normal",
+      	  	"Texture.Poison"
+      	  ]
+      	}
+      },
+      "geometry": "Geometry.armor",
+      "materials": [ { "*": "Material.outer" } ],
+      "textures": [ "Array.patterns[query.mark_variant]" ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:large_cave_feature"  
+		},
+		"count": 96,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:air",
+				"may_replace": [
+					"minecraft:stone",
+					"minecraft:planks",
+					"minecraft:rail",
+					"minecraft:fence",
+					"minecraft:web",
+					"minecraft:water",
+					"minecraft:lava",
+					"minecraft:gravel",
+					"minecraft:sand",
+					"minecraft:dirt",
+					"minecraft:grass",
+					"minecraft:seagrass",
+					"minecraft:kelp",
+					"minecraft:coal_ore",
+					"minecraft:diamond_ore",
+					"minecraft:emerald_ore",
+					"minecraft:gold_ore",
+					"minecraft:iron_ore",
+					"minecraft:lapis_ore",
+					"minecraft:copper_ore",
+					"minecraft:lit_redstone_ore",
+					"minecraft:redstone_ore",
+					"minecraft:ancient_debris",
+					"minecraft:shroomlight",
+					"minecraft:snow_layer",
+					"minecraft:ice",
+					"minecraft:packed_ice",
+					"minecraft:blue_ice"
+				]
+			}
+		]
+
+		// "places_block": "minecraft:air",
+		// "may_replace": [
+		// 	{"name": "minecraft:stone"},
+		// 	{"name": "minecraft:planks"},
+		// 	{"name": "minecraft:rail"},
+		// 	{"name": "minecraft:fence"},
+		// 	{"name": "minecraft:web"},
+		// 	{"name": "minecraft:water"},
+		// 	{"name": "minecraft:lava"},
+		// 	{"name": "minecraft:gravel"},
+		// 	{"name": "minecraft:sand"},
+		// 	{"name": "minecraft:dirt"},
+		// 	{"name": "minecraft:grass"},
+		// 	{"name": "minecraft:seagrass"},
+		// 	{"name": "minecraft:kelp"},
+		// 	{"name": "minecraft:coal_ore"},
+		// 	{"name": "minecraft:diamond_ore"},
+		// 	{"name": "minecraft:emerald_ore"},
+		// 	{"name": "minecraft:gold_ore"},
+		// 	{"name": "minecraft:iron_ore"},
+		// 	{"name": "minecraft:lapis_ore"},
+		// 	{"name": "minecraft:lit_redstone_ore"},
+		// 	{"name": "minecraft:redstone_ore"},
+		// 	{"name": "minecraft:ancient_debris"},
+		// 	{"name": "minecraft:shroomlight"},
+		// 	{"name": "minecraft:snow_layer"},
+		// 	{"name": "minecraft:ice"},
+		// 	{"name": "minecraft:packed_ice"},
+		// 	{"name": "minecraft:blue_ice"}
+		// ]
+	}	
+}

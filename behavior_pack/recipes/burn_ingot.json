@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:burn_ingot"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bbb",
+      "big",
+      "ig "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:salamander_core"
+      },
+      "i": {
+        "item": "minecraft:emerald"
+      },
+      "g": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:burn_ingot",
+      "data": 0
+    }
+  }
+}

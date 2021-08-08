@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:nether_metal"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "nnn",
+      "nab",
+      "cd "
+    ],
+    "key": {
+      "n": {
+        "item": "gaiawanderer:nether_core"
+      },
+      "a": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "b": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "c": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "d": {
+        "item": "gaiawanderer:rotten_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:nether_metal",
+      "data": 0
+    }
+  }
+}

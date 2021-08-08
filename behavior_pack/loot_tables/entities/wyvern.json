@@ -1,0 +1,122 @@
+{
+    "pools": [
+        {
+            "rolls": 4,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:bone",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:rotten_flesh",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 1.0,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:shebrus_fang",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.35,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:wyvern_wing",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.25,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "gaiawanderer:salamander_core",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.10,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:phantom_membrane",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

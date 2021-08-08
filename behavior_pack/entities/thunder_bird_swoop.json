@@ -1,0 +1,109 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:thunder_bird_swoop",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    // minecraft:variant => stun count
+    // minecraft:mark_variant => mode value
+ 
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "thunder_bird_swoop", "monster", "mob", "boss" ]
+      },
+      // "minecraft:boss": {
+      //   "should_darken_sky": false,
+      //   "hud_range": 500
+      // },
+
+      "minecraft:movement.glide": {
+        "start_speed": 4.2,
+        "speed_when_turning": 1.25
+      },
+      "minecraft:movement": {
+        "value": 4.2
+      },
+      "minecraft:behavior.swoop_attack": {
+        "priority": 2,
+        "delay_range": [ 10.0, 10 ]
+      },
+      "minecraft:behavior.circle_around_anchor": {
+        "priority": 3,
+        "radius_range": [ 12.0, 16.0 ],
+        "radius_change_chance": 250,
+        "height_above_target_range": [ 12.0, 15.0 ],
+        "height_offset_range": [ -1.0, 2.0 ],
+        "height_change_chance": 350,
+        "goal_radius": 1.25
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 32
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "interact_text": "action.interact.ride.boat",
+        "pull_in_entities": true,
+        "family_types": [
+          "thunder_bird"
+        ],
+        "seats": [
+          {
+            "position": [ 0.0, 0.0, 0.0 ]
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:damage_sensor": [
+        {
+          "on_damage": {
+          },
+          "deals_damage": false
+        }
+      ],
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 64,
+        "reselect_targets": false,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                { "test": "is_family", "subject": "other", "value": "irongolem" },
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "monster"}
+              ],
+              "all_of": [
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "inanimate"},
+                { "test": "in_water", "subject": "other", "operator": "!="}
+              ]
+            },
+            "max_dist": 64
+          }
+        ],
+        "must_see": true,
+        "must_see_forget_duration": 10,
+        "target_search_height": 80.0
+      }
+    }
+  }
+}

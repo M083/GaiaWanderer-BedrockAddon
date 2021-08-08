@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:shark",
+      "materials": {
+        "default": "shark"
+      },
+      "textures": {
+        "default": "textures/entity/shark"
+      },
+      "geometry": {
+        "default": "geometry.shark"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot = !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend = Math.lerp(query.time_stamp, (query.time_stamp + query.frame_alpha), query.frame_alpha);"
+        ]
+      },
+      "animations": {
+        "flop": "animation.shark.flop",
+        "swim": "animation.shark.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.shark"
+        }
+      ],
+      "render_controllers": [ "controller.render.shark" ],
+      "spawn_egg": {
+        "base_color": "#A0A0A0",
+        "overlay_color": "#00c6e4"
+      }
+    }
+  }
+}

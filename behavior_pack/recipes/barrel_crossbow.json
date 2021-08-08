@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:barrel_crossbow"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#I#",
+      "STS",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "S": {
+        "item": "gaiawanderer:strong_string"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "T": {
+        "item": "minecraft:tripwire_hook"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:barrel_crossbow"
+    }
+  }
+}

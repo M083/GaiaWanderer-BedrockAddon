@@ -1,0 +1,153 @@
+{
+  "resource_pack_name": "gaiawanderer",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "log_iron_ore": {
+      "textures": [
+        "textures/blocks/log_iron_ore"
+      ]
+    },
+    "stonebrick_burned": {
+      "textures": [
+        "textures/blocks/stonebrick_burned"
+      ]
+    },
+    "cobblestone_burned": {
+      "textures": [
+        "textures/blocks/cobblestone_burned"
+      ]
+    },
+    "mana_leaves": {
+      "textures": [
+        "textures/blocks/mana_leaves"
+      ]
+    },
+    "barrel_bow": {
+      "textures": [
+        "textures/blocks/barrel_bow"
+      ]
+    },
+    "barrel_crossbow": {
+      "textures": [
+        "textures/blocks/barrel_crossbow"
+      ]
+    },
+    "barrel_fishing_rod": {
+      "textures": [
+        "textures/blocks/barrel_fishing_rod"
+      ]
+    },
+    "rotten_dirt_top": {
+      "textures": [
+        "textures/blocks/rotten_dirt_top"
+      ]
+    },
+    "rotten_dirt_side": {
+      "textures": [
+        "textures/blocks/rotten_dirt_side"
+      ]
+    },
+    "rotten_stone_side": {
+      "textures": [
+        "textures/blocks/rotten_stone_side"
+      ]
+    },
+    "rotten_root": {
+      "textures": [
+        "textures/blocks/rotten_root"
+      ]
+    },
+    "rotten_wart_stage_0": {
+      "textures": [
+        "textures/blocks/rotten_wart_stage_0"
+      ]
+    },
+    "rotten_wart_stage_1": {
+      "textures": [
+        "textures/blocks/rotten_wart_stage_1"
+      ]
+    },
+    "rotten_wart_stage_2": {
+      "textures": [
+        "textures/blocks/rotten_wart_stage_2"
+      ]
+    },
+    "skyflower": {
+      "textures": [
+        "textures/blocks/skyflower"
+      ]
+    },
+    "forestflower": {
+      "textures": [
+        "textures/blocks/forestflower"
+      ]
+    },
+    "rotten_thorn_block": {
+      "textures": [
+        "textures/blocks/rotten_thorn_block"
+      ]
+    },
+    "test_32": {
+      "textures": [
+        "textures/blocks/test_32"
+      ]
+    },
+    "rocked_barrel_top": {
+      "textures": [
+        "textures/blocks/rocked_barrel_top"
+      ]
+    },
+    "rocked_barrel_bottom": {
+      "textures": [
+        "textures/blocks/rocked_barrel_bottom"
+      ]
+    },
+    "rocked_barrel_side": {
+      "textures": [
+        "textures/blocks/rocked_barrel_side"
+      ]
+    },
+    "iron_packed_ice": {
+      "textures": [
+        "textures/blocks/iron_packed_ice"
+      ]
+    },
+    "diamond_packed_ice": {
+      "textures": [
+        "textures/blocks/diamond_packed_ice"
+      ]
+    },
+    "emerald_packed_ice": {
+      "textures": [
+        "textures/blocks/emerald_packed_ice"
+      ]
+    },
+    "diamond_end_stone": {
+      "textures": [
+        "textures/blocks/diamond_end_stone"
+      ]
+    },
+    "emerald_end_stone": {
+      "textures": [
+        "textures/blocks/emerald_end_stone"
+      ]
+    },
+    "nether_diamond_ore": {
+      "textures": [
+        "textures/blocks/nether_diamond_ore"
+      ]
+    },
+    "soul_soil_nether_diamond_ore": {
+      "textures": [
+        "textures/blocks/soul_soil_nether_diamond_ore"
+      ]
+    },
+    "none": {
+      "textures": [
+        "textures/blocks/none"
+      ]
+    }
+  }
+}

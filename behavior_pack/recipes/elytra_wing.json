@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:elytra_wing"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "WCW",
+      "W W",
+      "W W"
+    ],
+    "key": {
+      "W": {
+        "item": "gaiawanderer:wyvern_wing"
+      },
+      "C": {
+        "item": "gaiawanderer:salamander_core"
+      }
+    },
+    "result": {
+      "item": "minecraft:elytra"
+    }
+  }
+}

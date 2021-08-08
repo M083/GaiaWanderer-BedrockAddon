@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:mushspider",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "mushspider"
+      },
+      "textures": {
+        "default": "textures/entity/mushspider"
+      },
+      "geometry": {
+        "default": "geometry.mushspider"
+      },
+      "animations": {
+        "default_leg_pose": "animation.forestspider.default_leg_pose",
+        "look_at_target": "animation.forestspider.look_at_target",
+        "walk": "animation.forestspider.walk"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.forestspider.move" }
+      ],
+      "render_controllers": [ "controller.render.mushspider" ],
+      "spawn_egg": {
+        "base_color": "#8B8A8B",
+        "overlay_color": "#E10000"
+      }
+    }
+  }
+}

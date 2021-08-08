@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:diamond"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "fff",
+      "fff",
+      "fff"
+    ],
+    "key": {
+      "f": {
+        "item": "gaiawanderer:diamond_fragment"
+      }
+    },
+    "result": {
+      "item": "minecraft:diamond"
+    }
+  }
+}

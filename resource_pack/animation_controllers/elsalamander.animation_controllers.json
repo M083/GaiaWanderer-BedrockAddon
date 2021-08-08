@@ -1,0 +1,115 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.elsalamander.walk": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "2.0": 1.0
+                }
+              ]
+            },
+            { "look_at_target": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.elsalamander.move": {
+      "states": {
+        "explode_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "explode": [ {"0.0": 0.0 , "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "shot_move": "query.mark_variant == 1"
+            },
+            {
+              "power_move": "query.mark_variant == 2"
+            },
+            {
+              "sleep_move": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "shot_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "shot": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "explode_move": "query.mark_variant == 0"
+            },
+            {
+              "power_move": "query.mark_variant == 2"
+            },
+            {
+              "sleep_move": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "power_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "stay": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "explode_move": "query.mark_variant == 0"
+            },
+            {
+              "shot_move": "query.mark_variant == 1"
+            },
+            {
+              "sleep_move": "query.mark_variant == 3"
+            }
+          ]
+        },
+        "sleep_move": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "sleep": [ {"0.0": 0.0 , "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "explode_move": "query.mark_variant == 0"
+            },
+            {
+              "shot_move": "query.mark_variant == 1"
+            },
+            {
+              "power_move": "query.mark_variant == 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.elsalamander.power": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "stay": []
+            }
+          ],
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "power_attacking": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

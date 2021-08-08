@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:wyvern_axe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bb ",
+      "blw",
+      " l "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "l": {
+        "item": "minecraft:blaze_rod"
+      },
+      "w": {
+        "item": "gaiawanderer:wyvern_wing"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:wyvern_axe"
+    }
+  }
+}

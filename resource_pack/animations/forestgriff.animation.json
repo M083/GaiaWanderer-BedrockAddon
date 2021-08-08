@@ -1,0 +1,181 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.forestgriff.stand_pose": {
+			"loop": true,
+			"bones": {
+				"neck": {
+					"rotation": [-10, 0, 0]
+				},
+				"head": {
+					"rotation": ["query.target_x_rotation + 10", "query.target_y_rotation", 0]
+				},
+				"tail": {
+					"rotation": [-60, 0, 0]
+				},
+				"rwing": {
+					"rotation": [10, 15, -60]
+				},
+				"rwing2": {
+					"rotation": [0, 15, 5]
+				},
+				"lwing": {
+					"rotation": [10, -15, 60]
+				},
+				"lwing2": {
+					"rotation": [0, -15, 5]
+				}
+			}
+		},
+		"animation.forestgriff.fly_pose": {
+			"loop": true,
+			"bones": {
+				"neck": {
+					"rotation": ["query.target_x_rotation + 60", 0, 0]
+				},
+				"head": {
+					"rotation": [-45, 0, 0]
+				},
+				"larm": {
+					"rotation": [-60, 0, 0]
+				},
+				"larm2": {
+					"rotation": [115, 0, 0]
+				},
+				"tail": {
+					"rotation": [10, 0, 0]
+				},
+				"rwing": {
+					"rotation": [0, -20, 0]
+				},
+				"rwing2": {
+					"rotation": [0, -10, 0]
+				},
+				"lwing": {
+					"rotation": [0, 20, 0]
+				},
+				"lwing2": {
+					"rotation": [0, 10, 0]
+				},
+				"rarm": {
+					"rotation": [-60, 0, 0]
+				},
+				"rarm2": {
+					"rotation": [115, 0, 0]
+				},
+				"lleg": {
+					"rotation": [75, 0, 0]
+				},
+				"lleg2": {
+					"rotation": [-30, 0, 0]
+				},
+				"rleg": {
+					"rotation": [75, 0, 0]
+				},
+				"rleg2": {
+					"rotation": [-30, 0, 0]
+				}
+			}
+		},
+		"animation.forestgriff.walk": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"rarm": {
+					"rotation": ["Math.cos(query.anim_time * 60) * 60.0", 0, 0]
+				},
+				"rarm2": {
+					"rotation": ["Math.cos(query.anim_time * 60) * -60.0", 0, 0]
+				},
+				"larm": {
+					"rotation": ["Math.sin(query.anim_time * 60) * 60.0", 0, 0]
+				},
+				"larm2": {
+					"rotation": ["Math.sin(query.anim_time * 60) * -60.0", 0, 0]
+				},
+				"rleg": {
+					"rotation": ["Math.cos(query.anim_time * 60) * -60.0", 0, 0]
+				},
+				"rleg2": {
+					"rotation": ["Math.cos(query.anim_time * 60) * 60.0", 0, 0]
+				},
+				"lleg": {
+					"rotation": ["Math.sin(query.anim_time * 60) * -60.0", 0, 0]
+				},
+				"lleg2": {
+					"rotation": ["Math.sin(query.anim_time * 60) * 60.0", 0, 0]
+				}
+			}
+		},
+		"animation.forestgriff.fly": {
+			"loop": true,
+			"bones": {
+				"rwing": {
+					"rotation": [0, 0, "Math.cos(query.life_time * 800) * 45.0"]
+				},
+				"rwing2": {
+					"rotation": [0, 0, "Math.cos(query.life_time * 800) * 15.0"]
+				},
+				"lwing": {
+					"rotation": [0, 0, "Math.cos(query.life_time * 800) * -45.0"]
+				},
+				"lwing2": {
+					"rotation": [0, 0, "Math.cos(query.life_time * 800) * -15.0"]
+				}
+			}
+		},
+		"animation.forestgriff.sitting": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-15, 0, 0],
+					"position": [0, -3, 0]
+				},
+				"neck": {
+					"rotation": [5, 0, 0]
+				},
+				"head": {
+					"rotation": [15, 0, 0]
+				},
+				"rwing": {
+					"rotation": [10, 15, -60]
+				},
+				"rwing2": {
+					"rotation": [0, 15, 5]
+				},
+				"lwing": {
+					"rotation": [10, -15, 60]
+				},
+				"lwing2": {
+					"rotation": [0, -15, 5]
+				},
+				"larm": {
+					"rotation": [15, 0, 0]
+				},
+				"rarm": {
+					"rotation": [15, 0, 0]
+				},
+				"lleg": {
+					"rotation": [-95, 0, 0]
+				},
+				"lleg2": {
+					"rotation": [110, 0, 0]
+				},
+				"rleg": {
+					"rotation": [-95, 0, 0]
+				},
+				"rleg2": {
+					"rotation": [110, 0, 0]
+				}
+			}
+		},
+		"animation.forestgriff.health": {
+			"loop": true,
+			"bones": {
+				"health_ring_green": {
+					"scale": [1, "query.health / query.max_health", 1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:cantera_light"
+        },
+        "components": {
+            "minecraft:loot": "",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:map_color": "#ffffff",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 1.0,
+            "minecraft:unit_cube": {},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "none",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [ 0.0, 0.0, 0.0],
+                "size": [ 8.0, 0.0, 0.0 ]
+            },
+            "minecraft:breathability": "air"
+        }
+    }
+}

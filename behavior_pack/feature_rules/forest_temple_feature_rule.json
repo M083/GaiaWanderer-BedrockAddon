@@ -1,0 +1,52 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "gaiawanderer:forest_temple_feature_rule",
+            "places_feature": "gaiawanderer:forest_temple_feature"
+        },
+        "conditions": {
+            "placement_pass": "before_surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "mana_jungle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 1,
+            "scatter_chance": 8.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    "(query.heightmap(variable.worldx, variable.worldz) < 70)? query.heightmap(variable.worldx, variable.worldz) - 13: -9999",
+                    "(query.heightmap(variable.worldx, variable.worldz) < 70)? query.heightmap(variable.worldx, variable.worldz) - 13: -9999"
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

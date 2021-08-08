@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "gaiawanderer:furnace_green_gel"
+    },
+
+    "tags": ["furnace", "smoker", "campfire"],
+    "input": "gaiawanderer:green_gel",
+    "output": "gaiawanderer:green_tablet"
+  }
+  
+}

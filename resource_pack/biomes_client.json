@@ -1,0 +1,26 @@
+{
+	"biomes": {
+		"mana_jungle": {
+    		"water_surface_color": "#00fa9a",
+            "water_surface_transparency": 0.75,
+            "fog_identifier": "gaiawanderer:fog_mana_jungle"
+    	},
+        "abyssal_ocean": {
+            "water_surface_color": "#161664",
+            "water_fog_color": "#191970",
+            "water_fog_distance": 24
+        },
+        "lava_mountain": {
+            "water_surface_color": "#905957",
+            "water_fog_color": "#905957"
+        },
+        "rotten_forest": {
+            "water_surface_color": "#780FAD",
+            "water_surface_transparency": 0.95,
+            "fog_identifier": "gaiawanderer:fog_rotten_forest"
+        },
+        "crevasse": {
+            "fog_identifier": "gaiawanderer:fog_crevasse"
+        }
+	}
+}

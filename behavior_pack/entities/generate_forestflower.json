@@ -1,0 +1,46 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gaiawanderer:generate_forestflower",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+    	"component_groups": {
+     		"gaiawanderer:remove": {
+       			"minecraft:instant_despawn":{}
+      		}
+		},
+		"components": {
+			"minecraft:environment_sensor": {
+			  "triggers":[
+			  	{
+			      "event": "gaiawanderer:generate_event"
+			    }
+			  ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.001,
+				"height": 0.001
+			},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:physics": {
+			}
+		},
+		"events": {
+			"gaiawanderer:generate_event": {
+				"run_command": {
+					"command" : "fill ~ ~ ~ ~ ~ ~ gaiawanderer:forestflower 0 replace air"
+				},
+				"add": {
+					"component_groups": [
+						"gaiawanderer:remove"
+					]
+				}
+			}
+		}
+	}
+}

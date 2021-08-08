@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:wyvern",
+      "materials": { "default": "wyvern" },
+      "textures": {
+        "default": "textures/entity/wyvern"
+      },
+      "geometry": {
+        "default": "geometry.wyvern"
+      },
+      "animations": {
+        "swoop": "animation.wyvern.swoop",
+        "stun": "animation.wyvern.stun"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.wyvern" }
+      ],
+      "render_controllers": [ "controller.render.wyvern" ],
+      "spawn_egg": {
+        "base_color": "#7F006E",
+        "overlay_color": "#570037"
+      }
+    }
+  }
+}

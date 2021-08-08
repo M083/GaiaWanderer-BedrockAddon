@@ -1,0 +1,201 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:hollow_salamander",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "nether": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:lava_movement": {
+          "value": 0.32
+        },
+        "minecraft:breathable": {
+          "totalSupply": 15,
+          "suffocateTime": 0,
+          "breathesLava": true,
+          "breathes_solids": true,
+          "breathes_water": true
+        },
+        "minecraft:attack": {
+          "damage": 8,
+          "effect_name": "slowness",
+          "effect_duration": 30
+        },
+        "minecraft:fire_immune": true
+      },
+      "follow": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [5.55, 5.55],
+          "time_down_event": {
+            "event": "to_avoid"
+          }
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 4
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of" : [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"},
+                  {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+                ]
+              },
+              "max_dist": 70
+            }
+          ],
+          "must_see": false
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        }
+      },
+      "avoid": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": [5.55, 5.55],
+          "time_down_event": {
+            "event": "to_follow"
+          }
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types":{
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "hollow_salamander" }
+              ]
+            },
+            "max_dist": 15,
+            "walk_speed_multiplier": 1.25,
+            "sprint_speed_multiplier": 1.25
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 25: 0"
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:burns_in_daylight": {
+      },
+      "minecraft:behavior.flee_sun": {
+        "priority": 2,
+        "speed_multiplier": 1
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "hollow_salamander", "monster", "mob", "undead" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/hollow_salamander.json"
+      },
+      "minecraft:health": {
+        "value": 44,
+        "max": 44
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathes_solids": true,
+        "breathes_water": true
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 0.8
+      },
+      "minecraft:movement": {
+        "value": 1.0
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": false,
+        "avoid_sun": true
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 11,
+        "xz_dist": 8,
+        "y_dist": 12,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [6, 12]
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:flying_speed": {
+        "value": 0.3
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.look_at_entity": {
+        "priority": 9,
+        "look_distance": 6.0,
+        "probability": 0.02,
+        "filters": { "test" :  "is_family", "subject" : "other", "value" :  "mob"}
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_biome_tag", "operator": "==", "value": "nether"
+            },
+            "add": { "component_groups": [ "nether" ] }
+          },
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "avoid" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "follow" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "to_avoid": {
+        "remove": { "component_groups": [ "follow" ] },
+        "add": { "component_groups": [ "avoid" ] }
+      },
+      "to_follow": {
+        "remove": { "component_groups": [ "avoid" ] },
+        "add": { "component_groups": [ "follow" ] }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:applesnale",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "normal": { 
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 1 : 0"
+        },
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "golden": {
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 66 : 0"
+        },
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/applesnale_golden.json"
+        },
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        },
+        "minecraft:scale": {
+          "value": 2.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "applesnale" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/applesnale.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.35,
+        "height": 0.35
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:movement": {
+        "value": 0.08
+      },
+      "minecraft：behavior.move_to_land": {
+      },
+      "minecraft:navigation.climb": {
+        "is_amphibious": true,
+        "can_pass_doors": false,
+        "can_break_doors": false,
+        "avoid_portals": false,
+        "avoid_water": true
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:health": {
+        "value": 4,
+        "max": 4
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:physics": {
+      }
+    },
+    "events": {
+      "become_normal": {
+        "add": { "component_groups": [ "normal" ] }
+      },
+      "become_golden": {
+        "add": { "component_groups": [ "golden" ] }
+      },
+
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 19,
+                "add": { "component_groups": [ "normal" ] }
+              },
+              {
+                "weight": 1,
+                "add": { "component_groups": [ "golden" ] }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

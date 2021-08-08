@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:thunder_fan"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " ft",
+      " nf",
+      "b  "
+    ],
+    "key": {
+      "n": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "b": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "t": {
+        "item": "gaiawanderer:thunder_feather"
+      },
+      "f": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:thunder_fan",
+      "data": 0
+    }
+  }
+}

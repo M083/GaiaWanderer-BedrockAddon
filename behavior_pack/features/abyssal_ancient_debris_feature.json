@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:abyssal_ancient_debris_feature"	    
+		},
+		"count": 12,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:ancient_debris",
+				"may_replace": [
+					"minecraft:stone"
+				]
+			}
+		]
+		
+		// "places_block": "minecraft:ancient_debris",
+		// "may_replace": [
+		// 	{
+		// 		"name": "minecraft:stone"
+		// 	}
+		// ]
+	}	
+}

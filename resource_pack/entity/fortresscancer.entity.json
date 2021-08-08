@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:fortresscancer",
+      "materials": { "default": "fortresscancer" },
+      "textures": {
+        "default": "textures/entity/fortresscancer"
+      },
+      "geometry": {
+        "default": "geometry.fortresscancer"
+      },
+      "animations": {
+        "default_leg_pose": "animation.fortresscancer.default_leg_pose",
+        "walk": "animation.fortresscancer.walk",
+        "broken": "animation.fortresscancer.broken",
+        "sleep": "animation.fortresscancer.sleep",
+        "shooting": "animation.fortresscancer.shooting",
+        "rolling": "animation.fortresscancer.rolling",
+        "stump": "animation.fortresscancer.stump",
+        "stump_attack": "animation.fortresscancer.stump_attack"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.fortresscancer.move"
+        },
+        {
+          "attack": "controller.animation.fortresscancer.attack"
+        },
+        {
+          "stump_attack": "controller.animation.fortresscancer.stump_attack"
+        }
+      ],
+      "render_controllers": [ "controller.render.fortresscancer" ],
+      "spawn_egg": {
+        "base_color": "#031152",
+        "overlay_color": "#706C54"
+      }
+    }
+  }
+}

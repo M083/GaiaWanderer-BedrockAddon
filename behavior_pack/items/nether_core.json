@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:nether_core",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "nether_core"
+      },
+      "minecraft:explodable": false,
+      "minecraft:should_despawn": false
+    }
+  }
+}

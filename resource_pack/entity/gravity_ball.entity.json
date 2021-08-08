@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:gravity_ball",
+      "materials": { "default": "interceptor" },
+      "textures": {
+        "default": "textures/entity/gravity_ball"
+      },
+      "geometry": {
+        "default": "geometry.gravity_ball"
+      }
+      ,
+      "animations": {
+        "look_at_target": "animation.interceptor.look_at_target"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.interceptor" }
+      ],
+      "render_controllers": [ "controller.render.interceptor" ]
+    }
+  }
+}

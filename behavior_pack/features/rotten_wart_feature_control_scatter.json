@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_wart_feature_control_scatter"
+    },
+    "places_feature": "gaiawanderer:rotten_wart_feature",
+    "iterations": 16,
+    "project_input_to_floor": false,
+    "scatter_chance": 20,
+    "x": {
+      "distribution": "gaussian",
+      "extent": [ -16, 16 ]
+    },
+    "y": {
+      "distribution": "fixed_grid",
+      "extent": [ -8, 8 ]
+    },
+    "z": {
+      "distribution": "gaussian",
+      "extent": [ -16, 16 ]
+    }
+  }
+}

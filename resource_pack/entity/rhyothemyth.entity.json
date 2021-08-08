@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:rhyothemyth",
+      "materials": { "default": "rhyothemyth" },
+      "textures": {
+        "default": "textures/entity/rhyothemyth"
+      },
+      "geometry": {
+        "default": "geometry.rhyothemyth"
+      },
+      "animations": {
+        "swoop": "animation.rhyothemyth.swoop",
+        "shot": "animation.rhyothemyth.shot",
+        "sting": "animation.rhyothemyth.sting",
+        "sting_default": "animation.rhyothemyth.sting_default",
+        "sting_attacking": "animation.rhyothemyth.sting_attacking",
+        "stun": "animation.rhyothemyth.stun"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.rhyothemyth.move"
+        },
+        {
+          "sting": "controller.animation.rhyothemyth.sting"
+        }
+      ],
+      "render_controllers": [ "controller.render.rhyothemyth" ],
+      "spawn_egg": {
+        "base_color": "#A1E021",
+        "overlay_color": "#A8AA17"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "gaiawanderer:flowering_azalea_feature_rule",
+            "places_feature": "gaiawanderer:flowering_azalea_feature_control_scatter"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": [
+                {
+                    "all_of": [
+                        {
+                            "any_of": [
+                                {
+                                    "test": "has_biome_tag",
+                                    "operator": "==",
+                                    "value": "mana_jungle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "distribution": {
+            "iterations": 4,
+            "scatter_chance": 35.0,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    "(query.above_top_solid(variable.worldx, variable.worldz) > 63)? query.above_top_solid(variable.worldx, variable.worldz) : -9999",
+                    "(query.above_top_solid(variable.worldx, variable.worldz) > 63)? query.above_top_solid(variable.worldx, variable.worldz) - 1 : -9999"
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

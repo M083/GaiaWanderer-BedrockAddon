@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:interceptor_rapid"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bi "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "i": {
+        "item": "gaiawanderer:interceptor_item"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:interceptor_rapid_item",
+      "count": 1
+    }
+  }
+}

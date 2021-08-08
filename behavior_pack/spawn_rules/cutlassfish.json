@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "gaiawanderer:cutlassfish",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:spawns_underground": {},
+
+        "minecraft:weight": {
+          "default": 80
+        },
+
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 40
+        },
+
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 3
+        },
+
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator": "==", "value": "abyssal_ocean" 
+        }
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:spawns_underground": {},
+
+        "minecraft:weight": {
+          "default": 60
+        },
+
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 40
+        },
+
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 3
+        },
+
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag", "operator": "==", "value": "ocean" 
+        }
+      }
+    ]
+  }
+}

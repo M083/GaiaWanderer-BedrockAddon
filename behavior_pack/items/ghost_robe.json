@@ -1,0 +1,79 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:ghost_robe",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "ghost_robe"
+      },
+      "minecraft:use_duration": 1,
+      "minecraft:max_stack_size":1,
+      "minecraft:durability": {
+        "max_durability": 100
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "gaiawanderer:fly_wing", "gaiawanderer:skyflower", "gaiawanderer:red_gel", "gaiawanderer:ice_beak" ],
+            "repair_amount": 40
+          }
+        ]
+      },
+      "minecraft:cooldown": {
+        "category": "robe",
+        "duration": 13
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "ghost_robe"
+        }
+      }
+    },
+    "events": {
+      "ghost_robe": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s clear"
+            }
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "invisibility",
+              "amplifier": 1,
+              "duration": 4
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "speed",
+              "amplifier": 3,
+              "duration": 4
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "resistance",
+              "amplifier": 5,
+              "duration": 4
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound item.trident.throw @s ~ ~ ~ 1.5 0.25"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

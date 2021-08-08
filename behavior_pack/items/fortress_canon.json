@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:fortress_canon",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "fortress_canon"
+      },
+      "minecraft:explodable": false,
+      "minecraft:should_despawn": false
+    }
+  }
+}

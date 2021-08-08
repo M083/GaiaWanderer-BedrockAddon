@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.forestgriff": {
+      "arrays": {
+        "geometries": {
+          "Array.geometries": [ 
+            "Geometry.default", 
+            "Geometry.saddled"
+          ]
+        },
+        "textures": {
+          "Array.textures": [
+            "Texture.brown_brown",
+            "Texture.brown_white",
+            "Texture.brown_black",
+            "Texture.white_brown",
+            "Texture.white_white",
+            "Texture.white_black",
+            "Texture.black_brown",
+            "Texture.black_white",
+            "Texture.black_black"
+          ]
+        }
+      },
+      "geometry": "Array.geometries[query.variant]",
+      "materials": [
+        { "*": "Material.default" }
+      ],
+      "textures": [
+        "Array.textures[query.mark_variant]"
+      ]
+    }
+  }
+}

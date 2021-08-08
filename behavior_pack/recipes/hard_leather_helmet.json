@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:hard_leather_helmet"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "lil",
+      "i i"
+    ],
+    "key": {
+      "i": {
+        "item": "minecraft:iron_nugget"
+      },
+      "l": {
+        "item": "gaiawanderer:hard_leather"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:hard_leather_helmet"
+    }
+  }
+}

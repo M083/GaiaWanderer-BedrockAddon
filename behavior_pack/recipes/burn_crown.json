@@ -1,0 +1,20 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "gaiawanderer:burn_crown"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "gaiawanderer:silver_crown"
+      },
+      {
+        "item": "gaiawanderer:elsalamander_tail"
+      }
+    ],
+    "result": {
+      "item": "gaiawanderer:burn_crown"
+    }
+  }
+}

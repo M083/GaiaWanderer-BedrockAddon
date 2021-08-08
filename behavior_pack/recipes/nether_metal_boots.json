@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:nether_metal_boots"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "b b",
+      "mpn"
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "m": {
+        "item": "gaiawanderer:nether_metal"
+      },
+      "n": {
+        "item": "gaiawanderer:nether_diamond"
+      },
+      "p": {
+        "item": "minecraft:splash_potion",
+        "data": 40
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:nether_metal_boots"
+    }
+  }
+}

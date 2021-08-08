@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:jetpack"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "h h",
+      "ibi",
+      "rmr"
+    ],
+    "key": {
+      "h": {
+        "item": "gaiawanderer:marrella_antenna"
+      },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      },
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "m": {
+        "item": "gaiawanderer:marrella_blood"
+      },
+      "r": {
+        "item": "gaiawanderer:rotten_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:jetpack"
+    }
+  }
+}

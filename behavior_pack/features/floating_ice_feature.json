@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:floating_ice_feature"	    
+		},
+		"count": 24,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:ice",
+				"may_replace": [
+					"minecraft:air"
+				]	  
+			}
+		]
+
+		// "places_block": "minecraft:ice",
+		// "may_replace": [
+		// 	{
+		// 		"name": "minecraft:air"
+		// 	}
+		// ]
+	}	
+}

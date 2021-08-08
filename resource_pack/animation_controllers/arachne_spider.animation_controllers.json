@@ -1,0 +1,224 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.arachne_spider.pose": {
+      "states": {
+        "default": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "stand_pose": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "ritual" : "query.variant == 0"
+            },
+            {
+              "transform" : "query.variant == 1"
+            }
+          ]
+        },
+        "ritual": {
+          "animations": [
+            {
+              "ritual": []
+            }
+          ],
+          "transitions": [
+            {
+              "transform" : "query.variant == 1"
+            }
+          ]
+        },
+        "transform": {
+          "animations": [
+            {
+              "transform": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.variant != 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.arachne_spider.walk": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 3.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.arachne_spider.move": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "floor" : "query.mark_variant == 1"
+            },
+            {
+              "ceil" : "query.mark_variant == 2"
+            }
+          ]
+        },
+        "ceil": {
+          "animations": [
+            {
+              "stick_ceil_pose": []
+            }
+          ],
+          "transitions": [
+            {
+              "floor" : "query.mark_variant == 1"
+            }
+          ]
+        },
+        "floor": {
+          "animations": [
+            {
+              "fall_floor": []
+            }
+          ],
+          "transitions": [
+            {
+              "ceil" : "query.mark_variant == 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.arachne_spider.mode": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "egg_shot" : "query.variant == 2"
+            },
+            {
+              "water_shot" : "query.variant == 3"
+            },
+            {
+              "charge" : "query.variant == 4"
+            },
+            {
+              "attack" : "query.variant == 5"
+            }
+          ]
+        },
+        "egg_shot": {
+          "animations": [
+            {
+              "spider_shot_pose": []
+            },
+            {
+              "look_at_target_flip": []
+            }
+          ],
+          "transitions": [
+            {
+              "water_shot" : "query.variant == 3"
+            },
+            {
+              "charge" : "query.variant == 4"
+            },
+            {
+              "attack" : "query.variant == 5"
+            }
+          ]
+        },
+        "water_shot": {
+          "animations": [
+            {
+              "look_at_target_flip": []
+            },
+            {
+              "look_at_target_flip_arm": []
+            }
+          ],
+          "transitions": [
+            {
+              "egg_shot" : "query.variant == 2"
+            },
+            {
+              "charge" : "query.variant == 4"
+            },
+            {
+              "attack" : "query.variant == 5"
+            }
+          ]
+        },
+        "charge": {
+          "animations": [
+            {
+              "look_at_target": []
+            },
+            {
+              "charge": []
+            }
+          ],
+          "transitions": [
+            {
+              "egg_shot" : "query.variant == 2"
+            },
+            {
+              "water_shot" : "query.variant == 3"
+            },
+            {
+              "attack" : "query.variant == 5"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            {
+              "look_at_target": []
+            }
+          ],
+          "transitions": [
+            {
+              "egg_shot" : "query.variant == 2"
+            },
+            {
+              "water_shot" : "query.variant == 3"
+            },
+            {
+              "charge" : "query.variant == 4"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.arachne_spider.attack": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "attack": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

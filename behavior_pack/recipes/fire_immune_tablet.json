@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gaiawanderer:fire_immune_tablet"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "a",
+      "b",
+      "c"
+    ],
+    "key": {
+      "a": {
+        "item": "minecraft:magma_cream"
+      },
+      "b": {
+        "item": "gaiawanderer:white_tablet"
+      },
+      "c": {
+        "item": "gaiawanderer:shebrus_liver"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:fire_immune_tablet",
+      "data": 0
+    }
+  }
+}

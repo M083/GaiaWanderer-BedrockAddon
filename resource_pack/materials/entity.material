@@ -1,0 +1,44 @@
+{
+    "materials": {
+        "version": "1.0.0",
+        "shark:entity_alphatest": {},
+        "wyvern:entity_alphatest": {},
+        "bonefish:entity_alphatest": {},
+        "shebrus:entity_alphatest": {},
+        "mushspider:entity_alphatest": {},
+    	"forestspider:entity_emissive_alpha": {},
+    	"forestspider_invisible:entity_emissive_alpha": {
+      		"+defines": [ "USE_ONLY_EMISSIVE" ]
+    	},
+        "frost_beak:entity_alphatest": {},
+        "thunder_bird:entity_alphatest": {},
+        "mantis:entity_alphatest": {},
+        "butterfly:entity_alphatest": {},
+        "mechaboat:entity_alphatest": {},
+        "salamander:entity_alphatest": {},
+        "hollow_salamander:entity_alphatest": {},
+        "elsalamander:entity_alphatest": {},
+        "boxahok:entity_alphatest": {},
+        "applesnale:entity_alphatest": {},
+        "rhyothemyth:entity_alphatest": {},
+        "interceptor:entity_alphatest": {},
+        "necrocancer:entity_alphatest": {},
+        "cutlassfish:entity_alphatest": {},
+        "marrella:entity_alphatest": {},
+        "locust:entity_alphatest": {},
+        "arachne_humanoid:entity_alphatest": {},
+        "arachne_spider:entity_alphatest": {},
+        "rolypse:entity_alphatest": {},
+        "fortresscancer:entity_alphatest": {},
+        "forestgriff:entity_alphatest": {},
+        "gelhollow:entity": {
+            "+states": [ "Blending" ]
+        },
+        "nether_jelly:entity": {
+            "+states": [ "Blending" ]
+        },
+        "air_blade:entity": {
+            "+states": [ "Blending" ]
+        }
+    }
+}

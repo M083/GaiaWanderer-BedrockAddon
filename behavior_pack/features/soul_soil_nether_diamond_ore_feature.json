@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:soul_soil_nether_diamond_ore_feature"
+		},
+		"count": 4,
+
+		"replace_rules": [
+			{
+				"places_block": "gaiawanderer:soul_soil_nether_diamond_ore",
+				"may_replace": [
+					"minecraft:soul_soil"
+				]
+			}
+		]
+		
+		// "places_block": "minecraft:ancient_debris",
+		// "may_replace": [
+		// 	{
+		// 		"name": "minecraft:stone"
+		// 	}
+		// ]
+	}	
+}

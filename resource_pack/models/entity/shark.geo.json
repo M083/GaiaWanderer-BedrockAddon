@@ -1,0 +1,402 @@
+{
+  "geometry.shark": {
+    "texturewidth": 64,
+    "textureheight": 64,
+    "visible_bounds_width": 1,
+    "visible_bounds_height": 2,
+    "visible_bounds_offset": [0, 1, 0],
+    "bones": [
+      {
+        "memo": "胸ビレ",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "cubes": [
+          {
+            "memo": "右",
+            "origin": [-3.5, 4.5, -9.5],
+            "size": [2.0, 2.0, 5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-5.5, 3.0, -8.0],
+            "size": [2.0, 2.0, 4.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-7.0, 2.0, -6.5],
+            "size": [1.5, 1.5, 5.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+
+          {
+            "memo": "左",
+            "origin": [1.5, 4.5, -9.5],
+            "size": [2.0, 2.0, 5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": true
+          },
+          {
+            "origin": [3.5, 3.0, -8.0],
+            "size": [2.0, 2.0, 4.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": true
+          },
+          {
+            "origin": [5.0, 2.0, -6.5],
+            "size": [1.5, 1.5, 5.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": true
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_front",
+        "parent": "base"
+      },
+
+      {
+        "memo": "背ビレ",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "cubes": [
+          {
+            "origin": [-0.5, 18.0, -1.25],
+            "size": [1.0, 2.0, 1.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-0.5, 16.0, -3.0],
+            "size": [1.0, 2.0, 3.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-0.5, 14.0, -4.75],
+            "size": [1.0, 2.0, 4.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-0.5, 12.0, -6.5],
+            "size": [1.0, 2.0, 6.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_front",
+        "parent": "base"
+      },
+
+      {
+        "memo": "前部分の身体",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 0.0],
+        "cubes": [
+          {
+            "origin": [-2.5, 5.5, -5.0],
+            "size": [5.0, 7.0, 5.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-2.0, 6.0, -10.0],
+            "size": [4.0, 6.0, 5.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-1.5, 7.0, -15.0],
+            "size": [3.0, 3.5, 5.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-8.0, 7.5, -18.0],
+            "size": [16.0, 2.0, 4.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+
+          {
+            "memo": "右眼",
+            "origin": [-8.75, 7.5, -17.5],
+            "size": [2.0, 2.0, 2.0],
+            "uv": [0.0, 50.0],
+            "inflate": -0.25,
+            "mirror": false
+          },
+          {
+            "memo": "左眼",
+            "origin": [6.75, 7.5, -17.5],
+            "size": [2.0, 2.0, 2.0],
+            "uv": [0.0, 50.0],
+            "inflate": -0.25,
+            "mirror": false
+          },
+
+          {
+            "memo": "エラ",
+            "origin": [-2.0, 7.0, -14.0],
+            "size": [4.0, 2.25, 1.0],
+            "uv": [0.0, 50.0],
+            "inflate": -0.25,
+            "mirror": false
+          },
+          {
+            "origin": [-2.0, 7.0, -12.5],
+            "size": [4.0, 2.25, 1.0],
+            "uv": [0.0, 50.0],
+            "inflate": -0.25,
+            "mirror": false
+          },
+          {
+            "origin": [-2.0, 7.0, -11.0],
+            "size": [4.0, 2.25, 1.0],
+            "uv": [0.0, 50.0],
+            "inflate": -0.25,
+            "mirror": false
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_front",
+        "parent": "base"
+      },
+
+      {
+        "memo": "ここから尻尾",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 90.0],
+        "cubes": [
+          {
+            "origin": [-10.0, -0.75, 11],
+            "size": [2.0, 1.5, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-10.5, -1.0, 9.0],
+            "size": [3.0, 2.0, 3.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-11.0, -1.5, 5.0],
+            "size": [4.0, 3.0, 4.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-12.0, -2.0, -1.0],
+            "size": [6.0, 4.0, 6.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_back",
+        "parent": "base"
+      },
+
+      {
+        "memo": "腹ビレ",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 90.0],
+        "cubes": [
+          {
+            "memo": "右",
+            "origin": [-6.5, -3.0, 1.5],
+            "size": [2.0, 2.0, 5],
+            "uv": [0.0, 0.0],
+            "inflate": -0.5,
+            "mirror": false
+          },
+          {
+            "origin": [-6.0, -3.5, 3.0],
+            "size": [2.0, 2.0, 4.5],
+            "uv": [0.0, 0.0],
+            "inflate": -0.5,
+            "mirror": false
+          },
+          {
+            "origin": [-5.5, -4.0, 4.5],
+            "size": [1.5, 1.5, 5.0],
+            "uv": [0.0, 0.0],
+            "inflate": -0.5,
+            "mirror": false
+          },
+
+          {
+            "memo": "左",
+            "origin": [-6.5, 1.0, 1.5],
+            "size": [2.0, 2.0, 5],
+            "uv": [0.0, 0.0],
+            "inflate": -0.5,
+            "mirror": false
+          },
+          {
+            "origin": [-6.0, 1.5, 3.0],
+            "size": [2.0, 2.0, 4.5],
+            "uv": [0.0, 0.0],
+            "inflate": -0.5,
+            "mirror": false
+          },
+          {
+            "origin": [-5.5, 2.5, 4.5],
+            "size": [1.5, 1.5, 5.0],
+            "uv": [0.0, 0.0],
+            "inflate": -0.5,
+            "mirror": false
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_back",
+        "parent": "base"
+      },
+
+      {
+        "memo": "脂ヒレ・尻ヒレ",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 90.0],
+        "cubes": [
+          {
+            "memo": "脂ヒレ",
+            "origin": [-12.0, -0.5, 10.75],
+            "size": [0.5, 1.0, 1.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-11.5, -0.5, 9.5],
+            "size": [1.0, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+
+          {
+            "memo": "尻ヒレ",
+            "origin": [-6.5, -0.5, 10.25],
+            "size": [0.5, 1.0, 1.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-7.5, -0.5, 9.0],
+            "size": [1.0, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_back",
+        "parent": "base"
+      },
+
+      {
+        "memo": "尾ヒレ",
+        "pivot": [0.0, 0, 0.0],
+        "rotation": [0.0, 0.0, 90.0],
+        "cubes": [
+          {
+            "origin": [-14.5, -0.5, 21.5],
+            "size": [1.0, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-14.0, -0.5, 19.5],
+            "size": [1.5, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-13.5, -0.5, 17.5],
+            "size": [2.0, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-13.0, -0.5, 16.5],
+            "size": [3.0, 1.0, 1.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-12.0, -0.5, 15.5],
+            "size": [3.0, 1.0, 1.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-11.0, -0.5, 14.5],
+            "size": [2.0, 1.0, 1.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-10.0, -0.5, 13.0],
+            "size": [2.0, 1.0, 1.5],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-9.0, -0.5, 14.5],
+            "size": [2.0, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-8.0, -0.5, 16.5],
+            "size": [1.5, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          },
+          {
+            "origin": [-7.5, -0.5, 18.5],
+            "size": [1.0, 1.0, 2.0],
+            "uv": [0.0, 0.0],
+            "inflate": 0.0,
+            "mirror": false
+          }
+        ],
+        "META_BoneType": "base",
+        "name": "body_back",
+        "parent": "base"
+      }
+    ]
+  }
+}

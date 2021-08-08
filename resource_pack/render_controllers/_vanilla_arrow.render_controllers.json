@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.arrow": {
+      "arrays": {
+      	"textures": {
+      	  "Array.textures": [
+      	  	"Texture.default",
+      	  	"Texture.air_blade",
+            "Texture.shebrus_spear",
+            "Texture.wander_broom",
+            "Texture.fireball", 
+            "Texture.frost_spear",
+            "Texture.canon",
+            "Texture.canon",
+            "Texture.mantis_throwing_star",
+            "Texture.void",
+            "Texture.gravity_ball"
+      	  ]
+      	},
+        "geometries": {
+          "Array.geometries": [ 
+            "Geometry.default", 
+            "Geometry.air_blade", 
+            "Geometry.shebrus_spear", 
+            "Geometry.wander_broom", 
+            "Geometry.fireball", 
+            "Geometry.frost_spear",
+            "Geometry.canon",
+            "Geometry.canon",
+            "Geometry.mantis_throwing_star",
+            "Geometry.void",
+            "Geometry.gravity_ball"
+          ]
+        },
+        "materials": {
+          "Array.materials": [ 
+            "Material.default", 
+            "Material.air_blade", 
+            "Material.default", 
+            "Material.default", 
+            "Material.default", 
+            "Material.default", 
+            "Material.default", 
+            "Material.default", 
+            "Material.default",
+            "Material.default" ,
+            "Material.default" 
+          ]
+        }
+      },
+      "geometry": "Array.geometries[query.variant]",
+      "materials": [ { "*": "Array.materials[query.variant]" } ],
+      "textures": [ "Array.textures[query.variant]" ]
+    }
+  }
+}

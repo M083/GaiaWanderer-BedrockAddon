@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_root_feature_control_sequence"
+    },
+    "features": [
+      "gaiawanderer:rotten_root_feature",
+      "gaiawanderer:rotten_root_chain_feature_control_search"
+    ]
+  }
+}

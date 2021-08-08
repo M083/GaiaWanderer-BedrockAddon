@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:cantera"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  I",
+      " Is",
+      "I L"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:stick"
+      },
+      "s": {
+        "item": "gaiawanderer:strong_string"
+      },
+      "L": {
+        "item": "minecraft:lantern"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:cantera"
+    }
+  }
+}

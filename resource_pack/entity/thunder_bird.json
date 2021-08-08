@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:thunder_bird",
+      "materials": { "default": "thunder_bird" },
+      "textures": {
+        "default": "textures/entity/thunder_bird"
+      },
+      "geometry": {
+        "default": "geometry.thunder_bird"
+      },
+      "animations": {
+        "fly": "animation.thunder_bird.fly",
+        "hover": "animation.thunder_bird.hover",
+        "attack": "animation.thunder_bird.attack"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.thunder_bird"
+        }
+      ],
+      "render_controllers": [ "controller.render.thunder_bird" ],
+      "spawn_egg": {
+        "base_color": "#8EFED6",
+        "overlay_color": "#FEF274"
+      }
+    }
+  }
+}

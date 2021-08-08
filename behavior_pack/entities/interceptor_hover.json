@@ -1,0 +1,131 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gaiawanderer:interceptor_hover",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"tamed": {
+				"minecraft:is_tamed": {
+				},
+
+				"minecraft:behavior.follow_owner": {
+					"priority": 7,
+					"speed_multiplier": 1.0,
+					"start_distance": 10,
+					"stop_distance": 2
+				},
+
+				"minecraft:behavior.owner_hurt_by_target": {
+					"priority": 1
+				},
+				"minecraft:behavior.float_wander": {
+					"priority": 5,
+					"must_reach": true
+				},
+				"minecraft:behavior.owner_hurt_target": {
+					"priority": 2
+				}
+			}
+		},
+		"components": {
+
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "fall",
+					"deals_damage": false
+				}
+			},
+			"minecraft:type_family": {
+				"family": [ "interceptor", "inanimate" ]
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+
+			},
+
+        	"minecraft:tameable": {
+    	     	"probability": 0.66,
+	         	"tame_items": "redstone",
+          		"tame_event": {
+            		"event": "gaiawanderer:on_tame",
+            		"target": "self"
+          		}
+        	},
+        		
+			"minecraft:loot": {
+				"table": "loot_tables/entities/interceptor_hover.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.45,
+				"height": 1.15
+			},
+			"minecraft:leashable": {
+				"soft_distance": 8.0,
+				"hard_distance": 12.0,
+				"max_distance":  16.0
+			},
+			"minecraft:attack":{
+				"damage": 4
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 4
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:behavior.ranged_attack": {
+				"priority": 3,
+				"attack_interval_min": 0.3,
+				"attack_interval_max": 0.3,
+				"charge_charged_trigger": 0.0,
+				"charge_shoot_trigger": 0.45,
+				"attack_radius": 24
+			},
+			"minecraft:movement": {
+				"value": 0.02
+			},
+			"minecraft:navigation.float": {
+				"can_path_over_water": true
+			},
+			"minecraft:can_fly": {
+			},
+			"minecraft:shooter": {
+				"def": "minecraft:arrow"
+			},
+      		"minecraft:knockback_resistance": {
+     	  		"value": 2.0
+      		},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 6,
+				"reselect_targets": true,
+				"entity_types": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "monster"
+						},
+						"max_dist":32
+					}
+				],
+				"must_see": true
+			},
+      		"minecraft:is_stackable": {
+      		}
+		},
+		"events": {
+		    "gaiawanderer:on_tame": {
+				"add": {
+					"component_groups": [
+						"tamed"
+          			]
+        		}
+      		}
+		}
+	}
+}

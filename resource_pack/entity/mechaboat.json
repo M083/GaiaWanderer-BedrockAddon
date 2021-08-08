@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:mechaboat",
+      "materials": { "default": "mechaboat" },
+      "textures": {
+        "default": "textures/entity/mechaboat"
+      },
+      "geometry": {
+        "default": "geometry.mechaboat"
+      },
+      "animations": {
+        "look_at_target": "animation.mechaboat.look_at_target"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.mechaboat" }
+      ],
+      "render_controllers": [ "controller.render.mechaboat" ]
+    }
+  }
+}

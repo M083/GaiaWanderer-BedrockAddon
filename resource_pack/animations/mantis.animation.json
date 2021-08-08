@@ -1,0 +1,184 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mantis.default_leg_pose": {
+			"loop": true,
+			"animation_length": 5.1,
+			"bones": {
+				"rleg_1": {
+					"rotation": [0, "-22.5- this", "-3.3- this"]
+				},
+				"Lleg_1": {
+					"rotation": [0, "22.5- this", "3.3- this"]
+				},
+				"rleg_2": {
+					"rotation": [0, "15- this", "-5- this"]
+				},
+				"Lleg_2": {
+					"rotation": [0, "-15- this", "5- this"]
+				}
+			}
+		},
+		"animation.mantis.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.mantis.walk": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"rleg_1": {
+					"rotation": [0, "-math.abs(math.cos(query.anim_time * 76.34 + 90 * 1) * 45.5)", "math.abs(math.sin(query.anim_time * 38.17 + 90 * 1) * 25)"]
+				},
+				"Lleg_1": {
+					"rotation": [0, "math.abs(math.cos(query.anim_time * 76.34 + 90 * 1) * 45.5)", "-math.abs(math.sin(query.anim_time * 38.17 + 90 * 1) * 25)"]
+				},
+				"rleg_2": {
+					"rotation": [0, "math.abs(math.cos(query.anim_time * 76.34 + 90 * 3) * 30)", "math.abs(math.sin(query.anim_time * 38.17 + 90 * 3) * 25)"]
+				},
+				"Lleg_2": {
+					"rotation": [0, "-math.abs(math.cos(query.anim_time * 76.34 + 90 * 3) * 30)", "-math.abs(math.sin(query.anim_time * 38.17 + 90 * 3) * 25)"]
+				}
+			}
+		},
+		"animation.mantis.attack": {
+			"animation_length": 1.12,
+			"bones": {
+				"rightarm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [-90, 45, 10],
+						"0.4": [-90, 45, 10],
+						"0.5167": [-30, 0, -15],
+						"0.8333": [-30, 0, -15],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"right1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [70, 0, 0],
+						"0.4": [70, 0, 0],
+						"0.5167": [85, 0, 0],
+						"0.8333": [85, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"right2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [-70, 0, 0],
+						"0.4": [-70, 0, 0],
+						"0.5167": [-45, 0, 0],
+						"0.8333": [-45, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"right3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [0, 0, 0],
+						"0.4": [0, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"leftarm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [-90, -45, -10],
+						"0.4": [-90, -45, -10],
+						"0.5167": [-30, 0, 15],
+						"0.8333": [-30, 0, 15],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"left1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [70, 0, 0],
+						"0.4": [70, 0, 0],
+						"0.5167": [85, 0, 0],
+						"0.8333": [85, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"left2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [-70, 0, 0],
+						"0.4": [-70, 0, 0],
+						"0.5167": [-45, 0, 0],
+						"0.8333": [-45, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"left3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [0, 0, 0],
+						"0.4": [0, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"rleg_1": {
+					"rotation": [0, 0, 0]
+				},
+				"Lleg_1": {
+					"rotation": [0, 0, 0]
+				},
+				"chest": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [-25, 0, 0],
+						"0.4": [-25, 0, 0],
+						"0.5167": [5, 0, 0],
+						"0.8333": [0, 0, 0]
+					}
+				}
+			}
+		},
+
+		"animation.mantis.attack_default": {
+			"loop": true,
+			"bones": {
+				"rightarm": {
+					"rotation": [0, 0, 0]
+				},
+				"right1": {
+					"rotation": [0, 0, 0]
+				},
+				"right2": {
+					"rotation": [0, 0, 0]
+				},
+				"right3": {
+					"rotation": [0, 0, 0]
+				},
+				"leftarm": {
+					"rotation": [0, 0, 0]
+				},
+				"left1": {
+					"rotation": [0, 0, 0]
+				},
+				"left2": {
+					"rotation": [0, 0, 0]
+				},
+				"left3": {
+					"rotation": [0, 0, 0]
+				},
+				"rleg_1": {
+					"rotation": [0, 0, 0]
+				},
+				"Lleg_1": {
+					"rotation": [0, 0, 0]
+				},
+				"chest": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

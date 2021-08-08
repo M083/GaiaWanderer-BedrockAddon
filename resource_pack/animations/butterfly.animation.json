@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.butterfly.flying": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [ "query.target_x_rotation", "query.target_y_rotation", 0.0 ]
+        },
+        "body_front": {
+          "rotation": [ -5.0, 5.0, 0.0 ]
+        },
+        "body_back": {
+          "rotation": [ -10.0, 0.0, 0.0 ]
+        },
+        "right_wing": {
+          "rotation": [ 0.0, 0.0, "Math.cos(query.life_time * 1489.6) * 45.0" ]
+        },
+        "left_wing": {
+          "rotation": [ 0.0, 0.0, "Math.cos(query.life_time * 1489.6) * -45.0" ]
+        }
+      }
+    }
+  }
+}

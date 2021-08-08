@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:barrel_fishing_rod"
+        },
+        "components": {
+            "tag:minecraft:wood": {},
+            "minecraft:loot": "loot_tables/blocks/barrel_fishing_rod.json",
+            "minecraft:destroy_time": 0.15,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:flammable": {
+                "flame_odds": 1.0,
+                "burn_odds": 1.0
+            },
+            "minecraft:map_color": "#8B6940",
+            "minecraft:block_light_absorption": 15,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

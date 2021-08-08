@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "gaiawanderer:potion_adryva_drink"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "minecraft:potion",
+    "reagent": "gaiawanderer:bug_extract",
+    "output": "gaiawanderer:adryva_drink"
+  }
+}

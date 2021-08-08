@@ -1,0 +1,120 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:dungeon_block5"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_dirt.json",
+            "tag:dirt": {},
+            "minecraft:destroy_time": 100,
+            "minecraft:explosion_resistance": 100000,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#ACABAA",
+            "minecraft:block_light_absorption": 15,
+            "minecraft:block_light_emission": 0,
+            "minecraft:random_ticking": {
+                "on_tick" : {
+                    "event": "gaiawanderer:create1"
+                }
+            },
+            "minecraft:on_step_on": {
+                "event": "gaiawanderer:create1"
+            }
+        },
+        "events": {
+            "gaiawanderer:create1": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "fill ~-30 ~-20 ~-30 ~-30 ~3 ~30 stone 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-30 ~-20 ~-30 ~30 ~3 ~-30 stone 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~30 ~-20 ~30 ~-30 ~3 ~30 stone 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~30 ~-20 ~30 ~30 ~3 ~-30 stone 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-27 ~-30 ~-27 ~-27 ~3 ~27 warped_hyphae 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-27 ~-30 ~-27 ~27 ~3 ~-27 warped_hyphae 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~27 ~-30 ~27 ~-27 ~3 ~27 warped_hyphae 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~27 ~-30 ~27 ~27 ~3 ~-27 warped_hyphae 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-27 ~-21 ~-27 ~27 ~-21 ~27 warped_hyphae 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-27 ~-31 ~-27 ~27 ~-31 ~27 warped_hyphae 0 outline"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-26 ~-22 ~-26 ~26 ~-30 ~26 air 0"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~-18 ~ ~ ~-18 ~ gaiawanderer:dungeon_block7"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~-12 ~ ~ ~-12 ~ gaiawanderer:dungeon_block7"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~-6 ~ ~ ~-6 ~ gaiawanderer:dungeon_block7"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~ ~ ~ ~ ~ gaiawanderer:dungeon_block7"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-1 ~3 ~-1 ~1 ~-2 ~1 air"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "summon gaiawanderer:arachne_humanoid ~ ~-30 ~"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

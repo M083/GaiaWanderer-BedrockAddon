@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:rotten_ingot"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bbb",
+      "bcg",
+      "cg "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:rotten_core"
+      },
+      "g": {
+        "item": "minecraft:gold_ingot"
+      },
+/*
+      "c": {
+        "item": "minecraft:copper_ingot"
+      }
+*/
+      "c": {
+        "item": "gaiawanderer:rolypse_shell"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:rotten_ingot",
+      "data": 0
+    }
+  }
+}

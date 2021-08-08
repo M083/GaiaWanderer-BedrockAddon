@@ -1,0 +1,17 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.arrow.move" : {
+			"loop" : true,
+			"bones" : {
+				"body" : {
+					"rotation" : [ "variable.shake_power - query.target_x_rotation", "-query.target_y_rotation", 0.0 ],
+					"scale" : [ 0.7, 0.7, 0.9 ]
+				},
+				"blade": {
+					"rotation" : [ 0.0, "((query.life_time * 0.5) * -3500.32)", 0.0 ]
+				}
+			}
+		}
+	}
+}

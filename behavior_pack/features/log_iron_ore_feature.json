@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:log_iron_ore_feature"
+		},
+		"count": 8,
+
+		"replace_rules": [
+			{
+				"places_block": "gaiawanderer:log_iron_ore",
+				"may_replace": [
+					"minecraft:log"
+				]	  
+			}
+		]
+
+		// "places_block": "gaiawanderer:emerald_end_stone",
+		// "may_replace": [
+		// 	{
+		// 		"name": "minecraft:end_stone"
+		// 	}
+		// ]
+	}	
+}

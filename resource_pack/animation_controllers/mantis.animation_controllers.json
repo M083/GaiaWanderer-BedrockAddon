@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.mantis.move": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            { "default_leg_pose": [] },
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            },
+            { "look_at_target": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.mantis.attack": {
+      "states": {
+        "default": {
+          "animations": [ 
+            { 
+              "attack_default": [] 
+            } 
+          ],
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "attack": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            },
+            {
+              "default" : "query.any_animation_finished == 1"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

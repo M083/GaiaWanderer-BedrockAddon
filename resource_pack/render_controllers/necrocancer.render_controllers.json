@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.necrocancer": {
+      "arrays": {
+      	"textures": {
+      	  "Array.patterns": [
+      	  	"Texture.normal",
+      	  	"Texture.nether"
+      	  ]
+      	}
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.patterns[query.variant]" ]
+    }
+  }
+}

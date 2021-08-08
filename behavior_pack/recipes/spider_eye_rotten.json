@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "gaiawanderer:spider_eye_rotten"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "gaiawanderer:rotten_wart_item"
+      },
+      {
+        "item": "minecraft:spider_eye"
+      },
+      {
+        "item": "gaiawanderer:rotten_spore"
+      }
+    ],
+    "result": {
+      "item": "gaiawanderer:spider_eye_rotten"
+    }
+  }
+}

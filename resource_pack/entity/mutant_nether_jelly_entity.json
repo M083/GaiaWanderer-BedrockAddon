@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:mutant_nether_jelly",
+      "materials": { "default": "nether_jelly" },
+      "textures": {
+        "default": "textures/entity/mutant_nether_jelly"
+      },
+      "geometry": {
+        "default": "geometry.mutant_nether_jelly"
+      },
+      "animations": {
+        "look_at_target": "animation.mutant_nether_jelly.look_at_target",
+        "legs_anim": "animation.mutant_nether_jelly.legs_anim",
+        "default_arm_pose": "animation.mutant_nether_jelly.default_arm_pose",
+        "umbrella_anim": "animation.mutant_nether_jelly.umbrella_anim",
+        "chase_anim": "animation.mutant_nether_jelly.chase_anim",
+        "spin_attack": "animation.mutant_nether_jelly.spin_attack",
+        "piercing_attack": "animation.mutant_nether_jelly.piercing_attack"
+      },
+      "animation_controllers": [
+        { "look_at_target": "controller.animation.mutant_nether_jelly.look_at_target" },
+        { "attack": "controller.animation.mutant_nether_jelly.attack" },
+        { "arm": "controller.animation.mutant_nether_jelly.arm" },
+        { "umbrella": "controller.animation.mutant_nether_jelly.umbrella" },
+        { "legs": "controller.animation.mutant_nether_jelly.legs" }
+      ],
+      "render_controllers": [ "controller.render.nether_jelly" ],
+      "spawn_egg": {
+        "base_color": "#BF5E5F",
+        "overlay_color": "#D1BE41"
+      }
+    }
+  }
+}

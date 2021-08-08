@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:elsalamander",
+      "materials": { "default": "elsalamander" },
+      "textures": {
+        "default": "textures/entity/elsalamander"
+      },
+      "geometry": {
+        "default": "geometry.elsalamander"
+      },
+      "animations": {
+        "sleep": "animation.elsalamander.sleep",
+        "look_at_target": "animation.elsalamander.look_at_target",
+        "explode": "animation.elsalamander.explode",
+        "shot": "animation.elsalamander.shot",
+        "stay": "animation.elsalamander.stay",
+        "walk": "animation.elsalamander.walk",
+        "power_attacking": "animation.elsalamander.power_attacking"
+      },
+      "animation_controllers": [
+        {
+          "walk": "controller.animation.elsalamander.walk"
+        },
+        {
+          "move": "controller.animation.elsalamander.move"
+        },
+        {
+          "power": "controller.animation.elsalamander.power"
+        }
+      ],
+      "render_controllers": [ "controller.render.elsalamander" ],
+      "spawn_egg": {
+        "base_color": "#9C0707",
+        "overlay_color": "#ee920D"
+      }
+    }
+  }
+}

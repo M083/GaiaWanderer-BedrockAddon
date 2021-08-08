@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:nether_jelly",
+      "materials": { "default": "nether_jelly" },
+      "textures": {
+        "default": "textures/entity/nether_jelly"
+      },
+      "geometry": {
+        "default": "geometry.nether_jelly"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.zbodyrotation = ((query.time_stamp + query.frame_alpha) * 14.32);",
+          "variable.tentacleangle = (Math.cos((query.time_stamp + query.frame_alpha) * 2.32) * 90);"
+        ]
+      },
+      "animations": {
+        "move": "animation.nether_jelly.move",
+        "rotate": "animation.nether_jelly.rotate"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.nether_jelly" }
+      ],
+      "render_controllers": [ "controller.render.nether_jelly" ],
+      "spawn_egg": {
+        "base_color": "#BF5E5F",
+        "overlay_color": "#D1BE41"
+      }
+    }
+  }
+}

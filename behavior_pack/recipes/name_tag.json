@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:name_tag"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "lls"
+    ],
+    "key": {
+      "l": {
+        "item": "gaiawanderer:hard_leather"
+      },
+      "s": {
+        "item": "gaiawanderer:strong_string"
+      }
+    },
+    "result": {
+      "item": "minecraft:name_tag"
+    }
+  }
+}

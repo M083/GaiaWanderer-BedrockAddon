@@ -1,0 +1,158 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:marrella",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 9 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "marrella", "arthropod", "monster", "rotten_monster" ]
+      },
+      "minecraft:breathable":{
+        "total_supply":15,
+        "suffocate_time":0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/marrella.json"
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:attack": {
+        "damage": 6,
+        "effect_name": "levitation",
+        "effect_duration": 10
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "target_dist": 1.2,
+        "track_target": false,
+        "reach_multiplier": 1.5,
+        "look_distance": 30,
+        "speed_multiplier": 9
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "slime"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "enderman"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "dragon"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "vex"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "snowgolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                }
+              ]
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "marrella"
+                },
+                {
+                  "test": "has_mob_effect",
+                  "subject": "other",
+                  "value": "levitation"
+                }
+              ]
+            },
+            "max_dist": 128
+          }
+        ],
+        "attack_interval": 1,
+        "must_see": false
+      },
+      "minecraft:collision_box": {
+        "width": 1.75,
+        "height": 1.5
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+
+      "minecraft:movement": {
+        "value": 0.025
+      },
+      "minecraft:flying_speed": {
+        "value": 0.2
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 11,
+        "xz_dist": 8,
+        "y_dist": 12,
+        "y_offset": -1,
+        "interval": 1,
+        "hover_height": [2, 6]
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:jump.static": {
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:can_fly": {
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:physics": {
+      }
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "resource_pack_name": "gaiawanderer",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "griff_feed_food": {
+      "textures": "textures/gaiawanderer/griff_feed_food"
+    },
+    "griff_breed_food": {
+      "textures": "textures/gaiawanderer/griff_breed_food"
+    },
+    "griff_growth_food": {
+      "textures": "textures/gaiawanderer/griff_growth_food"
+    },
+    "thunder_feather": {
+      "textures": "textures/gaiawanderer/thunder_feather"
+    },
+    "thunder_fan": {
+      "textures": "textures/gaiawanderer/thunder_fan"
+    },
+    "mantis_throwing_star": {
+      "textures": "textures/gaiawanderer/mantis_throwing_star"
+    },
+    "wyvern_wing": {
+      "textures": "textures/gaiawanderer/wing"
+    },
+    "shebrus_fang": {
+      "textures": "textures/gaiawanderer/shebrus_fang"
+    },
+    "shebrus_liver": {
+      "textures": "textures/gaiawanderer/sunakimo"
+    },
+    "shebrus_spear": {
+      "textures": "textures/gaiawanderer/shebrus_spear"
+    },
+    "frost_spear": {
+      "textures": "textures/gaiawanderer/frost_spear"
+    },
+    "strong_string": {
+      "textures": "textures/gaiawanderer/strong_string"
+    },
+    "bug_extract": {
+      "textures": "textures/gaiawanderer/bug_Liq"
+    },
+    "elsalamander_tail": {
+      "textures": "textures/gaiawanderer/elsalamander_tail"
+    },
+    "fortress_canon": {
+      "textures": "textures/gaiawanderer/fortress_canon"
+    },
+    "mutant_nether_jelly_arm": {
+      "textures": "textures/gaiawanderer/mutant_nether_jelly_arm"
+    },
+    "salamander_core": {
+      "textures": "textures/gaiawanderer/salamander_core"
+    },
+    "nether_core": {
+      "textures": "textures/gaiawanderer/nether_core"
+    },
+    "adryva_drink": {
+      "textures": "textures/gaiawanderer/adryvaDrink"
+    },
+    "boxa_meat": {
+      "textures": "textures/gaiawanderer/boxa_meat"
+    },
+    "boxa_steak": {
+      "textures": "textures/gaiawanderer/boxa_grillmeat"
+    },
+    "interceptor_canon_item": {
+      "textures": "textures/gaiawanderer/interceptor_canon_item"
+    },
+    "interceptor_item": {
+      "textures": "textures/gaiawanderer/interceptor_item"
+    },
+    "interceptor_rapid_item": {
+      "textures": "textures/gaiawanderer/interceptor_rapid_item"
+    },
+    "interceptor_hover_item": {
+      "textures": "textures/gaiawanderer/interceptor_hover_item"
+    },
+    "mechaboat_item": {
+      "textures": "textures/gaiawanderer/mechaboat"
+    },
+    "cutlassfish_item": {
+      "textures": "textures/gaiawanderer/cutlassfish_item"
+    },
+    "marrella_blood": {
+      "textures": "textures/gaiawanderer/marrella_blood"
+    },
+    "marrella_bow": {
+      "textures": "textures/gaiawanderer/marrella_bow"
+    },
+    "marrella_antenna": {
+      "textures": "textures/gaiawanderer/marrella_antenna"
+    },
+    "rotten_scythe": {
+      "textures": "textures/gaiawanderer/rotten_scythe"
+    },
+    "teleport_robe": {
+      "textures": "textures/gaiawanderer/teleport_robe"
+    },
+    "ghost_robe": {
+      "textures": "textures/gaiawanderer/ghost_robe"
+    },
+    "red_gel": {
+      "textures": "textures/gaiawanderer/red_gel"
+    },
+    "green_gel": {
+      "textures": "textures/gaiawanderer/green_gel"
+    },
+    "green_tablet": {
+      "textures": "textures/gaiawanderer/green_tablet"
+    },
+    "white_tablet": {
+      "textures": "textures/gaiawanderer/white_tablet"
+    },
+    "fire_immune_tablet": {
+      "textures": "textures/gaiawanderer/fire_immune_tablet"
+    },
+    "fly_wing": {
+      "textures": "textures/gaiawanderer/fly_wing"
+    },
+    "myth_sword": {
+      "textures": "textures/gaiawanderer/myth_sword"
+    },
+    "cantera": {
+      "textures": "textures/gaiawanderer/cantera"
+    },
+    "bug_ingot": {
+      "textures": "textures/gaiawanderer/bug_ingot"
+    },
+    "burn_ingot": {
+      "textures": "textures/gaiawanderer/burn_ingot"
+    },
+    "burn_spear": {
+      "textures": "textures/gaiawanderer/burn_spear"
+    },
+    "canon_spear": {
+      "textures": "textures/gaiawanderer/canon_spear"
+    },
+    "gravity_spear": {
+      "textures": "textures/gaiawanderer/gravity_spear"
+    },
+    "wyvern_axe": {
+      "textures": "textures/gaiawanderer/wyvern_axe"
+    },
+    "rotten_fertlizer": {
+      "textures": "textures/gaiawanderer/rotten_fertlizer"
+    },
+    "rotten_tablet": {
+      "textures": "textures/gaiawanderer/rotten_tablet"
+    },
+    "rotten_spore": {
+      "textures": "textures/gaiawanderer/rotten_spore"
+    },
+    "rotten_wart_item": {
+      "textures": "textures/gaiawanderer/rotten_wart"
+    },
+    "rotten_core": {
+      "textures": "textures/gaiawanderer/rotten_core"
+    },
+    "rotten_ingot": {
+      "textures": "textures/gaiawanderer/rotten_ingot"
+    },
+    "rotten_thorn_item": {
+      "textures": "textures/gaiawanderer/rotten_thorn_item"
+    },
+    "rolypse_shell": {
+      "textures": "textures/gaiawanderer/rolypse_shell"
+    },
+    "rolypse_shell_helmet": {
+      "textures": "textures/gaiawanderer/rolypse_shell_helmet"
+    },
+    "rolypse_shell_chestplate": {
+      "textures": "textures/gaiawanderer/rolypse_shell_chestplate"
+    },
+    "rolypse_shell_leggings": {
+      "textures": "textures/gaiawanderer/rolypse_shell_leggings"
+    },
+    "rolypse_shell_boots": {
+      "textures": "textures/gaiawanderer/rolypse_shell_boots"
+    },
+    "nether_metal": {
+      "textures": "textures/gaiawanderer/nether_metal"
+    },
+    "nether_metal_helmet": {
+      "textures": "textures/gaiawanderer/nether_metal_helmet"
+    },
+    "nether_metal_chestplate": {
+      "textures": "textures/gaiawanderer/nether_metal_chestplate"
+    },
+    "nether_metal_leggings": {
+      "textures": "textures/gaiawanderer/nether_metal_leggings"
+    },
+    "nether_metal_boots": {
+      "textures": "textures/gaiawanderer/nether_metal_boots"
+    },
+    "spider_eye_rotten": {
+      "textures": "textures/gaiawanderer/spider_eye_rotten"
+    },
+    "mantis_sickle": {
+      "textures": "textures/gaiawanderer/mantis_sickle"
+    },
+    "mantis_sword": {
+      "textures": "textures/gaiawanderer/mantis_sword"
+    },
+    "mantis_shovel": {
+      "textures": "textures/gaiawanderer/mantis_shovel"
+    },
+    "mantis_pickaxe": {
+      "textures": "textures/gaiawanderer/mantis_pickaxe"
+    },
+    "mantis_axe": {
+      "textures": "textures/gaiawanderer/mantis_axe"
+    },
+    "frost_sword": {
+      "textures": "textures/gaiawanderer/frost_sword"
+    },
+    "frost_shovel": {
+      "textures": "textures/gaiawanderer/frost_shovel"
+    },
+    "frost_pickaxe": {
+      "textures": "textures/gaiawanderer/frost_pickaxe"
+    },
+    "frost_axe": {
+      "textures": "textures/gaiawanderer/frost_axe"
+    },
+    "nether_diamond": {
+      "textures": "textures/gaiawanderer/nether_diamond"
+    },
+    "nether_diamond_sword": {
+      "textures": "textures/gaiawanderer/nether_diamond_sword"
+    },
+    "nether_diamond_shovel": {
+      "textures": "textures/gaiawanderer/nether_diamond_shovel"
+    },
+    "nether_diamond_pickaxe": {
+      "textures": "textures/gaiawanderer/nether_diamond_pickaxe"
+    },
+    "nether_diamond_axe": {
+      "textures": "textures/gaiawanderer/nether_diamond_axe"
+    },
+    "wander_broom": {
+      "textures": "textures/gaiawanderer/wander_broom"
+    },
+    "ice_beak": {
+      "textures": "textures/gaiawanderer/ice_beak"
+    },
+    "key": {
+      "textures": "textures/gaiawanderer/key"
+    },
+    "rusted_key": {
+      "textures": "textures/gaiawanderer/rusted_key"
+    },
+    "hard_leather": {
+      "textures": "textures/gaiawanderer/hard_leather"
+    },
+    "hard_leather_helmet": {
+      "textures": "textures/gaiawanderer/hard_leather_helmet"
+    },
+    "hard_leather_chestplate": {
+      "textures": "textures/gaiawanderer/hard_leather_chestplate"
+    },
+    "hard_leather_leggings": {
+      "textures": "textures/gaiawanderer/hard_leather_leggings"
+    },
+    "hard_leather_boots": {
+      "textures": "textures/gaiawanderer/hard_leather_boots"
+    },
+    "jetpack": {
+      "textures": "textures/gaiawanderer/jetpack"
+    },
+    "golden_crown": {
+      "textures": "textures/gaiawanderer/golden_crown"
+    },
+    "silver_crown": {
+      "textures": "textures/gaiawanderer/silver_crown"
+    },
+    "burn_crown": {
+      "textures": "textures/gaiawanderer/burn_crown"
+    },
+    "teleporter": {
+      "textures": "textures/gaiawanderer/teleporter"
+    },
+    "locator_item": {
+      "textures": "textures/gaiawanderer/locator"
+    },
+    "wandering_ticket": {
+      "textures": "textures/gaiawanderer/wandering_ticket"
+    },
+    "lumberjack_axe": {
+      "textures": "textures/gaiawanderer/lumberjack_axe"
+    },
+    "diamond_fragment": {
+      "textures": "textures/gaiawanderer/diamond_fragment"
+    },
+    "emerald_fragment": {
+      "textures": "textures/gaiawanderer/emerald_fragment"
+    }
+  }
+}

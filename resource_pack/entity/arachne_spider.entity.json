@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:arachne_spider",
+      "materials": { "default": "arachne_spider" },
+      "textures": {
+        "default": "textures/entity/arachne_spider"
+      },
+      "geometry": {
+        "default": "geometry.arachne_spider"
+      },
+      "animations": {
+        "ritual": "animation.arachne_spider.ritual",
+        "transform": "animation.arachne_spider.transform",
+        "stand_pose": "animation.arachne_spider.stand_pose",
+        "spider_shot_pose": "animation.arachne_spider.spider_shot_pose",
+        "stick_ceil_pose": "animation.arachne_spider.stick_ceil_pose",
+        "fall_floor": "animation.arachne_spider.fall_floor",
+        "walk": "animation.arachne_spider.walk",
+        "attack": "animation.arachne_spider.attack",
+        "charge": "animation.arachne_spider.charge",
+        "look_at_target_flip_arm": "animation.arachne_spider.look_at_target_flip_arm",
+        "look_at_target_flip": "animation.arachne_spider.look_at_target_flip",
+        "look_at_target": "animation.arachne_spider.look_at_target"
+      },
+      "animation_controllers": [
+        {
+          "pose": "controller.animation.arachne_spider.pose"
+        },
+        {
+          "move": "controller.animation.arachne_spider.move"
+        },
+        {
+          "mode": "controller.animation.arachne_spider.mode"
+        },
+        {
+          "walk": "controller.animation.arachne_spider.walk"
+        },
+        {
+          "attack": "controller.animation.arachne_spider.attack"
+        }
+      ],
+      "render_controllers": [ "controller.render.arachne_spider" ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:wander_broom"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  l",
+      "al ",
+      "fa "
+    ],
+    "key": {
+      "a": {
+        "item": "gaiawanderer:marrella_antenna"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      },
+      "f": {
+        "item": "gaiawanderer:forestflower"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:wander_broom"
+    }
+  }
+}

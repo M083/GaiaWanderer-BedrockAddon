@@ -1,0 +1,21 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "gaiawanderer:cave_vines_feature"
+    },
+    "places_block": {
+      "name": "minecraft:cave_vines"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 1,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:cave_vines",
+        "gaiawanderer:mana_leaves"
+      ]
+    }
+  }
+}

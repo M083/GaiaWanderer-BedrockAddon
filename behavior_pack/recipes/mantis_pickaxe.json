@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:mamtis_pickaxe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "iii",
+      " l ",
+      " l "
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:mantis_sickle"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:mantis_pickaxe",
+      "data": 0
+    }
+  }
+}

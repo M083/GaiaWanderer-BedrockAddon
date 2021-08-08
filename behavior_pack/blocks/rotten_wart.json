@@ -1,0 +1,113 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:rotten_wart",
+            "properties": {
+                "gaiawanderer:rotten_wart_stage": [0, 1, 2]
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_wart.json",
+            "minecraft:destroy_time": 0,
+            "minecraft:explosion_resistance": 1,
+            "minecraft:map_color": "#89E6E3",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0.6,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [ "up" ],
+                        "block_filter": [
+                            "gaiawanderer:rotten_stone",
+                            "gaiawanderer:rotten_dirt"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:on_interact": {
+                "condition":"query.get_equipped_item_name(0) == 'rotten_fertlizer'",
+                "event": "gaiawanderer:growup_fertlize"
+            },
+            "minecraft:random_ticking": {
+                "on_tick" : {
+                    "event": "gaiawanderer:growup"
+                }
+            },
+            "minecraft:geometry": "geometry.produce",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "rotten_wart_stage_0",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": {
+                "origin": [ -7.0, 0.0, -7.0],
+                "size": [ 14.0, 14.0, 14.0 ]
+            },
+            "minecraft:breathability": "air",
+            "minecraft:breakonpush": true
+        },
+        "events": {
+            "gaiawanderer:growup": {
+                "set_block_property": {
+                    "gaiawanderer:rotten_wart_stage": "query.block_property('gaiawanderer:rotten_wart_stage') + 1"
+                }
+            },
+            "gaiawanderer:growup_fertlize": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "playsound land.nether_wart @p"
+                        }  
+                    },
+                    {
+                        "set_block_property": {
+                            "gaiawanderer:rotten_wart_stage": "query.block_property('gaiawanderer:rotten_wart_stage') + 1"
+                        }
+                    },
+                    {
+                        "decrement_stack": {}
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('gaiawanderer:rotten_wart_stage') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "rotten_wart_stage_0",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('gaiawanderer:rotten_wart_stage') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "rotten_wart_stage_1",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_property('gaiawanderer:rotten_wart_stage') == 2",
+                "components": {
+                    "minecraft:loot": "loot_tables/blocks/rotten_wart_big.json",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "rotten_wart_stage_2",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

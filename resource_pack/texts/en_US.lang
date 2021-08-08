@@ -1,0 +1,6 @@
+﻿item.spawn_egg.entity.gaiawanderer:bonefish.name=Spawn Bone Fish
+item.spawn_egg.entity.gaiawanderer:shebrus.name=Spawn Shebrus
+item.spawn_egg.entity.gaiawanderer:forestspider.name=Forest Spider
+entity.gaiawanderer:bonefish.name=Bone Fish
+entity.gaiawanderer:shebrus.name=Shebrus
+entity.gaiawanderer:forestspider.name=Forest Spider

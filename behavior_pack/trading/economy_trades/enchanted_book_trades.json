@@ -1,0 +1,238 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:experience_bottle",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": {
+                        "min": 20,
+                        "max": 30
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

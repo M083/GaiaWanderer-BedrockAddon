@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:golden_crown"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ggg",
+      "gCg",
+      "ggg"
+    ],
+    "key": {
+      "g": {
+        "item": "minecraft:glowstone"
+      },
+      "C": {
+        "item": "gaiawanderer:silver_crown"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:golden_crown"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:rotten_thorn"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "iWi",
+      "WiW",
+      "iWi"
+    ],
+    "key": {
+      "i": {
+        "item": "minecraft:iron_nugget"
+      },
+      "W": {
+        "item": "gaiawanderer:rotten_spore"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:rotten_thorn_item"
+    }
+  }
+}

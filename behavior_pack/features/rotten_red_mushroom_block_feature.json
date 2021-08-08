@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:rotten_red_mushroom_block_feature"	    
+		},
+		"count": 12,
+
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "minecraft:red_mushroom_block",
+					"states": {
+						"huge_mushroom_bits": 15
+					}
+				},
+				"may_replace": [
+					"minecraft:stone"
+				]
+			}
+		]
+
+		// "places_block": {
+		// 	"name": "minecraft:red_mushroom_block",
+		// 	"states": {
+		// 		"huge_mushroom_bits": 15
+		// 	}
+		// },
+		// "may_replace": [
+		// 	{
+		// 		"name": "minecraft:stone"
+		// 	}
+		// ]
+	}	
+}

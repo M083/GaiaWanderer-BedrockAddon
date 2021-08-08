@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:mantis_sickle",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "mantis_sickle"
+      }
+    }
+  }
+}

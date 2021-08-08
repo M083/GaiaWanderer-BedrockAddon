@@ -1,0 +1,12 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "gaiawanderer:furnace_log_iron_ore"
+    },
+
+    "tags": ["furnace", "blast_furnace"],
+    "input": "gaiawanderer:log_iron_ore",
+    "output": "minecraft:iron_ingot"
+  }
+}

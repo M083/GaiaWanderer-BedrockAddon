@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:white_tablet"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " W ",
+      "WEW",
+      " W "
+    ],
+    "key": {
+      "E": {
+        "item": "gaiawanderer:bug_extract"
+      },
+      "W": {
+        "item": "gaiawanderer:rotten_spore"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:white_tablet"
+    }
+  }
+}

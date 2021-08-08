@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.hollow_salamander": {
+      "arrays": {
+      	"textures": {
+      	  "Array.patterns": [
+      	  	"Texture.default",
+      	  	"Texture.nether"
+      	  ]
+      	}
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.patterns[query.variant]" ]
+    }
+  }
+}

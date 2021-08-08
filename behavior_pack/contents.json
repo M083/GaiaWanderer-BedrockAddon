@@ -1,0 +1,28 @@
+{
+    "content": [
+        {
+            "path": "manifest.json"
+        },
+        {
+            "path": "pack_icon.png"
+        },
+        {
+            "path": "entities/bonefish.json"
+        },
+        {
+            "path": "entities/salmon.json"
+        },
+        {
+            "path": "loot_tables/entities/bonefish.json"
+        },
+        {
+            "path": "spawn_rules/bonefish.json"
+        },
+        {
+            "path": "biomes/mana_jungle.json"
+        },
+        {
+            "path": "recipes/arrow_from_shebrus_fang.json"
+        }
+    ]
+}

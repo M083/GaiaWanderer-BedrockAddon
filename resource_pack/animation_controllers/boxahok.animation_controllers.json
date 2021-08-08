@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.boxahok": {
+      "states": {
+/*
+        "idling": {
+          "animations": [ { "idle": [] } ],
+          "transitions": [
+            { "walking": "query.modified_move_speed >= 0.25" }
+          ]
+        },
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 7.0
+                }
+              ]
+            },
+            {"notidle": [] } 
+          ],
+          "transitions": [
+            { "idling": "query.modified_move_speed < 0.25" }
+          ]
+        }
+        */
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 7.0
+                }
+              ]
+            },
+            {"notidle": [] } 
+          ]
+        }
+      }
+    }
+  }
+}

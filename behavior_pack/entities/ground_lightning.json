@@ -1,0 +1,53 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gaiawanderer:ground_lightning",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+    	"component_groups": {
+     		"gaiawanderer:remove": {
+       			"minecraft:instant_despawn":{}
+      		}
+		},
+		"components": {
+			"minecraft:environment_sensor": {
+			  "triggers":[
+			    {
+			      "filters": {
+			      	"any_of": [
+			      		{ "test": "on_ground"},
+			      		{ "test": "in_water"},
+			      		{ "test": "in_lava"}
+			      	]
+			      },
+			      "event": "gaiawanderer:ground_lightning_event"
+			    }
+			  ]
+			},
+			"minecraft:collision_box": {
+				"width": 0.001,
+				"height": 0.001
+			},
+			"minecraft:fall_damage": {
+				"value": 0.0
+			},
+			"minecraft:physics": {
+			}
+		},
+		"events": {
+			"gaiawanderer:ground_lightning_event": {
+				"run_command": {
+					"command" : "summon lightning_bolt"
+				},
+				"add": {
+					"component_groups": [
+						"gaiawanderer:remove"
+					]
+				}
+			}
+		}
+	}
+}

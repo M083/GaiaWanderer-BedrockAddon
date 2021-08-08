@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:mamtis_axe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ii",
+      "il",
+      " l"
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:mantis_sickle"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:mantis_axe",
+      "data": 0
+    }
+  }
+}

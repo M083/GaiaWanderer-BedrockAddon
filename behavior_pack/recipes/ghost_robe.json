@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gaiawanderer:ghost_robe_recipe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "www",
+      "gfg",
+      "mmm"
+    ],
+    "key": {
+      "w": {
+        "item": "gaiawanderer:fly_wing"
+      },
+      "f": {
+        "item": "gaiawanderer:skyflower"
+      },
+      "g": {
+        "item": "gaiawanderer:ice_beak"
+      },
+      "m": {
+        "item": "gaiawanderer:red_gel"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:ghost_robe"
+    }
+  }
+}

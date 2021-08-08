@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:adryva_drink"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "REA",
+      " W "
+    ],
+    "key": {
+      "R": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "A": {
+        "item": "minecraft:apple"
+      },
+      "E": {
+        "item": "gaiawanderer:bug_extract"
+      },
+      "W": {
+        "item": "minecraft:potion",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:adryva_drink",
+      "data": 0
+    }
+  }
+}

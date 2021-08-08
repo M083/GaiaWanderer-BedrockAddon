@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.butterfly": {
+      "arrays": {
+      	"textures": {
+      	  "Array.patterns": [
+      	  	"Texture.lapis",
+      	  	"Texture.ruby"
+      	  ]
+      	}
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.patterns[query.variant]" ]
+    }
+  }
+}

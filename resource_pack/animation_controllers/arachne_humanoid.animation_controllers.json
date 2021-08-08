@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.arachne_humanoid.pose": {
+      "states": {
+        "float_pose": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "float_pose": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "sickle_attack_pose": "query.variant == 2"
+            }
+          ]
+        },
+        "sickle_attack_pose": {
+          "parameters": [ "1.0" ],
+          "animations": [ { "sickle_attack_pose": [ {"0.0" : 0.0, "1.0" : 1.0} ] } ],
+          "transitions": [
+            {
+              "float_pose": "query.variant != 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.arachne_humanoid.move": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attacking" : "query.is_delayed_attacking == 1"
+            }
+          ]
+        },
+        "attacking": {
+          "animations": [
+            {
+              "attack": []
+            }
+          ],
+          "transitions": [
+            {
+              "default" : "query.is_delayed_attacking == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

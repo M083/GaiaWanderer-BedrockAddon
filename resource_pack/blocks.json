@@ -1,0 +1,121 @@
+{
+  "gaiawanderer:cobblestone_burned": {
+    "textures": "cobblestone_burned",
+    "sound": "stone"
+  },
+  "gaiawanderer:diamond_end_stone": {
+    "textures": "diamond_end_stone",
+    "sound": "stone"
+  },
+  "gaiawanderer:emerald_end_stone": {
+    "textures": "emerald_end_stone",
+    "sound": "stone"
+  },
+  "gaiawanderer:iron_packed_ice": {
+    "textures": "iron_packed_ice",
+    "sound": "glass"
+  },
+  "gaiawanderer:emerald_packed_ice": {
+    "textures": "emerald_packed_ice",
+    "sound": "glass"
+  },
+  "gaiawanderer:diamond_packed_ice": {
+    "textures": "diamond_packed_ice",
+    "sound": "glass"
+  },
+  "gaiawanderer:rocked_barrel": {
+    "textures": {
+      "up": "rocked_barrel_top",
+      "down": "rocked_barrel_bottom",
+      "side": "rocked_barrel_side"
+    },
+    "sound": "glass"
+  },
+  "gaiawanderer:mana_leaves": {
+    "textures": "mana_leaves",
+    "sound": "vines"
+  },
+  "gaiawanderer:barrel_bow": {
+    "textures": {
+      "up": "barrel_bow",
+      "down": "barrel_bottom",
+      "side": "barrel_side"
+    },
+    "sound": "wood"
+  },
+  "gaiawanderer:barrel_crossbow": {
+    "textures": {
+      "up": "barrel_crossbow",
+      "down": "barrel_bottom",
+      "side": "barrel_side"
+    },
+    "sound": "wood"
+  },
+  "gaiawanderer:log_iron_ore": {
+    "textures": "log_iron_ore",
+    "sound": "wood"
+  },
+  "gaiawanderer:barrel_fishing_rod": {
+    "textures": {
+      "up": "barrel_fishing_rod",
+      "down": "barrel_bottom",
+      "side": "barrel_side"
+    },
+    "sound": "wood"
+  },
+  "gaiawanderer:rotten_dirt": {
+    "textures": {
+      "up": "rotten_dirt_top",
+      "down": "dirt",
+      "side": "rotten_dirt_side"
+    },
+    "sound": "netherrack"
+  },
+  "gaiawanderer:nether_diamond_ore": {
+    "textures": "nether_diamond_ore",
+    "sound": "netherrack"
+  },
+  "gaiawanderer:soul_soil_nether_diamond_ore": {
+    "textures": "soul_soil_nether_diamond_ore",
+    "sound": "soul_soil"
+  },
+  "gaiawanderer:rotten_egg": {
+    "textures": "rotten_dirt_top",
+    "sound": "shroomlight"
+  },
+  "gaiawanderer:rotten_stone": {
+    "textures": {
+      "up": "rotten_dirt_top",
+      "down": "stone",
+      "side": "rotten_stone_side"
+    },
+    "sound": "netherrack"
+  },
+  "gaiawanderer:stonebrick_burned": {
+    "textures": "stonebrick_burned",
+    "sound": "stone"
+  },
+  "gaiawanderer:dungeon_block1": {
+    "textures": "stonebrick_burned",
+    "sound": "wood"
+  },
+  "gaiawanderer:dungeon_block5": {
+    "textures": "rotten_dirt_top",
+    "sound": "wood"
+  },
+  "gaiawanderer:skyflower": {
+    "sound": "grass"
+  },
+  "gaiawanderer:forestflower": {
+    "sound": "grass"
+  },
+  "gaiawanderer:rotten_wart": {
+    "sound" : "nether_wart"
+  },
+  "gaiawanderer:rotten_root": {
+    "sound": "shroomlight"
+  },
+  "gaiawanderer:rotten_thorn": {
+    "sound": "metal"
+  }
+}

@@ -1,0 +1,55 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:dungeon_block4"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/rotten_dirt.json",
+            "tag:dirt": {},
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#ACABAA",
+            "minecraft:block_light_absorption": 15,
+            "minecraft:block_light_emission": 0,
+            "minecraft:on_placed": {
+                "event": "gaiawanderer:create4"
+            }
+        },
+        "events": {
+            "gaiawanderer:create4": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "fill ~6 ~ ~ ~6 ~ ~ gaiawanderer:dungeon_block4 0 replace air 0"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~-6 ~ ~ ~-6 ~ ~ gaiawanderer:dungeon_block4 0 replace air 0"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~ ~6 ~ ~ ~6 gaiawanderer:dungeon_block4 0 replace air 0"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~ ~-6 ~ ~ ~-6 gaiawanderer:dungeon_block4 0 replace air 0"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~ ~ ~ ~ ~ gaiawanderer:dungeon_block2"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

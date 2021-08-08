@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.locust.idle": {
+			"loop": true,
+			"bones": {
+				"lfoot": {
+					"rotation": [40, 0, 0]
+				},
+				"lfoot_2": {
+					"rotation": [-40, 0, 0]
+				},
+				"rfoot": {
+					"rotation": [40, 0, 0]
+				},
+				"rfoot_2": {
+					"rotation": [-40, 0, 0]
+				},
+				"lwing": {
+					"rotation": [5, 0, 0]
+				},
+				"rwing": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		},
+		"animation.locust.fly": {
+			"loop": true,
+			"animation_length": 0.32,
+			"bones": {
+				"body": {
+					"rotation": [-10, 0, 0]
+				},
+				"lfoot": {
+					"rotation": [-20, 0, 0]
+				},
+				"lfoot_2": {
+					"rotation": [60, 0, 0]
+				},
+				"rfoot": {
+					"rotation": [-20, 0, 0]
+				},
+				"rfoot_2": {
+					"rotation": [60, 0, 0]
+				},
+				"lwing": {
+					"rotation": {
+						"0.0": [0, 60, 0],
+						"0.2": [0, 60, -50],
+						"0.3167": [0, 60, 0]
+					}
+				},
+				"rwing": {
+					"rotation": {
+						"0.0": [0, -60, 0],
+						"0.2": [0, -60, 55],
+						"0.3167": [0, -60, 0]
+					}
+				}
+			}
+		}
+	}
+}

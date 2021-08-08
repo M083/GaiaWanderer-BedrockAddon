@@ -1,0 +1,92 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.forestgriff.health": {
+      "states": {
+        "default": {
+          "animations": [ { "health": [] } ]
+        }
+      }
+    },
+    "controller.animation.forestgriff.pose": {
+      "states": {
+        "standing": {
+          "animations": [
+            { "stand_pose": [] }
+          ],
+          "transitions": [
+            {
+              "sitting": "query.is_sitting && !query.has_rider"
+            },
+            {
+              "flying" : "!query.is_on_ground"
+            }
+          ]
+        },
+        "sitting": {
+          "animations": [
+            { "sitting_pose": [] }
+          ],
+          "transitions": [
+            {
+              "standing" : "!query.is_sitting || query.has_rider"
+            },
+            {
+              "flying" : "!query.is_on_ground"
+            }
+          ]
+        },
+        "flying": {
+          "animations": [
+            { "fly_pose": [] }
+          ],
+          "transitions": [
+            {
+              "standing" : "query.is_on_ground"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.forestgriff.move": {
+      "states": {
+        "walking": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "walk": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "flying" : "!query.is_on_ground"
+            }
+          ]
+        },
+        "flying": {
+          "parameters": [ "0.5 + query.modified_move_speed" ],
+          "animations": [
+            {
+              "fly": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "walking" : "query.is_on_ground"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

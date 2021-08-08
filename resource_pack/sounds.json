@@ -1,0 +1,496 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "gaiawanderer:mutant_nether_jelly": {
+                "events": {
+                    "death": "mob.squid.death",
+                    "hurt": "mob.squid.hurt",
+                    "shoot": "mob.blaze.shoot"
+                },
+                "pitch": [
+                    0.2,
+                    0.3
+                ],
+                "volume": 3
+            },
+            "gaiawanderer:hollow_salamander": {
+                "events": {
+                    "death": "mob.glow_squid.death",
+                    "hurt": "mob.glow_squid.hurt"
+                },
+                "pitch": [
+                    2.4,
+                    2.9
+                ],
+                "volume": 1
+            },
+            "gaiawanderer:arachne_humanoid": {
+                "events": {
+                    "ambient": "mob.endermen.idle",
+                    "death": "mob.endermen.death",
+                    "hurt": "mob.endermen.hit",
+                    "mad": "mob.endermen.scream",
+                    "stare": {
+                        "pitch": 1,
+                        "sound": "mob.endermen.stare",
+                        "volume": 1
+                    }
+                },
+                "pitch": [
+                    2.6,
+                    2.6
+                ],
+                "volume": 1
+            },
+            "gaiawanderer:arachne_spider": {
+                "events": {
+                    "ambient": "mob.endermen.idle",
+                    "death": "mob.endermen.death",
+                    "hurt": "mob.endermen.hit",
+                    "mad": "mob.endermen.scream",
+                    "stare": {
+                        "pitch": 1,
+                        "sound": "mob.endermen.stare",
+                        "volume": 1
+                    }
+                },
+                "pitch": [
+                    0.4,
+                    0.45
+                ],
+                "volume": 1
+            },
+            "gaiawanderer:rhyothemyth": {
+                "events": {
+                    "ambient": "mob.bat.idle",
+                    "death": "mob.bat.death",
+                    "hurt": "mob.bat.hurt",
+                    "takeoff": {
+                        "pitch": [
+                            0.8,
+                            1.2
+                        ],
+                        "sound": "mob.bat.takeoff",
+                        "volume": 0.05
+                    }
+                },
+                "pitch": [
+                    0.3,
+                    0.4
+                ],
+                "volume": 0.8
+            },
+            "gaiawanderer:fortresscancer": {
+                "volume": 3,
+                "pitch": 0.45,
+                "events": {
+                    "ambient": "mob.stray.ambient",
+                    "hurt": "mob.stray.hurt",
+                    "death": "mob.stray.death",
+                    "step": "mob.stray.step"
+                }
+            },
+            "gaiawanderer:fortress": {
+                "events": {
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.blaze.hit"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "gaiawanderer:enchanted_book_trader": {
+                "events": {
+                    "ambient": "mob.wanderingtrader.idle",
+                    "death": "mob.wanderingtrader.death",
+                    "disappeared": "mob.wanderingtrader.disappeared",
+                    "drink": "mob.wanderingtrader.drink_potion",
+                    "haggle": "mob.wanderingtrader.haggle",
+                    "haggle.no": "mob.wanderingtrader.no",
+                    "haggle.yes": "mob.wanderingtrader.yes",
+                    "hurt": "mob.wanderingtrader.hurt",
+                    "reappeared": "mob.wanderingtrader.reappeared"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "gaiawanderer:bonefish": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "hurt": "mob.skeleton.hurt",
+                    "hurt.in.water": "mob.skeleton.hurt",
+                    "flop": {
+                        "sound": "mob.skeleton.step",
+                        "volume": 1,
+                        "pitch": 1
+                    },
+                    "step": {
+                        "sound": "mob.skeleton.step",
+                        "volume": 0.15,
+                        "pitch": 1
+                    },
+                    "death": "mob.skeleton.death"
+                }
+            },
+            "gaiawanderer:forestspider": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": {
+                        "sound": "mob.spider.say",
+                        "volume": 1,
+                        "pitch": 0.75
+                    },
+                    "hurt": {
+                        "sound": "mob.spider.say",
+                        "volume": 1,
+                        "pitch": 0.75
+                    },
+                    "death": {
+                        "sound": "mob.spider.death",
+                        "volume": 1,
+                        "pitch": 0.75
+                    },
+                    "step": {
+                        "sound": "mob.spider.step",
+                        "volume": 1,
+                        "pitch": 1
+                    }
+                }
+            },
+            "gaiawanderer:mushspider": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": {
+                        "sound": "mob.spider.say",
+                        "volume": 1,
+                        "pitch": 1.25
+                    },
+                    "hurt": {
+                        "sound": "mob.spider.say",
+                        "volume": 1,
+                        "pitch": 1.25
+                    },
+                    "death": {
+                        "sound": "mob.spider.death",
+                        "volume": 1,
+                        "pitch": 1.25
+                    },
+                    "step": {
+                        "sound": "mob.spider.step",
+                        "volume": 1,
+                        "pitch": 1.25
+                    }
+                }
+            },
+            "gaiawanderer:rotten_zombie": {
+                "events": {
+                    "ambient": "mob.drowned.say",
+                    "ambient.in.water": "mob.drowned.say_water",
+                    "death": "mob.drowned.death",
+                    "death.in.water": "mob.drowned.death_water",
+                    "hurt": "mob.drowned.hurt",
+                    "hurt.in.water": "mob.drowned.hurt_water",
+                    "step": "mob.drowned.step"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "gaiawanderer:mantis": {
+                "volume": 1,
+                "pitch": 0.65,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.spider.say"
+                    },
+                    "hurt": {
+                        "sound": "mob.spider.say"
+                    },
+                    "death": {
+                        "sound": "mob.spider.death"
+                    },
+                    "step": {
+                        "sound": "mob.spider.step"
+                    }
+                }
+            },
+            "gaiawanderer:rolypse": {
+                "volume": 1,
+                "pitch": 0.4,
+                "events": {
+                    "ambient": {
+                        "sound": "mob.silverfish.say"
+                    },
+                    "hurt": {
+                        "sound": "mob.silverfish.say"
+                    },
+                    "death": {
+                        "sound": "mob.silverfish.kill"
+                    },
+                    "step": {
+                        "sound": "mob.silverfish.step"
+                    }
+                }
+            },
+            "gaiawanderer:salamander": {
+                "volume": 1,
+                "pitch": 0.25,
+                "events": {
+                    "ambient": "mob.cat.straymeow",
+                    "death": "mob.ocelot.death",
+                    "hurt": "mob.cat.hit",
+                    "shoot": "mob.blaze.shoot"
+                }
+            },
+            "gaiawanderer:nether_salamander": {
+                "volume": 1,
+                "pitch": 0.25,
+                "events": {
+                    "ambient": "mob.cat.straymeow",
+                    "death": "mob.ocelot.death",
+                    "hurt": "mob.cat.hit",
+                    "shoot": "mob.blaze.shoot"
+                }
+            },
+            "gaiawanderer:frost_beak": {
+                "volume": 1,
+                "pitch": 1.5,
+                "events": {
+                    "fly": "mob.parrot.fly",
+                    "death": "mob.parrot.death",
+                    "hurt": "mob.parrot.hurt",
+                    "shoot": "firework.launch"
+                }
+            },
+            "gaiawanderer:thunder_bird": {
+                "volume": 1,
+                "pitch": 0.05,
+                "events": {
+                    "fly": "mob.parrot.fly",
+                    "death": "mob.parrot.death",
+                    "hurt": "mob.parrot.hurt",
+                    "shoot": "firework.launch"
+                }
+            },
+            "gaiawanderer:forestgriff": {
+                "volume": 1,
+                "pitch": 0.75,
+                "events": {
+                    "fly": "mob.parrot.fly",
+                    "death": "mob.parrot.death",
+                    "hurt": "mob.parrot.hurt",
+                    "shoot": "firework.launch"
+                }
+            },
+            "gaiawanderer:elsalamander": {
+                "volume": 1,
+                "pitch": 0.1,
+                "events": {
+                    "ambient": "mob.phantom.idle",
+                    "death": "mob.phantom.death",
+                    "hurt": "mob.phantom.hurt",
+                    "attack": "mob.phantom.bite",
+                    "flap": "mob.phantom.flap",
+                    "shoot": "mob.blaze.shoot"
+                }
+            },
+            "gaiawanderer:wyvern": {
+                "volume": 1,
+                "pitch": 1.2,
+                "events": {
+                    "ambient": "mob.bat.takeoff",
+                    "death": "mob.phantom.death",
+                    "hurt": "mob.phantom.hurt",
+                    "attack": "mob.phantom.bite",
+                    "flap": "mob.phantom.flap",
+                    "shoot": "mob.blaze.shoot"
+                }
+            },
+            "gaiawanderer:applesnale": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.slime.small",
+                    "death": "mob.slime.small"
+                }
+            },
+            "gaiawanderer:gelhollow": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.slime.small",
+                    "death": "mob.slime.small"
+                }
+            },
+            "gaiawanderer:nether_jelly": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.slime.small",
+                    "death": "mob.slime.small"
+                }
+            },
+            "gaiawanderer:boxahok": {
+                "volume": 1,
+                "pitch": 0.65,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.rabbit.hurt",
+                    "death": "mob.rabbit.death"
+                }
+            },
+            "gaiawanderer:shark": {
+                "volume": 1,
+                "pitch": 0.4,
+                "events": {
+                    "ambient": "mob.drowned.say",
+                    "hurt": "mob.drowned.hurt",
+                    "death": "mob.drowned.death",
+                    "ambient.in.water": "mob.drowned.say_water",
+                    "hurt.in.water": "mob.drowned.hurt_water",
+                    "death.in.water": "mob.drowned.death_water",
+                    "step": "mob.drowned.step"
+                }
+            },
+            "gaiawanderer:shebrus": {
+                "volume": 1,
+                "pitch": 0.4,
+                "events": {
+                    "ambient": "mob.husk.say",
+                    "hurt": "mob.husk.hurt",
+                    "death": "mob.husk.death",
+                    "step": "mob.husk.step"
+                }
+            },
+            "gaiawanderer:locator": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:interceptor": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:interceptor_rapid": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:interceptor_canon": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break"
+                }
+            },
+            "gaiawanderer:interceptor_hover": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:mechaboat": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:necrocancer": {
+                "volume": 1,
+                "pitch": 0.65,
+                "events": {
+                    "ambient": "mob.stray.ambient",
+                    "hurt": "mob.stray.hurt",
+                    "death": "mob.stray.death",
+                    "step": "mob.stray.step"
+                }
+            },
+            "gaiawanderer:cutlassfish": {
+                "volume": 1,
+                "pitch": 1.6,
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1
+                    }
+                }
+            },
+            "gaiawanderer:marrella": {
+                "volume": 1,
+                "pitch": 1.8,
+                "events": {
+                    "hurt": {
+                        "sound": "mob.spider.step",
+                        "volume": 1.25,
+                        "pitch": 1.4
+                    },
+                    "death": {
+                        "sound": "mob.spider.death",
+                        "volume": 1.25,
+                        "pitch": 0.5
+                    }
+                }
+            }
+        }
+    }
+}

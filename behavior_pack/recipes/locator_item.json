@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:locator_item"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " b ",
+      "i i",
+      "i i"
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:locator_item"
+    }
+  }
+}

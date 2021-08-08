@@ -1,0 +1,38 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "crevasse"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 1.0,
+        "snow_accumulation": [ 0.9, 1.5 ],
+        "temperature": 0.0
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.45, 1.0 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": -3,
+        "sea_floor_material": "minecraft:blue_ice",
+        "sea_material": "minecraft:ice",
+        "foundation_material": "minecraft:packed_ice",
+        "mid_material": "minecraft:blue_ice",
+        "top_material": "gaiawanderer:blue_ice"
+      },
+      "minecraft:overworld_generation_rules": {
+        "generate_for_climates": [
+          [ "frozen", 5 ],
+          [ "cold", 2]
+        ]
+      },
+
+      "crevasse": {},
+      "ice_plains": {},
+      "ice_mountains": {},
+      "ice_plains_spikes":{},
+      "overworld": {}
+    }
+  }
+}

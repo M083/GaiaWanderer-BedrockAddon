@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:interceptor_rapid_item",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "interceptor_rapid_item"
+      },
+      "minecraft:entity_placer": {
+        "entity": "gaiawanderer:interceptor_rapid"
+      }
+    }
+  }
+}

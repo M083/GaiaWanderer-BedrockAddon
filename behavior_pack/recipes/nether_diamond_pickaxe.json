@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:nether_diamond_pickaxe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "iii",
+      " l ",
+      " l "
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:nether_diamond"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:nether_diamond_pickaxe",
+      "data": 0
+    }
+  }
+}

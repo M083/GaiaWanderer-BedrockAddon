@@ -1,0 +1,26 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_stone_underground_feature"
+    },
+    "places_block": {
+      "name": "gaiawanderer:rotten_stone"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 1,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:air",
+        "minecraft:red_mushroom",
+        "minecraft:brown_mushroom",
+        "gaiawanderer:rotten_wart"
+      ]
+    },
+    "may_replace": [
+      "minecraft:stone"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+// {
+// 	"format_version": "1.13.0",
+// 	"minecraft:structure_template_feature": {
+// 		"description": {
+// 			"identifier": "gaiawanderer:floor_water_feature"
+// 		},
+// 		"structure_name": "mystructure:floor_water",
+// 		"facing_direction": "random",
+// 		"adjustment_radius": 16,
+// 		"constraints": {
+// 			"grounded": {},
+// 			"block_intersection": {
+// 				"block_whitelist": [
+// 					"minecraft:leaves",
+// 					"minecraft:dirt",
+// 					"minecraft:tallgrass",
+// 					"minecraft:grass",
+// 					"minecraft:water",
+// 					"minecraft:log",
+// 					"minecraft:log2",
+// 					"minecraft:lava",
+// 					"minecraft:magma",
+// 					"minecraft:stone",
+// 					"minecraft:seagrass",
+// 					"minecraft:kelp",
+// 					"gaiawanderer:cobblestone_burned",
+// 					"gaiawanderer:rotten_dirt"
+// 				]
+// 			}
+// 		}
+// 	}
+// }
+
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:floor_water_feature"  
+		},
+		"count": 96,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:water",
+				"may_replace": [
+					"minecraft:glow_lichen",
+					"minecraft:air",
+					"minecraft:water",
+					"minecraft:stone",
+					"minecraft:lava",
+					"minecraft:gravel",
+					"minecraft:sand",
+					"minecraft:dirt",
+					"minecraft:grass",
+					"minecraft:seagrass",
+					"minecraft:kelp",
+					"minecraft:coal_ore",
+					"minecraft:diamond_ore",
+					"minecraft:emerald_ore",
+					"minecraft:gold_ore",
+					"minecraft:iron_ore",
+					"minecraft:lapis_ore",
+					"minecraft:lit_redstone_ore",
+					"minecraft:redstone_ore",
+					"minecraft:ancient_debris",
+					"minecraft:shroomlight",
+					"minecraft:snow_layer",
+					"minecraft:ice",
+					"minecraft:packed_ice",
+					"minecraft:blue_ice"
+				]
+			}
+		]
+
+		// "places_block": "minecraft:water",
+		// "may_replace": [
+		// 	{"name": "minecraft:stone"},
+		// 	{"name": "minecraft:lava"},
+		// 	{"name": "minecraft:gravel"},
+		// 	{"name": "minecraft:sand"},
+		// 	{"name": "minecraft:dirt"},
+		// 	{"name": "minecraft:grass"},
+		// 	{"name": "minecraft:seagrass"},
+		// 	{"name": "minecraft:kelp"},
+		// 	{"name": "minecraft:coal_ore"},
+		// 	{"name": "minecraft:diamond_ore"},
+		// 	{"name": "minecraft:emerald_ore"},
+		// 	{"name": "minecraft:gold_ore"},
+		// 	{"name": "minecraft:iron_ore"},
+		// 	{"name": "minecraft:lapis_ore"},
+		// 	{"name": "minecraft:lit_redstone_ore"},
+		// 	{"name": "minecraft:redstone_ore"},
+		// 	{"name": "minecraft:ancient_debris"},
+		// 	{"name": "minecraft:shroomlight"},
+		// 	{"name": "minecraft:snow_layer"},
+		// 	{"name": "minecraft:ice"},
+		// 	{"name": "minecraft:packed_ice"},
+		// 	{"name": "minecraft:blue_ice"}
+		// ]
+	}	
+}

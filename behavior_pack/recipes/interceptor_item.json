@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:interceptor"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "iDi",
+      "lRl",
+      "CCC"
+    ],
+    "key": {
+      "D": {
+        "item": "minecraft:dispenser"
+      },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      },
+      "l": {
+        "item": "minecraft:fence"
+      },
+      "R": {
+        "item": "minecraft:redstone"
+      },
+      "C": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:interceptor_item",
+      "count": 1
+    }
+  }
+}

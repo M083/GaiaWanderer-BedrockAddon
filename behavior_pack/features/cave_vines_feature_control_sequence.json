@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:sequence_feature": {
+    "description": {
+      "identifier": "gaiawanderer:cave_vines_feature_control_sequence"
+    },
+    "features": [
+      "gaiawanderer:cave_vines_feature",
+      "gaiawanderer:cave_vines_chain_feature_control_search"
+    ]
+  }
+}

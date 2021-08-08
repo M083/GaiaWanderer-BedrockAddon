@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:nether_diamond_ore"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/nether_diamond_ore.json",
+            "tag:ice_ore": {},
+            "minecraft:destroy_time": 12,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:map_color": "#C41CD9",
+            "minecraft:block_light_absorption": 16,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

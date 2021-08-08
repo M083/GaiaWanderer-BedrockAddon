@@ -1,0 +1,27 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_red_mushroom_feature"
+    },
+    "places_block": {
+      "name": "minecraft:red_mushroom"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 2,
+      "auto_rotate": false,
+      "top": [
+        "minecraft:air"
+      ],
+      "bottom": [
+        "minecraft:stone",
+        "gaiawanderer:rotten_dirt"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

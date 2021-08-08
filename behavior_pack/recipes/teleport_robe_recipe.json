@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gaiawanderer:teleport_robe_recipe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "www",
+      "gfg",
+      "mmm"
+    ],
+    "key": {
+      "w": {
+        "item": "gaiawanderer:fly_wing"
+      },
+      "f": {
+        "item": "gaiawanderer:skyflower"
+      },
+      "g": {
+        "item": "gaiawanderer:green_gel"
+      },
+      "m": {
+        "item": "gaiawanderer:marrella_blood"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:teleport_robe"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:fishing_hook",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    
+    "component_groups": {
+      "loot_jungle": {
+        "minecraft:loot": {
+          "table": "loot_tables/gameplay/jungle_fishing.json"
+        }
+      },
+      "loot_ocean": {
+        "minecraft:ageable": {
+          "duration": 10,
+          "grow_up": {
+            "event": "become_shark_standby",
+            "target": "self"
+          }
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/gameplay/ocean_fishing.json"
+        }
+      },
+      "loot_mana_jungle": {
+        "minecraft:loot": {
+          "table": "loot_tables/gameplay/mana_jungle_fishing.json"
+        }
+      },
+      "become_shark_standby": {
+        "minecraft:environment_sensor": {
+          "on_environment": {
+            "filters": {
+              "test": "in_water"
+            },
+            "event": "become_shark"
+          }
+        }
+      },
+      "become_shark": {
+        "minecraft:transformation": {
+          "into": "gaiawanderer:shark",
+          "keep_owner": true,
+          "transformation_sound": "swim"
+        }
+        
+        // "minecraft:spawn_entity": {
+        //    "filters": { "test" : "has_biome_tag", "operator": "==", "value": "ocean" },
+        //    "max_wait_time": 0,
+        //    "min_wait_time": 0,
+        //    "single_use": true,
+        //    "spawn_entity": "gaiawanderer:shark"
+        // }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "fishing_hook"]
+      },
+      "minecraft:collision_box": {
+        "width": 0.15,
+        "height": 0.15
+      },
+      "minecraft:projectile": {
+        "on_hit": { "stick_in_ground": {} }
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/gameplay/fishing.json"
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_biome_tag", "operator": "==", "value": "mana_jungle"
+            },
+            "add": { "component_groups": [ "loot_mana_jungle" ] }
+          },
+          {
+            "filters": {
+              "test": "is_biome",
+              "value": "jungle"
+            },
+            "add": { "component_groups": [ "loot_jungle" ] }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test" : "has_biome_tag", "operator": "==", "value": "ocean"
+                },
+                {
+                  "test" : "has_biome_tag", "operator": "==", "value": "beach"
+                }
+              ]
+            },
+            "add": { "component_groups": [ "loot_ocean" ] }
+          }
+        ]
+      },
+      "become_shark_standby": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "become_shark_standby"
+              ]
+            }
+          }
+        ]
+      },
+      "become_shark": {
+        "sequence": [
+          {
+            "add": {
+              "component_groups": [
+                "become_shark"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

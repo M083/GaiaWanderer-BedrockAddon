@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.locust": {
+      "states": {
+        "idling": {
+          "animations": [
+            { "idle": [] }
+          ],
+          "transitions": [
+            {
+              "flying" : "!query.is_on_ground"
+            }
+          ]
+        },
+        "flying": {
+          "animations": [
+            { "fly": [] }
+          ],
+          "transitions": [
+            {
+              "idling" : "query.is_on_ground"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

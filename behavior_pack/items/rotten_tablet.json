@@ -1,0 +1,92 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:rotten_tablet",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.miscFood"
+      },
+      "minecraft:icon": {
+        "texture": "rotten_tablet"
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_duration": 1,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": "good",
+        "can_always_eat": true,
+        "on_consume": {
+          "event": "tablet_effect",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "tablet_effect": {
+        "sequence": [
+          {
+            "remove_mob_effect": {
+              "effect": "poison"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "wither"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "nausea"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "slowness"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "mining_fatigue"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "blindness"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "levitation"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "unluck"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "weakness"
+            }
+          },
+          {
+            "remove_mob_effect": {
+              "effect": "bad_omen"
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "regeneration",
+              "amplifier": 2,
+              "duration": 10
+            }
+          }
+        ]
+      }
+    }
+  }
+}

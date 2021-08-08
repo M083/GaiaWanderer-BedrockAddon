@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:burn_spear"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "b ",
+      "bw",
+      "l "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "l": {
+        "item": "minecraft:iron_ingot"
+      },
+      "w": {
+        "item": "gaiawanderer:bug_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:burn_spear"
+    }
+  }
+}

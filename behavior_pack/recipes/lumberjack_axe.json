@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:lumberjack_axe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ab",
+      "cl",
+      " l"
+    ],
+    "key": {
+      "a": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "c": {
+        "item": "gaiawanderer:rotten_ingot"
+      },
+      "l": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:lumberjack_axe",
+      "data": 0
+    }
+  }
+}

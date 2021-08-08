@@ -1,0 +1,39 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "abyssal_ocean"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.7,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.7
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ -1.99, 0.0 ]
+      },
+      "minecraft:nether_surface": {},
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 20,
+        "sea_material": "minecraft:water",
+        "sea_floor_material": "minecraft:water",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:water",
+        "top_material": "minecraft:water"
+      },
+      "minecraft:overworld_generation_rules": {
+        "mutate_transformation": "deep_ocean",
+        "generate_for_climates": [
+          [ "medium", 8 ]
+        ]
+      },
+
+      "deep": {},
+      "monster": {},
+      "ocean": {},
+      "abyssal_ocean": {},
+      "overworld": {}
+    }
+  }
+}
