@@ -16,6 +16,10 @@ Addon for Minecraft Bedrock Edition
 
 Java Edition等、MCBE以外のMinecraftでは動作しません。
 
+このアドオンは追加要素が多く、他のアドオンと共存できない場合がほとんどです。
+
+そのため、他のアドオンとの併用は非推奨です。
+
 多数のアイテム、ブロック、バイオーム、モブ、ダンジョンなどが追加され、通常のMCBEのサバイバルとは一味違うサバイバルをプレイすることができます。
 
 ## 対応言語
@@ -30,8 +34,29 @@ Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能
 ## 導入方法
 
 #### 1. ダウンロード
-[**Releases**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases) から最新バージョンのアドオンをダウンロードします。 拡張子(ファイル名の末尾)が.mcaddonの物をダウンロードするようにしてください。
+[**Releases**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases) から最新バージョンのアドオンをダウンロードします。 
 
+Assets内にある、拡張子(ファイル名の末尾)が.mcaddonの物をダウンロードするようにしてください。
+
+#### 2. インポート
+ダウンロードしたアドオンを実行します。
+
+PCならダブルクリック、スマートフォンなら[開く → Minecraft]。
+
+**※MCBEに「ファイルとメディアへのアクセス」を許可していない場合はインポートに失敗します。**
+
+#### 3. ワールドの作成
+ワールドを新規作成します。
+
+以下の画像のように設定を編集します。
+
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/ex_options_ss.PNG">
+
+ビヘイビアーパックからマイパックを開き、アドオンを有効にします。
+
+<img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/behavior_ss.PNG">
+
+ワールド名やシード値などを任意で入力し、ワールド作成を実行すれば完了です。
 
 ## スクリーンショット
 
