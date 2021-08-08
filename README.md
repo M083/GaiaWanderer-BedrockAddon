@@ -52,9 +52,11 @@ PCならダブルクリック、スマートフォンなら[開く → Minecraft
 
 <img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/ex_options_ss.PNG">
 
-ビヘイビアーパックからマイパックを開き、アドオンを有効にします。
+ビヘイビアーパック→マイパックを開き、アドオンを有効にします。
 
 <img width="1200" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/behavior_ss.PNG">
+
+マルチプレイのホストをする場合はリソースパックを開き、「参加にはリソースパックの受け入れが必要」にチェックを入れてください。
 
 ワールド名やシード値などを任意で入力し、ワールド作成を実行すれば完了です。
 
