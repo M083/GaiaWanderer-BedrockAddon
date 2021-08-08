@@ -30,7 +30,23 @@ Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可。
 執筆中
 
 ## スクリーンショット
-執筆中
+
+<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/mana_jungle_ss.PNG">
+
+<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/lava_mountain_ss.PNG">
+
+<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/crevasse_ss.PNG">
+
+<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/plains_ss.PNG">
+
+<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/hover_ss.PNG">
+
+<img width="1200" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/griff_ss.PNG">
+
+<img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/red_gel_ss.png"> <img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/green_gel_ss.png">
+
+<img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/adryva_ss.PNG">
+
 
 ## 免責
 作者は、このアドオンによって生じた如何なる損害にも、
