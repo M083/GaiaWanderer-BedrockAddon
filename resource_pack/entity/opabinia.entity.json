@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:opabinia",
+      "materials": { "default": "marrella" },
+      "textures": {
+        "default": "textures/entity/opabinia"
+      },
+      "geometry": {
+        "default": "geometry.opabinia"
+      },
+      "animations": {
+        "swim": "animation.opabinia.swim",
+        "shot": "animation.opabinia.shot",
+        "attack": "animation.opabinia.attack",
+        "default_arm_pose": "animation.opabinia.default_arm_pose",
+        "energy_charge": "animation.opabinia.energy_charge",
+        "energy_charge_swim": "animation.opabinia.energy_charge_swim"
+      },
+      "animation_controllers": [
+        {
+          "pose": "controller.animation.opabinia.pose"
+        },
+        {
+          "swim": "controller.animation.opabinia.swim"
+        },
+        {
+          "attack": "controller.animation.opabinia.attack"
+        }
+      ],
+      "render_controllers": [ "controller.render.opabinia" ],
+      "spawn_egg": {
+        "base_color": "#DB8A8B",
+        "overlay_color": "#6B00AC"
+      }
+    }
+  }
+}

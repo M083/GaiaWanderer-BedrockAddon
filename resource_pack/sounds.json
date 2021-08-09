@@ -1,6 +1,30 @@
 {
     "entity_sounds": {
         "entities": {
+            "gaiawanderer:opabinia": {
+                "events": {
+                    "shoot": {
+                        "pitch": 2,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 1
+                    },
+                    "hurt": {
+                        "pitch": 9,
+                        "sound": "mob.enderdragon.growl",
+                        "volume": 0.25
+                    },
+                    "death": {
+                        "pitch": 0.375,
+                        "sound": "mob.dolphin.death",
+                        "volume": 1
+                    }
+                },
+                "pitch": [
+                    2.6,
+                    2.6
+                ],
+                "volume": 1
+            },
             "gaiawanderer:mutant_nether_jelly": {
                 "events": {
                     "death": "mob.squid.death",

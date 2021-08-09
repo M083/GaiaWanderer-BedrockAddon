@@ -1,0 +1,39 @@
+{
+	"format_version" : "1.8.0",
+	"animation_controllers" : {
+		"controller.animation.opabinia.swim" : {
+			"states" : {
+				"default": {
+					"parameters": [ "query.modified_move_speed + 0.3" ],
+					"animations": [
+						{ 
+							"swim": [
+								{
+									"0.0": 0.0,
+									"1.0": 1.0
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.opabinia.attack" : {
+			"states" : {
+				"default": {
+				}
+			}
+		},
+		"controller.animation.opabinia.pose" : {
+			"states" : {
+                "default": {
+                    "animations": [
+                        {
+                            "default_arm_pose": []
+                        }
+                    ]
+				}
+			}
+		}
+	}
+}
