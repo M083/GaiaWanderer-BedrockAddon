@@ -26,6 +26,19 @@
           "triggers": [
             {
               "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {"test": "has_damage", "value": "projectile"},
+                    {"test": "has_damage", "value": "entity_explosion"},
+                    {"test": "has_damage", "value": "block_explosion"}
+                  ]
+                }
+              },
+              "deals_damage": false,
+              "on_damage_sound_event": "break"
+            },
+            {
+              "on_damage": {
                 "event": "gaiawanderer:wakeup_event"
               }
             }
