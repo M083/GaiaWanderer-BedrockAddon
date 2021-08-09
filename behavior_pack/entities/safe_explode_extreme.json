@@ -10,7 +10,7 @@
 
 		"components": {
 		    "minecraft:explode": {
-				"breaks_blocks": true,
+				"breaks_blocks": false,
 		    	"fuse_length": 0,
 		    	"fuse_lit": true,
 		    	"power": 15,
