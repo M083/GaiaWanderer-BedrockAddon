@@ -137,6 +137,7 @@
           "burst_shots": 3,
           "burst_interval": 0.4
         },
+        
         "minecraft:timer": {
           "looping": false,
           "time": [6.0, 6.0],
