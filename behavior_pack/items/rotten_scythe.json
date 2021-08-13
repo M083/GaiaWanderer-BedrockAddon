@@ -62,7 +62,7 @@
           {
             "shoot": {
               "projectile": "minecraft:arrow",
-              "launch_power": 0.25
+              "launch_power": 0.5
             }
           },
           {
@@ -74,7 +74,7 @@
           {
             "shoot": {
               "projectile": "minecraft:arrow",
-              "launch_power": 2.0
+              "launch_power": 0.5
             }
           },
           {

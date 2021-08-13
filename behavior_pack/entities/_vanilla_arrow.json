@@ -86,6 +86,10 @@
         "minecraft:variant": {
           "value": 1
         },
+        "minecraft:collision_box": {
+          "width": 0.825,
+          "height": 0.825
+        },
         "minecraft:projectile": {
           "on_hit": {
             "impact_damage": {
@@ -110,6 +114,45 @@
           "gravity": 0.01,
           "liquid_inertia": 0.99,
           "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
+      "gaiawanderer:rotten_scythe_arrow": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 0.825,
+          "height": 0.825
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            },
+            "remove_on_hit": {}
+          },
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw",
+          "power": 2.0,
+          "gravity": 0.01,
+          "liquid_inertia": 0.99,
+          "uncertainty_base": 16,
           "uncertainty_multiplier": 0,
           "anchor": 1,
           "should_bounce": true,
@@ -155,7 +198,7 @@
           "anchor": 1,
           "liquid_inertia": 0.99,
           "should_bounce": true,
-          "offset": [ 0, -0.1, 0 ]
+          "offset": [ 0, -1.5, 0 ]
         }
       },
 
@@ -190,11 +233,11 @@
           "hit_ground_sound": "item.trident.throw",
           "power": 2.0,
           "gravity": 0.05,
-          "uncertainty_base": 1,
+          "uncertainty_base": 16,
           "uncertainty_multiplier": 0,
           "anchor": 1,
           "should_bounce": true,
-          "offset": [ 0, -0.1, 0 ],
+          "offset": [ 0, -1.1, 0 ],
           "liquid_inertia": 0.99
         }
       },
@@ -473,7 +516,7 @@
           "hit_ground_sound": "item.trident.hit_ground",
           "power": 4,
           "gravity": 0.10,
-          "uncertainty_base": 1,
+          "uncertainty_base": 0,
           "uncertainty_multiplier": 0,
           "stop_on_hurt": true,
           "anchor": 1,
@@ -539,7 +582,7 @@
           "hit_ground_sound": "item.trident.hit_ground",
           "power": 4,
           "gravity": 0.10,
-          "uncertainty_base": 1,
+          "uncertainty_base": 0,
           "uncertainty_multiplier": 0,
           "stop_on_hurt": true,
           "anchor": 1,
@@ -579,7 +622,7 @@
           "hit_ground_sound": "item.trident.hit_ground",
           "power": 3,
           "gravity": 0.10,
-          "uncertainty_base": 1,
+          "uncertainty_base": 0,
           "uncertainty_multiplier": 0,
           "stop_on_hurt": true,
           "anchor": 1,
@@ -897,7 +940,7 @@
         "sequence": [
           {
             "run_command": {
-              "command": "summon gaiawanderer:safe_explode_huge"
+              "command": "summon gaiawanderer:safe_explode"
             }
           }
         ]
@@ -1050,7 +1093,7 @@
             "sequence": [
               {
                 "add": {
-                  "component_groups" : [ "gaiawanderer:air_blade_arrow" ]
+                  "component_groups" : [ "gaiawanderer:rotten_scythe_arrow" ]
                 }
               }
             ]
