@@ -77,7 +77,7 @@ PCならダブルクリック、スマートフォンなら[開く → Minecraft
 
 <img width="400" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/red_gel_ss.png"> <img width="400" alt="adryva drink" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/green_gel_ss.png">
 
-<img width="400" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/adryva_ss.PNG">
+<img width="400" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/adryva_ss.PNG"> <img width="400" alt="" src="https://github.com/M083/GaiaWanderer-BedrockAddon/blob/main/screenshots/marrella_ss.PNG">
 
 
 ## 免責
