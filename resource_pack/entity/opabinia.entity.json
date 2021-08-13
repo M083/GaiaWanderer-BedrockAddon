@@ -13,7 +13,9 @@
       "animations": {
         "swim": "animation.opabinia.swim",
         "shot": "animation.opabinia.shot",
-        "attack": "animation.opabinia.attack",
+        "stun": "animation.opabinia.stun",
+        "attack": "animation.opabinia.arm_attack",
+        "look_at_target": "animation.opabinia.look_at_target",
         "default_arm_pose": "animation.opabinia.default_arm_pose",
         "energy_charge": "animation.opabinia.energy_charge",
         "energy_charge_swim": "animation.opabinia.energy_charge_swim"
@@ -27,6 +29,12 @@
         },
         {
           "attack": "controller.animation.opabinia.attack"
+        },
+        {
+          "satellite": "controller.animation.opabinia.satellite"
+        },
+        {
+          "look_at_target": "controller.animation.opabinia.look_at_target"
         }
       ],
       "render_controllers": [ "controller.render.opabinia" ],

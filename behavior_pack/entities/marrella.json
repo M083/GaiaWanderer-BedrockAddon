@@ -104,7 +104,7 @@
                   "test": "is_family",
                   "subject": "other",
                   "operator": "!=",
-                  "value": "marrella"
+                  "value": "rotten_monster"
                 },
                 {
                   "test": "has_mob_effect",

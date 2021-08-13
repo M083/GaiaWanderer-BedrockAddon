@@ -1,0 +1,103 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gaiawanderer:opabinia_energy",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"explode": {
+			    "minecraft:explode": {
+					"breaks_blocks": false,
+			    	"fuse_length": 0,
+			    	"fuse_lit": true,
+			    	"power": 15,
+			    	"causes_fire": true,
+			    	"fire_affected_by_griefing": true,
+			    	"destroy_affected_by_griefing": true
+			    }
+			},
+			"remove": {
+        		"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [ "opabinia_energy", "monster", "arthropod", "rotten_monster", "boss" ]
+			},
+			"minecraft:health": {
+				"value": 150,
+				"max": 150
+			},
+			"minecraft:physics": {
+			},
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"family_types": ["opabinia"],
+        		"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [ 0.0, 1, 0.0 ]
+					}
+				]
+			},
+	        "minecraft:timer": {
+	          "looping": false,
+	          "time": [11.0, 11.0],
+	          "time_down_event": {
+	            "event": "explode"
+	          }
+	        },
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:movement": {
+       			"value": 0
+      		},
+			"minecraft:collision_box": {
+				"width": 4.5,
+				"height": 4.5
+			},
+			"minecraft:knockback_resistance": {
+				"value": 2.0
+			},
+			"minecraft:on_death": {
+				"event": "death_event"
+			},
+			"minecraft:boss": {
+				"name": "entity.gaiawanderer:opabinia_energy.name"
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"run_command": {
+					"command": ["effect @s levitation 9 1 true", "effect @s slow_falling 16 1 true"]
+				}
+			},
+			"death_event": {
+	            "run_command":{
+					"command": "event entity @e[type=gaiawanderer:opabinia,c=1] satellite_death"
+            	},
+				"add": {
+	            	"component_groups": [
+	               		"remove"
+	             	]
+				}
+			},
+			"explode": {
+	            "run_command":{
+					"command": ["event entity @e[type=gaiawanderer:opabinia,c=1] satellite_explode", "playanimation @e[type = gaiawanderer:opabinia, c = 1] energy_charge "]
+            	},
+				"add": {
+	            	"component_groups": [
+	               		"explode"
+	             	]
+				}
+			}
+		}
+	}
+}

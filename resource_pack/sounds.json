@@ -1,8 +1,37 @@
 {
     "entity_sounds": {
         "entities": {
+            "gaiawanderer:opabinia_energy": {
+                "events": {
+                    "ambient": {
+                        "pitch": 0.35,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 1
+                    },
+                    "hurt": {
+                        "pitch": 0.7,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 1
+                    },
+                    "death": {
+                        "pitch": 0.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 1
+                    }
+                },
+                "pitch": [
+                    2.6,
+                    2.6
+                ],
+                "volume": 1
+            },
             "gaiawanderer:opabinia": {
                 "events": {
+                    "attack": {
+                        "pitch": 0.8,
+                        "sound": "mob.phantom.bite",
+                        "volume": 1
+                    },
                     "shoot": {
                         "pitch": 2,
                         "sound": "mob.enderdragon.hit",

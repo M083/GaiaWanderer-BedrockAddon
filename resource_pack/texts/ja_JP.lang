@@ -41,6 +41,10 @@ entity.gaiawanderer:arachne_humanoid.name=ムッシュアラクネ
 entity.gaiawanderer:arachne_spider.name=ムッシュアラクネ
 entity.gaiawanderer:mutant_nether_jelly<>.name=ミュータントネザージェリー
 entity.gaiawanderer:mutant_nether_jelly.name=ミュータントネザージェリー
+entity.gaiawanderer:opabinia<>.name=オパビニア
+entity.gaiawanderer:opabinia.name=オパビニア
+entity.gaiawanderer:opabinia_energy<>.name=オパビニア・サテライト
+entity.gaiawanderer:opabinia_energy.name=オパビニア・サテライト
 
 entity.gaiawanderer:gravity_ball.name=グラビティボール
 entity.gaiawanderer:locator.name=テレポートアンカー
@@ -87,6 +91,7 @@ item.spawn_egg.entity.gaiawanderer:elsalamander.name=§dエルサラマンダー
 item.spawn_egg.entity.gaiawanderer:fortresscancer.name=§dフォートレスキャンサーを出現させる
 item.spawn_egg.entity.gaiawanderer:thunder_bird.name=§dサンダーバードを出現させる
 item.spawn_egg.entity.gaiawanderer:arachne_humanoid.name=§dムッシュアラクネを出現させる
+item.spawn_egg.entity.gaiawanderer:opabinia.name=§dオパビニアを出現させる
 
 item.gaiawanderer:wandering_ticket=行商人招待券
 item.gaiawanderer:wander_broom=ワンダーブルーム

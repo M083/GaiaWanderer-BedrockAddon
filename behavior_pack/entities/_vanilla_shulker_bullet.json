@@ -1,0 +1,136 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:shulker_bullet",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "opabinia_bullet": {
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 8,
+              "knockback": true,
+              "should_bounce": true
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:explode_safe",
+                "target": "self"
+              }
+            },
+            "mob_effect": {
+              "effect": "levitation",
+              "durationeasy": 200,
+              "durationnormal": 200,
+              "durationhard": 200,
+              "amplifier": 1
+            },
+            "remove_on_hit": {
+            },
+            "particle_on_hit": {
+              "particle_type": "largeexplode",
+              "on_other_hit": true
+            }
+          },
+          "hit_sound": "bullet.hit",
+          "destroyOnHurt": false,
+          "crit_particle_on_hurt": false,
+          "power": 2.6,
+          "gravity": 0.05,
+          "uncertainty_base": 16,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "offset": [ 0, -0.5, 0 ],
+          "homing": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.625,
+        "height": 0.625
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 4,
+            "knockback": true,
+            "should_bounce": true
+          },
+          "mob_effect": {
+            "effect": "levitation",
+            "durationeasy": 200,
+            "durationnormal": 200,
+            "durationhard": 200,
+            "amplifier": 1
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "largeexplode",
+            "on_other_hit": true
+          }
+        },
+        "hit_sound": "bullet.hit",
+        "destroyOnHurt": true,
+        "crit_particle_on_hurt": true,
+        "power": 1.6,
+        "gravity": 0.05,
+        "uncertainty_base": 16,
+        "uncertainty_multiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, -0.1, 0 ],
+        "homing": true
+      },
+      "minecraft:physics": {
+        "has_collision": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "opabinia" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "opabinia_bullet" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:opabinia, c = 1] shot"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gaiawanderer:explode_safe": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:safe_explode"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

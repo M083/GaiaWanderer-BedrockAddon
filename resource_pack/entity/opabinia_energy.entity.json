@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:opabinia_energy",
+      "materials": { "default": "nether_jelly" },
+      "textures": {
+        "default": "textures/entity/opabinia_energy"
+      },
+      "geometry": {
+        "default": "geometry.opabinia_energy"
+      },
+      "animations": {
+        "charge": "animation.opabinia_energy.charge"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.opabinia_energy" }
+      ],
+      "render_controllers": [ "controller.render.opabinia_energy" ]
+    }
+  }
+}

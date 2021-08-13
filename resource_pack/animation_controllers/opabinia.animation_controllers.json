@@ -20,8 +20,25 @@
 		},
 		"controller.animation.opabinia.attack" : {
 			"states" : {
-				"default": {
-				}
+				"none": {
+                    "transitions": [
+                        {
+                            "attack": "query.variant == 2 && query.is_delayed_attacking == 1"
+                        }
+                    ]
+				},
+                "attack": {
+                    "animations": [
+                        {
+                            "attack": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "none": "!(query.variant == 2 && query.is_delayed_attacking == 1)"
+                        }
+                    ]
+                }
 			}
 		},
 		"controller.animation.opabinia.pose" : {
@@ -30,6 +47,76 @@
                     "animations": [
                         {
                             "default_arm_pose": []
+                        }
+                    ]
+				}
+			}
+		},
+		"controller.animation.opabinia.look_at_target" : {
+			"states" : {
+				"none": {
+                    "transitions": [
+                        {
+                            "default": "!(query.variant == 3 || query.variant == 4)"
+                        }
+                    ]
+				},
+                "default": {
+                    "transitions": [
+                        {
+                            "none": "query.variant == 3 || query.variant == 4"
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "look_at_target": []
+                        }
+                    ]
+				}
+			}
+		},
+		"controller.animation.opabinia.satellite" : {
+			"states" : {
+				"none": {
+                    "transitions": [
+                        {
+                            "default": "query.variant == 3"
+                        },
+                        {
+                            "stun": "query.variant == 4"
+                        }
+                    ]
+				},
+                "default": {
+                    "transitions": [
+                        {
+                            "none": "!(query.variant == 3 || query.variant == 4)"
+                        },
+                        {
+                            "stun": "query.variant == 4"
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "energy_charge": []
+                        },
+                        {
+                            "energy_charge_swim": []
+                        }
+                    ]
+				},
+                "stun": {
+                    "transitions": [
+                        {
+                            "none": "!(query.variant == 3 || query.variant == 4)"
+                        },
+                        {
+                            "default": "query.variant == 3"
+                        }
+                    ],
+                    "animations": [
+                        {
+                            "stun": []
                         }
                     ]
 				}
