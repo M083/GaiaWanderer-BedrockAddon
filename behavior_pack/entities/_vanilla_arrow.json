@@ -526,6 +526,51 @@
         }
       },
 
+      "gaiawanderer:wyvern_spear_arrow": {
+        "minecraft:variant": {
+          "value": 11
+        },
+
+        "minecraft:break_blocks": {
+          "breakable_blocks": [
+            "stone",
+            "cobblestone",
+            "gravel",
+            "grass",
+            "dirt",
+            "gaiawanderer:rotten_root",
+            "gaiawanderer:rotten_egg"
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 10,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 5,
+          "gravity": 0.10,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
       "gaiawanderer:mantis_throwing_star_arrow": {
         "minecraft:variant": {
           "value": 8
@@ -1232,6 +1277,17 @@
             },
             "add": {
               "component_groups" : [ "gaiawanderer:shebrus_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:wyvern_spear" }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:wyvern_spear_arrow" ]
             }
           },
           {

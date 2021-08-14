@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:wyvern_spear"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X",
+      "Y",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "gaiawanderer:wyvern_fang"
+      },
+      "Y": {
+        "item": "gaiawanderer:bug_extract"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:wyvern_spear",
+      "count": 4
+    }
+  }
+}

@@ -17,7 +17,8 @@
         "canon": "textures/entity/canon",
         "mantis_throwing_star": "textures/entity/mantis",
         "void": "textures/entity/void",
-        "gravity_ball": "textures/entity/gravity_ball"
+        "gravity_ball": "textures/entity/gravity_ball",
+        "wyvern_spear": "textures/entity/wyvern_spear"
       },
       "geometry": {
         "default": "geometry.arrow",

@@ -15,7 +15,8 @@
             "Texture.canon",
             "Texture.mantis_throwing_star",
             "Texture.void",
-            "Texture.gravity_ball"
+            "Texture.gravity_ball",
+            "Texture.wyvern_spear"
       	  ]
       	},
         "geometries": {
@@ -30,7 +31,8 @@
             "Geometry.canon",
             "Geometry.mantis_throwing_star",
             "Geometry.void",
-            "Geometry.gravity_ball"
+            "Geometry.gravity_ball", 
+            "Geometry.shebrus_spear"
           ]
         },
         "materials": {
@@ -44,7 +46,8 @@
             "Material.default", 
             "Material.default", 
             "Material.default",
-            "Material.default" ,
+            "Material.default",
+            "Material.default",
             "Material.default" 
           ]
         }

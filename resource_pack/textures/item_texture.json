@@ -23,11 +23,17 @@
     "wyvern_wing": {
       "textures": "textures/gaiawanderer/wing"
     },
+    "wyvern_fang": {
+      "textures": "textures/gaiawanderer/wyvern_fang"
+    },
     "shebrus_fang": {
       "textures": "textures/gaiawanderer/shebrus_fang"
     },
     "shebrus_liver": {
       "textures": "textures/gaiawanderer/sunakimo"
+    },
+    "wyvern_spear": {
+      "textures": "textures/gaiawanderer/wyvern_spear"
     },
     "shebrus_spear": {
       "textures": "textures/gaiawanderer/shebrus_spear"

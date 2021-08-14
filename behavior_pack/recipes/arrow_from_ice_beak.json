@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:arrow_from_beak"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X",
+      "#",
+      "Y"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "gaiawanderer:ice_beak"
+      },
+      "Y": {
+        "item": "minecraft:feather"
+      }
+    },
+    "result": {
+      "item": "minecraft:arrow",
+      "data": 36,
+      "count": 4
+    }
+  }
+}
