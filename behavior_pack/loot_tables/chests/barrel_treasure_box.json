@@ -102,11 +102,25 @@
               }
             }
           ],
-          "weight": 70
+          "weight": 40
         },
         {
           "type": "item",
           "name": "minecraft:string",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
           "functions": [
             {
               "function": "set_count",
@@ -517,6 +531,11 @@
               "treasure": true
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "gaiawanderer:wandering_ticket",
+          "weight": 10
         }
       ]
     }
