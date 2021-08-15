@@ -8,6 +8,11 @@
       "is_experimental": false
     },
 
+    "component_groups": {
+      "gaiawanderer:apoptosis": {
+          "minecraft:instant_despawn": {}
+      }
+    },
     "components": {
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 9 : 0"
@@ -169,6 +174,24 @@
       "minecraft:nameable": {
       },
       "minecraft:physics": {
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s invisibility 1 1 true"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:apoptosis_event": {
+        "add": {
+          "component_groups": [
+            "gaiawanderer:apoptosis"
+          ]
+        }
       }
     }
   }

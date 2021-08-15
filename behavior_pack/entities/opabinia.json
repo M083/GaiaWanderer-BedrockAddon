@@ -8,6 +8,9 @@
       "is_experimental": false
     },
     "component_groups": {
+      "gaiawanderer:apoptosis": {
+          "minecraft:instant_despawn": {}
+      },
       "damage_count_0": {
         "minecraft:mark_variant": {
           "value": 0
@@ -375,6 +378,13 @@
       }
     },
     "events": {
+      "gaiawanderer:apoptosis_event": {
+        "add": {
+          "component_groups": [
+            "gaiawanderer:apoptosis"
+          ]
+        }
+      },
       "death_event": {
         "sequence": []
       },
@@ -385,6 +395,11 @@
               "component_groups": [
                 "mode_calm"
               ]
+            }
+          },
+          {
+            "run_command": {
+              "command": "effect @s invisibility 1 1 true"
             }
           }
         ]
