@@ -95,6 +95,7 @@ item.spawn_egg.entity.gaiawanderer:opabinia.name=§dオパビニアを出現さ�
 
 item.gaiawanderer:wandering_ticket=行商人招待券
 item.gaiawanderer:wander_broom=ワンダーブルーム
+item.gaiawanderer:ancient_broom=エンシェントブルーム
 item.gaiawanderer:mechaboat_item=潜水艇
 item.gaiawanderer:interceptor_item=インターセプタ
 item.gaiawanderer:interceptor_rapid_item=インターセプタ・ラピッド
@@ -188,6 +189,7 @@ item.gaiawanderer:fortress_canon=砕けた砲塔
 item.gaiawanderer:thunder_feather=帯電する尾羽
 item.gaiawanderer:rotten_scythe=腐蝕した大鎌
 item.gaiawanderer:mutant_nether_jelly_arm=妖しい触手
+item.gaiawanderer:opabinia_arm=不気味な触腕
 
 item.gaiawanderer:shebrus_liver=シェブラスの肝
 item.gaiawanderer:adryva_drink=アドリーバドリンク

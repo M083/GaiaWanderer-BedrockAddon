@@ -855,6 +855,56 @@
         }
       },
 
+      "gaiawanderer:ancient_broom_arrow": {
+        "minecraft:variant": {
+          "value": 12
+        },
+
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "player"
+          ],
+          "seats": [
+            {
+              "position": [ 0.0, 0.15, 0.0 ]
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 6,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          //"hit_sound": "dig.wood",
+          //"hit_ground_sound": "dig.wood",
+          
+          "hit_sound": "item.trident.throw",
+          "hit_ground_sound": "item.trident.throw","power": 3,
+          
+          "gravity": 0.015,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ],
+          "potion_effect": 20
+        }
+      },
+
       "minecraft:pillager_arrow": {
         "minecraft:projectile": {
           "on_hit": {
@@ -1184,6 +1234,21 @@
               {
                 "add": {
                   "component_groups" : [ "gaiawanderer:wander_broom_arrow", "gaiawanderer:start_riding" ]
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:ancient_broom" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:ancient_broom_arrow", "gaiawanderer:start_riding" ]
                 }
               }
             ]

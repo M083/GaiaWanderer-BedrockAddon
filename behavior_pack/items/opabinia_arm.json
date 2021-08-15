@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:opabinia_arm"
+    },
+    
+    "components": {
+      "minecraft:icon":{
+        "texture": "opabinia_arm"
+      }
+    }
+  }
+}

@@ -16,7 +16,8 @@
             "Texture.mantis_throwing_star",
             "Texture.void",
             "Texture.gravity_ball",
-            "Texture.wyvern_spear"
+            "Texture.wyvern_spear",
+            "Texture.ancient_broom"
       	  ]
       	},
         "geometries": {
@@ -32,7 +33,8 @@
             "Geometry.mantis_throwing_star",
             "Geometry.void",
             "Geometry.gravity_ball", 
-            "Geometry.shebrus_spear"
+            "Geometry.shebrus_spear", 
+            "Geometry.wander_broom"
           ]
         },
         "materials": {

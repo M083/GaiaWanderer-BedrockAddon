@@ -92,8 +92,8 @@
     "marrella_blood": {
       "textures": "textures/gaiawanderer/marrella_blood"
     },
-    "marrella_bow": {
-      "textures": "textures/gaiawanderer/marrella_bow"
+    "opabinia_arm": {
+      "textures": "textures/gaiawanderer/opabinia_arm"
     },
     "marrella_antenna": {
       "textures": "textures/gaiawanderer/marrella_antenna"
@@ -247,6 +247,9 @@
     },
     "wander_broom": {
       "textures": "textures/gaiawanderer/wander_broom"
+    },
+    "ancient_broom": {
+      "textures": "textures/gaiawanderer/ancient_broom"
     },
     "ice_beak": {
       "textures": "textures/gaiawanderer/ice_beak"

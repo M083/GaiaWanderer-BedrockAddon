@@ -311,7 +311,11 @@
                     "ambient": "mob.cat.straymeow",
                     "death": "mob.ocelot.death",
                     "hurt": "mob.cat.hit",
-                    "shoot": "mob.blaze.shoot"
+                    "shoot": {
+                        "pitch": 1,
+                        "sound": "mob.blaze.shoot",
+                        "volume": 1
+                    }
                 }
             },
             "gaiawanderer:nether_salamander": {
@@ -321,7 +325,11 @@
                     "ambient": "mob.cat.straymeow",
                     "death": "mob.ocelot.death",
                     "hurt": "mob.cat.hit",
-                    "shoot": "mob.blaze.shoot"
+                    "shoot": {
+                        "pitch": 1,
+                        "sound": "mob.blaze.shoot",
+                        "volume": 1
+                    }
                 }
             },
             "gaiawanderer:frost_beak": {
