@@ -36,8 +36,8 @@
             "y": {
                 "distribution": "uniform",
                 "extent": [
-                    "query.heightmap(variable.worldx, variable.worldz)",
-                    "query.heightmap(variable.worldx, variable.worldz) - 1"
+                    "(math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200) ? query.heightmap(variable.worldx, variable.worldz) - 1 : -100",
+                    "(math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200) ? query.heightmap(variable.worldx, variable.worldz) : -100"
                 ]
             },
             "z": {

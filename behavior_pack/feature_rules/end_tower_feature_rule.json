@@ -33,13 +33,7 @@
                     16
                 ]
             },
-            "y": {
-                "distribution": "uniform",
-                "extent": [
-                    "query.heightmap(variable.worldx, variable.worldz) - 3",
-                    "query.heightmap(variable.worldx, variable.worldz) - 3"
-                ]
-            },
+            "y":"(math.abs(v.worldx) > 200 || math.abs(v.worldz) > 200) ? query.heightmap(variable.worldx, variable.worldz) - 3 : -100",
             "z": {
                 "distribution": "uniform",
                 "extent": [
