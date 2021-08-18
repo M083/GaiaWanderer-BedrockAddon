@@ -1,0 +1,46 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:rimafloga",
+      "materials": { "default": "rimafloga" },
+      "textures": {
+        "default": "textures/entity/rimafloga"
+      },
+      "geometry": {
+        "default": "geometry.rimafloga"
+      },
+      "animations": {
+        "default_pose": "animation.rimafloga.default_pose",
+        "look_at": "animation.rimafloga.look_at",
+        "move": "animation.rimafloga.move",
+        "flop1": "animation.rimafloga.flop1",
+        "flop2": "animation.rimafloga.flop2",
+        "roar": "animation.rimafloga.roar",
+        "shootingstar": "animation.rimafloga.shootingstar"
+      },
+      "animation_controllers": [
+        {
+          "pose": "controller.animation.rimafloga.pose"
+        },
+        {
+          "attack": "controller.animation.rimafloga.attack"
+        },
+        {
+          "move": "controller.animation.rimafloga.move"
+        },
+        {
+          "flop1": "controller.animation.rimafloga.flop1"
+        },
+        {
+          "flop2": "controller.animation.rimafloga.flop2"
+        }
+      ],
+      "render_controllers": [ "controller.render.rimafloga" ],
+      "spawn_egg": {
+        "base_color": "#2D2D2D",
+        "overlay_color": "#A10000"
+      }
+    }
+  }
+}

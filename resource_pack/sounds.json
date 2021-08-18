@@ -1,6 +1,25 @@
 {
     "entity_sounds": {
         "entities": {
+            "gaiawanderer:rimafloga": {
+                "events": {
+                    "death": {
+                        "sound": "mob.irongolem.death",
+                        "volume": 1,
+                        "pitch": 0.4
+                    },
+                    "hurt": {
+                        "sound": "mob.blaze.hit",
+                        "volume": 1,
+                        "pitch": 0.3
+                    },
+                    "shoot": {
+                        "sound": "mob.blaze.shoot",
+                        "volume": 1,
+                        "pitch": 0.8
+                    }
+                }
+            },
             "gaiawanderer:opabinia_energy": {
                 "events": {
                     "ambient": {

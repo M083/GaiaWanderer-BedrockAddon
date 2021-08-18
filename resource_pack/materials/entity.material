@@ -1,6 +1,7 @@
 {
     "materials": {
         "version": "1.0.0",
+        "rimafloga:entity_alphatest": {},
         "shark:entity_alphatest": {},
         "wyvern:entity_alphatest": {},
         "bonefish:entity_alphatest": {},

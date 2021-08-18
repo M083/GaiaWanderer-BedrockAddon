@@ -1,6 +1,23 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
+		"animation.rimafloga.look_at": {
+			"loop": true,
+			"bones": {
+				"neck1": {
+					"rotation": ["query.target_x_rotation/4", "query.target_y_rotation/4", 0]
+				},
+				"neck2": {
+					"rotation": ["query.target_x_rotation/4", "query.target_y_rotation/4", 0]
+				},
+				"neck3": {
+					"rotation": ["query.target_x_rotation/4", "query.target_y_rotation/4", 0]
+				},
+				"head": {
+					"rotation": ["query.target_x_rotation/4", "query.target_y_rotation/4", 0]
+				}
+			}
+		},
 		"animation.rimafloga.default_pose": {
 			"loop": true,
 			"bones": {
@@ -229,6 +246,8 @@
 					"rotation": {
 						"0.0": [0, 0, 0],
 						"0.12": [0, 0, 0],
+						"0.28": [5, 10, 0],
+						"0.8": [-12.5, -15, 5],
 						"1.04": [0, 0, 0]
 					}
 				},
@@ -309,6 +328,75 @@
 						"0.36": [-40, -15, -10],
 						"1.04": [0, 0, 0]
 					}
+				},
+				"body4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [0, 0, 0],
+						"0.28": [-15, -7.5, 0],
+						"0.8": [0, 0, -15],
+						"1.04": [0, 0, 0]
+					}
+				},
+				"body5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [0, 0, 0],
+						"0.28": [10, 0, 0],
+						"0.48": [-15, 0, 0],
+						"1.04": [0, 0, 0]
+					}
+				},
+				"tail1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [0, 0, 0],
+						"0.28": [10, 0, 0],
+						"0.48": [-15, 0, 0],
+						"1.04": [0, 0, 0]
+					}
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [0, 0, 0],
+						"0.28": [10, 0, 0],
+						"0.48": [-15, 0, 0],
+						"1.04": [0, 0, 0]
+					}
+				},
+				"tail3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [0, 0, 0],
+						"0.28": [10, 0, 0],
+						"0.48": [-15, 0, 0],
+						"1.04": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.rimafloga.flop1": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"rwing1_1": {
+					"rotation": [0, 0, "Math.cos((query.life_time + 0.050 ) * 400) * 60.0"]
+				},
+				"lwing1_1": {
+					"rotation": [0, 0, "Math.cos((query.life_time + 0.050 ) * 400) * -60.0"]
+				}
+			}
+		},
+		"animation.rimafloga.flop2": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"rwing2_1": {
+					"rotation": [0, 0, "Math.sin(query.life_time * 400) * 60.0"]
+				},
+				"lwing2_1": {
+					"rotation": [0, 0, "Math.sin(query.life_time * 400) * -60.0"]
 				}
 			}
 		}

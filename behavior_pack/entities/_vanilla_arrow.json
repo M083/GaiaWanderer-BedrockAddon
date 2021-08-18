@@ -805,6 +805,101 @@
           "offset": [ 0, -0.1, 0 ]
         }
       },
+
+      "gaiawanderer:shootingstar_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:flame_particle_event"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 12,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:shootingstar",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {}
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 1.5,
+          "gravity": 0.10,
+          "uncertainty_base": 80,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": false,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, 64, 0 ]
+        }
+      },
+
+      "gaiawanderer:rimafloga_breath_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:flame_particle_event"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 12,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:rimafloga_breath",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {}
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 1.5,
+          "gravity": 0.10,
+          "uncertainty_base": 15,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": false,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": true,
+          "offset": [ 0, 0, 0 ]
+        }
+      },
+
       "gaiawanderer:wander_broom_arrow": {
         "minecraft:variant": {
           "value": 3
@@ -1027,6 +1122,34 @@
           {
             "run_command": {
               "command": "summon gaiawanderer:safe_explode_huge"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:shootingstar": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:safe_explode_huge"
+            }
+          },
+          {
+            "run_command": {
+              "command": "fill ~-1 ~-2 ~-1 ~1 ~2 ~1 fire 0 replace air"
+            }
+          }
+        ]
+      },
+      "gaiawanderer:rimafloga_breath": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:safe_explode"
+            }
+          },
+          {
+            "run_command": {
+              "command": "fill ~-1 ~-2 ~-1 ~1 ~2 ~1 fire 0 replace air"
             }
           }
         ]
@@ -1315,6 +1438,41 @@
               {
                 "run_command": {
                   "command": "playanimation @e[type = gaiawanderer:arachne_humanoid, c = 1] shot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "rimafloga" },
+                { "test": "is_variant", "subject": "other", "operator": "equals", "value": 1}
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:shootingstar_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:rimafloga, c = 1] shootingstar"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "rimafloga" },
+                { "test": "is_variant", "subject": "other", "operator": "equals", "value": 2}
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:rimafloga_breath_arrow" ]
                 }
               }
             ]

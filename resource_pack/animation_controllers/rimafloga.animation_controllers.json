@@ -1,0 +1,134 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.rimafloga.move": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed * 0.01" ],
+          "animations": [
+            { 
+              "move": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "breath": "query.variant == 2"
+            }
+          ]
+        },
+        "breath": {
+          "parameters": [ "0" ],
+          "animations": [
+            { 
+              "move": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ],
+          "transitions": [
+            {
+              "default": "!(query.variant == 2)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rimafloga.pose": {
+      "states": {
+        "default": {
+          "animations": [
+            { 
+              "default_pose": []
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rimafloga.flop1": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed + 0.1" ],
+          "animations": [
+            { 
+              "flop1": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rimafloga.flop2": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed + 0.15" ],
+          "animations": [
+            { 
+              "flop2": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.rimafloga.attack": {
+      "states": {
+        "none": {
+          "transitions": [
+            {
+              "breath": "query.variant == 2"
+            },
+            {
+              "roar": "query.variant == 3"
+            }
+          ]
+        },
+        "breath": {
+          "animations": [
+            { 
+              "look_at": []
+            }
+          ],
+          "transitions": [
+            {
+              "none": "!(query.variant == 2 || query.variant == 3)"
+            },
+            {
+              "roar": "query.variant == 3"
+            }
+          ]
+        },
+        "roar": {
+          "animations": [
+            { 
+              "roar": []
+            }
+          ],
+          "transitions": [
+            {
+              "none": "!(query.variant == 2 || query.variant == 3)"
+            },
+            {
+              "breath": "query.variant == 2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
