@@ -2,6 +2,9 @@
   "resource_pack_name": "gaiawanderer",
   "texture_name": "atlas.items",
   "texture_data": {
+    "rimafloga_stone": {
+      "textures": "textures/gaiawanderer/rimafloga_stone"
+    },
     "griff_feed_food": {
       "textures": "textures/gaiawanderer/griff_feed_food"
     },
@@ -130,6 +133,9 @@
     },
     "cantera": {
       "textures": "textures/gaiawanderer/cantera"
+    },
+    "burn_quiver": {
+      "textures": "textures/gaiawanderer/burn_quiver"
     },
     "bug_ingot": {
       "textures": "textures/gaiawanderer/bug_ingot"

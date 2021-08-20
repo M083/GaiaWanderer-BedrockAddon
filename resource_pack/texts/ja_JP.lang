@@ -122,7 +122,7 @@ item.gaiawanderer:nether_diamond_axe=ネザーダイヤモンドアックス
 item.gaiawanderer:nether_diamond_pickaxe=ネザーダイヤモンドピッケル
 item.gaiawanderer:cutlassfish_item=タチウオ
 item.gaiawanderer:wyvern_axe=紫翼の戦斧
-item.gaiawanderer:marrella_bow=マーレラボウ
+item.gaiawanderer:burn_quiver=蠟焔の矢筒
 item.gaiawanderer:teleport_robe=転移の羽衣
 item.gaiawanderer:ghost_robe=霊体の羽衣
 item.gaiawanderer:myth_sword=蜻蛉剣
@@ -193,6 +193,7 @@ item.gaiawanderer:thunder_feather=帯電する尾羽
 item.gaiawanderer:rotten_scythe=腐蝕した大鎌
 item.gaiawanderer:mutant_nether_jelly_arm=妖しい触手
 item.gaiawanderer:opabinia_arm=不気味な触腕
+item.gaiawanderer:rimafloga_stone=蝋焔の龍石
 
 item.gaiawanderer:shebrus_liver=シェブラスの肝
 item.gaiawanderer:adryva_drink=アドリーバドリンク

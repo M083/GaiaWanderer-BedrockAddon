@@ -11,7 +11,7 @@
                     "hurt": {
                         "sound": "mob.blaze.hit",
                         "volume": 1,
-                        "pitch": 0.3
+                        "pitch": 0.5
                     },
                     "shoot": {
                         "sound": "mob.blaze.shoot",

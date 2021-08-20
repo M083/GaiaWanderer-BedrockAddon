@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:burn_quiver"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " b",
+      "crb",
+      "wc "
+    ],
+    "key": {
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      },
+      "r": {
+        "item": "gaiawanderer:rimafloga_stone"
+      },
+      "c": {
+        "item": ":minecraft:copper_block"
+      },
+      "w": {
+        "item": "gaiawanderer:wyvern_wing"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:burn_quiver"
+    }
+  }
+}

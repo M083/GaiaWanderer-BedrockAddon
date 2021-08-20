@@ -82,6 +82,51 @@
         }
       },
 
+
+      "gaiawanderer:burn_quiver_arrow": {
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:flame_particle_event"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 1,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:shootingstar",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0.35
+            },
+            "arrow_effect": {
+            }
+          },
+          "hit_sound": "bow.hit",
+          "power": 5.0,
+          "gravity": 0.05,
+          "uncertainty_base": 1,
+          "uncertainty_multiplier": 0,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, -0.1, 0 ],
+          "liquid_inertia": 1
+        }
+      },
+
       "gaiawanderer:air_blade_arrow": {
         "minecraft:variant": {
           "value": 1
@@ -823,8 +868,11 @@
             "impact_damage": {
               "damage": 12,
               "knockback": true,
-              "semi_random_diff_damage": false,
-              "destroy_on_hit": false
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
             },
             "definition_event": {
               "affect_projectile": true,
@@ -841,14 +889,13 @@
           "liquid_inertia": 0.99,
           "hit_sound": "item.trident.hit",
           "hit_ground_sound": "item.trident.hit_ground",
-          "power": 1.5,
-          "gravity": 0.10,
-          "uncertainty_base": 80,
+          "power": 0.5,
+          "gravity": 0.1,
+          "uncertainty_base": 60,
           "uncertainty_multiplier": 0,
           "stop_on_hurt": false,
           "anchor": 1,
           "should_bounce": true,
-          "multiple_targets": true,
           "offset": [ 0, 64, 0 ]
         }
       },
@@ -870,8 +917,11 @@
             "impact_damage": {
               "damage": 12,
               "knockback": true,
-              "semi_random_diff_damage": false,
-              "destroy_on_hit": false
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
             },
             "definition_event": {
               "affect_projectile": true,
@@ -881,7 +931,7 @@
               }
             },
             "stick_in_ground": {
-              "shake_time" : 0
+              "shake_time" : 0.35
             },
             "remove_on_hit": {}
           },
@@ -889,13 +939,12 @@
           "hit_sound": "item.trident.hit",
           "hit_ground_sound": "item.trident.hit_ground",
           "power": 1.5,
-          "gravity": 0.10,
+          "gravity": 0.01,
           "uncertainty_base": 15,
           "uncertainty_multiplier": 0,
           "stop_on_hurt": false,
           "anchor": 1,
           "should_bounce": true,
-          "multiple_targets": true,
           "offset": [ 0, 0, 0 ]
         }
       },
@@ -1552,6 +1601,23 @@
             },
             "add": {
               "component_groups" : [ "gaiawanderer:canon_spear_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:burn_quiver" },
+                {
+                  "any_of": [
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "minecraft:bow" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "minecraft:crossbow" }
+                  ]
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:burn_quiver_arrow" ]
             }
           },
           {
