@@ -57,6 +57,11 @@
             "run_command": {
               "command": "playsound random.bow @s ~ ~ ~ 1.5 1.5"
             }
+          },
+          {
+            "run_command": {
+              "command": "effect @s slow_falling 10"
+            }
           }
         ]
       }
