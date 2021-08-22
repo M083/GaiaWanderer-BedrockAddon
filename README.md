@@ -5,6 +5,7 @@ Addon for Minecraft Bedrock Edition
 - [はじめに](#はじめに)
 - [対応言語](#対応言語)
 - [動作環境](#動作環境)
+- [ダウンロード](#ダウンロード)
 - [導入方法](#導入方法)
 - [スクリーンショット](#スクリーンショット)
 - [免責](#免責)
@@ -32,12 +33,15 @@ Java Edition等、MCBE以外のMinecraftでは動作しません。
 v1.17.10以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
+## ダウンロード
+### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.19.214/Gaiawanderer_1_19_214.mcaddon)
+
+### [過去のバージョンをダウンロード](https://github.com/M083/GaiaWanderer-BedrockAddon/releases)
+
 ## 導入方法
 
 #### 1. ダウンロード
-[**Releases**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases) から最新バージョンのアドオンをダウンロードします。 
-
-Assets内にある、拡張子(ファイル名の末尾)が.mcaddonの物をダウンロードするようにしてください。
+最新バージョンのアドオンをダウンロードします。 
 
 #### 2. インポート
 ダウンロードしたアドオンを実行します。
@@ -97,7 +101,11 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 起動したインターセプタ・ホバーの名前が「不明」と表示される。
 
 ## 更新履歴
-	ver1.19
+	ver1.19.214
+	[不具合修正]
+	・ムッシュアラクネのキルログが正常に表示されない不具合の修正
+	　
+	ver1.19.213
 	[追加要素]
 	・ボス「オパビニア」を追加 - 腐蝕バイオームとジ・エンド(エンダードラゴン討伐後)に出現
 	・ボス「リマフロガ」を追加 - 火山バイオームに出現
