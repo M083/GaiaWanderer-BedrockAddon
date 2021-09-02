@@ -531,17 +531,6 @@
           "value": 2
         },
 
-        "minecraft:break_blocks": {
-          "breakable_blocks": [
-            "stone",
-            "cobblestone",
-            "gravel",
-            "grass",
-            "dirt",
-            "gaiawanderer:rotten_root",
-            "gaiawanderer:rotten_egg"
-          ]
-        },
         "minecraft:projectile": {
           "on_hit": {
             "impact_damage": {
@@ -576,17 +565,6 @@
           "value": 11
         },
 
-        "minecraft:break_blocks": {
-          "breakable_blocks": [
-            "stone",
-            "cobblestone",
-            "gravel",
-            "grass",
-            "dirt",
-            "gaiawanderer:rotten_root",
-            "gaiawanderer:rotten_egg"
-          ]
-        },
         "minecraft:projectile": {
           "on_hit": {
             "impact_damage": {
