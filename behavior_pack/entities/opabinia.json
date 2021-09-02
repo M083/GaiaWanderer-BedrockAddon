@@ -359,6 +359,7 @@
           "monster",
           "arthropod",
           "rotten_monster",
+          "founder",
           "boss"
         ]
       },
@@ -414,7 +415,7 @@
           },
           {
             "run_command": {
-              "command": "replaceitem block ~ ~1 ~ slot.container 2 gaiawanderer:rotten_ingot 6"
+              "command": "replaceitem block ~ ~1 ~ slot.container 2 gaiawanderer:founder_debris 6"
             }
           },
           {

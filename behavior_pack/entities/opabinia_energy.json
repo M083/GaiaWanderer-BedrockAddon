@@ -25,7 +25,7 @@
 		},
 		"components": {
 			"minecraft:type_family": {
-				"family": [ "opabinia_energy", "monster", "arthropod", "rotten_monster", "boss" ]
+				"family": [ "opabinia_energy", "monster", "arthropod", "rotten_monster", "boss", "founder" ]
 			},
 			"minecraft:health": {
 				"value": 150,

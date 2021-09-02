@@ -37,6 +37,8 @@
         "minecraft:spawns_on_surface": {},
         "minecraft:spawns_underground": {},
 
+        "minecraft:spawns_on_block_filter": "gaiawanderer:primitive_stone",
+
         "minecraft:height_filter": {
           "min": 0,
           "max": 60
@@ -53,7 +55,7 @@
         },
 
         "minecraft:weight": {
-          "default": 1
+          "default": 3
         },
         
         "minecraft:biome_filter": {
