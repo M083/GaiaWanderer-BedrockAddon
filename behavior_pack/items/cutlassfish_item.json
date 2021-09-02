@@ -19,7 +19,7 @@
         "max_durability": 240
       },
       "minecraft:enchantable":{
-        "value": 30,
+        "value": 9999,
         "slot": "sword"
       },
       "minecraft:use_animation": "eat",

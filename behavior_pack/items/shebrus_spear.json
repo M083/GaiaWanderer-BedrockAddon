@@ -41,14 +41,6 @@
       "gaiawanderer:spear_effect": {
         "sequence": [
           {
-            "add_mob_effect": {
-              "effect": "wither",
-              "amplifier": 1,
-              "duration": 10,
-              "target": "target"
-            }
-          },
-          {
             "decrement_stack": {}
           }
         ]

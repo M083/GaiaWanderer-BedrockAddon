@@ -19,7 +19,7 @@
         "max_durability": 640
       },
       "minecraft:enchantable":{
-        "value": 30,
+        "value": 20,
         "slot": "sword"
       },
       "minecraft:repairable": {
