@@ -4,6 +4,31 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "ender_lantern": {
+      "textures": [
+        "textures/blocks/ender_lantern"
+      ]
+    },
+    "ender_brick": {
+      "textures": [
+        "textures/blocks/ender_brick"
+      ]
+    },
+    "primitive_water": {
+      "textures": [
+        "textures/blocks/primitive_water"
+      ]
+    },
+    "primitive_log": {
+      "textures": [
+        "textures/blocks/primitive_log"
+      ]
+    },
+    "primitive_stone": {
+      "textures": [
+        "textures/blocks/primitive_stone"
+      ]
+    },
     "log_iron_ore": {
       "textures": [
         "textures/blocks/log_iron_ore"

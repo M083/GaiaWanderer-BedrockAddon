@@ -2,6 +2,21 @@
   "resource_pack_name": "gaiawanderer",
   "texture_name": "atlas.items",
   "texture_data": {
+    "founder_sword": {
+      "textures": "textures/gaiawanderer/founder_sword"
+    },
+    "ender_axe": {
+      "textures": "textures/gaiawanderer/ender_axe"
+    },
+    "ender_sword": {
+      "textures": "textures/gaiawanderer/ender_sword"
+    },
+    "ender_core": {
+      "textures": "textures/gaiawanderer/ender_core"
+    },
+    "founder_debris": {
+      "textures": "textures/gaiawanderer/founder_debris"
+    },
     "rimafloga_stone": {
       "textures": "textures/gaiawanderer/rimafloga_stone"
     },
