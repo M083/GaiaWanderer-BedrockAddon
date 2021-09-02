@@ -1,4 +1,24 @@
 {
+  "gaiawanderer:ender_lantern": {
+    "textures": "ender_lantern",
+    "sound": "glass"
+  },
+  "gaiawanderer:ender_brick": {
+    "textures": "ender_brick",
+    "sound": "stone"
+  },
+  "gaiawanderer:primitive_water": {
+    "textures": "primitive_water",
+    "sound": "amethyst_block"
+  },
+  "gaiawanderer:primitive_stone": {
+    "textures": "primitive_stone",
+    "sound": "amethyst_block"
+  },
+  "gaiawanderer:primitive_log": {
+    "textures": "primitive_log",
+    "sound": "amethyst_block"
+  },
   "gaiawanderer:cobblestone_burned": {
     "textures": "cobblestone_burned",
     "sound": "stone"
