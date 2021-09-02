@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:founder_sword"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "i",
+      "i",
+      "l"
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:founder_debris"
+      },
+      "l": {
+        "item": "gaiawanderer:marrella_antenna"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:founder_sword",
+      "data": 0
+    }
+  }
+}

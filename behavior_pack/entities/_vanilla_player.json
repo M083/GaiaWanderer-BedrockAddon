@@ -10,11 +10,142 @@
         "gw_event":"controller.animation.gw_event"
       },
       "scripts":{
-        "animate":["gw_event"]
+        "animate":[ "gw_event" ]
       }
     },
 
     "component_groups": {
+      "ender_axe_lv1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv3": {
+        "minecraft:mark_variant": {
+          "value": 3
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv4": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv5": {
+        "minecraft:mark_variant": {
+          "value": 5
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv6": {
+        "minecraft:mark_variant": {
+          "value": 6
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv7": {
+        "minecraft:mark_variant": {
+          "value": 7
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv8": {
+        "minecraft:mark_variant": {
+          "value": 8
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv9": {
+        "minecraft:mark_variant": {
+          "value": 9
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+      "ender_axe_lv10": {
+        "minecraft:mark_variant": {
+          "value": 10
+        },
+        "minecraft:timer": {
+          "time": [ 1.0, 1.0 ],
+          "looping": true,
+          "time_down_event": {
+            "event": "ender_axe_lvup",
+            "target": "self"
+          }
+        }
+      },
+
       "weapon_default": {
         "minecraft:attack": {
           "damage": 1
@@ -238,6 +369,16 @@
               "damage_per_tick": 2
             },
             {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "operator": "==",
+                "value": "gaiawanderer:ender_axe"
+              },
+              "cause": "wither",
+              "damage_per_tick": 4
+            },
+            {
               "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
               "cause": "lava",
               "damage_per_tick": 4
@@ -245,64 +386,26 @@
           ]
         }
       },
-
-      "helmet_hurt_effect": {
-        "minecraft:variant": {
-          "value": 1
-        },
-        "minecraft:timer": {
-          "time": [ 0.0, 0.0 ],
-          "looping": false,
-          "time_down_event": {
-            "event": "chestplate_hurt_event",
-            "target": "self"
-          }
+      "water_normal": {
+        "minecraft:hurt_on_condition": {
+          "damage_conditions": [
+            {
+              "filters": {
+                "test": "has_equipment",
+                "domain": "hand",
+                "operator": "==",
+                "value": "gaiawanderer:ender_axe"
+              },
+              "cause": "wither",
+              "damage_per_tick": 4
+            },
+            {
+              "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+              "cause": "lava",
+              "damage_per_tick": 4
+            }
+          ]
         }
-      },
-      "chestplate_hurt_effect": {
-        "minecraft:variant": {
-          "value": 2
-        },
-        "minecraft:timer": {
-          "time": [ 0.0, 0.0 ],
-          "looping": false,
-          "time_down_event": {
-            "event": "leggings_hurt_event",
-            "target": "self"
-          }
-        }
-      },
-      "leggings_hurt_effect": {
-        "minecraft:variant": {
-          "value": 3
-        },
-        "minecraft:timer": {
-          "time": [ 0.0, 0.0 ],
-          "looping": false,
-          "time_down_event": {
-            "event": "boots_hurt_event",
-            "target": "self"
-          }
-        }
-      },
-      "boots_hurt_effect": {
-        "minecraft:variant": {
-          "value": 4
-        },
-        "minecraft:timer": {
-          "time": [ 0.0, 0.0 ],
-          "looping": false,
-          "time_down_event": {
-            "event": "hurt_event_end",
-            "target": "self"
-          }
-        }
-      },
-      "hurt_effect_end": {
-        "minecraft:variant": {
-          "value": 0
-        },
-        "minecraft:timer": {}
       },
 
       "minecraft:add_bad_omen": {
@@ -315,13 +418,8 @@
             }
           ]
         },
-        "minecraft:timer": {
-          "time": [ 0.0, 0.0 ],
-          "looping": false,
-          "time_down_event": {
-            "event": "minecraft:clear_add_bad_omen",
-            "target": "self"
-          }
+        "run_command": {
+          "command": "event entity @s minecraft:clear_add_bad_omen"
         }
       },
       "minecraft:clear_bad_omen_spell_effect": {
@@ -345,6 +443,9 @@
       // "minecraft:burns_in_daylight": {
       // }, //dev
       "minecraft:variant": {
+        "value":0
+      },
+      "minecraft:mark_variant": {
         "value":0
       },
       "minecraft:damage_sensor": {
@@ -401,7 +502,7 @@
           // },
           {
             "on_damage": {
-              "event": "helmet_hurt_event"
+              "event": "hurt_event"
             }
           }
         ]
@@ -411,6 +512,16 @@
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
+          {
+            "filters": {
+              "test": "has_equipment",
+              "domain": "hand",
+              "operator": "==",
+              "value": "gaiawanderer:ender_axe"
+            },
+            "cause": "wither",
+            "damage_per_tick": 4
+          },
           {
             "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
             "cause": "lava",
@@ -523,19 +634,307 @@
     },
 
     "events": {
+      "ender_axe_lvup": {
+        "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 10
+                }
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 10"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 9
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv10"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 9"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 8
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv9"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 8"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 7
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv8"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 7"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 6
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv7"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 6"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 5
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv6"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 5"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 4
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv5"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 4"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 3
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv4"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 3"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 2
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv3"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 2"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "==",
+                  "value": "gaiawanderer:ender_axe"
+                },
+                {
+                  "test": "is_mark_variant",
+                  "operator": "equals",
+                  "value": 1
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv2"
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 1 1"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "hand",
+                  "operator": "!=",
+                  "value": "gaiawanderer:ender_axe"
+                }
+              ]
+            },
+            "add": {
+              "component_groups": [
+                "ender_axe_lv1"
+              ]
+            }
+          }
+        ]
+      },
       "water_poison": {
-        "add": {
-          "component_groups": [
-            "water_poison"
-          ]
-        }
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "water_normal"
+              ]
+            }
+          },
+          {     
+            "add": {
+              "component_groups": [
+                "water_poison"
+              ]
+            }
+          }
+        ]
       },
       "remove_water_poison": {
-        "remove": {
-          "component_groups": [
-            "water_poison"
-          ]
-        }
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "water_poison"
+              ]
+            }
+          },
+          {     
+            "add": {
+              "component_groups": [
+                "water_normal"
+              ]
+            }
+          }
+        ]
       },
       "save_life": {
         "sequence": [
@@ -594,42 +993,6 @@
           }
         ]
       },
-      "nether_metal_helmet_hurt_event": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": "effect @s resistance 10 1 true"
-            }
-          }
-        ]
-      },
-      "nether_metal_chestplate_hurt_event": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": "effect @s strength 10 0 true"
-            }
-          }
-        ]
-      },
-      "nether_metal_leggings_hurt_event": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": "effect @s speed 10 1 true"
-            }
-          }
-        ]
-      },
-      "nether_metal_boots_hurt_event": {
-        "sequence": [
-          {
-            "run_command": {
-              "command": "effect @s slow_falling 10 1 true"
-            }
-          }
-        ]
-      },
       "burn_crown_effect": {
         "sequence": [
           {
@@ -679,7 +1042,8 @@
       "minecraft:entity_spawned": {
         "add": {
           "component_groups": [
-            "weapon_default"
+            "weapon_default",
+            "ender_axe_lv1"
           ]
         }
       },
@@ -712,43 +1076,69 @@
           "component_groups": [ "minecraft:raid_trigger" ]
         }
       },
-
-      "helmet_hurt_event": {
-        "add": {
-          "component_groups": [ "helmet_hurt_effect" ]
-        }
-      },
-      "chestplate_hurt_event": {
-        "remove": {
-          "component_groups": [ "helmet_hurt_effect" ]
-        },
-        "add": {
-          "component_groups": [ "chestplate_hurt_effect" ]
-        }
-      },
-      "leggings_hurt_event": {
-        "remove": {
-          "component_groups": [ "chestplate_hurt_effect" ]
-        },
-        "add": {
-          "component_groups": [ "leggings_hurt_effect" ]
-        }
-      },
-      "boots_hurt_event": {
-        "remove": {
-          "component_groups": [ "leggings_hurt_effect" ]
-        },
-        "add": {
-          "component_groups": [ "boots_hurt_effect" ]
-        }
-      },
-      "hurt_event_end": {
-        "remove": {
-          "component_groups": [ "boots_hurt_effect" ]
-        },
-        "add": {
-          "component_groups": [ "hurt_effect_end" ]
-        }
+      "hurt_event": {
+        "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "head",
+                  "operator": "==",
+                  "value": "gaiawanderer:nether_metal_helmet"
+                }
+              ]
+            },
+            "run_command": {
+              "command": "effect @s resistance 10 1 true"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "torso",
+                  "operator": "==",
+                  "value": "gaiawanderer:nether_metal_chestplate"
+                }
+              ]
+            },
+            "run_command": {
+              "command": "effect @s strength 10 0 true"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "leg",
+                  "operator": "==",
+                  "value": "gaiawanderer:nether_metal_leggings"
+                }
+              ]
+            },
+            "run_command": {
+              "command": "effect @s speed 10 1 true"
+            }
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "feet",
+                  "operator": "==",
+                  "value": "gaiawanderer:nether_metal_boots"
+                }
+              ]
+            },
+            "run_command": {
+              "command": "effect @s slow_falling 10 1 true"
+            }
+          }
+        ]
       }
     }
   }
