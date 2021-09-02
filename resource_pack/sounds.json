@@ -1,6 +1,17 @@
 {
     "entity_sounds": {
         "entities": {
+            "gaiawanderer:ender_proto": {
+                "events": {
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
             "gaiawanderer:rimafloga": {
                 "events": {
                     "death": {
@@ -461,6 +472,16 @@
                     "hurt.in.water": "mob.drowned.hurt_water",
                     "death.in.water": "mob.drowned.death_water",
                     "step": "mob.drowned.step"
+                }
+            },
+            "gaiawanderer:shebrus_founder": {
+                "volume": 1,
+                "pitch": 0.4,
+                "events": {
+                    "ambient": "mob.husk.say",
+                    "hurt": "mob.husk.hurt",
+                    "death": "mob.husk.death",
+                    "step": "mob.husk.step"
                 }
             },
             "gaiawanderer:shebrus": {
