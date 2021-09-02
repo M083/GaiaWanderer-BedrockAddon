@@ -1,0 +1,157 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:shebrus_founder",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 13 : 0"
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.7,
+        "height": 0.4
+      },
+      "minecraft:nameable": {
+      },
+
+      "minecraft:type_family": {
+        "family": [ "shebrus", "monster", "founder", "arthropod" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/shebrus_founder.json"
+      },
+
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:attack": {
+        "damage": 12,
+        "effect_name": "levitation",
+        "effect_duration": 3
+      },
+      "minecraft:behavior.leap_at_target": {
+        "yd": 0.95
+      },
+      "minecraft:scale": {
+        "value": 1.48
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {"test": "has_damage", "value": "projectile"},
+                  {"test": "has_damage", "value": "entity_explosion"},
+                  {"test": "has_damage", "value": "block_explosion"}
+                ]
+              }
+            },
+            "deals_damage": false,
+            "on_damage_sound_event": "break"
+          }
+        ]
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_break_doors": true,
+        "avoid_portals": false
+      },
+      "minecraft:annotation.break_door": {
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.5
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:environment_sensor": [
+        {
+          "filters": {
+            "test": "is_underwater",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          },
+          "event": "minecraft:start_transforming"
+        }
+      ],
+
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1,
+        "reach_multiplier": 1.35,
+        "track_target": false
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 25,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "operator": "!=", "value": "monster" },
+                { "test": "is_family", "subject": "other", "value": "ender" },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "enderman"
+                }
+              ]
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      }
+    }
+  }
+}
