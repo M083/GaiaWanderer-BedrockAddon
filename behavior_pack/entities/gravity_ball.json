@@ -10,6 +10,15 @@
         "component_groups": {
             "despawn": {
                 "minecraft:instant_despawn": {}
+            },
+            "gravity": {
+                "minecraft:environment_sensor": {
+                    "triggers": [
+                        {
+                            "event": "gravity_event"
+                        }
+                    ]
+                }
             }
         },
         "components": {
@@ -45,13 +54,6 @@
                     "event": "despawn_event"
                 }
             },
-            "minecraft:environment_sensor": {
-                "triggers": [
-                    {
-                        "event": "gravity_event"
-                    }
-                ]
-            },
             "minecraft:damage_sensor": {
                 "triggers": [
                     {
@@ -68,20 +70,44 @@
             }
         },
         "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "gravity"
+                            ]
+                        }
+                    }
+                ]
+            },
             "gravity_event": {
                 "run_command": {
-                    "command": ["gamerule sendcommandfeedback false","tp @e[r=8] ~ ~ ~"]
+                    "command": ["gamerule sendcommandfeedback false", "tp @e[r=8] ~ ~ ~"]
                 }
             },
             "despawn_event": {
-                "add": {
-                    "component_groups": [
-                        "despawn"
-                    ]
-                },
-                "run_command": {
-                    "command": "gamerule sendcommandfeedback true"
-                }
+                "sequence": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "gravity"
+                            ]
+                        }
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "despawn"
+                            ]
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "gamerule sendcommandfeedback true"
+                        }
+                    }
+                ]
             }
         }
     }
