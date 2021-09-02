@@ -111,7 +111,7 @@
     "events": {
       "gaiawanderer:kills_all_rotten_monster": {
         "run_command": {
-          "command": "event entity @e[family = rotten_monster, r = 200] gaiawanderer:apoptosis_event"
+          "command": "event entity @e[family = founder, r = 200] gaiawanderer:apoptosis_event"
         }
       },
       "minecraft:entity_spawned": {
