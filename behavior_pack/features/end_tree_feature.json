@@ -87,7 +87,7 @@
 				"branch_canopy": {
 					"acacia_canopy": {
 						"leaf_block": {
-							"name": "minecraft:obsidian"
+							"name": "minecraft:crying_obsidian"
 						},
 						"canopy_size": 3
 					}
@@ -103,7 +103,7 @@
 		},
 		"mega_canopy": {
 			"leaf_block": {
-				"name": "minecraft:obsidian"
+				"name": "minecraft:crying_obsidian"
 			},
 			"canopy_height": 4,
 			 "base_radius": 8,

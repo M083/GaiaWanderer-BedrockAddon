@@ -1,0 +1,21 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "gaiawanderer:ender_wall_L_feature"
+		},
+		"structure_name": "mystructure:ender_wall_L",
+		"facing_direction": "random",
+		"adjustment_radius": 0,
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+					"minecraft:air",
+					"minecraft:end_stone",
+					"gaiawanderer:ender_brick"
+				]
+			}
+		}
+	}
+}

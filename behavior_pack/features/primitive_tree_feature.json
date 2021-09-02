@@ -1,0 +1,34 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "gaiawanderer:primitive_tree_feature"
+		},
+		"may_grow_on": [
+			"gaiawanderer:primitive_stone"
+		],
+		"may_replace": [
+			"minecraft:air",
+			"gaiawanderer:primitive_stone",
+			"gaiawanderer:primitive_log"
+		],
+		"fancy_trunk": {
+			"trunk_block": {
+				"name": "gaiawanderer:primitive_log"
+			},
+			"trunk_width": 1,
+			"trunk_height": {
+				"base": 12,
+				"variance": 16,
+				"scale": 1.0
+			},
+			"foliage_altitude_factor": 0.7,
+			"width_scale": 1.5,
+			"branches": {
+				"slope": 0.3,
+				"density": 0.3,
+				"min_altitude_factor": 0.1
+			}
+		}
+	}
+}

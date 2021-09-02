@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:primitive_stone"
+        },
+        "components": {
+            "tag:ice_ore": {},
+            "minecraft:loot": "loot_tables/blocks/primitive_stone.json",
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#DFDFDF",
+            "minecraft:block_light_absorption": 1,
+            "minecraft:block_light_emission": 0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "primitive_stone",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

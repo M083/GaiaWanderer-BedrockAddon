@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:primitive_stone_feature"  
+		},
+		"count": 128,
+
+		"replace_rules": [
+			{
+				"places_block": "gaiawanderer:primitive_stone",
+				"may_replace": [
+					"minecraft:end_stone"
+				]
+			}
+		]
+	}	
+}

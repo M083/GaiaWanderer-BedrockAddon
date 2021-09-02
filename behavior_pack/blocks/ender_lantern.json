@@ -1,0 +1,21 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:ender_lantern"
+        },
+        "components": {
+            "tag:stone": {},
+            "minecraft:loot": "loot_tables/blocks/ender_lantern.json",
+            "minecraft:destroy_time": 10,
+            "minecraft:explosion_resistance": 5,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#191A28",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 1
+        }
+    }
+}

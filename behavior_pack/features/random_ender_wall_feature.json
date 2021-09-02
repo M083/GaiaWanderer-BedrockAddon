@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "gaiawanderer:random_ender_wall_feature"
+    },
+    "features": [
+      [ "gaiawanderer:ender_wall_I_feature", 3 ],
+      [ "gaiawanderer:ender_wall_L_feature", 3 ],
+      [ "gaiawanderer:ender_wall_II_feature", 2 ],
+      [ "gaiawanderer:ender_wall_LI_feature", 2 ]
+    ]
+  }
+}

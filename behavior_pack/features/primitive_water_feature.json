@@ -1,0 +1,19 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:primitive_water_feature"  
+		},
+		"count": 128,
+
+		"replace_rules": [
+			{
+				"places_block": "gaiawanderer:primitive_water",
+				"may_replace": [
+					"minecraft:end_stone",
+					"gaiawanderer:primitive_stone"
+				]
+			}
+		]
+	}	
+}

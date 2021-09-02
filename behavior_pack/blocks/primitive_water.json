@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:primitive_water"
+        },
+        "components": {
+            "tag:ice_ore": {},
+            "minecraft:loot": "loot_tables/blocks/primitive_water.json",
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#6C66D8",
+            "minecraft:block_light_absorption": 1,
+            "minecraft:block_light_emission": 0,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "primitive_water",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

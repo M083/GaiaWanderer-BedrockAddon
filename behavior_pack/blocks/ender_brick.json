@@ -1,0 +1,30 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:ender_brick"
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/ender_brick.json",
+            "tag:stone": {},
+            "tag:diamond_pick_diggable": {},
+            "tag:gold_pick_diggable": {},
+            "tag:iron_pick_diggable": {},
+            "tag:stone_pick_diggable": {},
+            "minecraft:destroy_time": 10,
+            "minecraft:explosion_resistance": 1000.0,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#002B00",
+            "minecraft:block_light_absorption": 16,
+            "minecraft:block_light_emission": 0,
+            "minecraft:random_ticking": {
+                "on_tick" : {
+                    "event": "gaiawanderer:burn"
+                }
+            }
+        }
+    }
+}
