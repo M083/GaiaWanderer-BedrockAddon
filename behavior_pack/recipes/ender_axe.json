@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:ender_axe"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "cc",
+      "ce",
+      " l"
+    ],
+    "key": {
+      "c": {
+        "item": "gaiawanderer:ender_star"
+      },
+      "e": {
+        "item": "minecraft:ender_eye"
+      },
+      "l": {
+        "item": "gaiawanderer:wyvern_axe"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:ender_axe",
+      "data": 0
+    }
+  }
+}

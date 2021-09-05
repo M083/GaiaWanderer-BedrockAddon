@@ -2,25 +2,25 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "gaiawanderer:founder_sword"
+    "identifier": "gaiawanderer:ender_sword"
     },
     "priority": 0,
     "tags": [ "crafting_table" ],
     "pattern": [
-      "i",
-      "i",
+      "e",
+      "e",
       "l"
     ],
     "key": {
-      "i": {
-        "item": "gaiawanderer:founder_star"
+      "e": {
+        "item": "gaiawanderer:ender_star"
       },
       "l": {
-        "item": "gaiawanderer:marrella_antenna"
+        "item": "minecraft:ender_eye"
       }
     },
     "result": {
-      "item": "gaiawanderer:founder_sword",
+      "item": "gaiawanderer:ender_sword",
       "data": 0
     }
   }
