@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:red_locator",
+      "materials": { "default": "interceptor" },
+      "textures": {
+        "default": "textures/entity/red_locator"
+      },
+      "geometry": {
+        "default": "geometry.locator"
+      },
+      "animations": {
+        "look_at_target": "animation.interceptor.look_at_target"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.interceptor" }
+      ],
+      "render_controllers": [ "controller.render.interceptor" ]
+    }
+  }
+}
