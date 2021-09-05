@@ -1,8 +1,37 @@
 {
     "entity_sounds": {
         "entities": {
+            "gaiawanderer:ender_snipe": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
+            "gaiawanderer:ender_thrust": {
+                "events": {
+                    "attack": "mob.irongolem.hurt",
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
             "gaiawanderer:ender_proto": {
                 "events": {
+                    "attack": "mob.irongolem.hurt",
                     "hurt": "mob.blaze.hit",
                     "death": "mob.irongolem.death"
                 },
@@ -495,6 +524,26 @@
                 }
             },
             "gaiawanderer:locator": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:red_locator": {
+                "volume": 1,
+                "pitch": 1,
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.armor_stand.hit",
+                    "death": "mob.armor_stand.break",
+                    "shoot": "crossbow.shoot"
+                }
+            },
+            "gaiawanderer:purple_locator": {
                 "volume": 1,
                 "pitch": 1,
                 "events": {
