@@ -2,22 +2,22 @@
     "format_version": 1,
     "header": {
         "description": "Enable all experiments.\nOnly v1.17.X is supported.\nIf you enable this, the resource pack will also be activated automatically.",
-        "name": "GaiaWanderer Behavior Pack ver1,20,157",
+        "name": "GaiaWanderer Behavior Pack ver1,20,209",
         "uuid": "ee649bcf-256c-4013-9068-6a802b891083",
-        "version":[1,20,157]
+        "version":[1,20,209]
     },
     "modules": [
         {
             "description": "GaiaWanderer behavior pack",
             "type": "data",
             "uuid": "fa6e90c8-c925-460f-8155-c8a60b751083",
-            "version":[1,20,157]
+            "version":[1,20,209]
         }
     ],
     "dependencies": [
         {
             "uuid": "66c6e9a8-3093-462a-9c36-dbb6a4cd1083",
-            "version":[1,20,157]
+            "version":[1,20,209]
         }
     ]
 }
