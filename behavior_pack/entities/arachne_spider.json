@@ -176,6 +176,8 @@
           "def": "minecraft:arrow",
           "aux_val": 27
         },
+        "minecraft:jump.static": {
+        },
         "minecraft:behavior.ranged_attack": {
           "attack_radius": 64,
           "charge_shoot_trigger": 0.6,
@@ -198,6 +200,13 @@
         "minecraft:movement": {
           "value": 0.14
         },
+        "minecraft:navigation.climb": {
+          "is_amphibious": true,
+          "can_pass_doors": false,
+          "can_break_doors": false,
+          "avoid_portals": false,
+          "avoid_water": true
+        },
         "minecraft:behavior.melee_attack": {
           "speed_multiplier": 3,
           "track_target": false
@@ -214,6 +223,13 @@
         }
       },
       "gaiawanderer:mode_attack": {
+        "minecraft:navigation.climb": {
+          "is_amphibious": true,
+          "can_pass_doors": false,
+          "can_break_doors": false,
+          "avoid_portals": false,
+          "avoid_water": true
+        },
         "minecraft:variant": {
           "value": 5
         },
@@ -259,15 +275,6 @@
       "minecraft:collision_box": {
         "width": 5,
         "height": 5.25
-      },
-      "minecraft：behavior.move_to_land": {
-      },
-      "minecraft:navigation.climb": {
-        "is_amphibious": true,
-        "can_pass_doors": false,
-        "can_break_doors": false,
-        "avoid_portals": false,
-        "avoid_water": true
       },
       "minecraft:can_climb": {
       },

@@ -8,6 +8,9 @@
     },
     "component_groups": {
       "mode_calm": {
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
         "minecraft:behavior.float_wander": {
           "priority": 10,
           "xz_dist": 3,
@@ -48,6 +51,17 @@
         }
       },
       "mode_rage": {
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+        "minecraft:behavior.float_wander": {
+          "priority": 10,
+          "xz_dist": 3,
+          "y_dist": 12,
+          "y_offset": -1.0,
+          "random_reselect": true,
+          "float_duration": [ 0.3, 0.75 ]
+        },
         "minecraft:boss": {
           "name": "entity.gaiawanderer:rimafloga.name"
         },
@@ -126,14 +140,6 @@
         },
         "minecraft:shooter": {
           "def": "minecraft:arrow"
-        },
-        "minecraft:behavior.float_wander": {
-          "priority": 10,
-          "xz_dist": 3,
-          "y_dist": 12,
-          "y_offset": -1.0,
-          "random_reselect": true,
-          "float_duration": [ 0.3, 0.75 ]
         },
         "minecraft:timer": {
           "looping": false,
@@ -256,13 +262,7 @@
       "minecraft:variant": {
         "value": 0
       },
-      "minecraft:burns_in_daylight": {
-      },
-      "minecraft:behavior.flee_sun": {
-        "priority": 2,
-        "speed_multiplier": 1
-      },
-      "minecraft:nameable": {
+      "minecraft:jump.static": {
       },
       "minecraft:type_family": {
         "family": [ "rimafloga", "monster", "boss" ]
@@ -298,28 +298,11 @@
         "height": 8.8
       },
       "minecraft:movement": {
-        "value": 1.0
+        "value": 0.2
       },
       "minecraft:knockback_resistance": {
         "value": 2.0
       },
-      "minecraft:navigation.hover": {
-        "can_path_over_water": true,
-        "can_sink": false,
-        "can_path_from_air": true,
-        "avoid_water": true,
-        "avoid_damage_blocks": false,
-        "avoid_sun": true
-      },
-      "minecraft:behavior.random_hover": {
-        "priority": 11,
-        "xz_dist": 8,
-        "y_dist": 12,
-        "y_offset": -1,
-        "interval": 1,
-        "hover_height": [6, 12]
-      },
-      "minecraft:movement.hover": {},
       "minecraft:flying_speed": {
         "value": 0.3
       },

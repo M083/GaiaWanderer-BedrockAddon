@@ -3,7 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "gaiawanderer:mutant_nether_jelly",
-      "is_spawnable": false,
+      "is_spawnable": true,
       "is_summonable": true
     },
     "component_groups": {
@@ -167,15 +167,17 @@
         "minecraft:flying_speed": {
           "value": 0.3
         },
-        "minecraft:navigation.hover": {
-          "can_path_over_water": true,
-          "can_sink": false,
-          "can_path_from_air": true,
-          "avoid_water": false,
-          "avoid_damage_blocks": false,
-          "avoid_sun": false
+        "minecraft:behavior.float_wander": {
+          "priority": 10,
+          "xz_dist": 3,
+          "y_dist": 12,
+          "y_offset": -1.0,
+          "random_reselect": true,
+          "float_duration": [ 0.3, 0.75 ]
         },
-        "minecraft:movement.hover": {},
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
         "minecraft:damage_sensor": {
           "triggers": [
             {
@@ -371,15 +373,17 @@
           "burst_shots": 1,
           "burst_interval": 0.05
         },
-        "minecraft:navigation.hover": {
-          "can_path_over_water": true,
-          "can_sink": false,
-          "can_path_from_air": true,
-          "avoid_water": false,
-          "avoid_damage_blocks": false,
-          "avoid_sun": false
+        "minecraft:behavior.float_wander": {
+          "priority": 10,
+          "xz_dist": 3,
+          "y_dist": 12,
+          "y_offset": -1.0,
+          "random_reselect": true,
+          "float_duration": [ 0.3, 0.75 ]
         },
-        "minecraft:movement.hover": {},
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
         "minecraft:variant": {
           "value": 2
         },
@@ -442,16 +446,8 @@
     },
     "components": {
       "minecraft:health": {
-        "value": 1200,
-        "max": 1200
-      },
-      "minecraft:behavior.float_wander": {
-        "priority": 10,
-        "xz_dist": 3,
-        "y_dist": 12,
-        "y_offset": -1.0,
-        "random_reselect": true,
-        "float_duration": [ 0.3, 0.75 ]
+        "value": 1000,
+        "max": 1000
       },
       "minecraft:variant": {
         "value": 0
@@ -502,14 +498,6 @@
       "minecraft:behavior.hurt_by_target": {
         "priority": 1
       },
-      "minecraft:behavior.random_hover": {
-        "priority": 11,
-        "xz_dist": 8,
-        "y_dist": 16,
-        "y_offset": -1,
-        "interval": 1,
-        "hover_height": [6, 12]
-      },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 2,
         "entity_types": [
@@ -535,6 +523,8 @@
       "minecraft:fall_damage": {
         "value": 0
       },
+      "minecraft:jump.static": {
+      },
       "minecraft:scale": {
         "value": 2
       },
@@ -553,7 +543,6 @@
         "probability": 0.02
       },
       "minecraft:can_fly": {},
-      "minecraft:nameable": {},
       "minecraft:on_death": {
         "event": "death_event"
       }
