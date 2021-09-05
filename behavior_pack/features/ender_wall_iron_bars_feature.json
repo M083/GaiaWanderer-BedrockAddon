@@ -1,0 +1,24 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "gaiawanderer:ender_wall_iron_bars_feature"  
+		},
+		"count": 8,
+
+		"replace_rules": [
+			{
+				"places_block": "minecraft:iron_bars",
+				"may_replace": [
+					"gaiawanderer:ender_brick"
+				]
+			},
+			{
+				"places_block": "gaiawanderer:ender_lantern",
+				"may_replace": [
+					"minecraft:end_stone"
+				]
+			}
+		]
+	}	
+}

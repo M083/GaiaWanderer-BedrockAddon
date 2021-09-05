@@ -161,7 +161,7 @@
         "y_dist": 12,
         "y_offset": -1,
         "interval": 1,
-        "hover_height": [2, 6]
+        "hover_height": [6, 12]
       },
       "minecraft:movement.hover": {},
       "minecraft:jump.static": {
