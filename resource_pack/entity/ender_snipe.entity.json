@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:ender_snipe",
+      "materials": {
+        "default": "ender_snipe"
+      },
+      "textures": {
+        "default": "textures/entity/ender_snipe"
+      },
+      "geometry": {
+        "default": "geometry.ender_snipe"
+      },
+      "animations": {
+        "part": "animation.ender_snipe.part",
+        "stone": "animation.ender_snipe.stone",
+        "look_at": "animation.ender_snipe.look_at",
+        "bolt_roll": "animation.ender_snipe.bolt_roll",
+        "shoot": "animation.ender_snipe.shoot",
+        "mode_aim": "animation.ender_snipe.mode_aim",
+        "mode_calm": "animation.ender_snipe.mode_calm",
+        "to_aim": "animation.ender_snipe.to_aim",
+        "to_calm": "animation.ender_snipe.to_calm"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.ender_snipe.general"
+        },
+        {
+          "mode": "controller.animation.ender_snipe.mode"
+        }
+      ],
+      "render_controllers": [ "controller.render.ender_snipe" ],
+      "spawn_egg": {
+        "base_color": "#ECFBAF",
+        "overlay_color": "#003800"
+      }
+    }
+  }
+}

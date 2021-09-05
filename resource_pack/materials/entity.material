@@ -2,6 +2,10 @@
     "materials": {
         "version": "1.0.0",
         "ender_proto:entity_alphatest": {},
+        "ender_thrust:entity_alphatest": {},
+        "ender_snipe:entity": {
+            "+states": [ "Blending" ]
+        },
         "rimafloga:entity_alphatest": {},
         "shark:entity_alphatest": {},
         "wyvern:entity_alphatest": {},

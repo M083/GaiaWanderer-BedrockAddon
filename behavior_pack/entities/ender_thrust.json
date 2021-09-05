@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
-      "identifier": "gaiawanderer:ender_proto",
+      "identifier": "gaiawanderer:ender_thrust",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -18,7 +18,7 @@
         "on_death": "query.last_hit_by_player ? 14 : 0"
       },
       "minecraft:type_family": {
-        "family": [ "ender_proto", "undead", "monster", "ender" ]
+        "family": [ "ender_thrust", "undead", "monster", "ender" ]
       },
       "minecraft:breathable":{
         "total_supply":15,
@@ -27,13 +27,13 @@
         "breathes_water": true
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/ender_proto.json"
+        "table": "loot_tables/entities/ender_thrust.json"
       },
       "minecraft:behavior.hurt_by_target": {
         "priority": 1
       },
       "minecraft:attack": {
-        "damage": 11
+        "damage": 18
       },
       "minecraft:damage_sensor": {
         "triggers": [
@@ -54,13 +54,11 @@
           }
         ]
       },
-      "minecraft:behavior.melee_attack": {
-        "priority": 3,
-        "target_dist": 1.2,
-        "track_target": false,
-        "reach_multiplier": 1.5,
-        "look_distance": 30,
-        "speed_multiplier": 1
+      "minecraft:behavior.delayed_attack": {
+        "attack_duration": 2.6,
+        "hit_delay_pct": 1.6,
+        "reach_multiplier": 6.25,
+        "track_target": true
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 2,
@@ -96,7 +94,7 @@
       },
       "minecraft:collision_box": {
         "width": 1.75,
-        "height": 3.25
+        "height": 4.25
       },
       "minecraft:fall_damage": {
         "value": 0.0
@@ -138,8 +136,8 @@
       "minecraft:can_fly": {
       },
       "minecraft:health": {
-        "value": 80,
-        "max": 80
+        "value": 60,
+        "max": 60
       },
       "minecraft:teleport": {
         "random_teleports": true,

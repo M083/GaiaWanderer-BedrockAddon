@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:ender_thrust",
+      "materials": {
+        "default": "ender_thrust"
+      },
+      "textures": {
+        "default": "textures/entity/ender_thrust"
+      },
+      "geometry": {
+        "default": "geometry.ender_thrust"
+      },
+      "animations": {
+        "part": "animation.ender_thrust.part",
+        "stone": "animation.ender_thrust.stone",
+        "look_at": "animation.ender_thrust.look_at",
+        "unit": "animation.ender_thrust.unit",
+        "thrust": "animation.ender_thrust.thrust"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.ender_thrust.general"
+        },
+        {
+          "attack": "controller.animation.ender_thrust.attack"
+        }
+      ],
+      "render_controllers": [ "controller.render.ender_thrust" ],
+      "spawn_egg": {
+        "base_color": "#ECFBAF",
+        "overlay_color": "#003800"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.ender_snipe.general": {
+      "states": {
+        "default": {
+          "animations": [
+            { "part": [] },
+            { "stone": [] },
+            { "bolt_roll": [] },
+            { "look_at": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.ender_snipe.mode": {
+      "states": {
+        "calm": {
+          "animations": [
+            {
+              "to_calm": []
+            },
+            {
+              "mode_calm": []
+            }
+          ],
+          "transitions": [
+            {
+              "aim" : "query.has_target == 1"
+            }
+          ]
+        },
+        "aim": {
+          "animations": [
+            {
+              "to_aim": []
+            },
+            {
+              "mode_aim": []
+            }
+          ],
+          "transitions": [
+            {
+              "calm" : "query.has_target == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

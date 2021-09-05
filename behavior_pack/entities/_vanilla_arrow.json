@@ -560,6 +560,40 @@
         }
       },
 
+      "gaiawanderer:ender_snipe_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 30,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "mob.enderdragon.hit",
+          "hit_ground_sound": "mob.enderdragon.hit",
+          "power": 6,
+          "gravity": 0.10,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
       "gaiawanderer:wyvern_spear_arrow": {
         "minecraft:variant": {
           "value": 11
@@ -1465,6 +1499,25 @@
               {
                 "run_command": {
                   "command": "playanimation @e[type = gaiawanderer:arachne_humanoid, c = 1] shot"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "ender_snipe" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:ender_snipe_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:ender_snipe, c = 1] shoot"
                 }
               }
             ]
