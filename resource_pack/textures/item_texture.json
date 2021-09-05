@@ -11,6 +11,12 @@
     "ender_sword": {
       "textures": "textures/gaiawanderer/ender_sword"
     },
+    "ender_star": {
+      "textures": "textures/gaiawanderer/ender_star"
+    },
+    "founder_star": {
+      "textures": "textures/gaiawanderer/founder_star"
+    },
     "ender_core": {
       "textures": "textures/gaiawanderer/ender_core"
     },
@@ -313,6 +319,18 @@
     },
     "locator_item": {
       "textures": "textures/gaiawanderer/locator"
+    },
+    "red_teleporter": {
+      "textures": "textures/gaiawanderer/red_teleporter"
+    },
+    "red_locator_item": {
+      "textures": "textures/gaiawanderer/red_locator"
+    },
+    "purple_teleporter": {
+      "textures": "textures/gaiawanderer/purple_teleporter"
+    },
+    "purple_locator_item": {
+      "textures": "textures/gaiawanderer/purple_locator"
     },
     "wandering_ticket": {
       "textures": "textures/gaiawanderer/wandering_ticket"
