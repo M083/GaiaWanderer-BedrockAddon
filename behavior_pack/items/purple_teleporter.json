@@ -1,0 +1,58 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:purple_teleporter",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "purple_teleporter"
+      },
+      "minecraft:use_duration": 1,
+      "minecraft:max_stack_size":1,
+      "minecraft:durability": {
+        "max_durability": 100
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [ "gaiawanderer:nether_diamond" ],
+            "repair_amount": 60
+          },
+          {
+            "items": [ "gaiawanderer:purple_teleporter" ],
+            "repair_amount": 100
+          }
+        ]
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "purple_teleporter"
+        }
+      }
+    },
+    "events": {
+      "purple_teleporter": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "tp @s @e[type = gaiawanderer:purple_locator, c = -1]"
+            }
+          },
+          {
+            "run_command": {
+              "command": "playsound mob.shulker.teleport"
+            }
+          },
+          {
+            "damage": {
+              "type": "void",
+              "amount": 1
+            }
+          }
+        ]
+      }
+    }
+  }
+}

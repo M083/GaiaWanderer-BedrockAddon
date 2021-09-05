@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:purple_locator_item",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "purple_locator_item"
+      },
+      "minecraft:entity_placer": {
+        "entity": "gaiawanderer:purple_locator"
+      }
+    }
+  }
+}

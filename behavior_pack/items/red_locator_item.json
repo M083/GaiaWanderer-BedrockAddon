@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:red_locator_item",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "red_locator_item"
+      },
+      "minecraft:entity_placer": {
+        "entity": "gaiawanderer:red_locator"
+      }
+    }
+  }
+}
