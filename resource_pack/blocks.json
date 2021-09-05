@@ -5,7 +5,7 @@
   },
   "gaiawanderer:ender_brick": {
     "textures": "ender_brick",
-    "sound": "stone"
+    "sound": "nether_brick"
   },
   "gaiawanderer:primitive_water": {
     "textures": "primitive_water",
