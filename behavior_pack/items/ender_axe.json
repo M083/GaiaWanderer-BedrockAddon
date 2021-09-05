@@ -180,7 +180,7 @@
           }
         ]
       },
-      "minecraft:damage": 10,
+      "minecraft:damage": 120,
       "minecraft:weapon": {
         "on_hurt_entity": {
           "event": "gaiawanderer:attacked",

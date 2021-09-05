@@ -20,7 +20,7 @@
           "value": 1
         },
         "minecraft:timer": {
-          "time": [ 1.0, 1.0 ],
+          "time": [ 0.0, 0.0 ],
           "looping": true,
           "time_down_event": {
             "event": "ender_axe_lvup",
@@ -137,7 +137,7 @@
           "value": 10
         },
         "minecraft:timer": {
-          "time": [ 1.0, 1.0 ],
+          "time": [ 0.0, 0.0 ],
           "looping": true,
           "time_down_event": {
             "event": "ender_axe_lvup",
@@ -651,9 +651,6 @@
                   "value": 10
                 }
               ]
-            },
-            "run_command": {
-              "command": "effect @s strength 1 10"
             }
           },
           {
@@ -678,7 +675,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 9"
+              "command": ["effect @s weakness 0","effect @s weakness 2 2"]
             }
           },
           {
@@ -703,7 +700,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 8"
+              "command": ["effect @s weakness 0","effect @s weakness 2 3"]
             }
           },
           {
@@ -728,7 +725,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 7"
+              "command": ["effect @s weakness 0","effect @s weakness 2 4"]
             }
           },
           {
@@ -753,7 +750,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 6"
+              "command": ["effect @s weakness 0","effect @s weakness 2 5"]
             }
           },
           {
@@ -778,7 +775,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 5"
+              "command": ["effect @s weakness 0","effect @s weakness 2 6"]
             }
           },
           {
@@ -803,7 +800,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 4"
+              "command": ["effect @s weakness 0","effect @s weakness 2 7"]
             }
           },
           {
@@ -828,7 +825,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 3"
+              "command": ["effect @s weakness 0","effect @s weakness 2 8"]
             }
           },
           {
@@ -853,7 +850,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 2"
+              "command": ["effect @s weakness 0","effect @s weakness 2 9"]
             }
           },
           {
@@ -878,7 +875,7 @@
               ]
             },
             "run_command": {
-              "command": "effect @s strength 1 1"
+              "command": ["effect @s weakness 0","effect @s weakness 2 10"]
             }
           },
           {
