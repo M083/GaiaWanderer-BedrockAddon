@@ -1,5 +1,5 @@
 {
-  "format_version": "1.10.0",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "gaiawanderer:bonefish",
@@ -128,6 +128,24 @@
         "must_see_forget_duration": 2.0
       },
       "minecraft:physics": {
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_bonefish ~ ~ ~"
+            }
+          }
+        ]
       }
     }
   }

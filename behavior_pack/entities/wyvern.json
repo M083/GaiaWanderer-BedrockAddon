@@ -219,10 +219,25 @@
         "must_see": true,
         "must_see_forget_duration": 10,
         "target_search_height": 80.0
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
       }
     },
-
     "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_wyvern ~ ~ ~"
+            }
+          }
+        ]
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {

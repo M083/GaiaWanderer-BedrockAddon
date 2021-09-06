@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.16.100",
   "minecraft:entity": {
     "description": {
       "identifier": "gaiawanderer:elsalamander",
@@ -201,9 +201,6 @@
     "components": {
       "minecraft：persistent": {},
       "minecraft:fire_immune": true,
-      "minecraft:fall_damage": {
-        "value": 0.0
-      },
       "minecraft:mob_effect": {
         "entity_filter": {
           "all_of": [

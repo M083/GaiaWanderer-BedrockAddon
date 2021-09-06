@@ -829,9 +829,25 @@
         "must_see": true
       },
       "minecraft:physics": {
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
       }
     },
     "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_rolypse ~ ~ ~"
+            }
+          }
+        ]
+      },
       "minecraft:entity_spawned": {
         "randomize": [
           {

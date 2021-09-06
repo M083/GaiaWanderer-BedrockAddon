@@ -163,9 +163,25 @@
       "minecraft:physics": {
         "has_gravity": false,
         "has_collision": false
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
       }
     },
     "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_hollow_S ~ ~ ~"
+            }
+          }
+        ]
+      },
       "minecraft:entity_spawned": {
         "sequence": [
           {

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.10.0",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "gaiawanderer:cutlassfish",
@@ -115,9 +115,25 @@
       ],
       "minecraft:physics": {
         "has_gravity": false
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
       }
     },
     "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_cutlassfish ~ ~ ~"
+            }
+          }
+        ]
+      },
       "become_bonefish": {
         "sequence": [
           {

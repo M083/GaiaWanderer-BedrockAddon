@@ -150,9 +150,25 @@
       "minecraft:nameable": {
       },
       "minecraft:physics": {
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
       }
     },
     "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_ender_thrust ~ ~ ~"
+            }
+          }
+        ]
+      },
       "gaiawanderer:apoptosis_event": {
         "add": {
           "component_groups": [
