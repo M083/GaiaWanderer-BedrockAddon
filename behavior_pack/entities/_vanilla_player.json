@@ -249,6 +249,22 @@
                 "all_of": [
                   {
                     "test": "has_equipment",
+                    "domain": "head",
+                    "operator": "==",
+                    "value": "gaiawanderer:air_helmet"
+                  },
+                  {
+                    "test": "in_water"
+                  }
+                ]
+              },
+              "event": "air_helmet_effect"
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
                     "domain": "hand",
                     "operator": "==",
                     "value": "gaiawanderer:cantera"
@@ -1009,6 +1025,15 @@
           {
             "run_command": {
               "command": "effect @s night_vision 11 0 true"
+            }
+          }
+        ]
+      },
+      "air_helmet_effect": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "effect @s conduit_power 1 0 true"
             }
           }
         ]

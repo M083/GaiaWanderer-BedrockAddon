@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:air_helmet"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ggg",
+      "gcg",
+      "obo"
+    ],
+    "key": {
+      "c": {
+        "item": "minecraft:conduit"
+      },
+      "g": {
+        "item": "minecraft:glass"
+      },
+      "o": {
+        "item": "minecraft:obsidian"
+      },
+      "b": {
+        "item": "gaiawanderer:burn_ingot"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:air_helmet"
+    }
+  }
+}

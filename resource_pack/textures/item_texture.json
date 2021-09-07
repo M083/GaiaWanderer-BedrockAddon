@@ -2,6 +2,12 @@
   "resource_pack_name": "gaiawanderer",
   "texture_name": "atlas.items",
   "texture_data": {
+    "air_helmet": {
+      "textures": "textures/gaiawanderer/air_helmet"
+    },
+    "myth_axe": {
+      "textures": "textures/gaiawanderer/myth_axe"
+    },
     "founder_sword": {
       "textures": "textures/gaiawanderer/founder_sword"
     },

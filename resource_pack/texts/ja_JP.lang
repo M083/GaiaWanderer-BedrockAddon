@@ -161,6 +161,7 @@ item.gaiawanderer:gravity_spear=歪な砲槍
 item.gaiawanderer:ender_sword=エンダーソード
 item.gaiawanderer:ender_axe=奪命の戦斧
 item.gaiawanderer:founder_sword=ファウンダーソード
+item.gaiawanderer:myth_axe=鎧虫の戦斧
 
 item.gaiawanderer:hard_leather_helmet=ハードレザーヘルメット
 item.gaiawanderer:hard_leather_chestplate=ハードレザーチェストプレート
@@ -178,6 +179,7 @@ item.gaiawanderer:jetpack=ジェットパック
 item.gaiawanderer:golden_crown=輝く王冠
 item.gaiawanderer:silver_crown=くすんだ王冠
 item.gaiawanderer:burn_crown=焔の王冠
+item.gaiawanderer:air_helmet=潜水ヘルメット
 
 item.gaiawanderer:fly_wing=鮮やかな翅
 item.gaiawanderer:strong_string=強靭な糸
