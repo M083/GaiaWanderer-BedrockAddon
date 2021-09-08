@@ -34,7 +34,7 @@ v1.17.10以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.20.232/Gaiawanderer_1_20_232.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.20.236/Gaiawanderer_1_20_236.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/GaiaWanderer-BedrockAddon/releases)
 
@@ -101,6 +101,14 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 起動したインターセプタ・ホバーの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver1.20.236
+	[不具合修正]
+	・追加されたピッケルが滑らかな玄武岩に対応していないバグの修正
+	・ファウンダーソード、鎧虫の戦斧の追加効果がテレポートアンカー等にかかる不具合の修正
+	・原初の水が原初の幹をドロップするバグの修正
+	・リマフロガが遠距離攻撃で戦闘開始しないバグの修正
+	・ワンダーブルーム、エンシェントブルームを使用中にテレポーターを使用すると無限ロードが起きるバグの修正
+
 	ver1.20.232
 	[不具合修正]
 	・歪な砲槍を使用後、テレポーター使用時にメッセージが表示されなくなる不具合の修正
