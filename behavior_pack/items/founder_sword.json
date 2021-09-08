@@ -51,7 +51,7 @@
         "sequence": [
           {
             "run_command": {
-              "command": "effect @e[type=!player,r=9] levitation 3 1"
+              "command": "effect @e[type=!player,family=!inanimate,r=9] levitation 3 1"
             }
           },
           {

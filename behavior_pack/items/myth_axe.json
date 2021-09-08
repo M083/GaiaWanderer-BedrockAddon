@@ -193,7 +193,7 @@
         "sequence": [
           {
             "run_command": {
-              "command": "effect @e[type=!player,r=7] levitation 1 15 true"
+              "command": "effect @e[type=!player,family=!inanimate,r=7] levitation 1 15 true"
             }
           },
           {
