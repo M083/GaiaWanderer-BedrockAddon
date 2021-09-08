@@ -37,6 +37,11 @@
         "sequence": [
           {
             "run_command": {
+              "command": "kill @e[type = arrow, c = 1, r = 20]"
+            }
+          },
+          {
+            "run_command": {
               "command": "tp @s @e[type = gaiawanderer:locator, c = -1]"
             }
           },
