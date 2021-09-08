@@ -193,6 +193,7 @@
           { "block": "minecraft:skull", "speed" : 10 },
           { "block": "minecraft:smithing_table", "speed" : 10 },
           { "block": "minecraft:smoker", "speed" : 10 },
+          { "block": "minecraft:smooth_basalt", "speed" : 10 },
           { "block": "minecraft:smooth_quartz_stairs", "speed" : 10 },
           { "block": "minecraft:smooth_red_sandstone_stairs", "speed" : 10 },
           { "block": "minecraft:smooth_sandstone_stairs", "speed" : 10 },
