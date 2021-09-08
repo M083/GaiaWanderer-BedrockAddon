@@ -25,16 +25,6 @@
               "on_damage": {
                 "filters": {
                   "any_of": [
-                    {"test": "has_damage", "value": "projectile"}
-                  ]
-                }
-              },
-              "damage_multiplier": 0.3
-            },
-            {
-              "on_damage": {
-                "filters": {
-                  "any_of": [
                     {"test": "has_damage", "value": "entity_explosion"},
                     {"test": "has_damage", "value": "block_explosion"}
                   ]
@@ -50,6 +40,16 @@
               "on_damage": {
                 "event": "rage"
               }
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {"test": "has_damage", "value": "projectile"}
+                  ]
+                }
+              },
+              "damage_multiplier": 0.3
             }
           ]
         }
