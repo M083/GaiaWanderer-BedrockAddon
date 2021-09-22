@@ -111,7 +111,7 @@
             {
               "wants": [
                 {
-                  "item": "gaiawanderer:salamander:core",
+                  "item": "gaiawanderer:salamander_core",
                   "quantity": 1,
                   "price_multiplier": 0.05
                 }

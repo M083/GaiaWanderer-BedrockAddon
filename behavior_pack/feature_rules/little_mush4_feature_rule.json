@@ -2,8 +2,8 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "gaiawanderer:little_mush3_feature_rule",
-            "places_feature": "gaiawanderer:little_mush3_feature"
+            "identifier": "gaiawanderer:little_mush4_feature_rule",
+            "places_feature": "gaiawanderer:little_mush4_feature"
         },
         "conditions": {
             "placement_pass": "surface_pass",

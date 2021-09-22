@@ -26,7 +26,7 @@
           "general": "controller.animation.shebrus"
         }
       ],
-      "render_controllers": [ "controller.render.shebrus" ],
+      "render_controllers": [ "controller.render.shebrus_founder" ],
       "spawn_egg": {
         "base_color": "#C0C0C0",
         "overlay_color": "#6B00AC"
