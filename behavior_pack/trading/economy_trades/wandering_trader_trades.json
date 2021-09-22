@@ -839,20 +839,6 @@
               ]
             },
             {
-              "max_uses": 6,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:bug_ingot"
-                }
-              ]
-            },
-            {
               "max_uses": 8,
               "wants": [
                 {
