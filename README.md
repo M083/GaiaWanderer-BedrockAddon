@@ -17,7 +17,7 @@ Addon for Minecraft Bedrock Edition
 ## お知らせ
 2021/9/22
 
-現在Minecraftt Bedrock Edition v1.17.30に対応していません。対応前に遊びたい場合にはMinecraftt Bedrock Editionをアップデートしないようにしてください。
+現在Minecraft Bedrock Edition v1.17.30に対応していません。対応前に遊びたい場合にはMinecraft Bedrock Editionをアップデートしないようにしてください。
 
 ## はじめに
 このアドオンはMinecraft Bedrock Edition(以下MCBE)専用です。
