@@ -15,7 +15,7 @@
         "idle": "animation.necrocancer.idle",
         "walk": "animation.necrocancer.walk",
         "attack": "animation.necrocancer.attack",
-        "look_at_target": "animation.necrocancer.loot_at_target"
+        "look_at_target": "animation.necrocancer.look_at_target"
       },
       "scripts": {
         "pre_animation": [
