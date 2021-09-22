@@ -2,6 +2,7 @@
 Addon for Minecraft Bedrock Edition
 
 ## 目次
+- [お知らせ](#お知らせ)
 - [はじめに](#はじめに)
 - [対応言語](#対応言語)
 - [動作環境](#動作環境)
@@ -12,6 +13,11 @@ Addon for Minecraft Bedrock Edition
 - [連絡先](#連絡先)
 - [既知の不具合](#既知の不具合)
 - [更新履歴](#更新履歴)
+
+## お知らせ
+2021/9/22
+
+現在Minecraftt Bedrock Edition v1.17.30に対応していません。対応前に遊びたい場合にはMinecraftt Bedrock Editionをアップデートしないようにしてください。
 
 ## はじめに
 このアドオンはMinecraft Bedrock Edition(以下MCBE)専用です。
