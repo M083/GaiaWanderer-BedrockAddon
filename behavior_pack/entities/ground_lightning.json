@@ -31,8 +31,12 @@
 				"width": 0.001,
 				"height": 0.001
 			},
-			"minecraft:fall_damage": {
-				"value": 0.0
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
 			},
 			"minecraft:physics": {
 			}

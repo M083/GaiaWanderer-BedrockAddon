@@ -235,11 +235,6 @@
         "width": 6,
         "height": 5.2
       },
-      "minecraft:fall_damage": {
-        "value": 0.0
-      },
-      "minecraft：behavior.move_to_land": {
-      },
       "minecraft:navigation.climb": {
         "is_amphibious": true,
         "can_pass_doors": false,
@@ -406,7 +401,7 @@
           },
           {
             "run_command": {
-              "command": "playsound mob.stray.death @e[type = player, r = 10] 1 0.4"
+              "command": "playsound mob.stray.death @e[type = player, r = 10] ~ ~ ~ 1 0.4"
             }
           }
         ]

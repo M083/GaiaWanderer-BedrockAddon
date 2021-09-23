@@ -520,9 +520,6 @@
         "width": 3.25,
         "height": 3.9
       },
-      "minecraft:fall_damage": {
-        "value": 0
-      },
       "minecraft:jump.static": {
       },
       "minecraft:scale": {

@@ -9,6 +9,8 @@
             "minecraft:destroy_time": 1,
             "minecraft:explosion_resistance": 10,
             "minecraft:map_color": "#DDDDDD",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
             "minecraft:geometry": "geometry.rotten_thorn",
             "minecraft:material_instances": {
                 "*": {
@@ -16,10 +18,13 @@
                     "render_method": "alpha_test"
                 }
             },
-            "minecraft:entity_collision": true,
+            "minecraft:entity_collision": {
+                "origin": [-8, 0, -8],
+                "size": [16, 4, 16]
+            },
             "minecraft:pick_collision": {
                 "origin": [ -8.0, 0, -8.0],
-                "size": [ 16.0, 16.0, 16.0 ]
+                "size": [ 16.0, 12.0, 16.0 ]
             },
             "minecraft:breathability": "air",
             "minecraft:on_step_on": {
@@ -32,8 +37,8 @@
                 "sequence": [
                     {
                         "add_mob_effect": {
-                            "amplifier": 1,
-                            "duration": 10,
+                            "amplifier": 2,
+                            "duration": 20,
                             "effect": "poison",
                             "target": "other"
                         }
@@ -41,14 +46,14 @@
                     {
                         "add_mob_effect": {
                             "amplifier": 3,
-                            "duration": 10,
+                            "duration": 20,
                             "effect": "slowness",
                             "target": "other"
                         }
                     },
                     {
                         "damage": {
-                            "amount": 4,
+                            "amount": 10,
                             "type": "wither",
                             "target": "other"
                         }

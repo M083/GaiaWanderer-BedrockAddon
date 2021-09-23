@@ -95,10 +95,6 @@
         "totalSupply": 15,
         "suffocateTime": 0
       },
-      "minecraft：behavior.move_to_land": {
-      },
-      "minecraft：behavior.random_swim": {
-      },
       "minecraft:navigation.climb": {
         "is_amphibious": true,
         "can_pass_doors": false,

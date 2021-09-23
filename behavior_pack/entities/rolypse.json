@@ -11,7 +11,7 @@
     "component_groups": {
       "roll_gold": {
         "minecraft:area_attack" : {
-          "filters": {
+          "entity_filter": {
             "all_of": [
               { "test" :  "is_family", "subject" : "other", "operator" : "!=" , "value" :  "forestgriff"}
             ]
@@ -106,7 +106,7 @@
       },
       "roll_emerald": {
         "minecraft:area_attack" : {
-          "filters": {
+          "entity_filter": {
             "all_of": [
               { "test" :  "is_family", "subject" : "other", "operator" : "!=" , "value" :  "forestgriff"}
             ]
@@ -201,7 +201,7 @@
       },
       "roll_diamond": {
         "minecraft:area_attack" : {
-          "filters": {
+          "entity_filter": {
             "all_of": [
               { "test" :  "is_family", "subject" : "other", "operator" : "!=" , "value" :  "forestgriff"}
             ]
@@ -761,8 +761,6 @@
       "minecraft:behavior.float": {
         "priority": 0
       },
-      "minecraft：behavior.move_to_land": {
-      },
       "minecraft:breathable": {
         "totalSupply": 15,
         "suffocateTime": 0,
@@ -792,10 +790,6 @@
       "minecraft:jump.static": {
       },
       "minecraft:can_climb": {
-      },
-      "minecraft:behavior.move_towards_restriction": {
-        "priority": 5,
-        "speed_multiplier": 1
       },
       "minecraft:behavior.random_stroll": {
         "priority": 6,

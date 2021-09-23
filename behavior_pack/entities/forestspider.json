@@ -123,10 +123,6 @@
       "minecraft:movement": {
         "value": 0.25
       },
-      "minecraft：behavior.move_to_land": {
-      },
-      "minecraft：behavior.random_swim": {
-      },
       "minecraft:navigation.climb": {
         "can_path_over_water": true
       },

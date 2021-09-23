@@ -92,27 +92,12 @@
       },
       "minecraft:can_climb": {
       },
-      "minecraft:environment_sensor": [
-        {
-          "filters": {
-            "test": "is_underwater",
-            "subject": "self",
-            "operator": "==",
-            "value": true
-          },
-          "event": "minecraft:start_transforming"
-        }
-      ],
 
       "minecraft:behavior.melee_attack": {
         "priority": 3,
         "speed_multiplier": 1,
         "reach_multiplier": 1.25,
         "track_target": false
-      },
-      "minecraft:behavior.move_towards_restriction": {
-        "priority": 5,
-        "speed_multiplier": 1
       },
       "minecraft:behavior.random_stroll": {
         "priority": 6,

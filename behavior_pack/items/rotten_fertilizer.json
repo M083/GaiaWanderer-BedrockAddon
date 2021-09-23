@@ -12,7 +12,7 @@
       },
       "minecraft:on_use_on": {
         "on_use_on": {
-          "condition": "query.all_tags('dirt')",
+          //"condition": "query.all_tags(dirt)",
           "event": "gaiawanderer:set_fertlizer"
         }
       }

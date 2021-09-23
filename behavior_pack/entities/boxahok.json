@@ -80,13 +80,8 @@
         "width": 0.95,
         "height": 1.05
       },
-      "minecraft:fall_damage": {
-        "value": 1.0
-      },
       "minecraft:movement": {
         "value": 0.2
-      },
-      "minecraft：behavior.move_to_land": {
       },
       "minecraft:navigation.walk": {
         "is_amphibious": true,

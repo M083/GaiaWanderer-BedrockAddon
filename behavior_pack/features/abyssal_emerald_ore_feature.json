@@ -8,7 +8,7 @@
 
 		"replace_rules": [
 			{
-				"places_block": "minecraft:emerald",
+				"places_block": "minecraft:emerald_ore",
 				"may_replace": [
 					"minecraft:stone"
 				]

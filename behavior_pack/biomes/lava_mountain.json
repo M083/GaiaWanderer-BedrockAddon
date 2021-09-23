@@ -1,0 +1,112 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "lava_mountain"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": -1.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 1.0,
+        "ash": true
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.25, 0.65 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": -3,
+        "sea_floor_material": "minecraft:obsidian",
+        "sea_material": "minecraft:water",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "gaiawanderer:cobblestone_burned",
+        "top_material": "gaiawanderer:cobblestone_burned"
+      },
+      "minecraft:overworld_generation_rules": {
+        "generate_for_climates": [
+          [ "medium", 10 ],
+          [ "warm", 2]
+        ]
+      },
+
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": "minecraft:lava",
+              "mid_material": "minecraft:lava"
+            },
+            "noise_range": [ 0.15, 0.45 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:magma",
+              "mid_material": "minecraft:lava"
+            },
+            "noise_range": [ 0.2, 0.750 ]
+          }
+        ]
+      },
+
+      "lava_mountain": {},
+      "monster": {},
+      "overworld": {},
+      "roofed": {}
+    }
+  }
+}
+
+// {
+//   "lava_mountain": {
+//     "format_version": "1.12.0",
+//     "minecraft:climate": {
+//       "temperature": 1.0,
+//       "downfall": 0.4,
+//       "snow_accumulation": [ 0.0, 0.125 ],
+//       "ash": true
+//     },
+//     "minecraft:overworld_height": {
+//       "noise_params": [ 0.25, 0.65 ]
+//     },
+//     "minecraft:surface_parameters": {
+//       "sea_floor_depth": -3,
+//       "sea_floor_material": "minecraft:obsidian",
+//       "sea_material": "minecraft:water",
+//       "foundation_material": "minecraft:stone",
+//       "mid_material": "gaiawanderer:cobblestone_burned",
+//       "top_material": "gaiawanderer:cobblestone_burned"
+//     },
+//     "minecraft:overworld_generation_rules": {
+//       "generate_for_climates": [
+//         [ "medium", 10 ],
+//         [ "warm", 2]
+//       ]
+//     },
+//     "minecraft:surface_material_adjustments": {
+//       "adjustments": [
+//         {
+//           "materials": {
+//             "top_material": "minecraft:lava",
+//             "mid_material": "minecraft:lava"
+//           },
+//           "noise_range": [ 0.15, 0.45 ],
+//           "height_range": [ 0.2, 0.5 ],
+//           "noise_frequency_scale" : 1
+//         },
+//         {
+//           "materials": {
+//             "top_material": "minecraft:magma",
+//             "mid_material": "minecraft:lava"
+//           },
+//           "noise_range": [ 0.2, 0.750 ],
+//           "height_range": [ 0.2, 0.5 ],
+//           "noise_frequency_scale" : 1
+//         }
+//       ]
+//     },
+//     "lava_mountain": {},
+//     "monster": {},
+//     "overworld": {},
+//     "roofed": {}
+//   }
+// }

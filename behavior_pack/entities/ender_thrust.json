@@ -56,7 +56,7 @@
       },
       "minecraft:behavior.delayed_attack": {
         "attack_duration": 2.6,
-        "hit_delay_pct": 1.6,
+        "hit_delay_pct": 0.6,
         "reach_multiplier": 6.25,
         "track_target": true
       },
@@ -95,9 +95,6 @@
       "minecraft:collision_box": {
         "width": 1.75,
         "height": 4.25
-      },
-      "minecraft:fall_damage": {
-        "value": 0.0
       },
 
       "minecraft:movement": {

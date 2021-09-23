@@ -13,7 +13,6 @@
       "minecraft:overworld_height": {
         "noise_params": [ -1.99, 0.0 ]
       },
-      "minecraft:nether_surface": {},
       "minecraft:surface_parameters": {
         "sea_floor_depth": 20,
         "sea_material": "minecraft:water",

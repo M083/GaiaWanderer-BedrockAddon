@@ -5,10 +5,10 @@
       "identifier": "gaiawanderer:random_ender_wall_feature"
     },
     "features": [
-      [ "gaiawanderer:ender_wall_I_feature", 3 ],
-      [ "gaiawanderer:ender_wall_L_feature", 3 ],
-      [ "gaiawanderer:ender_wall_II_feature", 2 ],
-      [ "gaiawanderer:ender_wall_LI_feature", 2 ]
+      [ "gaiawanderer:ender_wall_i_feature", 3 ],
+      [ "gaiawanderer:ender_wall_l_feature", 3 ],
+      [ "gaiawanderer:ender_wall_ii_feature", 2 ],
+      [ "gaiawanderer:ender_wall_li_feature", 2 ]
     ]
   }
 }

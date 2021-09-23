@@ -40,9 +40,9 @@
         "width": 0.9,
         "height": 0.4
       },
-      "minecraft:fall_damage": {
-        "value": 0.0
-      },
+      // "minecraft:fall_damage": {
+      //   "value": 0.0
+      // },
       "minecraft:nameable": {
       },
       "minecraft:follow_range": {
@@ -83,9 +83,6 @@
       },
       "minecraft:underwater_movement": {
         "value": 0.1
-      },
-      "minecraft:hurt_when_wet": {
-        "value": true
       },
       "minecraft:jump.static": {
       },

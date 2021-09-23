@@ -50,7 +50,7 @@
         },
         {
           "type": "item",
-          "name": "gaiawanderer:wander_bloom",
+          "name": "gaiawanderer:wander_broom",
           "weight": 10,
           "functions": [
             {

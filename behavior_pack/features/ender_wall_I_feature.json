@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "gaiawanderer:ender_wall_I_feature"
+			"identifier": "gaiawanderer:ender_wall_i_feature"
 		},
 		"structure_name": "mystructure:ender_wall_I",
 		"facing_direction": "random",
