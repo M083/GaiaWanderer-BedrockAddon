@@ -15,6 +15,10 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
+Minecraft Bedrock Edition v1.17.30に対応しました。最新バージョンをダウンロードしてください。
+
+「洞窟と崖」のオプションを有効化するとアドオンが正常に動作しません。ご注意ください。
+
 2021/9/22
 
 現在Minecraft Bedrock Edition v1.17.30に対応していません。対応前に遊びたい場合にはMinecraft Bedrock Editionをアップデートしないようにしてください。
@@ -40,7 +44,7 @@ v1.17.10以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.20.236/Gaiawanderer_1_20_236.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.20.257/Gaiawanderer_1_20_257.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/GaiaWanderer-BedrockAddon/releases)
 
@@ -107,6 +111,15 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 起動したインターセプタ・ホバーの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver1.20.257
+	[不具合修正]
+	・MCBEv1.17.30に対応
+	・いくつかのアニメーションが正常に動作しないバグの修正
+	・チェストから一部のアイテムが出現しないバグの修正
+
+	[調整・変更]
+	・腐蝕鉄針の強化
+
 	ver1.20.236
 	[不具合修正]
 	・追加されたピッケルが滑らかな玄武岩に対応していないバグの修正
