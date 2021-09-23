@@ -21,9 +21,9 @@ Minecraft Bedrock Edition v1.17.30に対応しました。最新バージョン�
 
 「洞窟と崖」のオプションを有効化するとアドオンが正常に動作しません。ご注意ください。
 
-2021/9/22
+~~2021/9/22~~
 
-現在Minecraft Bedrock Edition v1.17.30に対応していません。対応前に遊びたい場合にはMinecraft Bedrock Editionをアップデートしないようにしてください。
+~~現在Minecraft Bedrock Edition v1.17.30に対応していません。対応前に遊びたい場合にはMinecraft Bedrock Editionをアップデートしないようにしてください。~~
 
 ## はじめに
 このアドオンはMinecraft Bedrock Edition(以下MCBE)専用です。
