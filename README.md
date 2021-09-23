@@ -15,6 +15,8 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
+2021/9/23
+
 Minecraft Bedrock Edition v1.17.30に対応しました。最新バージョンをダウンロードしてください。
 
 「洞窟と崖」のオプションを有効化するとアドオンが正常に動作しません。ご注意ください。
