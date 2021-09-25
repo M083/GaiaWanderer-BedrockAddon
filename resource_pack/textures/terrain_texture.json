@@ -4,6 +4,27 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "copy_table": {
+      "textures": "textures/blocks/copy_table"
+    },
+    "nether_diamond_block": {
+      "textures": "textures/blocks/nether_diamond_block"
+    },
+    "nether_metal_block": {
+      "textures": "textures/blocks/nether_metal_block"
+    },
+    "rotten_ingot_block": {
+      "textures": "textures/blocks/rotten_ingot_block"
+    },
+    "burn_ingot_block": {
+      "textures": "textures/blocks/burn_ingot_block"
+    },
+    "bug_ingot_block": {
+      "textures": "textures/blocks/bug_ingot_block"
+    },
+    "bug_extract_block": {
+      "textures": "textures/blocks/bug_extract_block"
+    },
     "ender_lantern": {
       "textures": [
         "textures/blocks/ender_lantern"

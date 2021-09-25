@@ -2,27 +2,6 @@
   "resource_pack_name": "gaiawanderer",
   "texture_name": "atlas.items",
   "texture_data": {
-    "copy_table": {
-      "textures": "textures/gaiawanderer/copy_table"
-    },
-    "nether_diamond_block": {
-      "textures": "textures/gaiawanderer/nether_diamond_block"
-    },
-    "nether_metal_block": {
-      "textures": "textures/gaiawanderer/nether_metal_block"
-    },
-    "rotten_ingot_block": {
-      "textures": "textures/gaiawanderer/rotten_ingot_block"
-    },
-    "burn_ingot_block": {
-      "textures": "textures/gaiawanderer/burn_ingot_block"
-    },
-    "bug_ingot_block": {
-      "textures": "textures/gaiawanderer/bug_ingot_block"
-    },
-    "bug_extract_block": {
-      "textures": "textures/gaiawanderer/bug_extract_block"
-    },
     "mysterious_literature": {
       "textures": "textures/gaiawanderer/mysterious_literature"
     },
