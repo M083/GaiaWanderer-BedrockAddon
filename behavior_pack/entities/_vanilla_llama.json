@@ -78,7 +78,8 @@
         "minecraft:rideable": {
           "seat_count": 1,
           "family_types": [
-            "enchanted_book_trader"
+            "enchanted_book_trader",
+            "scholar"
           ],
           "seats": {
             "position": [ 0.0, 0.75, 0 ]
@@ -107,6 +108,11 @@
       "gaiawanderer:ride_enchanted_book_trader": {
         "minecraft:addrider": {
           "entity_type": "gaiawanderer:enchanted_book_trader"
+        }
+      },
+      "gaiawanderer:ride_scholar": {
+        "minecraft:addrider": {
+          "entity_type": "gaiawanderer:scholar"
         }
       },
 
@@ -633,9 +639,18 @@
           {
             "randomize": [
               {
-                "weight": 1
+                "weight": 5
               },
               {
+                "weight": 5,
+                "add": {
+                  "component_groups": [
+                    "gaiawanderer:ride_scholar"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
                 "add": {
                   "component_groups": [
                     "gaiawanderer:ride_enchanted_book_trader"

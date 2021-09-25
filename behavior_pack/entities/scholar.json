@@ -1,0 +1,165 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:scholar",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "despawning": {
+        "minecraft:type_family": {
+          "family": [ "scholar", "wandering_trader_despawning", "mob" ]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "scholar", "mob" ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "random_time_choices": [
+          { "weight": 50, "value": 2400 },
+          { "weight": 50, "value": 3600 }
+        ],
+        "time_down_event": {
+          "event": "minecraft:start_despawn",
+          "target": "self"
+        }
+      },
+      "minecraft:economy_trade_table": {
+        "display_name": "entity.gaiawanderer:scholar.name",
+        "table": "trading/economy_trades/scholar_trades.json",
+        "new_screen": true
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:despawn": {
+        "remove_child_entities": true,
+        "filters": {
+          "all_of": [
+            {
+              "any_of": [
+                { "test": "is_family", "subject": "self", "value": "wandering_trader_despawning" },
+                { "test": "has_trade_supply", "subject": "self", "value": false }
+              ]
+            },
+            { "test": "distance_to_nearest_player", "operator": ">", "value": 24 }
+          ]
+        }
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+      "minecraft:behavior.trade_interest": {
+          "priority": 3,
+          "within_radius": 6.0,
+          "interest_time": 45.0,
+          "remove_item_time": 1.0,
+          "carried_item_switch_time": 2.0,
+          "cooldown": 2.0
+      },
+      "minecraft:behavior.look_at_trading_player": {
+        "priority": 4
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "zombie" },
+                { "test": "is_family", "subject": "other", "value": "zombie_villager" },
+                { "test": "is_family", "subject": "other", "value": "zombie_pigman" },
+                { "test": "is_family", "subject": "other", "value": "illager" },
+                { "test": "is_family", "subject": "other", "value": "vex" }
+              ]
+            },
+            "walk_speed_multiplier": 0.6,
+            "sprint_speed_multiplier": 0.6
+          }
+        ],
+        "max_dist": 6
+      },
+      "minecraft:behavior.restrict_open_door": {
+        "priority": 5
+      },
+      "minecraft:behavior.open_door": {
+        "priority": 6,
+        "close_door_after": true
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 8,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "minecraft:start_despawn": {
+        "add": {
+          "component_groups": [
+            "despawning"
+          ]
+        }
+      }
+    }
+  }
+}
