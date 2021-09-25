@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:copy_table"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "minecraft:crafting_table": {
+                "grid_size": 3,
+                "crafting_tags": ["copy_table"],
+                "custom_description": "tile.gaiawanderer:copy_table.name"
+            },
+            "minecraft:loot": "loot_tables/blocks/copy_table.json",
+            "tag:ice_ore": {},
+            "minecraft:destroy_time": 8,
+            "minecraft:explosion_resistance": 20,
+            "minecraft:map_color": "#B5AAA1",
+            "minecraft:block_light_absorption": 16,
+            "minecraft:block_light_emission": 0
+        }
+    }
+}

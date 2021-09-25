@@ -4,9 +4,19 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
-    "copy_table": {
+    "copy_table_top": {
       "textures": [
-        "textures/blocks/copy_table"
+        "textures/blocks/copy_table_top"
+      ]
+    },
+    "copy_table_side": {
+      "textures": [
+        "textures/blocks/copy_table_side"
+      ]
+    },
+    "copy_table_bottom": {
+      "textures": [
+        "textures/blocks/copy_table_bottom"
       ]
     },
     "nether_diamond_block": {

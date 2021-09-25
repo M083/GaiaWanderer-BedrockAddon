@@ -26,7 +26,47 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:copy_table",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:copy_paper",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 64,
               "wants": [
                 {
                   "item": "gaiawanderer:fortress_canon",
@@ -46,7 +86,7 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 64,
               "wants": [
                 {
                   "item": "gaiawanderer:thunder_feather",
@@ -66,7 +106,7 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 64,
               "wants": [
                 {
                   "item": "gaiawanderer:elsalamander_tail",
@@ -86,7 +126,7 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 64,
               "wants": [
                 {
                   "item": "gaiawanderer:rimafloga_stone",
@@ -106,7 +146,27 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:rotten_scythe",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 64,
               "wants": [
                 {
                   "item": "gaiawanderer:opabinia_arm",
@@ -126,7 +186,7 @@
           "num_to_select": 1,
           "trades": [
             {
-              "max_uses": 1,
+              "max_uses": 64,
               "wants": [
                 {
                   "item": "gaiawanderer:mutant_nether_jelly_arm",
