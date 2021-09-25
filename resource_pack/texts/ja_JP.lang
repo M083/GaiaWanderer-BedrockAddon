@@ -25,6 +25,7 @@ entity.gaiawanderer:rotten_zombie.name=ムッシュゾンビ
 entity.gaiawanderer:frost_beak.name=フロストビーク
 entity.gaiawanderer:frost_beak<>.name=フロストビーク
 entity.gaiawanderer:enchanted_book_trader.name=本屋
+entity.gaiawanderer:scholar.name=研究者
 entity.gaiawanderer:forestgriff.name=フォレストグリフ
 entity.gaiawanderer:forestgriff<>.name=フォレストグリフ
 entity.gaiawanderer:marrella.name=マーレラ・ファウンダー
@@ -101,6 +102,7 @@ item.spawn_egg.entity.gaiawanderer:ender_proto.name=エンダープロトを出�
 item.spawn_egg.entity.gaiawanderer:ender_thrust.name=エンダースラストを出現させる
 item.spawn_egg.entity.gaiawanderer:ender_snipe.name=エンダースナイプを出現させる
 item.spawn_egg.entity.gaiawanderer:enchanted_book_trader.name=本屋を出現させる
+item.spawn_egg.entity.gaiawanderer:scolar.name=研究者を出現させる
 
 item.spawn_egg.entity.gaiawanderer:elsalamander.name=§dエルサラマンダーを出現させる
 item.spawn_egg.entity.gaiawanderer:fortresscancer.name=§dフォートレスキャンサーを出現させる
@@ -209,6 +211,8 @@ item.gaiawanderer:rolypse_shell=ロリープスの殻
 item.gaiawanderer:griff_breed_food=グリフの繫殖餌
 item.gaiawanderer:griff_feed_food=グリフの懐き餌
 item.gaiawanderer:griff_growth_food=グリフの成長餌
+item.gaiawanderer:scholar_coin=研究者のコイン
+item.gaiawanderer:mysterious_literature=謎の文献
 
 item.gaiawanderer:elsalamander_tail=焔え盛る尻尾
 item.gaiawanderer:fortress_canon=砕けた砲塔
