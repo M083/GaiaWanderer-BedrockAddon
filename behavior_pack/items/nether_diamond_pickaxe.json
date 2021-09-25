@@ -41,7 +41,7 @@
             "block": "minecraft:blue_ice",
             "speed" : 40
           },
-          { "block": "minecraft:activator_raill", "speed" : 40 },
+          // { "block": "minecraft:activator_raill", "speed" : 40 },
           { "block": "minecraft:anvil", "speed" : 40 },
           { "block": "minecraft:ancient_debris", "speed" : 40 },
           { "block": "minecraft:basalt", "speed" : 40 },
@@ -143,7 +143,6 @@
           { "block": "minecraft:netherrack", "speed" : 40 },
           { "block": "minecraft:netherreactor", "speed" : 40 },
           { "block": "minecraft:normal_stone_stairs", "speed" : 40 },
-          { "block": "minecraft:bsidian", "speed" : 40 },
           { "block": "minecraft:obsidian", "speed" : 40 },
           { "block": "minecraft:orange_glazed_terracotta", "speed" : 40 },
           { "block": "minecraft:pink_glazed_terracotta", "speed" : 40 },
@@ -177,10 +176,10 @@
           { "block": "minecraft:quartz_stairs", "speed" : 40 },
           { "block": "minecraft:rail", "speed" : 40 },
 
-          { "block": "minecraft:real_double_stone_slab", "speed" : 40 },
-          { "block": "minecraft:real_double_stone_slab2", "speed" : 40 },
-          { "block": "minecraft:real_double_stone_slab3", "speed" : 40 },
-          { "block": "minecraft:real_double_stone_slab4", "speed" : 40 },
+          // { "block": "minecraft:real_double_stone_slab", "speed" : 40 },
+          // { "block": "minecraft:real_double_stone_slab2", "speed" : 40 },
+          // { "block": "minecraft:real_double_stone_slab3", "speed" : 40 },
+          // { "block": "minecraft:real_double_stone_slab4", "speed" : 40 },
 
           { "block": "minecraft:red_glazed_terracotta", "speed" : 40 },
           { "block": "minecraft:red_nether_brick", "speed" : 40 },
