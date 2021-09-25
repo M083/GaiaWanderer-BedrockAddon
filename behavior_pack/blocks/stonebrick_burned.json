@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:stonebrick_burned"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/stonebrick_burned.json",
             "tag:stone": {},
             "tag:diamond_pick_diggable": {},
