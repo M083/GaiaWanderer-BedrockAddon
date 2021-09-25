@@ -263,6 +263,13 @@ tile.gaiawanderer:primitive_log.name=原初の幹
 tile.gaiawanderer:primitive_water.name=原初の水
 tile.gaiawanderer:ender_brick.name=エンダーブリック
 tile.gaiawanderer:ender_lantern.name=エンダーランタン
+tile.gaiawanderer:copy_table.name=複製台
+tile.gaiawanderer:bug_extract_block.name=虫の体液ブロック
+tile.gaiawanderer:bug_ingot_block.name=虫鉄鋼ブロック
+tile.gaiawanderer:burn_ingot_block.name=焔熱鋼ブロック
+tile.gaiawanderer:bug_ingot_block.name=腐蝕鋼ブロック
+tile.gaiawanderer:nether_metal_block.name=ネザーメタルブロック
+tile.gaiawanderer:nether_diamond_block.name=ネザーダイヤモンドブロック
 
 tile.gaiawanderer:rocked_barrel.text=鍵がかかっている
 

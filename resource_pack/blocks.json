@@ -1,4 +1,30 @@
 {
+  "gaiawanderer:copy_table": {
+    "textures": {
+      "up": "copy_table_top",
+      "down": "copy_table_bottom",
+      "side": "copy_table_side"
+    },
+    "sound": "nether_brick"
+  },
+  "gaiawanderer:nether_diamond_block": {
+    "sound": "metal"
+  },
+  "gaiawanderer:nether_metal_block": {
+    "sound": "metal"
+  },
+  "gaiawanderer:rotten_ingot_block": {
+    "sound": "metal"
+  },
+  "gaiawanderer:burn_ingot_block": {
+    "sound": "metal"
+  },
+  "gaiawanderer:bug_ingot_block": {
+    "sound": "metal"
+  },
+  "gaiawanderer:bug_extract_block": {
+    "sound": "slime"
+  },
   "gaiawanderer:ender_lantern": {
     "textures": "ender_lantern",
     "sound": "glass"
