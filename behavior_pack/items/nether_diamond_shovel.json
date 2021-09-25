@@ -27,13 +27,13 @@
             "block": {
               "tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
             },
-            "speed" : 20
+            "speed" : 40
           },
-          { "block": "minecraft:clay", "speed" : 20 },
-          { "block": "minecraft:mycelium", "speed" : 20 },
-          { "block": "minecraft:podzol", "speed" : 20 },
-          { "block": "minecraft:soul_sand", "speed" : 20 },
-          { "block": "minecraft:soul_soil", "speed" : 20 }
+          { "block": "minecraft:clay", "speed" : 40 },
+          { "block": "minecraft:mycelium", "speed" : 40 },
+          { "block": "minecraft:podzol", "speed" : 40 },
+          { "block": "minecraft:soul_sand", "speed" : 40 },
+          { "block": "minecraft:soul_soil", "speed" : 40 }
         ]
       },
       "minecraft:enchantable":{
