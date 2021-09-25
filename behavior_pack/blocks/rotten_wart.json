@@ -52,7 +52,7 @@
         "events": {
             "gaiawanderer:growup": {
                 "set_block_property": {
-                    "gaiawanderer:rotten_wart_stage": "query.block_property('gaiawanderer:rotten_wart_stage') + 1"
+                    "gaiawanderer:rotten_wart_stage": "(query.block_property('gaiawanderer:rotten_wart_stage') == 2)? 2 : query.block_property('gaiawanderer:rotten_wart_stage') + 1"
                 }
             },
             "gaiawanderer:growup_fertlize": {
@@ -64,7 +64,7 @@
                     },
                     {
                         "set_block_property": {
-                            "gaiawanderer:rotten_wart_stage": "query.block_property('gaiawanderer:rotten_wart_stage') + 1"
+                            "gaiawanderer:rotten_wart_stage": "(query.block_property('gaiawanderer:rotten_wart_stage') == 2)? 2 : query.block_property('gaiawanderer:rotten_wart_stage') + 1"
                         }
                     },
                     {
