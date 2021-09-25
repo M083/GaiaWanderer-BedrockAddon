@@ -6,6 +6,9 @@
         },
         "components": {
             "tag:minecraft:wood": {},
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/barrel_crossbow.json",
             "minecraft:destroy_time": 0.15,
             "minecraft:explosion_resistance": 1,

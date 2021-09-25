@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:rocked_barrel"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:minecraft:wood": {},
             "minecraft:loot": "",
             "minecraft:destroy_time": 0.5,

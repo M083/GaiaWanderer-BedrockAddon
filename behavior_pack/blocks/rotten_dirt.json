@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:rotten_dirt"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:dirt": {},
             "minecraft:loot": "loot_tables/blocks/rotten_dirt.json",
             "minecraft:destroy_time": 1,

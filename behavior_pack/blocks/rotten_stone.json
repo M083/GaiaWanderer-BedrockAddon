@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:rotten_stone"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:diamond_pick_diggable": {},
             "tag:gold_pick_diggable": {},
             "tag:iron_pick_diggable": {},

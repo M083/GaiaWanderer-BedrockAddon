@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:log_iron_ore"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:wood": {},
             "tag:ice_ore": {},
             "minecraft:loot": "loot_tables/blocks/log_iron_ore.json",

@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:emerald_packed_ice"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/emerald_packed_ice.json",
             "tag:ice_ore": {},
             "minecraft:destroy_time": 8,

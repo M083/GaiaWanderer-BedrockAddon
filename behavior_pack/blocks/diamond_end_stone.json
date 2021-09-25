@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:diamond_end_stone"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/diamond_end_stone.json",
             "tag:ice_ore": {},
             "minecraft:destroy_time": 7,

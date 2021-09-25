@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:skyflower"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/skyflower.json",
             "minecraft:destroy_time": 0,
             "minecraft:explosion_resistance": 1,

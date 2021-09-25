@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:rotten_egg"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/rotten_root.json",
             "minecraft:destroy_time": 0,
             "minecraft:explosion_resistance": 1,

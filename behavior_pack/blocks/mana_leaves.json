@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:mana_leaves"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:minecraft:wood": {},
             "minecraft:loot": "loot_tables/blocks/mana_leaves.json",
             "minecraft:destroy_time": 0,

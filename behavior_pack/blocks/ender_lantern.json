@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:ender_lantern"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:stone": {},
             "minecraft:loot": "loot_tables/blocks/ender_lantern.json",
             "minecraft:destroy_time": 10,

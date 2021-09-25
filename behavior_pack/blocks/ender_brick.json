@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:ender_brick"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/ender_brick.json",
             "tag:stone": {},
             "tag:diamond_pick_diggable": {},

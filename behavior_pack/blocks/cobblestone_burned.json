@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:cobblestone_burned"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "minecraft:loot": "loot_tables/blocks/cobblestone_burned.json",
             "tag:stone": {},
             "tag:wood_pick_diggable": {},

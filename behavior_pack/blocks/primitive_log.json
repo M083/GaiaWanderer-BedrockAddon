@@ -5,6 +5,9 @@
             "identifier": "gaiawanderer:primitive_log"
         },
         "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
             "tag:ice_ore": {},
             "minecraft:loot": "loot_tables/blocks/primitive_log.json",
             "minecraft:destroy_time": 1,
