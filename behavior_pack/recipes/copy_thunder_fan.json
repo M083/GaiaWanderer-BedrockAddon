@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:copy_thunder_fan"
+    },
+    "tags": [ "copy_table" ],
+    "pattern": [
+      " p ",
+      " i ",
+      "   "
+    ],
+    "key": {
+      "p": {
+        "item": "gaiawanderer:copy_paper"
+      },
+      "i": {
+        "item": "gaiawanderer:thunder_fan"
+      }
+    },
+    "result": ["gaiawanderer:thunder_fan", "gaiawanderer:thunder_fan"]
+  }
+}
