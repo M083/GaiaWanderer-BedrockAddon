@@ -57,7 +57,7 @@
                                         }
                                     }
                                 ],
-                                "weight": 85
+                                "weight": 81
                             },
                             {
                                 "sequence": [
@@ -100,6 +100,12 @@
                             {
                                 "run_command": {
                                     "command": "fill ~ ~ ~ ~ ~ ~ iron_block"
+                                },
+                                "weight": 4
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~ ~ ~ ~ oxidized_copper"
                                 },
                                 "weight": 4
                             },
