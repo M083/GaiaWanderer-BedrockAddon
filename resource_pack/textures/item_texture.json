@@ -2,6 +2,9 @@
   "resource_pack_name": "gaiawanderer",
   "texture_name": "atlas.items",
   "texture_data": {
+    "gas_mask": {
+      "textures": "textures/gaiawanderer/gas_mask"
+    },
     "copy_paper": {
       "textures": "textures/gaiawanderer/copy_paper"
     },

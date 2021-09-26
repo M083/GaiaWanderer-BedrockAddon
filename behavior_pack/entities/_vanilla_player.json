@@ -292,82 +292,6 @@
                 ]
               },
               "event": "cantera_off"
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "domain": "head",
-                    "operator": "==",
-                    "value": "gaiawanderer:nether_metal_helmet"
-                  }
-                  ,
-                  {
-                    "test": "is_variant",
-                    "operator": "equals",
-                    "value": 1
-                  }
-                ]
-              },
-              "event": "nether_metal_helmet_hurt_event"
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "domain": "torso",
-                    "operator": "==",
-                    "value": "gaiawanderer:nether_metal_chestplate"
-                  }
-                  ,
-                  {
-                    "test": "is_variant",
-                    "operator": "equals",
-                    "value": 2
-                  }
-                ]
-              },
-              "event": "nether_metal_chestplate_hurt_event"
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "domain": "leg",
-                    "operator": "==",
-                    "value": "gaiawanderer:nether_metal_leggings"
-                  }
-                  ,
-                  {
-                    "test": "is_variant",
-                    "operator": "equals",
-                    "value": 3
-                  }
-                ]
-              },
-              "event": "nether_metal_leggings_hurt_event"
-            },
-            {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "domain": "feet",
-                    "operator": "==",
-                    "value": "gaiawanderer:nether_metal_boots"
-                  }
-                  ,
-                  {
-                    "test": "is_variant",
-                    "operator": "equals",
-                    "value": 4
-                  }
-                ]
-              },
-              "event": "nether_metal_boots_hurt_event"
             }
           ]
         }
@@ -1100,6 +1024,24 @@
       },
       "hurt_event": {
         "sequence": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "domain": "head",
+                  "operator": "==",
+                  "value": "gaiawanderer:gas_mask"
+                }
+              ]
+            },
+            "run_command": {
+              "command": [
+                "effect @s poison 0 0 true",
+                "effect @s wither 0 0 true"
+              ]
+            }
+          },
           {
             "filters": {
               "all_of": [

@@ -1,0 +1,53 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "gaiawanderer:gas_mask",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": {
+        "texture": "gas_mask"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.helmet"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "damage_chance": 0,
+        "max_durability": 1000
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["gaiawanderer:gas_mask"],
+            "repair_amount": 1000
+          }
+        ]
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "wear_sound"
+        }
+      },
+      "minecraft:enchantable": {
+        "value": 1,
+        "slot": "armor_head"
+      },
+      "minecraft:armor": {
+        "protection": 1
+      }
+    },
+    "events": {
+      "wear_sound": {
+        "run_command": {
+          "command": "playsound armor.equip_iron"
+        }
+      }
+    }
+  }
+}
