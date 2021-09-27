@@ -237,6 +237,8 @@ item.gaiawanderer:rotten_tablet=万能薬
 item.gaiawanderer:marrella_blood=マーレラの血
 item.gaiawanderer:boxa_meat=ボクサミート
 item.gaiawanderer:boxa_steak=ボクサステーキ
+item.gaiawanderer:red_mushroom_pie=赤きのこパイ
+item.gaiawanderer:brown_mushroom_pie=茶きのこパイ
 
 tile.gaiawanderer:rotten_thorn.name=腐蝕鉄針
 tile.gaiawanderer:rotten_root.name=腐蝕根

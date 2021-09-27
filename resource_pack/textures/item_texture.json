@@ -2,6 +2,12 @@
   "resource_pack_name": "gaiawanderer",
   "texture_name": "atlas.items",
   "texture_data": {
+    "brown_mushroom_pie": {
+      "textures": "textures/gaiawanderer/brown_mushroom_pie"
+    },
+    "red_mushroom_pie": {
+      "textures": "textures/gaiawanderer/red_mushroom_pie"
+    },
     "gas_mask": {
       "textures": "textures/gaiawanderer/gas_mask"
     },
