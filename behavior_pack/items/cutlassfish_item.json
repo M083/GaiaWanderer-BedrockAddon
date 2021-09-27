@@ -27,7 +27,7 @@
       "minecraft:food": {
         "nutrition": 8,
         "saturation_modifier": "good",
-        "can_always_eat": false,
+        "can_always_eat": true,
         "on_consume": {
           "event": "cutlassfish_effect",
           "target": "self"
