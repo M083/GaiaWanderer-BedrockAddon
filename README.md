@@ -15,6 +15,11 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
+2021/10/1
+
+ver1.20.XXXのアドオンを使用して作成したワールドは、ver1.21.XXXのアドオンを使用しても引き続きそのままのワールドで遊ぶことができます。
+参考：https://twitter.com/M0_83/status/1443899547147661316
+
 2021/9/23
 
 Minecraft Bedrock Edition v1.17.30に対応しました。最新バージョンをダウンロードしてください。
@@ -46,7 +51,7 @@ v1.17.10以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.20.257/Gaiawanderer_1_20_257.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.21.109/Gaiawanderer_1_21_109.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/GaiaWanderer-BedrockAddon/releases)
 
@@ -113,6 +118,22 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 起動したインターセプタ・ホバーの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver1.21.109
+	[不具合修正]
+	・本屋、腐蝕茸、追加されたツルハシで発生していたエラーの修正
+
+	[追加要素]
+	・弓が入った樽、クロスボウが入った樽、釣竿が入った樽のクラフトレシピが見えるように
+	・各種ブロックをクリエイティブモードのインベントリに追加
+	・各種鋼、虫の体液等をブロックにできるように
+	・ネザーダイヤモンドツールの採掘速度を上方修正
+	・複製台で一部の装備を複製できるように
+	・抗毒マスクを追加
+	・満腹度が満タンの状態でもタチウオを食べられるように
+	・赤きのこパイ、茶きのこパイを追加
+	・腐蝕林の迷宮に銅ブロックが生成されるように
+	・研究者およびそれに関連するアイテムの追加
+
 	ver1.20.257
 	[不具合修正]
 	・MCBEv1.17.30に対応
