@@ -7,8 +7,8 @@
 				"texture_width": 256,
 				"texture_height": 256,
 				"visible_bounds_width": 34,
-				"visible_bounds_height": 17.5,
-				"visible_bounds_offset": [0, 8.25, 0]
+				"visible_bounds_height": 18,
+				"visible_bounds_offset": [0, 8, 0]
 			},
 			"bones": [
 				{
@@ -25,6 +25,37 @@
 					]
 				},
 				{
+					"name": "ice_body1",
+					"parent": "body1",
+					"pivot": [0, 56, 27],
+					"cubes": [
+						{"origin": [-9, 61, 16], "size": [18, 4, 20], "uv": [0, 128]},
+						{"origin": [-11, 59, -2], "size": [22, 8, 22], "uv": [0, 128]}
+					]
+				},
+				{
+					"name": "ice_thorn1",
+					"parent": "ice_body1",
+					"pivot": [0, 65, 27],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-3, 63, 24], "size": [6, 8, 6], "uv": [0, 128]},
+						{"origin": [-2, 71, 25], "size": [4, 6, 4], "uv": [0, 128]},
+						{"origin": [-1, 77, 26], "size": [2, 6, 2], "uv": [0, 128]}
+					]
+				},
+				{
+					"name": "ice_thorn2",
+					"parent": "ice_body1",
+					"pivot": [0, 67, 11],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-3, 65, 8], "size": [6, 8, 6], "uv": [0, 128]},
+						{"origin": [-2, 73, 9], "size": [4, 6, 4], "uv": [0, 128]},
+						{"origin": [-1, 79, 10], "size": [2, 6, 2], "uv": [0, 128]}
+					]
+				},
+				{
 					"name": "body2",
 					"parent": "body1",
 					"pivot": [0, 56, 3],
@@ -34,11 +65,72 @@
 					]
 				},
 				{
+					"name": "ice_body2",
+					"parent": "body2",
+					"pivot": [0, 57, -13],
+					"cubes": [
+						{"origin": [-12, 59, -16], "size": [24, 9, 19], "uv": [0, 128]},
+						{"origin": [-13, 59, -29], "size": [26, 10, 16], "uv": [0, 128]}
+					]
+				},
+				{
+					"name": "ice_thorn3",
+					"parent": "ice_body2",
+					"pivot": [0, 68, -5],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-3, 66, -8], "size": [6, 8, 6], "uv": [0, 128]},
+						{"origin": [-2, 74, -7], "size": [4, 6, 4], "uv": [0, 128]},
+						{"origin": [-1, 80, -6], "size": [2, 6, 2], "uv": [0, 128]}
+					]
+				},
+				{
+					"name": "ice_thorn4",
+					"parent": "ice_body2",
+					"pivot": [0, 69, -19],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-3, 67, -22], "size": [6, 8, 6], "uv": [0, 128]},
+						{"origin": [-2, 75, -21], "size": [4, 6, 4], "uv": [0, 128]},
+						{"origin": [-1, 81, -20], "size": [2, 6, 2], "uv": [0, 128]}
+					]
+				},
+				{
 					"name": "body3",
 					"parent": "body2",
 					"pivot": [0, 56, -29],
 					"cubes": [
 						{"origin": [-12, 46, -48], "size": [24, 21, 24], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "ice_body3",
+					"parent": "body3",
+					"pivot": [0, 57, -42],
+					"cubes": [
+						{"origin": [-14, 60, -49], "size": [28, 10, 23], "uv": [0, 128]}
+					]
+				},
+				{
+					"name": "ice_thorn5",
+					"parent": "ice_body3",
+					"pivot": [0, 70, -32],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-3, 68, -35], "size": [6, 8, 6], "uv": [0, 128]},
+						{"origin": [-2, 76, -34], "size": [4, 6, 4], "uv": [0, 128]},
+						{"origin": [-1, 82, -33], "size": [2, 6, 2], "uv": [0, 128]}
+					]
+				},
+				{
+					"name": "ice_thorn6",
+					"parent": "ice_body3",
+					"pivot": [0, 70, -43],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-3, 68, -46], "size": [6, 8, 6], "uv": [0, 128]},
+						{"origin": [-2, 76, -45], "size": [4, 6, 4], "uv": [0, 128]},
+						{"origin": [-1, 82, -44], "size": [2, 6, 2], "uv": [0, 128]}
 					]
 				},
 				{
