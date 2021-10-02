@@ -35,16 +35,7 @@
                     }
                 ]
             },
-            "minecraft:on_fall_on":{
-                "event": "gaiawanderer:spawnspider"
-            },
             "minecraft:on_interact":{
-                "event": "gaiawanderer:spawnspider"
-            },
-            "minecraft:on_step_on":{
-                "event": "gaiawanderer:spawnspider"
-            },
-            "minecraft:on_step_off":{
                 "event": "gaiawanderer:spawnspider"
             },
             "minecraft:on_player_destroyed":{
