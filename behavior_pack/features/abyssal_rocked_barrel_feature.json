@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "gaiawanderer:abyssal_rocked_barrel_feature"
+    },
+    "places_block": {
+      "name": "gaiawanderer:rocked_barrel"
+    },
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "min_sides_must_attach": 1,
+      "auto_rotate": false,
+      "bottom": [
+        "minecraft:stone",
+        "minecraft:deepslate",
+        "minecraft:bedrock"
+      ]
+    },
+    "may_replace": [
+      "minecraft:water"
+    ]
+  }
+}

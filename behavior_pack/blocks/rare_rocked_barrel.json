@@ -1,0 +1,66 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "gaiawanderer:rare_rocked_barrel"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "category":"Construction"
+            },
+            "tag:minecraft:wood": {},
+            "minecraft:loot": "",
+            "minecraft:destroy_time": 0.5,
+            "minecraft:explosion_resistance": 20000,
+            "minecraft:map_color": "#8B6940",
+            "minecraft:block_light_absorption": 15,
+            "minecraft:block_light_emission": 0,
+            "minecraft:on_player_destroyed": {
+                "event": "cantdestroy"
+            },
+            "minecraft:on_interact": {
+                "condition":"query.get_equipped_item_name(0) == 'key'",
+                "event": "open"
+            }
+        },
+        "events": {
+            "cantdestroy": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "setblock ~ ~ ~ gaiawanderer:rare_rocked_barrel"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": "tellraw @e [type = player, r = 3] {\"rawtext\":[{\"text\":\"鍵がかかっている\"}]}"
+                        }
+                    }
+                ]
+            },
+            "open": {
+
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": "playsound random.door_open @e [type = player, r = 5] ~ ~ ~ 5 0.9"
+                        }  
+                    },
+                    {
+                        "spawn_loot": {
+                            "table": "loot_tables/blocks/rare_rocked_barrel.json"
+                        }  
+                    },
+                    {
+                        "run_command": {
+                            "command": "fill ~ ~ ~ ~ ~ ~ air 0 destroy"
+                        }
+                    },
+                    {
+                        "decrement_stack": {}
+                    }
+                ]
+            }
+        }
+    }
+}
