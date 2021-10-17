@@ -852,82 +852,108 @@
                   "quantity": 3
                 }
               ]
-            },
-            {
-              "max_uses": 1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 20
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:filled_map",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "set_data",
-                      "data": 2
-                    },
-                    {
-                      "function": "exploration_map",
-                      "destination": "stronghold"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "max_uses": 1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 20
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:filled_map",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "set_data",
-                      "data": 2
-                    },
-                    {
-                      "function": "exploration_map",
-                      "destination": "briedtreasure"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "max_uses": 1,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 20
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:filled_map",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "set_data",
-                      "data": 2
-                    },
-                    {
-                      "function": "exploration_map",
-                      "destination": "ruinedportal"
-                    }
-                  ]
-                }
-              ]
             }
+            //,
+            // {
+            //   "max_uses": 1,
+            //   "wants": [
+            //     {
+            //       "item": "minecraft:emerald",
+            //       "quantity": 5
+            //     }
+            //   ],
+            //   "gives": [
+            //     {
+            //       "item": "minecraft:map",
+            //       "quantity": 1,
+            //       "functions": [
+            //         {
+            //           "function": "set_data",
+            //           "data": 2
+            //         },
+            //         {
+            //           "function": "exploration_map",
+            //           "destination": "stronghold"
+            //         }
+            //       ]
+            //     }
+            //   ]
+            // },
+            // {
+            //   "max_uses": 1,
+            //   "wants": [
+            //     {
+            //       "item": "minecraft:emerald",
+            //       "quantity": 10
+            //     }
+            //   ],
+            //   "gives": [
+            //     {
+            //       "item": "minecraft:map",
+            //       "quantity": 1,
+            //       "functions": [
+            //         {
+            //           "function": "set_data",
+            //           "data": 2
+            //         },
+            //         {
+            //           "function": "exploration_map",
+            //           "destination": "briedtreasure"
+            //         }
+            //       ]
+            //     }
+            //   ]
+            // },
+            // {
+            //   "max_uses": 1,
+            //   "wants": [
+            //     {
+            //       "item": "minecraft:emerald",
+            //       "quantity": 15
+            //     }
+            //   ],
+            //   "gives": [
+            //     {
+            //       "item": "minecraft:map",
+            //       "quantity": 1,
+            //       "functions": [
+            //         {
+            //           "function": "set_data",
+            //           "data": 2
+            //         },
+            //         {
+            //           "function": "exploration_map",
+            //           "destination": "fortress"
+            //         }
+            //       ]
+            //     }
+            //   ]
+            // },
+            // {
+            //   "max_uses": 1,
+            //   "wants": [
+            //     {
+            //       "item": "minecraft:emerald",
+            //       "quantity": 3
+            //     }
+            //   ],
+            //   "gives": [
+            //     {
+            //       "item": "minecraft:map",
+            //       "quantity": 1,
+            //       "functions": [
+            //         {
+            //           "function": "set_data",
+            //           "data": 2
+            //         },
+            //         {
+            //           "function": "exploration_map",
+            //           "destination": "ruinedportal"
+            //         }
+            //       ]
+            //     }
+            //   ]
+            // }
           ]
         }
       ]

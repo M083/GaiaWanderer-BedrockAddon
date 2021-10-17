@@ -43,7 +43,7 @@
         "slot": "armor_head"
       },
       "minecraft:armor": {
-        "protection": 0
+        "protection": 2
       }
     },
     "events": {

@@ -42,7 +42,7 @@
           }
         ]
       },
-      "minecraft:damage": 11,
+      "minecraft:damage": 9,
       "minecraft:weapon": {
         "on_hurt_entity": {
           "event": "gaiawanderer:attacked",

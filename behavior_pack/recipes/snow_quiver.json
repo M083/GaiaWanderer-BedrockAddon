@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:snow_quiver"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " b ",
+      "crb",
+      "wc "
+    ],
+    "key": {
+      "b": {
+        "item": "minecraft:iron_block"
+      },
+      "r": {
+        "item": "gaiawanderer:zimaluze_stone"
+      },
+      "c": {
+        "item": "minecraft:copper_block"
+      },
+      "w": {
+        "item": "gaiawanderer:ice_beak"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:snow_quiver"
+    }
+  }
+}

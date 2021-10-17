@@ -83,6 +83,14 @@
     },
     "sound": "glass"
   },
+  "gaiawanderer:rare_rocked_barrel": {
+    "textures": {
+      "up": "rare_rocked_barrel_top",
+      "down": "rare_rocked_barrel_bottom",
+      "side": "rare_rocked_barrel_side"
+    },
+    "sound": "glass"
+  },
   "gaiawanderer:mana_leaves": {
     "textures": "mana_leaves",
     "sound": "vines"
@@ -165,6 +173,11 @@
     "sound" : "nether_wart"
   },
   "gaiawanderer:rotten_root": {
+    "textures": {
+      "up": "none",
+      "down": "none",
+      "side": "rotten_root"
+    },
     "sound": "shroomlight"
   },
   "gaiawanderer:rotten_thorn": {

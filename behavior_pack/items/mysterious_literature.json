@@ -59,6 +59,11 @@
                 "run_command": {
                   "command": "structure load mystructure:book_m_jelly ~ ~ ~"
                 }
+              },
+              {
+                "run_command": {
+                  "command": "structure load mystructure:book_zimaluze ~ ~ ~"
+                }
               }
             ]
           }

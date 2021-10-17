@@ -2,22 +2,22 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "gaiawanderer:copy_gravity_spear"
+    "identifier": "gaiawanderer:copy_thunder_blade"
     },
     "tags": [ "copy_table" ],
     "pattern": [
       " p ",
       " i ",
-      " p "
+      "   "
     ],
     "key": {
       "p": {
         "item": "gaiawanderer:copy_paper"
       },
       "i": {
-        "item": "gaiawanderer:gravity_spear"
+        "item": "gaiawanderer:thunder_fan"
       }
     },
-    "result": ["gaiawanderer:gravity_spear", "gaiawanderer:gravity_spear"]
+    "result": ["gaiawanderer:thunder_blade", "gaiawanderer:thunder_blade"]
   }
 }

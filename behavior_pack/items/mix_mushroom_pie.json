@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "gaiawanderer:red_mushroom_pie",
+      "identifier": "gaiawanderer:mix_mushroom_pie",
       "category": "Equipment"
     },
     
@@ -11,12 +11,12 @@
         "parent": "itemGroup.name.miscFood"
       },
       "minecraft:icon": {
-        "texture": "red_mushroom_pie"
+        "texture": "mix_mushroom_pie"
       },
       "minecraft:use_animation": "eat",
       "minecraft:use_duration": 1,
       "minecraft:food": {
-        "nutrition": 8,
+        "nutrition":14,
         "saturation_modifier": "good",
         "can_always_eat": true,
         "on_consume": {
@@ -30,7 +30,12 @@
         "sequence": [
           {
             "run_command": {
-              "command": "effect @s instant_health 1 2"
+              "command": "effect @s health_boost 360 2"
+            }
+          },
+          {
+            "run_command": {
+              "command": "effect @s regeneration 20 2"
             }
           }
         ]

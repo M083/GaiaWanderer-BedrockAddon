@@ -2,24 +2,27 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "gaiawanderer:canon_spear"
+    "identifier": "gaiawanderer:long_canon_spear"
     },
     "tags": [ "crafting_table" ],
     "pattern": [
       "   ",
-      " cb",
+      "cib",
       "   "
     ],
     "key": {
       "b": {
         "item": "gaiawanderer:burn_spear"
       },
+      "i": {
+        "item": "gaiawanderer:burn_ingot"
+      },
       "c": {
         "item": "gaiawanderer:fortress_canon"
       }
     },
     "result": {
-      "item": "gaiawanderer:canon_spear",
+      "item": "gaiawanderer:long_canon_spear",
       "data": 0
     }
   }

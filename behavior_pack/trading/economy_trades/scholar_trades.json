@@ -10,7 +10,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 10
+                  "quantity": 5
                 }
               ],
               "gives": [
@@ -30,7 +30,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 10
+                  "quantity": 5
                 }
               ],
               "gives": [
@@ -50,7 +50,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 10
+                  "quantity": 8
                 }
               ],
               "gives": [
@@ -150,6 +150,26 @@
               "wants": [
                 {
                   "item": "gaiawanderer:rimafloga_stone",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:zimaluze_stone",
                   "quantity": 1
                 }
               ],

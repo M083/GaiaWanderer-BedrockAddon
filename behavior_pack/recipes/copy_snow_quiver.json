@@ -2,22 +2,22 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "gaiawanderer:copy_gravity_spear"
+    "identifier": "gaiawanderer:copy_snow_quiver"
     },
     "tags": [ "copy_table" ],
     "pattern": [
       " p ",
       " i ",
-      " p "
+      "   "
     ],
     "key": {
       "p": {
         "item": "gaiawanderer:copy_paper"
       },
       "i": {
-        "item": "gaiawanderer:gravity_spear"
+        "item": "gaiawanderer:snow_quiver"
       }
     },
-    "result": ["gaiawanderer:gravity_spear", "gaiawanderer:gravity_spear"]
+    "result": ["gaiawanderer:snow_quiver", "gaiawanderer:snow_quiver"]
   }
 }

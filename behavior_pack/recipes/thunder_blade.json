@@ -1,0 +1,36 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "gaiawanderer:thunder_blade"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " im",
+      " if",
+      " l "
+    ],
+    "key": {
+      "i": {
+        "item": "gaiawanderer:bug_ingot"
+      },
+      "l": {
+        "item": "minecraft:lightning_rod"
+      },
+      "s": {
+        "item": "gaiawanderer:strong_string"
+      },
+      "f": {
+        "item": "gaiawanderer:thunder_feather"
+      },
+      "m": {
+        "item": "gaiawanderer:fly_wing"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:thunder_blade",
+      "data": 0
+    }
+  }
+}

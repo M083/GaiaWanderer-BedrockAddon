@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "gaiawanderer:burn_spear",
+      "identifier": "gaiawanderer:thunder_blade",
       "category": "Equipment"
     },
     "components": {
@@ -10,48 +10,48 @@
         "parent": "itemGroup.name.sword"
       },
       "minecraft:icon": {
-        "texture": "burn_spear"
+        "texture": "thunder_blade"
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 1280
+        "max_durability": 1640
       },
       "minecraft:enchantable":{
-        "value": 10,
+        "value": 25,
         "slot": "sword"
       },
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": [ "gaiawanderer:salamander_core", "minecraft:iron_ingot" ],
-            "repair_amount": 260
+            "items": [ "gaiawanderer:bug_ingot" ],
+            "repair_amount": 860
           },
           {
-            "items": [ "gaiawanderer:burn_ingot" ],
-            "repair_amount": 780
+            "items": [ "gaiawanderer:thunder_feather" ],
+            "repair_amount": 860
           },
           {
-            "items": [ "gaiawanderer:burn_spear" ],
-            "repair_amount": 780
+            "items": [ "gaiawanderer:thunder_blade" ],
+            "repair_amount": 1640
           }
         ]
       },
-      "minecraft:cooldown": {
-        "category": "myth_sword",
-        "duration": 1
-      },
-      "minecraft:damage": 8,
+      "minecraft:damage": 11,
       "minecraft:weapon": {
         "on_hurt_entity": {
           "event": "gaiawanderer:attacked",
           "target": "self"
         }
       },
+      "minecraft:cooldown": {
+        "category": "myth_sword",
+        "duration": 1
+      },
       "minecraft:on_use": {
         "on_use": {
-          "event": "gaiawanderer:burn"
+          "event": "gaiawanderer:blade"
         }
       }
     },
@@ -60,9 +60,25 @@
         "damage": {
           "type": "void",
           "amount": 1
-        }
+        },
+        "sequence": [
+          {
+            "add_mob_effect": {
+              "effect": "speed",
+              "amplifier": 4,
+              "duration": 8
+            }
+          },
+          {
+            "add_mob_effect": {
+              "effect": "jump_boost",
+              "amplifier": 4,
+              "duration": 8
+            }
+          }
+        ]
       },
-      "gaiawanderer:burn": {
+      "gaiawanderer:blade": {
         "sequence": [
           {
             "swing": {}
@@ -70,7 +86,7 @@
           {
             "shoot": {
               "projectile": "minecraft:arrow",
-              "launch_power": 0.7
+              "launch_power": 1.0
             }
           },
           {
@@ -80,8 +96,15 @@
             }
           },
           {
+            "add_mob_effect": {
+              "effect": "slow_falling",
+              "amplifier": 0,
+              "duration": 4
+            }
+          },
+          {
             "run_command": {
-              "command": "playsound mob.blaze.shoot @s ~ ~ ~ 0.25 1.25"
+              "command": "playsound random.bow @s ~ ~ ~ 1.5 1.5"
             }
           }
         ]

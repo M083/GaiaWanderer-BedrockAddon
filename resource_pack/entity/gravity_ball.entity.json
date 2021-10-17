@@ -9,8 +9,7 @@
       },
       "geometry": {
         "default": "geometry.gravity_ball"
-      }
-      ,
+      },
       "animations": {
         "look_at_target": "animation.interceptor.look_at_target"
       },

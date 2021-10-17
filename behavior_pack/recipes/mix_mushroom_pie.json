@@ -2,18 +2,21 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "gaiawanderer:red_mushroom_pie"
+    "identifier": "gaiawanderer:mix_mushroom_pie"
     },
     "priority": 0,
     "tags": [ "crafting_table" ],
     "pattern": [
-      "mmm",
-      "mmm",
+      "mrr",
+      "mmr",
       "abc"
     ],
     "key": {
-      "m": {
+      "r": {
         "item": "minecraft:red_mushroom"
+      },
+      "m": {
+        "item": "minecraft:brown_mushroom"
       },
       "a": {
         "item": "gaiawanderer:shebrus_liver"
@@ -26,7 +29,7 @@
       }
     },
     "result": {
-      "item": "gaiawanderer:red_mushroom_pie",
+      "item": "gaiawanderer:mix_mushroom_pie",
       "count": 4
     }
   }
