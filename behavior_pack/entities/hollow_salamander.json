@@ -45,6 +45,7 @@
             {
               "filters": {
                 "any_of" : [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"},
                   {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"},
                   {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
                 ]
@@ -55,7 +56,20 @@
           "must_see": false
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       },
       "avoid": {

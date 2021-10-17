@@ -106,7 +106,20 @@
 			"minecraft:can_climb": {
 			},
 			"minecraft:behavior.hurt_by_target": {
-				"priority": 1
+				"entity_types": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"operator": "!=",
+									"value": "snow_storm"
+								}
+							]
+						}
+					}
+				]
 			},
 			"minecraft:behavior.random_look_around": {
 				"priority": 7

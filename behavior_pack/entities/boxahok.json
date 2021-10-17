@@ -31,7 +31,20 @@
           "damage": 2
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       },
       "nether_angry": {
@@ -52,7 +65,20 @@
           "damage": 8
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       }
     },

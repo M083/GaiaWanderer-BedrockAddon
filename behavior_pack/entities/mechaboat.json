@@ -62,21 +62,10 @@
       "minecraft:underwater_movement": {
         "value": 0.15
       },
-      "minecraft:navigation.generic": {
-        "is_amphibious": false,
-        "can_path_over_water": false,
-        "can_swim": true,
-        "can_walk": false,
-        "can_breach": false,
-        "can_sink": false
-      },
       "minecraft:knockback_resistance": {
         "value": 2.0
       },
       "minecraft:can_climb": {
-      },
-      "minecraft:navigation.climb": {
-        "can_path_over_water": true
       },
       "minecraft:rideable": {
         "seat_count": 5,
@@ -103,9 +92,6 @@
             "position": [ 1.2, 0.9,-1.2 ]
           }
         ]
-      },
-      "minecraft:navigation.float": {
-        "can_path_over_water": true
       },
       "minecraft:mob_effect": {
         "entity_filter": {

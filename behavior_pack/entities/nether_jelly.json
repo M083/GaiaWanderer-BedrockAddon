@@ -30,6 +30,14 @@
                     "operator": "==",
                     "value": "mutant_nether_jelly"
                   }
+                ],
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "inanimate"
+                  }
                 ]
               },
               "max_dist": 48
