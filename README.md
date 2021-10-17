@@ -56,7 +56,7 @@ v1.17.10以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.22.100/Gaiawanderer_1_22_100.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.22.102/Gaiawanderer_1_22_102.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/GaiaWanderer-BedrockAddon/releases)
 
@@ -123,6 +123,10 @@ Twitter ([@M0_83](https://twitter.com/M0_83))
 	- 起動したインターセプタ・ホバーの名前が「不明」と表示される。
 
 ## 更新履歴
+	ver1.22.102
+	[不具合修正]
+	・クレバスバイオームにフィールドボスがスポーンしない不具合の修正
+
 	ver1.22.100
 	[不具合修正]
 	・リマフロガが落下ダメージを受ける不具合の修正
