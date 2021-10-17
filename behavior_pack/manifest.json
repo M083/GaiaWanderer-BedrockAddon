@@ -2,22 +2,22 @@
     "format_version": 1,
     "header": {
         "description": "Twitter : @M0_83",
-        "name": "GaiaWanderer Behavior Pack ver1,22,100",
+        "name": "GaiaWanderer Behavior Pack ver1,22,102",
         "uuid": "ee649bcf-256c-4013-9068-6a802b891083",
-        "version":[1,22,100]
+        "version":[1,22,102]
     },
     "modules": [
         {
             "description": "GaiaWanderer behavior pack",
             "type": "data",
             "uuid": "fa6e90c8-c925-460f-8155-c8a60b751083",
-            "version":[1,22,100]
+            "version":[1,22,102]
         }
     ],
     "dependencies": [
         {
             "uuid": "66c6e9a8-3093-462a-9c36-dbb6a4cd1083",
-            "version":[1,22,100]
+            "version":[1,22,102]
         }
     ]
 }
