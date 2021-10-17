@@ -81,6 +81,10 @@
               },
               "damage_multiplier": 0.3
             },
+            {   
+              "cause": "fall",
+              "deals_damage": false
+            },
             {
               "on_damage": {
                 "filters": {
@@ -127,6 +131,9 @@
                 "any_of" : [
                   {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"},
                   {"test" : "is_family", "subject" : "other", "value" :  "necrocancer"}
+                ],
+                "all_of" : [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"}
                 ]
               },
               "max_dist": 70
@@ -135,7 +142,20 @@
           "must_see": false
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       },
       "mode_breath": {
@@ -178,7 +198,20 @@
           "must_see": false
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       },
       "mode_roar_standby": {
@@ -211,7 +244,20 @@
           "must_see": false
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       },
       "mode_roar": {
@@ -244,7 +290,20 @@
           "must_see": false
         },
         "minecraft:behavior.hurt_by_target": {
-          "priority": 1
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
         }
       }
     },

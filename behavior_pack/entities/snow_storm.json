@@ -1,0 +1,130 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "gaiawanderer:snow_storm",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "despawn": {
+                "minecraft:instant_despawn": {}
+            },
+            "player_storm": {
+                "minecraft:mob_effect": {
+                    "entity_filter": {
+                      "all_of": [
+                        { "test": "is_family", "subject": "other", "operator": "!=", "value": "player" },
+                        { "test": "is_family", "subject": "other", "operator": "!=", "value": "inanimate" }
+                      ] 
+                    },
+                    "effect_range": 4,
+                    "effect_time": 1,
+                    "mob_effect": "levitation"
+                },
+                "minecraft:area_attack" : {
+                  "entity_filter": {
+                    "all_of": [
+                        { "test": "is_family", "subject": "other", "operator": "!=", "value": "player" },
+                        { "test": "is_family", "subject": "other", "operator": "!=", "value": "inanimate" }
+                    ]
+                  },
+                  "damage_range": 4,
+                  "damage_per_tick": 16,
+                  "cause": "contact"
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": [
+                    "snow_storm",
+                    "inanimate"
+                ]
+            },
+            "minecraft:area_attack" : {
+              "entity_filter": {
+                "all_of": [
+                    { "test": "is_family", "subject": "other", "operator": "!=", "value": "monster" },
+                    { "test": "is_family", "subject": "other", "operator": "!=", "value": "inanimate" }
+                ]
+              },
+              "damage_range": 4,
+              "damage_per_tick": 16,
+              "cause": "contact"
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:physics": {
+                "has_gravity": true,
+                "has_collision": true
+            },
+            "minecraft:breathable": {
+                "totalSupply": 15,
+                "suffocateTime": 0,
+                "breathesWater": true
+            },
+            "minecraft:loot": {
+                "table": ""
+            },
+            "minecraft:mob_effect": {
+                "entity_filter": {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "operator": "!=", "value": "monster" },
+                    { "test": "is_family", "subject": "other", "operator": "!=", "value": "inanimate" }
+                  ] 
+                },
+                "effect_range": 4,
+                "effect_time": 1,
+                "mob_effect": "levitation"
+            },
+            "minecraft:timer": {
+                "looping": false,
+                "time": [
+                    18,
+                    18
+                ],
+                "time_down_event": {
+                    "event": "despawn_event"
+                }
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 1.0,
+                "height": 1.0
+            },
+            "minecraft:knockback_resistance": {
+                "value": 4
+            }
+        },
+        "events": {
+            "despawn_event": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "despawn"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "player_storm_event": {
+                "add": {
+                    "component_groups": [
+                        "player_storm"
+                    ]
+                }
+            }
+        }
+    }
+}
