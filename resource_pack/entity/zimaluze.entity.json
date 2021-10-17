@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:zimaluze",
+      "materials": { "default": "zimaluze" },
+      "textures": {
+        "default": "textures/entity/zimaluze"
+      },
+      "geometry": {
+        "default": "geometry.zimaluze"
+      },
+      "animations": {
+        "look_at_target": "animation.zimaluze.look_at_target",
+        "flying": "animation.zimaluze.flying",
+        "hovering": "animation.zimaluze.hovering",
+        "hovering_pose": "animation.zimaluze.hovering_pose",
+        "ice_on": "animation.zimaluze.ice_on",
+        "ice_off": "animation.zimaluze.ice_off",
+        "roar": "animation.zimaluze.roar",
+        "ice_claw": "animation.zimaluze.claw_attack",
+        "ice_tail": "animation.zimaluze.tail_attack",
+        "open_mouth": "animation.zimaluze.open_mouth"
+      },
+      "animation_controllers": [
+        {
+          "look_at_target": "controller.animation.zimaluze.look_at_target"
+        },
+        {
+          "flying": "controller.animation.zimaluze.flying"
+        },
+        {
+          "hovering_pose": "controller.animation.zimaluze.hovering_pose"
+        },
+        {
+          "hovering": "controller.animation.zimaluze.hovering"
+        },
+        {
+          "ice": "controller.animation.zimaluze.ice"
+        },
+        {
+          "roar": "controller.animation.zimaluze.roar"
+        },
+        {
+          "ice_claw": "controller.animation.zimaluze.ice_claw"
+        },
+        {
+          "ice_tail": "controller.animation.zimaluze.ice_tail"
+        }
+      ],
+      "render_controllers": [ "controller.render.zimaluze" ],
+      "spawn_egg": {
+        "base_color": "#A0A0A0",
+        "overlay_color": "#00c6e4"
+      }
+    }
+  }
+}

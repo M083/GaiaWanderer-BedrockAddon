@@ -1,0 +1,198 @@
+    // 0:calm 1:normal_swoop 2:normal_breath
+    // 10:ice_swoop 11:ice_claw 12:ice_tail 13:roar 14:normal_breath
+
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.zimaluze.look_at_target": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "!(query.variant == 0 || query.variant == 1 || query.variant == 10)"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "look_at_target": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "query.variant == 0 || query.variant == 1 || query.variant == 10"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.zimaluze.flying": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 0 || query.variant == 1 || query.variant == 10"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "flying": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 0 || query.variant == 1 || query.variant == 10)"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.zimaluze.hovering_pose": {
+            "states": {
+
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 2 || query.variant == 11 || query.variant == 12 || query.variant == 13 || query.variant == 14"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "hovering_pose": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 2 || query.variant == 11 || query.variant == 12 || query.variant == 13 || query.variant == 14)"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.zimaluze.hovering": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 0 || query.variant == 2 || query.variant == 11 || query.variant == 13 || query.variant == 14 || (query.is_delayed_attacking == 0 && query.variant == 12)"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "hovering": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 0 || query.variant == 2 || query.variant == 11 || query.variant == 13 || query.variant == 14 || (query.is_delayed_attacking == 0 && query.variant == 12))"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.zimaluze.ice": {
+            "states": {
+                "disable": {
+                    "animations": [
+                        {
+                            "ice_off": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "enable": "query.variant >= 10"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "ice_on": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "query.variant < 10"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.zimaluze.roar": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 13"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "roar": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "!(query.variant == 13)"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.zimaluze.ice_claw": {
+        	"states": {
+        		"disable": {
+        			"transitions": [
+        				{
+        					"enable": "query.is_delayed_attacking == 1 && query.variant == 11"
+        				}
+        			]
+        		},
+        		"enable": {
+                    "animations": [
+                        {
+                            "ice_claw": []
+                        }
+                    ],
+        			"transitions": [
+        				{
+        					"disable": "!(query.is_delayed_attacking == 1 && query.variant == 11)"
+        				}
+        			]
+        		}
+        	}
+        },
+        "controller.animation.zimaluze.ice_tail": {
+        	"states": {
+        		"disable": {
+        			"transitions": [
+        				{
+        					"enable": "query.is_delayed_attacking == 1 && query.variant == 12"
+        				}
+        			]
+        		},
+        		"enable": {
+                    "animations": [
+                        {
+                            "ice_tail": []
+                        }
+                    ],
+        			"transitions": [
+        				{
+        					"disable": "!(query.is_delayed_attacking == 1 && query.variant == 12)"
+        				}
+        			]
+        		}
+        	}
+        }
+    }
+}

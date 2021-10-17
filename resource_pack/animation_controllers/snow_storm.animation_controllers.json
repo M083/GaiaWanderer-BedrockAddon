@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.snow_storm": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "spin": []
+            },
+            {
+              "storm": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}

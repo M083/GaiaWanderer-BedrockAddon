@@ -1,6 +1,37 @@
 {
     "entity_sounds": {
         "entities": {
+            "gaiawanderer:zimaluze": {
+                "events": {
+                    "death" : "mob.bee.death",
+                    "hurt" : {
+                        "pitch": [
+                            1.75,
+                            1.85
+                        ],
+                        "sound": "mob.irongolem.hit"
+                    }
+                },
+                "pitch": [
+                    0.35,
+                    0.4
+                ],
+                "volume": 1
+            },
+            "gaiawanderer:snow_storm": {
+                "events": {
+                    "ambient": {
+                        "pitch": 1,
+                        "sound": "elytra.loop",
+                        "volume": 1
+                    }
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
             "gaiawanderer:ender_snipe": {
                 "events": {
                     "shoot": {
