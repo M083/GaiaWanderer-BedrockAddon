@@ -21,16 +21,9 @@
             "minecraft:placement_filter": {
                 "conditions": [
                     {
-                        "allowed_faces": [ "down" ],
+                        "allowed_faces": [ "side" ],
                         "block_filter": [
-                            {
-                                "tags": "q.any_tag('dirt','sand','gravel','grass','snow','wood','pumpkin','plant','stone','metal','diamond_pick_diggable','gold_pick_diggable','iron_pick_diggable','stone_pick_diggable','wood_pick_diggable')"
-                            },
-                            "gaiawanderer:rotten_root",
-                            "gaiawanderer:rotten_egg",
-                            "gaiawanderer:rotten_dirt",
-                            "minecraft:brown_mushroom_block",
-                            "minecraft:red_mushroom_block"
+                            "gaiawanderer:rotten_root"
                         ]
                     }
                 ]
@@ -47,7 +40,7 @@
                 "sequence": [
                     {
                         "run_command": {
-                            "command": "setblock ~ ~ ~ gaiawanderer:rotten_root"
+                            "command": "setblock ~ ~ ~ air"
                         }
                     },
                     {

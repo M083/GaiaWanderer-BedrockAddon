@@ -33,15 +33,11 @@
                     }
                 ]
             },
-            "minecraft:on_placed": {
-                "event": "gaiawanderer:growup"
-            },
             "minecraft:random_ticking": {
                 "on_tick" : {
                     "event": "gaiawanderer:setegg"
                 }
             },
-            "minecraft:geometry": "geometry.low_block",
             "minecraft:material_instances": {
                 "*": {
                     "texture": "rotten_root",
@@ -49,10 +45,7 @@
                 }
             },
             "minecraft:entity_collision": false,
-            "minecraft:pick_collision": {
-                "origin": [ -4.0, 0.0, -4.0],
-                "size": [ 8.0, 16.0, 8.0 ]
-            },
+            "minecraft:pick_collision": true,
             "minecraft:breathability": "air",
             "minecraft:breakonpush": true
         },
@@ -85,19 +78,29 @@
                         "weight": 19
                     },
                     {
-                        "run_command": {
-                            "command": "fill ~ ~1 ~ ~ ~1 ~ gaiawanderer:rotten_egg 0 replace gaiawanderer:rotten_root"
-                        },
+                        "randomize": [
+                            {
+                                "run_command": {
+                                    "command": "fill ~1 ~ ~ ~1 ~ ~ gaiawanderer:rotten_egg 0 replace air"
+                                }
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~-1 ~ ~ ~-1 ~ ~ gaiawanderer:rotten_egg 0 replace air"
+                                }
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~1 ~ ~ ~1 gaiawanderer:rotten_egg 0 replace air"
+                                }
+                            },
+                            {
+                                "run_command": {
+                                    "command": "fill ~ ~ ~-1 ~ ~ ~-1 gaiawanderer:rotten_egg 0 replace air"
+                                }
+                            }
+                        ],
                         "weight": 1
-                    }
-                ]
-            },
-            "gaiawanderer:growup": {
-                "sequence": [
-                    {
-                        "run_command": {
-                            "command": "fill ~ ~1 ~ ~ ~1 ~ gaiawanderer:rotten_root 0 replace air"
-                        }
                     }
                 ]
             }
