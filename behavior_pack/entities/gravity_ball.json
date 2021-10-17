@@ -83,7 +83,7 @@
             },
             "gravity_event": {
                 "run_command": {
-                    "command": ["gamerule sendcommandfeedback false", "tp @e[r=8] ~ ~ ~"]
+                    "command": [ "tp @e[r=8,type=!player,family=!inanimate] ~ ~ ~"]
                 }
             },
             "despawn_event": {
@@ -100,11 +100,6 @@
                             "component_groups": [
                                 "despawn"
                             ]
-                        }
-                    },
-                    {
-                        "run_command": {
-                            "command": "gamerule sendcommandfeedback true"
                         }
                     }
                 ]
