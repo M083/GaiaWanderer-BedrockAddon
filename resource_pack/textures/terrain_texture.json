@@ -164,6 +164,21 @@
         "textures/blocks/test_32"
       ]
     },
+    "rare_rocked_barrel_top": {
+      "textures": [
+        "textures/blocks/rare_rocked_barrel_top"
+      ]
+    },
+    "rare_rocked_barrel_bottom": {
+      "textures": [
+        "textures/blocks/rare_rocked_barrel_bottom"
+      ]
+    },
+    "rare_rocked_barrel_side": {
+      "textures": [
+        "textures/blocks/rare_rocked_barrel_side"
+      ]
+    },
     "rocked_barrel_top": {
       "textures": [
         "textures/blocks/rocked_barrel_top"
