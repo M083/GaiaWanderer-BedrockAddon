@@ -15,6 +15,11 @@
         "minecraft:weight": {
           "default": 1
         },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": true
+        },
         "minecraft:herd": {
           "min_size": 1,
           "max_size": 1

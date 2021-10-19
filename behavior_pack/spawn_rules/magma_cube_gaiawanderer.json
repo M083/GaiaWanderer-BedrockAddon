@@ -38,6 +38,11 @@
           "min": "easy",
           "max": "hard"
         },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": true
+        },
 
         "minecraft:weight": {
           "default": 15

@@ -37,6 +37,11 @@
         "minecraft:weight": {
           "default": 15
         },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": true
+        },
         "minecraft:herd": {
           "min_size": 2,
           "max_size": 4
@@ -57,6 +62,11 @@
         "minecraft:height_filter": {
           "min": 50,
           "max": 80
+        },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": true
         },
         "minecraft:herd": {
           "min_size": 2,

@@ -75,7 +75,7 @@
         },
 
         "minecraft:weight": {
-          "default": 200
+          "default": 30
         },
 
         "minecraft:density_limit": {
@@ -114,7 +114,7 @@
         },
 
         "minecraft:weight": {
-          "default": 60
+          "default": 15
         },
 
         "minecraft:density_limit": {

@@ -15,6 +15,11 @@
           "min_size": 1,
           "max_size": 2
         },
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 15,
+          "adjust_for_weather": true
+        },
         "minecraft:height_filter": {
           "min": 60,
           "max": 100
