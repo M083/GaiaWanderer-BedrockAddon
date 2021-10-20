@@ -11,7 +11,7 @@
         "minecraft:spawns_underground": {},
         "minecraft:spawns_on_block_filter": "gaiawanderer:rotten_egg",
         "minecraft:weight": {
-          "default": 2500
+          "default": 25
         },
         "minecraft:brightness_filter": {
           "min": 0,
