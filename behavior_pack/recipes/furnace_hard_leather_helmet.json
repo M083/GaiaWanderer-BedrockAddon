@@ -1,0 +1,12 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "gaiawanderer:furnace_hard_leather_helmet"
+    },
+
+    "tags": ["furnace", "blast_furnace"],
+    "input": "gaiawanderer:hard_leather_helmet",
+    "output": "minecraft:iron_nugget"
+  }
+}
