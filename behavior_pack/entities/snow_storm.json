@@ -84,8 +84,8 @@
             "minecraft:timer": {
                 "looping": false,
                 "time": [
-                    18,
-                    18
+                    12,
+                    12
                 ],
                 "time_down_event": {
                     "event": "despawn_event"
