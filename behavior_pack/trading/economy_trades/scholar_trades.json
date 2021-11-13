@@ -86,6 +86,26 @@
           "num_to_select": 1,
           "trades": [
             {
+              "max_uses": 999,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:emerald_fragment",
+                  "quantity": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
               "max_uses": 64,
               "wants": [
                 {

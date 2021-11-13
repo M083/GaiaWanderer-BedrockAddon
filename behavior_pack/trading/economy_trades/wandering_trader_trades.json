@@ -74,6 +74,66 @@
           ]
         },
         {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:key",
+                  "quantity": 1
+                },
+                {
+                  "item": "gaiawanderer:rocked_barrel",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:barrel",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "fill_container",
+                      "loot_table": "loot_tables/chests/barrel_treasure_box.json"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "gaiawanderer:rare_key",
+                  "quantity": 1
+                },
+                {
+                  "item": "gaiawanderer:rare_rocked_barrel",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:barrel",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "fill_container",
+                      "loot_table": "loot_tables/chests/rare_barrel_treasure_box.json"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "num_to_select": 4,
           "trades": [
             {
@@ -378,21 +438,6 @@
                 {
                   "item": "minecraft:ender_pearl",
                   "quantity": 1
-                }
-              ]
-            },
-            {
-              "max_uses": 16,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:marrella_blood",
-                  "quantity": 2
                 }
               ]
             },
