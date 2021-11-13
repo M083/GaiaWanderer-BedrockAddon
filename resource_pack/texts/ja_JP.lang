@@ -105,7 +105,7 @@ item.spawn_egg.entity.gaiawanderer:ender_proto.name=エンダープロトを出�
 item.spawn_egg.entity.gaiawanderer:ender_thrust.name=エンダースラストを出現させる
 item.spawn_egg.entity.gaiawanderer:ender_snipe.name=エンダースナイプを出現させる
 item.spawn_egg.entity.gaiawanderer:enchanted_book_trader.name=本屋を出現させる
-item.spawn_egg.entity.gaiawanderer:scolar.name=研究者を出現させる
+item.spawn_egg.entity.gaiawanderer:scholar.name=研究者を出現させる
 
 item.spawn_egg.entity.gaiawanderer:elsalamander.name=§dエルサラマンダーを出現させる
 item.spawn_egg.entity.gaiawanderer:fortresscancer.name=§dフォートレスキャンサーを出現させる
