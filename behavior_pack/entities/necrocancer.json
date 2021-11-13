@@ -9,6 +9,30 @@
 		},
 
 		"component_groups": {
+			"status_easy": {
+				"minecraft:health": {
+					"value": 20,
+					"max": 20
+				}
+			},
+			"status_hard": {
+				"minecraft:health": {
+					"value": 45,
+					"max": 45
+				}
+			},
+			"status_easy_nether": {
+				"minecraft:health": {
+					"value": 30,
+					"max": 30
+				}
+			},
+			"status_hard_nether": {
+				"minecraft:health": {
+					"value": 75,
+					"max": 75
+				}
+			},
 			"nether": {
 				"minecraft:variant": {
 					"value": 1
@@ -300,12 +324,47 @@
 			"minecraft:entity_spawned": {
 				"sequence": [
 					{
+						"filters": { "test": "is_difficulty", "value": "easy" },
+						"add": {
+							"component_groups": [
+								"status_easy"
+							]
+						}
+					},
+					{
+						"filters": { "test": "is_difficulty", "value": "hard" },
+						"add": {
+							"component_groups": [
+								"status_hard"
+							]
+						}
+					},
+					{
 						"filters": {
 							"test": "has_biome_tag", "operator": "==", "value": "nether"
 						},
-						"add": { "component_groups": [ "nether" ] }
+						"sequence": [
+							{
+								"add": { "component_groups": [ "nether" ] }
+							},
+							{
+								"filters": { "test": "is_difficulty", "value": "easy" },
+								"add": {
+									"component_groups": [
+										"status_easy_nether"
+									]
+								}
+							},
+							{
+								"filters": { "test": "is_difficulty", "value": "hard" },
+								"add": {
+									"component_groups": [
+										"status_hard_nether"
+									]
+								}
+							}
+						]
 					},
-
 					{
 						"filters": {
 							"test": "has_biome_tag", "operator": "==", "value": "rotten_forest"

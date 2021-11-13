@@ -7,7 +7,21 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
+// 
+    "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 10,
+          "max": 10
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 25,
+          "max": 25
+        }
+      }
+    },
     "components": {
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 9 : 0"
@@ -176,6 +190,41 @@
         "must_see": true
       },
       "minecraft:physics": {
+      }
+    },
+    "events": {
+      "death_event": {
+        "randomize": [
+          {
+            "weight": 99
+          },
+          {
+            "weight": 1,
+            "run_command": {
+              "command": "structure load mystructure:book_salamander ~ ~ ~"
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
       }
     }
   }

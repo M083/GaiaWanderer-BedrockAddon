@@ -7,6 +7,18 @@
       "is_summonable": true
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 650,
+          "max": 650
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1500,
+          "max": 1500
+        }
+      },
       "damage_count_0": {
         "minecraft:mark_variant": {
           "value": 0
@@ -612,6 +624,22 @@
             "add": {
               "component_groups": [
                 "mode_calm"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
               ]
             }
           }

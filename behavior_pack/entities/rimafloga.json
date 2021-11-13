@@ -7,6 +7,18 @@
       "is_summonable": true
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 550,
+          "max": 550
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1250,
+          "max": 1250
+        }
+      },
       "mode_calm": {
         "minecraft:navigation.float": {
           "can_path_over_water": true
@@ -449,6 +461,22 @@
         "sequence": [
           {
             "add": { "component_groups": [ "mode_calm" ] }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
           }
         ]
       },

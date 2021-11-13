@@ -8,6 +8,18 @@
       "is_experimental": false
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "status_hard": {    
+        "minecraft:health": {
+          "value": 55,
+          "max": 55
+        }
+      },
       "minecraft:baby_rotten_zombie": {
         "minecraft:experience_reward": {
           "on_death": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0"
@@ -543,43 +555,63 @@
         ]
       },
       "minecraft:entity_spawned": {
-        "randomize": [
+        "sequence": [
           {
-            "weight": 15,
-            "remove": {
-            },
+            "filters": { "test": "is_difficulty", "value": "easy" },
             "add": {
               "component_groups": [
-                "minecraft:mode_switcher",
-                "minecraft:ranged_mode",
-                "minecraft:adult_rotten_zombie"
+                "status_easy"
               ]
             }
           },
           {
-            "weight": 85,
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
             "randomize": [
               {
-                "weight": 95,
+                "weight": 15,
                 "remove": {
                 },
                 "add": {
                   "component_groups": [
-                    "minecraft:melee_mode",
+                    "minecraft:mode_switcher",
+                    "minecraft:ranged_mode",
                     "minecraft:adult_rotten_zombie"
                   ]
                 }
               },
               {
-                "weight": 5,
-                "remove": {
-                },
-                "add": {
-                  "component_groups": [
-                    "minecraft:melee_mode",
-                    "minecraft:baby_rotten_zombie"
-                  ]
-                }
+                "weight": 85,
+                "randomize": [
+                  {
+                    "weight": 95,
+                    "remove": {
+                    },
+                    "add": {
+                      "component_groups": [
+                        "minecraft:melee_mode",
+                        "minecraft:adult_rotten_zombie"
+                      ]
+                    }
+                  },
+                  {
+                    "weight": 5,
+                    "remove": {
+                    },
+                    "add": {
+                      "component_groups": [
+                        "minecraft:melee_mode",
+                        "minecraft:baby_rotten_zombie"
+                      ]
+                    }
+                  }
+                ]
               }
             ]
           }

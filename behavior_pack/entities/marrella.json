@@ -9,6 +9,28 @@
     },
 
     "component_groups": {
+      "status_easy": {
+        "minecraft:attack": {
+          "damage": 4,
+          "effect_name": "levitation",
+          "effect_duration": 7
+        },
+        "minecraft:health": {
+          "value": 35,
+          "max": 35
+        }
+      },
+      "status_hard": {
+        "minecraft:attack": {
+          "damage": 9,
+          "effect_name": "levitation",
+          "effect_duration": 15
+        },
+        "minecraft:health": {
+          "value": 80,
+          "max": 80
+        }
+      },
       "gaiawanderer:apoptosis": {
           "minecraft:instant_despawn": {}
       }
@@ -212,6 +234,22 @@
           {
             "run_command": {
               "command": "effect @s invisibility 1 1 true"
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
             }
           }
         ]

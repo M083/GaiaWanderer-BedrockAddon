@@ -9,6 +9,50 @@
     },
 
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:attack": {
+          "damage": 4,
+          "effect_name": "wither",
+          "effect_duration": 5
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        },
+        "minecraft:attack": {
+          "damage": 7,
+          "effect_name": "wither",
+          "effect_duration": 5
+        }
+      },
+      "status_easy_snow": {
+        "minecraft:health": {
+          "value": 25,
+          "max": 25
+        },
+        "minecraft:attack": {
+          "damage": 4,
+          "effect_name": "slowness",
+          "effect_duration": 5
+        }
+      },
+      "status_hard_snow": {
+        "minecraft:health": {
+          "value": 45,
+          "max": 45
+        },
+        "minecraft:attack": {
+          "damage": 8,
+          "effect_name": "slowness",
+          "effect_duration": 5
+        }
+      },
       "snow": {
         "minecraft:variant": {
           "value": 1
@@ -19,12 +63,12 @@
         "minecraft:scale": {
           "value": 1.48
         },
+        "minecraft:behavior.leap_at_target": {
+          "yd": 0.5
+        },
         "minecraft:health": {
           "value": 35,
           "max": 35
-        },
-        "minecraft:behavior.leap_at_target": {
-        "yd": 0.5
         },
         "minecraft:attack": {
           "damage": 5,
@@ -186,10 +230,46 @@
       "minecraft:entity_spawned": {
         "sequence": [
           {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
             "filters": {
               "test": "has_biome_tag", "operator": "==", "value": "crevasse"
             },
-            "add": { "component_groups": [ "snow" ] }
+            "sequence": [
+              {
+                "add": { "component_groups": [ "snow" ] }
+              },     
+              {
+                "filters": { "test": "is_difficulty", "value": "easy" },
+                "add": {
+                  "component_groups": [
+                    "status_easy_snow"
+                  ]
+                }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "hard" },
+                "add": {
+                  "component_groups": [
+                    "status_hard_snow"
+                  ]
+                }
+              }
+            ]
           }
         ]
       }

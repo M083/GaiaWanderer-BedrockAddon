@@ -7,6 +7,18 @@
       "is_summonable": true
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 33,
+          "max": 33
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 66,
+          "max": 66
+        }
+      },
       "nether": {
         "minecraft:variant": {
           "value": 1
@@ -198,6 +210,22 @@
       },
       "minecraft:entity_spawned": {
         "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
           {
             "filters": {
               "test": "has_biome_tag", "operator": "==", "value": "nether"

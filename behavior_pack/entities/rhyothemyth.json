@@ -11,6 +11,19 @@
     // minecraft:variant => stun count
     // minecraft:mark_variant => mode value
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 45,
+          "max": 45
+        }
+      },
+
       //Swoop attack mode
       // => All
       // val : 0
@@ -334,6 +347,22 @@
                 //,
                 //"gaiawanderer:stunable",
                 //"gaiawanderer:default_stun_count"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
               ]
             }
           }

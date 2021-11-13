@@ -8,6 +8,18 @@
       "is_experimental": false
     },
     "component_groups":{
+      "status_easy": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        }
+      },
       "servant": {
         "minecraft:loot": {
           "table": ""
@@ -45,21 +57,23 @@
           ],
           "must_see": true
         }
+      },
+      "area_poison": {
+        "minecraft:mob_effect": {
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "operator": "!=", "value": "monster" }
+            ] 
+          },
+          "effect_range": 1.45,
+          "effect_time": 60,
+          "mob_effect": "poison"
+        }
       }
     },
     "components": {
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 14 : 0"
-      },
-      "minecraft:mob_effect": {
-        "entity_filter": {
-          "any_of": [
-            { "test": "is_family", "subject": "other", "operator": "!=", "value": "monster" }
-          ] 
-        },
-        "effect_range": 1.45,
-        "effect_time": 60,
-        "mob_effect": "poison"
       },
       "minecraft:type_family": {
         "family": [ "nether_jelly", "monster" ]
@@ -151,16 +165,54 @@
       }
     },
     "events": {
-      "death_event": {
-        "randomize": [
+      "minecraft:entity_spawned": {
+        "sequence": [
           {
-            "weight": 99
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
           },
           {
-            "weight": 1,
-            "run_command": {
-              "command": "structure load mystructure:book_nether_jelly ~ ~ ~"
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
             }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "area_poison"
+              ]
+            }
+          }
+        ]
+      },
+      "death_event": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": [
+                "area_poison"
+              ]
+            }
+          },
+          {        
+            "randomize": [
+              {
+                "weight": 99
+              },
+              {
+                "weight": 1,
+                "run_command": {
+                  "command": "structure load mystructure:book_nether_jelly ~ ~ ~"
+                }
+              }
+            ]
           }
         ]
       },

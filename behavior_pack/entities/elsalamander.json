@@ -11,6 +11,18 @@
     // minecraft:variant => stun count
     // minecraft:mark_variant => mode value
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 150,
+          "max": 150
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 400,
+          "max": 400
+        }
+      },
       "gaiawanderer:sleep": {
         "minecraft:mark_variant": {
           "value": 3
@@ -320,6 +332,22 @@
       },
       "minecraft:entity_spawned": {
         "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
           {
             "add": {
               "component_groups": [

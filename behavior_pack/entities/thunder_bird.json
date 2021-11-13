@@ -8,6 +8,18 @@
       "is_experimental": false
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 200,
+          "max": 200
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 500,
+          "max": 500
+        }
+      },
       "mode_calm": {
         "minecraft:variant": {
           "value": 0
@@ -359,6 +371,22 @@
                 //"gaiawanderer:mode_flying",
                 //"gaiawanderer:mode_power_attack",
                 "mode_calm"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
               ]
             }
           }

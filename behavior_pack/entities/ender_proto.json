@@ -9,6 +9,24 @@
     },
 
     "component_groups": {
+      "status_easy": {
+        "minecraft:attack": {
+          "damage": 9
+        },
+        "minecraft:health": {
+          "value": 60,
+          "max": 60
+        }
+      },
+      "status_hard": {
+        "minecraft:attack": {
+          "damage": 16
+        },
+        "minecraft:health": {
+          "value": 120,
+          "max": 120
+        }
+      },
       "gaiawanderer:apoptosis": {
           "minecraft:instant_despawn": {}
       }
@@ -167,6 +185,26 @@
       }
     },
     "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      },
       "death_event": {
         "randomize": [
           {

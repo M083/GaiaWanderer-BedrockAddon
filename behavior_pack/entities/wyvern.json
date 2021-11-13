@@ -8,6 +8,25 @@
       "is_experimental": false
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:attack": {
+          "damage": 5
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 80,
+          "max": 80
+        },
+        "minecraft:attack": {
+          "damage": 9
+        }
+      },
+
       //Swoop attack mode
       // => All
       // val : 0
@@ -15,9 +34,6 @@
 
         "minecraft:mark_variant": {
           "value": 0
-        },
-        "minecraft:attack": {
-          "damage": 6
         },
         "minecraft:movement": {
           "value": 0.6
@@ -187,6 +203,9 @@
         "value": 50,
         "max": 50
       },
+      "minecraft:attack": {
+        "damage": 6
+      },
       "minecraft:scale": {
         "value": 1.0
       },
@@ -262,6 +281,22 @@
                 //,
                 // "gaiawanderer:stunable",
                 // "gaiawanderer:default_stun_count"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
               ]
             }
           }

@@ -9,6 +9,18 @@
     },
 
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 350,
+          "max": 350
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 800,
+          "max": 800
+        }
+      },
       "gaiawanderer:ritual": {
         "minecraft:variant": {
           "value": 0
@@ -347,18 +359,58 @@
         ]
       },
       "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "gaiawanderer:ritual"
-          ]
-        }
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "gaiawanderer:ritual"
+              ]
+            }
+          }
+        ]
       },
       "minecraft:entity_transformed": {
-        "add": {
-          "component_groups": [
-            "gaiawanderer:ritual"
-          ]
-        }
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
+            "add": {
+              "component_groups": [
+                "gaiawanderer:ritual"
+              ]
+            }
+          }
+        ]
       },
       "gaiawanderer:mode_change_by_egg_shot": {
         "sequence" : [

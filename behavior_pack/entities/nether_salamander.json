@@ -8,6 +8,20 @@
       "is_experimental": false
     },
 
+    "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 25,
+          "max": 25
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 50,
+          "max": 50
+        }
+      }
+    },
     "components": {
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 19 : 0"
@@ -185,6 +199,26 @@
       }
     },
     "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      },
       "death_event": {
         "randomize": [
           {

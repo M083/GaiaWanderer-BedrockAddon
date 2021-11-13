@@ -8,6 +8,30 @@
       "is_experimental": false
     },
 
+    "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 30,
+          "max": 30
+        },
+        "minecraft:attack": {
+          "damage": 10,
+          "effect_name": "levitation",
+          "effect_duration": 3
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 80,
+          "max": 80
+        },
+        "minecraft:attack": {
+          "damage": 16,
+          "effect_name": "levitation",
+          "effect_duration": 3
+        }
+      }
+    },
     "components": {
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 13 : 0"
@@ -158,6 +182,26 @@
       }
     },
     "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      },
       "death_event": {
         "randomize": [
           {

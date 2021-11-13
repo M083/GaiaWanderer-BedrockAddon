@@ -9,12 +9,28 @@
     },
 
     "component_groups": {
+      "status_easy": {
+        "minecraft:attack": {
+          "damage": 6
+        },
+        "minecraft:health": {
+          "value": 40,
+          "max": 40
+        }
+      },
+      "status_hard": {
+        "minecraft:attack": {
+          "damage": 12
+        },
+        "minecraft:health": {
+          "value": 80,
+          "max": 80
+        }
+      }
     },
     "components": {
       "minecraft:attack": {
-        "damage": 8,
-        "effect_name": "instant_damage",
-        "effect_duration": 1
+        "damage": 8
       },
       "minecraft:pushable": {
         "is_pushable": true,
@@ -137,6 +153,26 @@
       }
     },
     "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          }
+        ]
+      },
       "death_event": {
         "randomize": [
           {

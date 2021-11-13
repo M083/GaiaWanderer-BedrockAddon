@@ -9,6 +9,42 @@
     },
 
     "component_groups": {
+      "status_easy_gold": {
+        "minecraft:health": {
+          "value": 25,
+          "max": 25
+        }
+      },
+      "status_hard_gold": {
+        "minecraft:health": {
+          "value": 45,
+          "max": 45
+        }
+      },
+      "status_easy_emerald": {
+        "minecraft:health": {
+          "value": 35,
+          "max": 35
+        }
+      },
+      "status_hard_emerald": {
+        "minecraft:health": {
+          "value": 55,
+          "max": 55
+        }
+      },
+      "status_easy_diamond": {
+        "minecraft:health": {
+          "value": 45,
+          "max": 45
+        }
+      },
+      "status_hard_diamond": {
+        "minecraft:health": {
+          "value": 65,
+          "max": 65
+        }
+      },
       "roll_gold": {
         "minecraft:area_attack" : {
           "entity_filter": {
@@ -862,16 +898,76 @@
         "randomize": [
           {
             "weight": 60,
-            "add": { "component_groups": [ "gold", "walk_gold" ] }
+            "sequence": [
+              {
+                "add": { "component_groups": [ "gold", "walk_gold" ] }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "easy" },
+                "add": {
+                  "component_groups": [
+                    "status_easy_gold"
+                  ]
+                }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "hard" },
+                "add": {
+                  "component_groups": [
+                    "status_hard_gold"
+                  ]
+                }
+              }
+            ]
           },
           {
             "weight": 30,
-            "add": { "component_groups": [ "emerald", "walk_emerald" ] }
+            "sequence": [
+              {
+                "add": { "component_groups": [ "emerald", "walk_emerald" ] }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "easy" },
+                "add": {
+                  "component_groups": [
+                    "status_easy_emerald"
+                  ]
+                }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "hard" },
+                "add": {
+                  "component_groups": [
+                    "status_hard_emerald"
+                  ]
+                }
+              }
+            ]
           },
           {
             "weight": 10,
-            "add": { "component_groups": [ "diamond", "walk_diamond" ] }
-          }
+            "sequence": [
+              {
+                "add": { "component_groups": [ "diamond", "walk_diamond" ] }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "easy" },
+                "add": {
+                  "component_groups": [
+                    "status_easy_diamond"
+                  ]
+                }
+              },
+              {
+                "filters": { "test": "is_difficulty", "value": "hard" },
+                "add": {
+                  "component_groups": [
+                    "status_hard_diamond"
+                  ]
+                }
+              }
+            ]
+          },
         ]
       },
       "to_walk_gold": {

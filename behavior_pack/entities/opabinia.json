@@ -8,6 +8,18 @@
       "is_experimental": false
     },
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 450,
+          "max": 450
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1000,
+          "max": 1000
+        }
+      },
       "gaiawanderer:apoptosis": {
           "minecraft:instant_despawn": {}
       },
@@ -465,6 +477,22 @@
           {
             "run_command": {
               "command": "effect @s invisibility 1 1 true"
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
             }
           }
         ]
