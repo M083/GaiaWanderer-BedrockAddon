@@ -314,6 +314,9 @@
     "ice_beak": {
       "textures": "textures/gaiawanderer/ice_beak"
     },
+    "rare_key": {
+      "textures": "textures/gaiawanderer/rare_key"
+    },
     "key": {
       "textures": "textures/gaiawanderer/key"
     },

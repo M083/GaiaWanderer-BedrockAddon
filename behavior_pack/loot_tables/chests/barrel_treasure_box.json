@@ -139,6 +139,11 @@
         },
         {
           "type": "item",
+          "name": "gaiawanderer:rare_key",
+          "weight": 1
+        },
+        {
+          "type": "item",
           "name": "minecraft:saddle",
           "weight": 15
         },

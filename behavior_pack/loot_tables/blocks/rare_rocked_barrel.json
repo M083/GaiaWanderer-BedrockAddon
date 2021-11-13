@@ -5,14 +5,28 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:barrel",
+                    "name": "gaiawanderer:rare_rocked_barrel",
+                    "weight": 1,
                     "functions": [
                         {
-                            "function": "fill_container",
-                            "loot_table": "loot_tables/chests/rare_barrel_treasure_box.json"
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            }
                         }
                     ]
                 }
+                // {
+                //     "type": "item",
+                //     "name": "minecraft:barrel",
+                //     "functions": [
+                //         {
+                //             "function": "fill_container",
+                //             "loot_table": "loot_tables/chests/rare_barrel_treasure_box.json"
+                //         }
+                //     ]
+                // }
             ]
         }
     ]
