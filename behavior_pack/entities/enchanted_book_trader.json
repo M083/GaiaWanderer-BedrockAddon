@@ -22,17 +22,17 @@
       },
       "minecraft:is_hidden_when_invisible": {
       },
-      "minecraft:timer": {
-        "looping": false,
-        "random_time_choices": [
-          { "weight": 50, "value": 2400 },
-          { "weight": 50, "value": 3600 }
-        ],
-        "time_down_event": {
-          "event": "minecraft:start_despawn",
-          "target": "self"
-        }
-      },
+      // "minecraft:timer": {
+      //   "looping": false,
+      //   "random_time_choices": [
+      //     { "weight": 50, "value": 2400 },
+      //     { "weight": 50, "value": 3600 }
+      //   ],
+      //   "time_down_event": {
+      //     "event": "minecraft:start_despawn",
+      //     "target": "self"
+      //   }
+      // },
       "minecraft:economy_trade_table": {
         "display_name": "entity.gaiawanderer:enchanted_book_trader.name",
         "table": "trading/economy_trades/enchanted_book_trades.json",
