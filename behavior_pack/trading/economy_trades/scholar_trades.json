@@ -10,7 +10,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 5
+                  "quantity": 50
                 }
               ],
               "gives": [
@@ -30,7 +30,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 5
+                  "quantity": 50
                 }
               ],
               "gives": [
@@ -50,7 +50,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 8
+                  "quantity": 50
                 }
               ],
               "gives": [
@@ -70,7 +70,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 5
+                  "quantity": 50
                 }
               ],
               "gives": [
@@ -90,7 +90,7 @@
               "wants": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 1
+                  "quantity": 5
                 }
               ],
               "gives": [
@@ -116,7 +116,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 1
+                  "quantity": 10
                 }
               ]
             }
@@ -136,7 +136,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 2
+                  "quantity": 20
                 }
               ]
             }
@@ -156,7 +156,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 2
+                  "quantity": 25
                 }
               ]
             }
@@ -176,7 +176,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 3
+                  "quantity": 30
                 }
               ]
             }
@@ -196,7 +196,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 3
+                  "quantity": 30
                 }
               ]
             }
@@ -216,7 +216,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 3
+                  "quantity": 30
                 }
               ]
             }
@@ -236,7 +236,7 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 4
+                  "quantity": 40
                 }
               ]
             }
@@ -256,7 +256,267 @@
               "gives": [
                 {
                   "item": "gaiawanderer:scholar_coin",
-                  "quantity": 4
+                  "quantity": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 5,
+          "trades": [
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:ice_beak",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:boxa_meat",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:bug_extract",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:green_gel",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 15
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:marrella_antenna",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:marrella_blood",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:mantis_sickle",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 15
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:rolypse_shell",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 15
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:rolypse_shell",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 20
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:nether_core",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:salamander_core",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:rotten_core",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:red_gel",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:shebrus_fang",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:shebrus_liver",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:strong_string",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 64,
+              "wants": [
+                {
+                  "item": "gaiawanderer:scholar_coin",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gaiawanderer:fly_wing",
+                  "quantity": 1
                 }
               ]
             }

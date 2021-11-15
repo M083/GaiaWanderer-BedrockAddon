@@ -341,36 +341,6 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 3
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:fly_wing",
-                  "quantity": 1
-                }
-              ]
-            },
-            {
-              "max_uses": 16,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:marrella_blood",
-                  "quantity": 2
-                }
-              ]
-            },
-            {
-              "max_uses": 16,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
                   "quantity": 1
                 }
               ],
@@ -401,57 +371,12 @@
               "wants": [
                 {
                   "item": "minecraft:emerald",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:mantis_sickle",
-                  "quantity": 3
-                }
-              ]
-            },
-            {
-              "max_uses": 16,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:green_gel",
-                  "quantity": 3
-                }
-              ]
-            },
-            {
-              "max_uses": 16,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
                   "quantity": 2
                 }
               ],
               "gives": [
                 {
                   "item": "minecraft:ender_pearl",
-                  "quantity": 1
-                }
-              ]
-            },
-            {
-              "max_uses": 16,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:salamander_core",
                   "quantity": 1
                 }
               ]
@@ -851,21 +776,6 @@
                 {
                   "item": "gaiawanderer:forestflower",
                   "quantity": 1
-                }
-              ]
-            },
-            {
-              "max_uses": 8,
-              "wants": [
-                {
-                  "item": "minecraft:emerald",
-                  "quantity": 1
-                }
-              ],
-              "gives": [
-                {
-                  "item": "gaiawanderer:shebrus_liver",
-                  "quantity": 4
                 }
               ]
             },
