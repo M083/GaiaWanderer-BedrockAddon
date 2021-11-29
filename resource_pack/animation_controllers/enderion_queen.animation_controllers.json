@@ -1,0 +1,94 @@
+{
+    "format_version": "1.8.0",
+    "animation_controllers": {
+        "controller.animation.enderion_queen.default": {
+            "states": {
+                "enable": {
+                    "animations": [
+                        {
+                            "part": []
+                        },
+                        {
+                            "default_pose": []
+                        },
+                        {
+                            "default_ring_anim": []
+                        },
+                        {
+                            "default_arm_anim": []
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.enderion_queen.move": {
+            "states": {
+                "default": {
+                    "parameters": [ "query.modified_move_speed" ],
+                    "animations": [
+                        {
+                            "move_anim": [
+                                {
+                                    "0.0": 0.0,
+                                    "1.0": 1.0
+                                }
+                            ]
+                        },
+                        {
+                            "stay_anim": []
+                        } 
+                    ]
+                }
+            }
+        },
+        "controller.animation.enderion_queen.shot_attack": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 2"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "shot_attack_pose": []
+                        },
+                        {
+                            "look_at_target": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "query.variant != 2"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.enderion_queen.melee_attack": {
+            "states": {
+                "disable": {
+                    "transitions": [
+                        {
+                            "enable": "query.variant == 3"
+                        }
+                    ]
+                },
+                "enable": {
+                    "animations": [
+                        {
+                            "melee_attack_anim": []
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "disable": "query.variant != 3"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

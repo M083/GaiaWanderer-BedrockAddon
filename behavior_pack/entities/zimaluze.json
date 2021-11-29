@@ -12,6 +12,18 @@
     // 10:ice_swoop 11:ice_claw 12:ice_tail 13:roar 14:normal_breath
 
     "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 600,
+          "max": 600
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1200,
+          "max": 1200
+        }
+      },
       "gaiawanderer:calm": {
         "minecraft:variant": {
           "value": 0
@@ -463,6 +475,22 @@
       },
       "minecraft:entity_spawned": {
         "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
           {
             "add": { "component_groups": [ "gaiawanderer:calm" ] }
           } 

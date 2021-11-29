@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.enderion_bit.look_at": {
+			"loop": true,
+			"bones": {
+				"core": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.enderion_bit.roll": {
+			"loop": true,
+			"animation_length": 2.84,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.84": [0, 0, 360]
+					}
+				}
+			}
+		},
+		"animation.enderion_bit.site_on": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.12,
+			"bones": {
+				"site": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.12": [1, 1, 1024]
+					}
+				}
+			}
+		},
+		"animation.enderion_bit.site_off": {
+			"animation_length": 1.16,
+			"bones": {
+				"site": {
+					"scale": {
+						"0.0": [1, 1, 0],
+						"0.84": [1, 1, 0],
+						"1.16": [1, 1, 1]
+					}
+				}
+			}
+		}
+	}
+}

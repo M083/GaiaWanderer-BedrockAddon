@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:enderion_queen",
+      "materials": { "default": "enderion_queen" },
+      "textures": {
+        "default": "textures/entity/enderion_queen"
+      },
+      "geometry": {
+        "default": "geometry.enderion_queen"
+      },
+      "animations": {
+        "look_at_target": "animation.enderion_queen.look_at_target",
+        "default_pose": "animation.enderion_queen.default_pose",
+        "move_anim": "animation.enderion_queen.move_anim",
+        "default_ring_anim": "animation.enderion_queen.default_ring_anim",
+        "default_arm_anim": "animation.enderion_queen.default_arm_anim",
+        "stay_anim": "animation.enderion_queen.stay_anim",
+        "shot_attack_anim": "animation.enderion_queen.shot_attack_anim",
+        "shot_attack_pose": "animation.enderion_queen.shot_attack_pose",
+        "shower_anim": "animation.enderion_queen.shower_anim",
+        "part": "animation.enderion_queen.part",
+        "melee_attack_anim": "animation.enderion_queen.melee_attack_anim"
+      },
+      "animation_controllers": [
+        {
+          "default_pose": "controller.animation.enderion_queen.default"
+        },
+        {
+          "move": "controller.animation.enderion_queen.move"
+        },
+        {
+          "shot_attack": "controller.animation.enderion_queen.shot_attack"
+        },
+        {
+          "melee_attack": "controller.animation.enderion_queen.melee_attack"
+        }
+      ],
+      "render_controllers": [ "controller.render.enderion_queen" ],
+      "spawn_egg": {
+        "base_color": "#ECFBAF",
+        "overlay_color": "#380038"
+      }
+    }
+  }
+}

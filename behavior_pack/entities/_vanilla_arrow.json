@@ -688,6 +688,40 @@
         }
       },
 
+      "gaiawanderer:enderion_bit_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 40,
+              "knockback": true,
+              "semi_random_diff_damage": false,
+              "destroy_on_hit": false
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {
+            }
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "mob.enderdragon.hit",
+          "hit_ground_sound": "mob.enderdragon.hit",
+          "power": 6,
+          "gravity": 0.10,
+          "uncertainty_base": 0,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": true,
+          "anchor": 1,
+          "should_bounce": true,
+          "multiple_targets": false,
+          "offset": [ 0, -0.1, 0 ]
+        }
+      },
+
       "gaiawanderer:wyvern_spear_arrow": {
         "minecraft:variant": {
           "value": 11
@@ -970,6 +1004,54 @@
         }
       },
 
+      "gaiawanderer:enderionstar_arrow": {
+        "minecraft:variant": {
+          "value": 9
+        },
+
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "event": "gaiawanderer:soul_flame_particle_event"
+            }
+          ]
+        },
+        "minecraft:projectile": {
+          "on_hit": {
+            "impact_damage": {
+              "damage": 20,
+              "knockback": true,
+              "semi_random_diff_damage": true,
+              "destroy_on_hit": true,
+              "max_critical_damage": 10,
+              "min_critical_damage": 9,
+              "power_multiplier": 0.97
+            },
+            "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {              
+                "event": "gaiawanderer:enderionstar_event",
+                "target": "self"
+              }
+            },
+            "stick_in_ground": {
+              "shake_time" : 0
+            },
+            "remove_on_hit": {}
+          },
+          "liquid_inertia": 0.99,
+          "hit_sound": "item.trident.hit",
+          "hit_ground_sound": "item.trident.hit_ground",
+          "power": 0.5,
+          "gravity": 0.1,
+          "uncertainty_base": 60,
+          "uncertainty_multiplier": 0,
+          "stop_on_hurt": false,
+          "anchor": 1,
+          "should_bounce": true,
+          "offset": [ 0, 64, 0 ]
+        }
+      },
       "gaiawanderer:shootingstar_arrow": {
         "minecraft:variant": {
           "value": 9
@@ -1351,6 +1433,15 @@
           }
         ]
       },
+      "gaiawanderer:enderionstar_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon ender_crystal"
+            }
+          }
+        ]
+      },
       "gaiawanderer:shootingstar": {
         "sequence": [
           {
@@ -1727,6 +1818,25 @@
           {
             "filters": {
               "all_of": [
+                { "test": "is_family", "subject": "other", "value": "enderion_bit" }
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:enderion_bit_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:enderion_bit, c = 1] site_off"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
                 { "test": "is_family", "subject": "other", "value": "zimaluze" }
               ]
             },
@@ -1739,6 +1849,46 @@
               {
                 "run_command": {
                   "command": "playanimation @e[type = gaiawanderer:zimaluze, c = 1] open_mouth"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "enderion_queen" },
+                { "test": "is_variant", "subject": "other", "operator": "equals", "value": 1}
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:enderionstar_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:enderion_queen, c = 1] shower_anim"
+                }
+              }
+            ]
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "enderion_queen" },
+                { "test": "is_variant", "subject": "other", "operator": "equals", "value": 2}
+              ]
+            },
+            "sequence": [
+              {
+                "add": {
+                  "component_groups" : [ "gaiawanderer:mutant_nether_jelly_arrow" ]
+                }
+              },
+              {
+                "run_command": {
+                  "command": "playanimation @e[type = gaiawanderer:enderion_queen, c = 1] shot_attack_anim"
                 }
               }
             ]
@@ -1902,6 +2052,21 @@
                   "all_of": [
                     { "test": "is_family", "subject": "other", "value": "player" },
                     { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:gravity_spear" }
+                  ]
+                }
+              ]
+            },
+            "add": {
+              "component_groups" : [ "gaiawanderer:gravity_ball_arrow" ]
+            }
+          },
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "player" },
+                    { "test": "has_equipment", "domain": "hand", "subject": "other", "value": "gaiawanderer:enderion_spear" }
                   ]
                 }
               ]

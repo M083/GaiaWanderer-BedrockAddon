@@ -63,6 +63,10 @@
       "minecraft:damage_sensor": {
         "triggers": [
           {
+            "cause": "fall",
+            "deals_damage": false
+          },
+          {
             "on_damage": {
               "filters": {
                 "all_of": [
@@ -217,6 +221,20 @@
             "gaiawanderer:apoptosis"
           ]
         }
+      },
+      "gaiawanderer:transform_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:enderion_bit"
+            }
+          },
+          {
+            "run_command": {
+              "command": "kill @s"
+            }
+          }
+        ]
       }
     }
   }

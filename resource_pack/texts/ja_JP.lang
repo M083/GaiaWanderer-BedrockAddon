@@ -34,6 +34,8 @@ entity.gaiawanderer:ender_proto.name=エンダープロト
 entity.gaiawanderer:ender_thrust.name=エンダースラスト
 entity.gaiawanderer:ender_snipe.name=エンダースナイプ
 entity.gaiawanderer:ender_snipe<>.name=エンダースナイプ
+entity.gaiawanderer:enderion_bit.name=エンダリオンビット
+entity.gaiawanderer:enderion_bit<>.name=エンダリオンビット
 
 entity.gaiawanderer:elsalamander<>.name=エルサラマンダー
 entity.gaiawanderer:elsalamander.name=エルサラマンダー
@@ -57,6 +59,8 @@ entity.gaiawanderer:rimafloga<>.name=リマフロガ
 entity.gaiawanderer:rimafloga.name=リマフロガ
 entity.gaiawanderer:zimaluze<>.name=ジマルーツェ
 entity.gaiawanderer:zimaluze.name=ジマルーツェ
+entity.gaiawanderer:enderion_queen<>.name=エンダリオンクイン
+entity.gaiawanderer:enderion_queen.name=エンダリオンクイン
 
 entity.gaiawanderer:gravity_ball.name=グラビティボール
 entity.gaiawanderer:locator.name=テレポートアンカー
@@ -104,6 +108,7 @@ item.spawn_egg.entity.gaiawanderer:shebrus_founder.name=シェブラス・ファ
 item.spawn_egg.entity.gaiawanderer:ender_proto.name=エンダープロトを出現させる
 item.spawn_egg.entity.gaiawanderer:ender_thrust.name=エンダースラストを出現させる
 item.spawn_egg.entity.gaiawanderer:ender_snipe.name=エンダースナイプを出現させる
+item.spawn_egg.entity.gaiawanderer:enderion_bit.name=エンダリオンビットを出現させる
 item.spawn_egg.entity.gaiawanderer:enchanted_book_trader.name=本屋を出現させる
 item.spawn_egg.entity.gaiawanderer:scholar.name=研究者を出現させる
 
@@ -115,6 +120,7 @@ item.spawn_egg.entity.gaiawanderer:mutant_nether_jelly.name=§dミュータン�
 item.spawn_egg.entity.gaiawanderer:opabinia.name=§dオパビニア・ファウンダーを出現させる
 item.spawn_egg.entity.gaiawanderer:rimafloga.name=§dリマフロガを出現させる
 item.spawn_egg.entity.gaiawanderer:zimaluze.name=§dジマルーツェを出現させる
+item.spawn_egg.entity.gaiawanderer:enderion_queen.name=§dエンダリオンクインを出現させる
 
 item.gaiawanderer:wandering_ticket=行商人招待券
 item.gaiawanderer:wander_broom=ワンダーブルーム
@@ -172,6 +178,7 @@ item.gaiawanderer:ender_axe=奪命の戦斧
 item.gaiawanderer:founder_sword=ファウンダーソード
 item.gaiawanderer:myth_axe=鎧虫の戦斧
 item.gaiawanderer:thunder_blade=サンダーブレード
+item.gaiawanderer:enderion_spear=終焉の砲槍
 
 item.gaiawanderer:hard_leather_helmet=ハードレザーヘルメット
 item.gaiawanderer:hard_leather_chestplate=ハードレザーチェストプレート
@@ -232,6 +239,7 @@ item.gaiawanderer:mutant_nether_jelly_arm=妖しい触手
 item.gaiawanderer:opabinia_arm=不気味な触腕
 item.gaiawanderer:rimafloga_stone=蝋焔の龍石
 item.gaiawanderer:zimaluze_stone=凍旋の龍石
+item.gaiawanderer:enderion_eye=エンダリオンアイ
 item.gaiawanderer:ender_core=終末の残滓
 item.gaiawanderer:ender_star=宵の明星
 item.gaiawanderer:founder_debris=始祖の残骸

@@ -32,6 +32,38 @@
                 ],
                 "volume": 1
             },
+            "gaiawanderer:enderion_queen": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.35,
+                    0.4
+                ],
+                "volume": 3
+            },
+            "gaiawanderer:enderion_bit": {
+                "events": {
+                    "shoot": {
+                        "pitch": 1.5,
+                        "sound": "mob.enderdragon.hit",
+                        "volume": 3
+                    },
+                    "hurt": "mob.blaze.hit",
+                    "death": "mob.irongolem.death"
+                },
+                "pitch": [
+                    0.5,
+                    0.6
+                ],
+                "volume": 3
+            },
             "gaiawanderer:ender_snipe": {
                 "events": {
                     "shoot": {

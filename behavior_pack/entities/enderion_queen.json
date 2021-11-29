@@ -1,0 +1,488 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gaiawanderer:enderion_queen",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "status_easy": {
+        "minecraft:health": {
+          "value": 750,
+          "max": 750
+        }
+      },
+      "status_hard": {
+        "minecraft:health": {
+          "value": 1500,
+          "max": 1500
+        }
+      },
+      "gaiawanderer:calm": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        },
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+        "minecraft:behavior.float_wander": {
+          "priority": 2,
+          "y_dist": 12,
+          "y_offset": -2.0,
+          "random_reselect": true,
+          "float_duration": [ 0.1, 0.45 ],
+          "must_reach": true
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "enderion"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "event": "rage"
+              },
+              "damage_multiplier": 0.1
+            }
+          ]
+        }
+      },
+      "gaiawanderer:rage": {
+        "minecraft:boss": {
+          "name": "entity.gaiawanderer:enderion_queen.name"
+        },
+        "minecraft:damage_sensor": {
+          "triggers": [
+            {
+              "cause": "fall",
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": "enderion"
+                    }
+                  ]
+                }
+              },
+              "deals_damage": false
+            },
+            {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {"test": "has_damage", "value": "entity_explosion"},
+                    {"test": "has_damage", "value": "block_explosion"}
+                  ]
+                }
+              },
+              "deals_damage": false
+            }
+          ]
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "snow_storm"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of" : [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "monster"}
+                ],
+                "all_of": [
+                  {"test" : "is_family", "subject" : "other", "operator": "!=", "value" :  "inanimate"}
+                ]
+              },
+              "max_dist": 70
+            }
+          ],
+          "must_see": true
+        }
+      },
+      "gaiawanderer:crystal_fall": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:arrow"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 1,
+          "attack_radius": 64,
+          "charge_shoot_trigger": 1.9,
+          "charge_charged_trigger": 0.5,
+          "burst_shots": 5,
+          "burst_interval": 0.1
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        },
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+        "minecraft:behavior.float_wander": {
+          "priority": 2,
+          "y_dist": 12,
+          "y_offset": -2.0,
+          "random_reselect": true,
+          "float_duration": [ 0.1, 0.45 ],
+          "must_reach": true
+        },
+        "minecraft:follow_range": {
+          "value": 64,
+          "max": 64
+        },
+
+        "minecraft:timer": {
+          "looping": false,
+          "time": [6.0, 6.0],
+          "time_down_event": {
+            "event": "mode_change_by_crystal_fall"
+          }
+        }
+      },
+      "gaiawanderer:shot": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:teleport": {
+          "random_teleports": true,
+          "max_random_teleport_time": 5,
+          "random_teleport_cube": [ 32, 32, 32 ],
+          "target_distance": 16,
+          "target_teleport_chance": 0.15,
+          "light_teleport_chance": 0.15
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:arrow"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 1,
+          "attack_radius": 64,
+          "charge_shoot_trigger": 0.25,
+          "charge_charged_trigger": 0.25,
+          "burst_shots": 1,
+          "burst_interval": 0.25
+        },
+        "minecraft:movement": {
+          "value": 0.08
+        },
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+        "minecraft:behavior.float_wander": {
+          "priority": 2,
+          "y_dist": 12,
+          "y_offset": -2.0,
+          "random_reselect": true,
+          "float_duration": [ 0.1, 0.45 ],
+          "must_reach": true
+        },
+        "minecraft:follow_range": {
+          "value": 64,
+          "max": 64
+        },
+
+        "minecraft:timer": {
+          "looping": false,
+          "time": [6.0, 6.0],
+          "time_down_event": {
+            "event": "mode_change_by_shot"
+          }
+        }
+      },
+      "gaiawanderer:melee":{
+        "minecraft:variant": {
+          "value": 3
+        },
+        "minecraft:attack": {
+          "damage": 32
+        },
+        "minecraft:area_attack" : {
+          "damage_range": 3,
+          "damage_per_tick": 32,
+          "cause": "contact",
+          "entity_filter": {
+            "all_of": [
+              { "test": "is_family", "subject": "other", "operator": "!=", "value": "enderion" }
+            ] 
+          }
+        },
+        "minecraft:movement.glide": {
+          "start_speed": 0.9,
+          "speed_when_turning": 2.25
+        },
+        "minecraft:movement": {
+          "value": 3.8
+        },
+        "minecraft:behavior.swoop_attack": {
+          "priority": 2,
+          "delay_range": [ 1.0, 1.5 ]
+        },
+        "minecraft:behavior.circle_around_anchor": {
+          "priority": 3,
+          "radius_range": [ 8.0, 12.0 ],
+          "radius_change_chance": 250,
+          "height_above_target_range": [ 12.0, 15.0 ],
+          "height_offset_range": [ -1.0, 2.0 ],
+          "height_change_chance": 350,
+          "goal_radius": 1.25
+        },
+        "minecraft:follow_range": {
+          "value": 32,
+          "max": 32
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": [10.0, 10.0],
+          "time_down_event": {
+            "event": "mode_change_by_melee"
+          }
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "enderion_queen", "undead", "monster", "boss", "enderion" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:loot": {
+        "table": ""
+      },
+      "minecraft:collision_box": {
+        "width": 6.5,
+        "height": 8.5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:health": {
+        "value": 1000,
+        "max": 1000
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:on_death": {
+        "event": "death_event"
+      }
+    },
+    "events": {
+      "death_event": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "fill ~ ~ ~ ~ ~ ~ gaiawanderer:rocked_barrel"
+            }
+          },
+          {
+            "run_command": {
+              "command": "fill ~ ~1 ~ ~ ~1 ~ chest"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 13 gaiawanderer:key"
+            }
+          },
+          {
+            "run_command": {
+              "command":  "replaceitem block ~ ~1 ~ slot.container 0 shulker_box 1 4"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 1 shulker_box 1 2"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 2 gaiawanderer:ender_core 6"
+            }
+          },
+          {
+            "run_command": {
+              "command": "replaceitem block ~ ~1 ~ slot.container 3 gaiawanderer:enderion_eye 1"
+            }
+          },
+          {
+            "run_command": {
+              "command": "xp 150 @e[type = player]"
+            }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "filters": { "test": "is_difficulty", "value": "easy" },
+            "add": {
+              "component_groups": [
+                "status_easy"
+              ]
+            }
+          },
+          {
+            "filters": { "test": "is_difficulty", "value": "hard" },
+            "add": {
+              "component_groups": [
+                "status_hard"
+              ]
+            }
+          },
+          {
+            "add": { "component_groups": [ "gaiawanderer:calm" ] }
+          } 
+        ]
+      },
+      "rage": {
+        "sequence": [
+          {
+            "run_command": {
+              "command": "event entity @e[family = ender, r = 200] gaiawanderer:transform_event"
+            }
+          },
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:enderion_bit"
+            }
+          },
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:enderion_bit"
+            }
+          },
+          {
+            "remove": { "component_groups": [ "gaiawanderer:calm" ] }
+          },
+          {
+            "add": { "component_groups": [ "gaiawanderer:rage" ] }
+          },
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:enderion_bit"
+            }
+          },
+          {
+            "run_command": {
+              "command": "summon gaiawanderer:enderion_bit"
+            }
+          },
+          {
+            "randomize": [
+              {
+                "add": { "component_groups": [ "gaiawanderer:crystal_fall" ] }
+              },
+              {
+                "add": { "component_groups": [ "gaiawanderer:shot" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "mode_change_by_crystal_fall": {
+        "sequence": [
+          {
+            "remove": { "component_groups": [ "gaiawanderer:crystal_fall" ] }
+          },
+          {
+            "randomize": [
+              {
+                "add": { "component_groups": [ "gaiawanderer:melee" ] }
+              },
+              {
+                "add": { "component_groups": [ "gaiawanderer:shot" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "mode_change_by_melee": {
+        "sequence": [
+          {
+            "remove": { "component_groups": [ "gaiawanderer:melee" ] }
+          },
+          {
+            "randomize": [
+              {
+                "add": { "component_groups": [ "gaiawanderer:crystal_fall" ] }
+              },
+              {
+                "add": { "component_groups": [ "gaiawanderer:shot" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "mode_change_by_shot": {
+        "sequence": [
+          {
+            "remove": { "component_groups": [ "gaiawanderer:shot" ] }
+          },
+          {
+            "randomize": [
+              {
+                "add": { "component_groups": [ "gaiawanderer:melee" ] }
+              },
+              {
+                "add": { "component_groups": [ "gaiawanderer:crystal_fall" ] }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

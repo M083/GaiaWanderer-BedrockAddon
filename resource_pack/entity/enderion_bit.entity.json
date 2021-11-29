@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "gaiawanderer:enderion_bit",
+      "materials": {
+        "default": "enderion_bit"
+      },
+      "textures": {
+        "default": "textures/entity/enderion_queen"
+      },
+      "geometry": {
+        "default": "geometry.enderion_bit"
+      },
+      "animations": {
+        "roll": "animation.enderion_bit.roll",
+        "site_on": "animation.enderion_bit.site_on",
+        "site_off": "animation.enderion_bit.site_off",
+        "look_at": "animation.enderion_bit.look_at"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.enderion_bit.general"
+        },
+        {
+          "mode": "controller.animation.enderion_bit.mode"
+        }
+      ],
+      "render_controllers": [ "controller.render.enderion_bit" ],
+      "spawn_egg": {
+        "base_color": "#ECFBAF",
+        "overlay_color": "#003800"
+      }
+    }
+  }
+}

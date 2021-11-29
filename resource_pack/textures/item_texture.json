@@ -35,6 +35,9 @@
     "ender_sword": {
       "textures": "textures/gaiawanderer/ender_sword"
     },
+    "enderion_eye": {
+      "textures": "textures/gaiawanderer/enderion_eye"
+    },
     "ender_star": {
       "textures": "textures/gaiawanderer/ender_star"
     },
@@ -205,6 +208,9 @@
     },
     "gravity_spear": {
       "textures": "textures/gaiawanderer/gravity_spear"
+    },
+    "enderion_spear": {
+      "textures": "textures/gaiawanderer/enderion_spear"
     },
     "wyvern_axe": {
       "textures": "textures/gaiawanderer/wyvern_axe"

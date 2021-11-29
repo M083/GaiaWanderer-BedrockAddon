@@ -2,6 +2,8 @@
     "materials": {
         "version": "1.0.0",
         "zimaluze:entity_alphatest": {},
+        "enderion_bit:entity_alphatest": {},
+        "enderion_queen:entity_alphatest": {},
         "ender_proto:entity_alphatest": {},
         "ender_thrust:entity_alphatest": {},
         "ender_snipe:entity": {

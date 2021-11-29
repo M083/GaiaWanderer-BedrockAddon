@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "gaiawanderer:enderion_spear"
+    },
+    "priority": 0,
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " a ",
+      "mc ",
+      " s"
+    ],
+    "key": {
+      "a": {
+        "item": "gaiawanderer:ender_star"
+      },
+      "m": {
+        "item": "gaiawanderer:enderion_eye"
+      },
+      "s": {
+        "item": "gaiawanderer:founder_star"
+      },
+      "c": {
+        "item": "gaiawanderer:gravity_spear"
+      }
+    },
+    "result": {
+      "item": "gaiawanderer:enderion_spear"
+    }
+  }
+}
