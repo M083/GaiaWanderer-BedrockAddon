@@ -15,6 +15,11 @@ Addon for Minecraft Bedrock Edition
 - [更新履歴](#更新履歴)
 
 ## お知らせ
+2021/11/29
+
+Minecraft Bedrock Edition v1.18.Xのアップデートに伴い、本アドオンの更新を一時停止します。
+本アドオンの機能が全て実装可能であることが確認でき次第更新を再開します。
+
 2021/10/17
 
 ver1.21.XXXの以前アドオンを使用して作成したワールドは、ver1.22.XXXのアドオンを使用して遊ぶことができません。
@@ -56,7 +61,7 @@ v1.17.10以降のMCBEがインストールされた端末。
 Windows 10、iOS、Android以外はマルチプレイでのゲストのみ可能。
 
 ## ダウンロード
-### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.22.106/Gaiawanderer_1_23_100.mcaddon)
+### [**最新バージョンをダウンロード**](https://github.com/M083/GaiaWanderer-BedrockAddon/releases/download/ver1.23.100/Gaiawanderer_1_23_100.mcaddon)
 
 ### [過去のバージョンをダウンロード](https://github.com/M083/GaiaWanderer-BedrockAddon/releases)
 
